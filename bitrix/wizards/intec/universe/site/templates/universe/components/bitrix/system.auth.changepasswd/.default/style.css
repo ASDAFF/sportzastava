@@ -1,0 +1,11 @@
+.bx-auth.bx-changepsw input[type="text"], .bx-auth.bx-changepsw input[type="password"] {
+    max-width: 400px;
+    border-radius: 2px;
+    border: 1px solid #E6E6E6;
+    box-shadow: none;
+    height: 45px;
+}
+.bx-auth.bx-changepsw .form-group label {
+    font-weight: normal;
+    font-size: 15px;
+}

@@ -1,0 +1,44 @@
+.menu.menu-header-info {
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.menu.menu-header-info .menu-wrapper {
+    display: block;
+    overflow: hidden;
+    margin: 0 -12px;
+    height: 100%;
+}
+.menu.menu-header-info .menu-item {
+    display: block;
+    float: left;
+    height: 100%;
+    padding: 0 12px;
+    white-space: nowrap;
+}
+.menu.menu-header-info .menu-item .menu-item-text {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+.menu.menu-header-info .menu-item .menu-item-text .menu-item-text-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #a7a7a7;
+    white-space: nowrap;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}
+.menu.menu-header-info .menu-item .menu-item-text:hover .menu-item-text-wrapper,
+.menu.menu-header-info .menu-item.menu-item-active .menu-item-text .menu-item-text-wrapper {
+    color: #666666;
+}

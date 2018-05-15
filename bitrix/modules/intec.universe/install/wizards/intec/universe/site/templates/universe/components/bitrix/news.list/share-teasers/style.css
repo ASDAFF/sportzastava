@@ -1,0 +1,45 @@
+
+
+.share-teaser {
+    margin: 60px 0 70px 0;
+    font-size: 0;
+    text-align: left;
+}
+.share-teaser .teaser-element {
+    display: inline-block;
+    width: 33.333333%;
+    vertical-align: top;
+}
+.share-teaser .teaser-element .element-header {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 500;
+    text-align: center;
+}
+.share-teaser .teaser-element .element-description {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: 500;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px 20px 20px 0;
+}
+
+@media all and (max-width: 720px) {
+    .intec-adaptive .share-teaser {
+        text-align: center;
+    }
+    .intec-adaptive .share-teaser .teaser-element {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .intec-adaptive .share-teaser .teaser-element:last-child {
+        margin-bottom: 0;
+    }
+}
+@media all and (max-width: 450px) {
+    .intec-adaptive .share-teaser .teaser-element {
+        width: 100%;
+    }
+}

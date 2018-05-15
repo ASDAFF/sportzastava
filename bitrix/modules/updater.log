@@ -1,0 +1,502 @@
+2018-04-29 01:21:00 -  - exec CUpdateClient::GetUpdatesList
+2018-04-29 01:21:00 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:21:00 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.13&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.13&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.2&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:21:00 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:21:00 -  - TIME GetUpdatesList(request) 0.164 sec
+2018-04-29 01:21:00 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:21:09 -  - exec CUpdateClient::GetUpdatesList
+2018-04-29 01:21:09 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:21:09 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.13&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.13&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.2&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:21:09 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:21:09 -  - TIME GetUpdatesList(request) 0.175 sec
+2018-04-29 01:21:09 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:37 -  - exec CUpdateClient::GetUpdatesList
+2018-04-29 01:24:37 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:37 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.13&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.13&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.2&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:37 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:38 -  - TIME GetUpdatesList(request) 0.478 sec
+2018-04-29 01:24:38 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:41 -  - exec CUpdateClient::RegisterVersion
+2018-04-29 01:24:41 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:41 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.13&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.13&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.2&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y&query_type=register
+2018-04-29 01:24:41 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:41 -  - TIME RegisterVersion(request) 0.165 sec
+2018-04-29 01:24:41 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:41 -  - TIME UnGzipArchive 0.002 sec
+2018-04-29 01:24:41 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:41 - CURV - Product registered successfully!
+2018-04-29 01:24:41 - UPD_SUCCESS - Registered
+2018-04-29 01:24:43 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:43 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:43 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.13&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.13&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.2&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:43 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:43 -  - TIME LoadModulesUpdates(request) 0.178 sec
+2018-04-29 01:24:43 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:43 - S - STEP
+2018-04-29 01:24:43 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:43 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:43 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:43 -  - loadFile
+2018-04-29 01:24:44 - U - RETURN
+2018-04-29 01:24:44 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:44 -  - TIME UnGzipArchive 0.004 sec
+2018-04-29 01:24:44 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954284/forum/updater17.5.3.php'
+2018-04-29 01:24:44 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954284/forum/updater17.5.3.php': CopyFiles(install/components, components)
+2018-04-29 01:24:44 -  - TIME UpdateStepModules 0.007 sec
+2018-04-29 01:24:44 - UPD_SUCCESS - Updated: forum (17.5.3)<br><li>Незначительные исправления и улучшения.
+2018-04-29 01:24:44 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:44 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:44 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.13&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.13&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:44 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:44 -  - TIME LoadModulesUpdates(request) 0.178 sec
+2018-04-29 01:24:44 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:44 - S - STEP
+2018-04-29 01:24:44 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:44 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:44 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:44 -  - loadFile
+2018-04-29 01:24:45 - U - RETURN
+2018-04-29 01:24:45 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:45 -  - TIME UnGzipArchive 0.066 sec
+2018-04-29 01:24:45 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954285/main/updater17.5.14.php'
+2018-04-29 01:24:45 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954285/main/updater17.5.14.php': CopyFiles(install/components, components)
+2018-04-29 01:24:45 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954285/main/updater17.5.14.php': CopyFiles(install/js, js)
+2018-04-29 01:24:45 -  - TIME UpdateStepModules 0.125 sec
+2018-04-29 01:24:45 - UPD_SUCCESS - Updated: main (17.5.14)<br><li>Исправлен ряд интерфейсных ошибок. <li>Расширение php openssl теперь считается обязательным для корректной работы продукта. 
+2018-04-29 01:24:45 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:45 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:45 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.14&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.14&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:45 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:45 -  - TIME LoadModulesUpdates(request) 0.164 sec
+2018-04-29 01:24:45 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:45 - S - STEP
+2018-04-29 01:24:45 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:45 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:45 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:45 -  - loadFile
+2018-04-29 01:24:46 - U - RETURN
+2018-04-29 01:24:46 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:46 -  - TIME UnGzipArchive 0.033 sec
+2018-04-29 01:24:46 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954286/main/updater17.5.15.php'
+2018-04-29 01:24:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954286/main/updater17.5.15.php': CopyFiles(install/components, components)
+2018-04-29 01:24:46 -  - TIME UpdateStepModules 0.084 sec
+2018-04-29 01:24:46 - UPD_SUCCESS - Updated: main (17.5.15)<br><li>Исправлен ряд интерфейсных ошибок. 
+2018-04-29 01:24:46 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:46 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.5.15&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:46 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:46 -  - TIME LoadModulesUpdates(request) 0.165 sec
+2018-04-29 01:24:46 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:46 - S - STEP
+2018-04-29 01:24:46 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:47 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:47 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:47 -  - loadFile
+2018-04-29 01:24:47 - U - RETURN
+2018-04-29 01:24:47 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:47 -  - TIME UnGzipArchive 0.076 sec
+2018-04-29 01:24:47 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954287/catalog/updater17.6.0/index.php'
+2018-04-29 01:24:47 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954287/catalog/updater17.6.0/index.php': CopyFiles(install/components, components)
+2018-04-29 01:24:47 -  - TIME UpdateStepModules 0.137 sec
+2018-04-29 01:24:47 - UPD_SUCCESS - Updated: catalog (17.6.0)<br><li>В CIBlockElement::GetList добавлена поддержка сортировки товаров по ценам торговых предложений. <li>Добавлена поддержка отложенного пересчета доступности товаров с торговыми предложениями. <li>Улучшена производительность модуля. <li>Улучшена производительность и исправлены ошибки csv-импорта. <li>Увеличена скорость переиндексации товаров. <li>Разработчикам: добавлены классы \\Bitrix\\Catalog\\Model\\Product и \\Bitrix\\Catalog\\Model\\Price для работы с товарами и ценами. <li>Разработчикам: методы Add, Update, Delete, GetList классов CCatalogProduct и CPrice объявлены устаревшими. Поддержка событий этих методов по умолчанию остается включенной. Выключить ее можно в настройках модуля. 
+2018-04-29 01:24:47 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:47 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:47 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.5.5&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.0&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:47 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:48 -  - TIME LoadModulesUpdates(request) 0.168 sec
+2018-04-29 01:24:48 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:48 - S - STEP
+2018-04-29 01:24:48 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:48 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:48 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:48 -  - loadFile
+2018-04-29 01:24:49 - U - RETURN
+2018-04-29 01:24:49 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:49 -  - TIME UnGzipArchive 0.108 sec
+2018-04-29 01:24:49 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954289/iblock/updater17.6.0/index.php'
+2018-04-29 01:24:49 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954289/iblock/updater17.6.0/index.php': CopyFiles(install/components, components)
+2018-04-29 01:24:49 -  - TIME UpdateStepModules 0.235 sec
+2018-04-29 01:24:49 - UPD_SUCCESS - Updated: iblock (17.6.0)<br><li>Добавлена возможность отложенного обновления фасетного индекса. <li>Исправлены ошибки создания фасетного индекса на большом числе элементов. <li>Исправлены ошибки административных страниц. <li>Исправлены ошибки компонент rss.out, news.list, catalog.comments. <li>Исправлены ошибки базового шаблона компонента catalog. <li>Исправлены ошибки обмена с 1С. <li>Добавлены шаблоны компонентов catalog.section, catalog.item, catalog.element для bootstrap v4.0. 
+2018-04-29 01:24:49 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:49 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:49 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.0&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.0&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:49 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:49 -  - TIME LoadModulesUpdates(request) 0.179 sec
+2018-04-29 01:24:49 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:49 - S - STEP
+2018-04-29 01:24:49 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:50 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:50 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:50 -  - loadFile
+2018-04-29 01:24:50 - U - RETURN
+2018-04-29 01:24:50 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:50 -  - TIME UnGzipArchive 0.003 sec
+2018-04-29 01:24:50 -  - TIME UpdateStepModules 0.003 sec
+2018-04-29 01:24:50 - UPD_SUCCESS - Updated: iblock (17.6.1)<br><li>Исправлена ошибка, возникавшая при попытке изменить параметры товара в списке торговых предложений.
+2018-04-29 01:24:50 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:50 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:50 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.0&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:50 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:50 -  - TIME LoadModulesUpdates(request) 0.18 sec
+2018-04-29 01:24:50 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:50 - S - STEP
+2018-04-29 01:24:50 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:51 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:51 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:51 -  - loadFile
+2018-04-29 01:24:51 - U - RETURN
+2018-04-29 01:24:51 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:51 -  - TIME UnGzipArchive 0.004 sec
+2018-04-29 01:24:51 -  - TIME UpdateStepModules 0.004 sec
+2018-04-29 01:24:51 - UPD_SUCCESS - Updated: catalog (17.6.1)<br><li>Исправлена ошибка определения типа товара для случая, когда включена настройка модуля \"Показывать вкладку Торговый каталог для товаров, имеющих торговые предложения\". <li>Исправлена ошибка работы csv-импорта для режима, когда меняется доступность товаров, отсутствующих в файле импорта.
+2018-04-29 01:24:51 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:51 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:51 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.5&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:51 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:51 -  - TIME LoadModulesUpdates(request) 0.183 sec
+2018-04-29 01:24:51 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:51 - S - STEP
+2018-04-29 01:24:51 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:51 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:51 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:51 -  - loadFile
+2018-04-29 01:24:51 - U - RETURN
+2018-04-29 01:24:51 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:51 -  - TIME UnGzipArchive 0.005 sec
+2018-04-29 01:24:51 -  - TIME UpdateStepModules 0.006 sec
+2018-04-29 01:24:51 - UPD_SUCCESS - Updated: mail (17.5.6)<br><li>Исправления ошибок.
+2018-04-29 01:24:52 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:52 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:52 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=17.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:52 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:52 -  - TIME LoadModulesUpdates(request) 0.184 sec
+2018-04-29 01:24:52 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:52 - S - STEP
+2018-04-29 01:24:52 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:52 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:52 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:52 -  - loadFile
+2018-04-29 01:24:53 - U - RETURN
+2018-04-29 01:24:53 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:53 -  - TIME UnGzipArchive 0.142 sec
+2018-04-29 01:24:53 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php'
+2018-04-29 01:24:53 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': CopyFiles(install/components, components)
+2018-04-29 01:24:53 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': CopyFiles(install/images, images)
+2018-04-29 01:24:53 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': CopyFiles(install/public/js, js)
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_widget 
+				(
+  					ID INT (11) NOT NULL AUTO_INCREMENT,
+  					GID VARCHAR(255) NOT NULL,
+					VIEW_KEY VARCHAR(255) NOT NULL,
+					WIDGET_CLASS VARCHAR(255) NOT NULL,
+					BOARD_ID VARCHAR(255) NOT NULL,
+					DASHBOARD_ROW_ID INT(11) NOT NULL,
+					WEIGHT VARCHAR(25) NOT NULL DEFAULT "",
+					PARENT_WIDGET_ID INT DEFAULT 0 NOT NULL,
+					IS_PATTERN BOOLEAN DEFAULT FALSE,
+					CREATED_DATE DATETIME NOT NULL,
+					UPDATED_DATE DATETIME NOT NULL,
+					PRIMARY KEY (ID),
+					INDEX IX_BOARD_ID (BOARD_ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_entity 
+				(
+					ID INT(11) NOT  NULL  AUTO_INCREMENT,
+					GID VARCHAR(255) NOT NULL,
+  					WIDGET_ID INT(11) NOT NULL,
+                    WEIGHT INT(4) NOT NULL DEFAULT 0,
+                    REPORT_CLASS VARCHAR(255),
+                    CREATED_DATE DATETIME NOT NULL,
+                    UPDATED_DATE DATETIME NOT NULL,
+                    PRIMARY KEY  (ID),
+                    INDEX IX_WIDGET_ID (WIDGET_ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_configuration
+				(
+				   	ID INT(11) NOT  NULL  AUTO_INCREMENT,
+				   	GID VARCHAR(255) NOT NULL,
+                    WEIGHT INT(4) NOT NULL DEFAULT 0,
+                    CREATED_DATE DATETIME NOT NULL,
+                    UPDATED_DATE DATETIME NOT NULL,
+                    UKEY VARCHAR(255) NOT NULL,
+                    CONFIGURATION_FIELD_CLASS VARCHAR(255) NOT NULL,
+                    SETTINGS TEXT NULL,
+                    PRIMARY KEY (ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_entity_config
+				(
+				   	REPORT_ID INT(11) NOT NULL,
+                    CONFIGURATION_ID INT(11) NOT NULL,
+                    PRIMARY KEY  (REPORT_ID, CONFIGURATION_ID),
+                    INDEX IX_REPORT_CONFIG (REPORT_ID, CONFIGURATION_ID),
+                    INDEX IX_CONFIG_REPORT (CONFIGURATION_ID, REPORT_ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_widget_config
+				(
+				   	WIDGET_ID INT(11) NOT NULL,
+  					CONFIGURATION_ID INT(11) NOT NULL,
+                    PRIMARY KEY  (WIDGET_ID, CONFIGURATION_ID),
+                    INDEX IX_WIDGET_CONFIG (WIDGET_ID, CONFIGURATION_ID),
+                    INDEX IX_CONFIG_WIDGET (CONFIGURATION_ID, WIDGET_ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_dashboard_row
+				(
+				   	ID INT(11) NOT  NULL  AUTO_INCREMENT,
+				   	GID VARCHAR(255) NOT NULL,
+				   	BOARD_ID INT NOT NULL,
+				  	WEIGHT INT(4) NOT NULL DEFAULT 0,
+				  	CREATED_DATE DATETIME NOT NULL,
+				  	UPDATED_DATE DATETIME NOT NULL,
+				  	LAYOUT_MAP TEXT NOT NULL,
+				  	PRIMARY KEY (ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(
+				CREATE TABLE b_report_visual_report_dashboard
+				(
+				   	ID INT(11) NOT  NULL  AUTO_INCREMENT,
+				   	GID VARCHAR(255) NOT NULL,
+				   	BOARD_KEY VARCHAR(255) NOT NULL,
+				  	USER_ID INT DEFAULT 0 NOT NULL,
+				  	CREATED_DATE DATETIME NOT NULL,
+				  	UPDATED_DATE DATETIME NOT NULL,
+				  	PRIMARY KEY (ID)
+				)
+			, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(ALTER TABLE b_report_visual_report_widget ADD CATEGORY_KEY VARCHAR(255) DEFAULT "" NOT NULL;, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(ALTER TABLE b_report_visual_report_widget ADD OWNER_ID INT DEFAULT 0 NOT NULL;, )
+2018-04-29 01:24:53 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1524954293/report/updater18.0.0.php': Query(ALTER TABLE b_report_visual_report_dashboard ADD VERSION VARCHAR(255) DEFAULT "" NOT NULL, )
+2018-04-29 01:24:53 -  - TIME UpdateStepModules 0.466 sec
+2018-04-29 01:24:53 - UPD_SUCCESS - Updated: report (18.0.0)<br><li>Добавлен визуальный конструктор отчетов. 
+2018-04-29 01:24:54 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:54 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:54 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.0&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:54 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:54 -  - TIME LoadModulesUpdates(request) 0.171 sec
+2018-04-29 01:24:54 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:54 - S - STEP
+2018-04-29 01:24:54 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:54 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:54 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:54 -  - loadFile
+2018-04-29 01:24:54 - U - RETURN
+2018-04-29 01:24:54 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:54 -  - TIME UnGzipArchive 0.005 sec
+2018-04-29 01:24:54 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954294/report/updater18.0.1.php'
+2018-04-29 01:24:54 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954294/report/updater18.0.1.php': CopyFiles(install/components, components)
+2018-04-29 01:24:54 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954294/report/updater18.0.1.php': CopyFiles(install/public/js, js)
+2018-04-29 01:24:54 -  - TIME UpdateStepModules 0.015 sec
+2018-04-29 01:24:54 - UPD_SUCCESS - Updated: report (18.0.1)<br><li>Ряд правок и доработок.
+2018-04-29 01:24:54 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:54 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:55 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.1&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:55 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:55 -  - TIME LoadModulesUpdates(request) 0.169 sec
+2018-04-29 01:24:55 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:55 - S - STEP
+2018-04-29 01:24:55 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:55 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:55 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:55 -  - loadFile
+2018-04-29 01:24:55 - U - RETURN
+2018-04-29 01:24:55 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:55 -  - TIME UnGzipArchive 0.011 sec
+2018-04-29 01:24:55 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954295/report/updater18.0.2.php'
+2018-04-29 01:24:55 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954295/report/updater18.0.2.php': CopyFiles(install/components, components)
+2018-04-29 01:24:55 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954295/report/updater18.0.2.php': CopyFiles(install/public/js, js)
+2018-04-29 01:24:55 -  - TIME UpdateStepModules 0.03 sec
+2018-04-29 01:24:55 - UPD_SUCCESS - Updated: report (18.0.2)<br><li>Ряд правок и доработок.
+2018-04-29 01:24:55 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:55 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:55 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.2&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:55 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:56 -  - TIME LoadModulesUpdates(request) 0.181 sec
+2018-04-29 01:24:56 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:56 - S - STEP
+2018-04-29 01:24:56 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:56 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:56 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:56 -  - loadFile
+2018-04-29 01:24:56 - U - RETURN
+2018-04-29 01:24:56 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:56 -  - TIME UnGzipArchive 0.011 sec
+2018-04-29 01:24:56 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954296/report/updater18.0.3.php'
+2018-04-29 01:24:56 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954296/report/updater18.0.3.php': CopyFiles(install/components, components)
+2018-04-29 01:24:56 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954296/report/updater18.0.3.php': CopyFiles(install/public/js, js)
+2018-04-29 01:24:56 -  - TIME UpdateStepModules 0.03 sec
+2018-04-29 01:24:56 - UPD_SUCCESS - Updated: report (18.0.3)<br><li>Ряд правок и доработок.
+2018-04-29 01:24:56 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:56 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:56 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.9&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:56 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:56 -  - TIME LoadModulesUpdates(request) 0.186 sec
+2018-04-29 01:24:56 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:56 - S - STEP
+2018-04-29 01:24:56 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:57 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:57 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:57 -  - loadFile
+2018-04-29 01:24:57 - U - RETURN
+2018-04-29 01:24:57 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:57 -  - TIME UnGzipArchive 0.002 sec
+2018-04-29 01:24:57 -  - TIME UpdateStepModules 0.004 sec
+2018-04-29 01:24:57 - UPD_SUCCESS - Updated: calendar (17.5.10)<br><li>Оптимизация процесса синхронизации с Google Calendar.
+2018-04-29 01:24:57 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:57 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:57 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.10&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:57 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:57 -  - TIME LoadModulesUpdates(request) 0.173 sec
+2018-04-29 01:24:57 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:57 - S - STEP
+2018-04-29 01:24:57 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:57 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:57 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:57 -  - loadFile
+2018-04-29 01:24:57 - U - RETURN
+2018-04-29 01:24:57 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:57 -  - TIME UnGzipArchive 0.004 sec
+2018-04-29 01:24:57 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954297/calendar/updater17.5.11.php'
+2018-04-29 01:24:57 -  - TIME UpdateStepModules 0.009 sec
+2018-04-29 01:24:57 - UPD_SUCCESS - Updated: calendar (17.5.11)<br><li>Оптимизация процесса синхронизации с Google Calendar.
+2018-04-29 01:24:57 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:57 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:57 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=17.5.10&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:57 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:58 -  - TIME LoadModulesUpdates(request) 0.183 sec
+2018-04-29 01:24:58 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:58 - S - STEP
+2018-04-29 01:24:58 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:24:58 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:58 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:58 -  - loadFile
+2018-04-29 01:24:59 - U - RETURN
+2018-04-29 01:24:59 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:24:59 -  - TIME UnGzipArchive 0.13 sec
+2018-04-29 01:24:59 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954299/im/updater18.0.0.php'
+2018-04-29 01:24:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954299/im/updater18.0.0.php': CopyFiles(install/components, components)
+2018-04-29 01:24:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954299/im/updater18.0.0.php': CopyFiles(install/js, js)
+2018-04-29 01:24:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954299/im/updater18.0.0.php': CopyFiles(install/templates, templates)
+2018-04-29 01:24:59 -  - TIME UpdateStepModules 0.208 sec
+2018-04-29 01:24:59 - UPD_SUCCESS - Updated: im (18.0.0)<br><li>Улучшена поддержка мобильного приложения Битрикс24. <li>Добавлена возможность отключить предварительную загрузку пользователей при старте чата в настройках модуля. <li>Исправлена ошибка, при которой мог не сбрасываться счетчик уведомлений в мобильном чате. <li>Исправлена ошибка, при которой сворачивание и разворачивание карточки звонка приводило к переинициализации встроенного приложения. <li>Исправлена ошибка в REST-методе imbot.app.update, из-за которой не получалось изменить высоту встроенного приложения. <li>Исправлена ошибка, при которой могли создаваться дубли уведомлений о лайках при работе через глобальную сеть Битрикс24.Network. 
+2018-04-29 01:24:59 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:24:59 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:24:59 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.3&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:24:59 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:24:59 -  - TIME LoadModulesUpdates(request) 0.185 sec
+2018-04-29 01:24:59 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:24:59 - S - STEP
+2018-04-29 01:24:59 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:25:00 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:25:00 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:25:00 -  - loadFile
+2018-04-29 01:25:00 - U - RETURN
+2018-04-29 01:25:00 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:25:00 -  - TIME UnGzipArchive 0.003 sec
+2018-04-29 01:25:00 -  - TIME UpdateStepModules 0.005 sec
+2018-04-29 01:25:00 - UPD_SUCCESS - Updated: pull (17.5.4)<br><li>Незначительные исправления и улучшения.
+2018-04-29 01:25:00 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:25:00 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:25:00 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.0&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:25:00 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:25:00 -  - TIME LoadModulesUpdates(request) 0.189 sec
+2018-04-29 01:25:00 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:25:00 - S - STEP
+2018-04-29 01:25:00 - LMU01 - LoadModulesUpdates-Step
+2018-04-29 01:25:00 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:25:00 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:25:00 -  - loadFile
+2018-04-29 01:25:01 - U - RETURN
+2018-04-29 01:25:01 -  - exec CUpdateClient::UnGzipArchive
+2018-04-29 01:25:01 -  - TIME UnGzipArchive 0.004 sec
+2018-04-29 01:25:01 - CSURUS1 - Run updater '/bitrix/updates/update_m1524954301/mobileapp/updater17.5.1.php'
+2018-04-29 01:25:01 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1524954301/mobileapp/updater17.5.1.php': CopyFiles(install/js, js)
+2018-04-29 01:25:01 -  - TIME UpdateStepModules 0.01 sec
+2018-04-29 01:25:01 - UPD_SUCCESS - Updated: mobileapp (17.5.1)<br><li>Исправление незначительных ошибок. 
+2018-04-29 01:25:01 -  - exec CUpdateClient::LoadModulesUpdates
+2018-04-29 01:25:01 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:25:01 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:25:01 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:25:01 -  - TIME LoadModulesUpdates(request) 0.19 sec
+2018-04-29 01:25:01 -  - exec CUpdateClient::ParseServerData
+2018-04-29 01:25:01 - STEP - Finish - NOUPDATES
+2018-04-29 01:25:01 - STEP - Finish - NOUPDATES
+2018-04-29 01:25:06 -  - exec CUpdateClient::GetUpdatesList
+2018-04-29 01:25:06 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 01:25:06 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 01:25:06 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 01:25:06 -  - TIME GetUpdatesList(request) 0.215 sec
+2018-04-29 01:25:06 -  - exec CUpdateClient::ParseServerData
+2018-04-29 09:35:14 -  - exec CUpdateClient::GetUpdatesList
+2018-04-29 09:35:14 -  - exec CUpdateClient::CollectRequestData
+2018-04-29 09:35:14 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=2&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-29 09:35:14 -  - exec CUpdateClient::GetHTTPPage
+2018-04-29 09:35:15 -  - TIME GetUpdatesList(request) 0.576 sec
+2018-04-29 09:35:15 -  - exec CUpdateClient::ParseServerData
+2018-04-30 13:51:59 -  - exec CUpdateClient::GetUpdatesList
+2018-04-30 13:51:59 -  - exec CUpdateClient::CollectRequestData
+2018-04-30 13:51:59 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=2&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-04-30 13:51:59 -  - exec CUpdateClient::GetHTTPPage
+2018-04-30 13:51:59 -  - TIME GetUpdatesList(request) 0.374 sec
+2018-04-30 13:51:59 -  - exec CUpdateClient::ParseServerData
+2018-04-30 15:23:35 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1525091015/artrix.imageoptimizer/updater1.0.1.php': CopyDirFiles(install/tools, /bitrix/tools)
+2018-04-30 15:23:37 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1525091017/artrix.imageoptimizer/updater1.0.4.php': CopyDirFiles(install/tools, /bitrix/tools)
+2018-04-30 15:23:37 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1525091017/artrix.imageoptimizer/updater1.0.4.php': CopyDirFiles(install/css, /bitrix/css)
+2018-04-30 15:23:40 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1525091020/artrix.imageoptimizer/updater1.0.7.php': CopyDirFiles(install/tools, /bitrix/tools)
+2018-04-30 15:23:40 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1525091020/artrix.imageoptimizer/updater1.0.7.php': CopyDirFiles(install/css, /bitrix/css)
+2018-05-01 12:24:14 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525166654/yakus.yml2/updater2.3.6.php': CopyFiles(install/js/, js/yakus.yml2/)
+2018-05-01 12:24:14 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525166654/yakus.yml2/updater2.3.6.php': CopyFiles(install/css/, css/yakus.yml2/)
+2018-05-01 12:24:14 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525166654/yakus.yml2/updater2.3.6.php': CopyFiles(install/tools/, tools/yakus.yml2/)
+2018-05-01 12:37:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167466/esol.importxml/updater0.1.1.php': CopyFiles(install/js, js)
+2018-05-01 12:37:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167466/esol.importxml/updater0.1.1.php': CopyFiles(install/panel, panel)
+2018-05-01 12:37:49 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167469/esol.importxml/updater0.1.3.php': CopyFiles(install/php_interface, php_interface)
+2018-05-01 12:37:50 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167470/esol.importxml/updater0.1.4.php': CopyFiles(install/js, js)
+2018-05-01 12:37:50 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167470/esol.importxml/updater0.1.4.php': CopyFiles(install/panel, panel)
+2018-05-01 12:37:51 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167471/esol.importxml/updater0.1.5.php': CopyFiles(install/js, js)
+2018-05-01 12:37:51 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167471/esol.importxml/updater0.1.6.php': CopyFiles(install/panel, panel)
+2018-05-01 12:37:54 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167474/esol.importxml/updater0.1.9.php': CopyFiles(install/js, js)
+2018-05-01 12:37:55 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167475/esol.importxml/updater0.2.0.php': CopyFiles(install/js, js)
+2018-05-01 12:37:56 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167476/esol.importxml/updater0.2.1.php': CopyFiles(install/js, js)
+2018-05-01 12:37:57 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167477/esol.importxml/updater0.2.2.php': CopyFiles(install/js, js)
+2018-05-01 12:37:58 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167478/esol.importxml/updater0.2.3.php': CopyFiles(install/js, js)
+2018-05-01 12:37:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167479/esol.importxml/updater0.2.4.php': CopyFiles(install/js, js)
+2018-05-01 12:37:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167479/esol.importxml/updater0.2.4.php': CopyFiles(install/php_interface, php_interface)
+2018-05-01 12:37:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167479/esol.importxml/updater0.2.5.php': CopyFiles(install/admin, admin)
+2018-05-01 12:37:59 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167479/esol.importxml/updater0.2.5.php': CopyFiles(install/js, js)
+2018-05-01 12:38:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167479/esol.importxml/updater0.2.5.php': CopyFiles(install/panel, panel)
+2018-05-01 12:38:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167479/esol.importxml/updater0.2.5.php': CopyFiles(install/php_interface, php_interface)
+2018-05-01 12:38:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167480/esol.importxml/updater0.2.6.php': CopyFiles(install/js, js)
+2018-05-01 12:38:01 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167481/esol.importxml/updater0.2.7.php': CopyFiles(install/js, js)
+2018-05-01 12:38:01 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167481/esol.importxml/updater0.2.7.php': CopyFiles(install/panel, panel)
+2018-05-01 12:38:03 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167483/esol.importxml/updater0.2.9.php': CopyFiles(install/js, js)
+2018-05-01 12:38:03 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167483/esol.importxml/updater0.2.9.php': CopyFiles(install/panel, panel)
+2018-05-01 12:38:04 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167484/esol.importxml/updater0.3.0.php': CopyFiles(install/js, js)
+2018-05-01 12:38:04 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167484/esol.importxml/updater0.3.0.php': CopyFiles(install/php_interface, php_interface)
+2018-05-01 12:38:05 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167485/esol.importxml/updater0.3.1.php': CopyFiles(install/admin, admin)
+2018-05-01 12:38:05 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167485/esol.importxml/updater0.3.1.php': CopyFiles(install/js, js)
+2018-05-01 12:38:05 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167485/esol.importxml/updater0.3.1.php': CopyFiles(install/php_interface, php_interface)
+2018-05-01 12:38:06 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167486/esol.importxml/updater0.3.2.php': CopyFiles(install/js, js)
+2018-05-01 12:38:06 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167486/esol.importxml/updater0.3.2.php': CopyFiles(install/panel, panel)
+2018-05-01 12:38:06 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1525167486/esol.importxml/updater0.3.2.php': CopyFiles(install/php_interface, php_interface)
+2018-05-01 12:52:07 -  - exec CUpdateClient::GetUpdatesList
+2018-05-01 12:52:07 -  - exec CUpdateClient::CollectRequestData
+2018-05-01 12:52:07 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=2&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=5.101.152.72&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-05-01 12:52:07 -  - exec CUpdateClient::GetHTTPPage
+2018-05-01 12:52:07 -  - TIME GetUpdatesList(request) 0.2 sec
+2018-05-01 12:52:07 -  - exec CUpdateClient::ParseServerData
+2018-05-01 14:50:16 -  - exec CUpdateClient::GetUpdatesList
+2018-05-01 14:50:16 -  - exec CUpdateClient::CollectRequestData
+2018-05-01 14:50:16 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.5.12&VERSION=17.5.15&TYPENC=E&SUPD_STS=2&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=87.236.16.4&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=N&SALE_15=Y
+2018-05-01 14:50:16 -  - exec CUpdateClient::GetHTTPPage
+2018-05-01 14:50:17 -  - TIME GetUpdatesList(request) 0.186 sec
+2018-05-01 14:50:17 -  - exec CUpdateClient::ParseServerData

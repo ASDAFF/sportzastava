@@ -1,0 +1,114 @@
+.services-sections.services-sections-list {
+	display: block;
+}
+
+.services-sections.services-sections-list .services-sections-description {
+	display: block;
+	color: #616267;
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 35px;
+}
+
+.services-sections.services-sections-list .services-sections-items {
+	display: block;
+	overflow: hidden;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-items-wrapper {
+	display: block;
+	margin: -20px 0;
+	overflow: hidden;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-delimiter,
+.services-sections.services-sections-list .services-sections-items .services-sections-item {
+	display: block;
+	padding: 20px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-delimiter .services-sections-delimiter-wrapper {
+	display: block;
+	height: 1px;
+	background: #e8e8e8;
+	overflow: hidden;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-wrapper {
+	display: block;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-image {
+	display: block;
+	float: left;
+	width: 270px;
+	height: 195px;
+	font-size: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-decoration: none;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-information {
+	display: block;
+	margin-left: 310px;
+	padding-top: 15px;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-name {
+	display: block;
+	overflow: hidden;
+	max-height: 48px;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-name .services-sections-item-name-wrapper {
+	font-size: 16px;
+	line-height: 1.5;
+	text-decoration: none;
+	color: #0f6bfc;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-name .services-sections-item-name-wrapper:hover {
+	color:#616267!important;
+}
+.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-description {
+	display: block;
+	font-size: 14px;
+	color: #616267;
+	line-height: 1.5;
+	max-height: 105px;
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+@media all and (max-width: 920px) {
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-image {
+		width: 195px;
+	}
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-information {
+		margin-left: 235px;
+	}
+}
+
+@media all and (max-width: 720px) {
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-image {
+		width: 270px;
+	}
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-information {
+		margin-left: 310px;
+	}
+}
+
+@media all and (max-width: 540px) {
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-image {
+		width: 195px;
+	}
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-information {
+		margin-left: 235px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-image {
+		float: none;
+		width: auto;
+	}
+	.services-sections.services-sections-list .services-sections-items .services-sections-item .services-sections-item-information {
+		margin: 20px 0 0 0;
+	}
+}

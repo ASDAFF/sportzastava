@@ -1,0 +1,108 @@
+.order-fast {
+    display: table;
+    position: relative;
+}
+
+.order-fast .required-sign {
+    color: #de002b;
+}
+
+.order-fast .order-fast_product_wrapper,
+.order-fast .order-fast_product_wrapper + .order-fast_form_wrapper {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.order-fast .order-fast_product_wrapper {
+    width: 40%;
+    padding-top: 50px;
+    padding-right: 40px;
+    text-align: center;
+    color: #33312e;
+}
+.order-fast .order-fast_product_wrapper + .order-fast_form_wrapper {
+    width: 60%;
+    padding-left: 45px;
+    border-left: 1px solid #e8e8e8;
+}
+
+.order-fast .order-fast_product_name {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.order-fast .order-fast_product_quantity {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #808080;
+}
+.order-fast .order-fast_product_picture {
+    margin-bottom: 15px;
+}
+.order-fast .order-fast_product_picture img {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+}
+.order-fast .order-fast_product_price {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.order-fast .order-fast_product_old_price {
+    font-size: 12px;
+    color: #e50f30;
+    text-decoration: line-through;
+}
+.order-fast .order-fast_title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #262626;
+}
+.order-fast .order-fast_bottom {}
+.order-fast .order-fast_send {
+    float: left;
+    margin-right: 25px;
+}
+.order-fast .order-fast_disclaimer {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #808080;
+}
+
+.order-fast .order-fast_form_result {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.order-fast .order-fast_form_result.order-fast_form_result_error {
+    font-size: 14px;
+    color: #de002b;
+}
+.order-fast .requied-firld-is-empty {
+    float: right;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 13px;
+    color: #de002b;
+}
+
+@media all and (max-width: 620px) {
+    .order-fast .order-fast_send {
+        float: none;
+    }
+
+    .order-fast .order-fast_disclaimer {
+        padding-top: 10px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .order-fast .order-fast_product_wrapper {
+        display: none;
+    }
+
+    .order-fast .order-fast_product_wrapper + .order-fast_form_wrapper {
+        float: none;
+        width: auto;
+        padding-left: 0;
+        border: none;
+    }
+}

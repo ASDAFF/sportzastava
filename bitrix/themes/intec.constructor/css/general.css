@@ -1,0 +1,7 @@
+.constructor-clearfix:before, .constructor-clearfix:after {
+    content: " ";
+    display: table;
+}
+.constructor-clearfix:after {
+    clear: both;
+}

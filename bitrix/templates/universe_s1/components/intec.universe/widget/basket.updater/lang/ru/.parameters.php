@@ -1,0 +1,4 @@
+<?php
+$MESS['W_BASKET_UPDATER_PARAMETERS_BASKET_UPDATE'] = 'Обновлять корзину';
+$MESS['W_BASKET_UPDATER_PARAMETERS_COMPARE_UPDATE'] = 'Обновлять сравнение';
+$MESS['W_BASKET_UPDATER_PARAMETERS_COMPARE_NAME'] = 'Имя списка сравнения';

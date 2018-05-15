@@ -1,0 +1,160 @@
+.order-list-default {
+	display: block;
+}
+.order-list-default .order-list-default-header {
+	display: block;
+	border: 1px solid #ebebeb;
+}
+.order-list-default .order-list-default-header .order-list-default-text {
+	display: block;
+	float: left;
+	margin: 20px 0 20px 30px;
+	font-weight: bold;
+	color: #2d2d2d;
+}
+.order-list-default .order-list-default-header .order-list-default-history {
+	display: block;
+	float: right;
+	margin: 20px 30px 20px 0;
+}
+.order-list-default .order-list-default-header .order-list-default-text,
+.order-list-default .order-list-default-header .order-list-default-history {
+	font-size: 16px;
+}
+.order-list-default .order-list-default-items {
+	display: block;
+	border: 1px solid #ebebeb;
+	border-top: none;
+}
+.order-list-default .order-list-default-items .order-list-default-items-wrapper {
+	display: block;
+}
+.order-list-default .order-list-default-items .order-list-default-item {
+	display: block;
+	border-top: 1px solid #ebebeb;
+}
+.order-list-default .order-list-default-items .order-list-default-item:first-child {
+	border-top: none;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header {
+	display: block;
+	position: relative;
+	background: #fafafa;
+	padding: 25px 60px 25px 30px;
+	cursor: pointer;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header .order-list-default-item-header-wrapper {
+	display: block;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header .order-list-default-item-header-parts {
+	display: block;
+	margin: -4px 0;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header .order-list-default-item-header-parts .order-list-default-item-header-part {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 4px 0;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #2d2d2d;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header .order-list-default-item-header-indicator {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 30px;
+	bottom: 0;
+	left: auto;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header .order-list-default-item-header-indicator .order-list-default-item-header-icon {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: bold;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-header .order-list-default-item-header-indicator .order-list-default-item-header-icon.order-list-default-item-header-icon-inactive,
+.order-list-default .order-list-default-items .order-list-default-item.order-list-default-item-active .order-list-default-item-header .order-list-default-item-header-indicator .order-list-default-item-header-icon.order-list-default-item-header-icon-active {
+	display: none;
+}
+.order-list-default .order-list-default-items .order-list-default-item.order-list-default-item-active .order-list-default-item-header .order-list-default-item-header-indicator .order-list-default-item-header-icon.order-list-default-item-header-icon-inactive {
+	display: inline-block;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content {
+	border-top: 1px solid #ebebeb;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-buttons {
+	display: block;
+	border-top: 1px solid #ebebeb;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-wrapper {
+	display: block;
+	margin: 25px 30px;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-left {
+	display: block;
+	float: left;
+	width: 50%;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-right {
+	display: block;
+	float: right;
+	width: 50%;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-buttons .order-list-default-item-content-left,
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-buttons .order-list-default-item-content-right {
+	width: auto;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-blocks {
+	display: block;
+	margin: -8px;
+	min-height: 16px;
+	min-width: 16px;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-blocks .order-list-default-item-content-block {
+	display: block;
+	padding: 8px;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-payment {
+	display: block;
+	margin-bottom: 20px;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-state {
+	color: #ff0000;
+}
+.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-delivery .order-list-default-item-content-name {
+	display: block;
+	margin-bottom: 20px;
+}
+
+@media all and (max-width: 660px) {
+	.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-left,
+	.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-right {
+		float: none;
+		width: auto;
+	}
+
+	.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .order-list-default-item-content-right {
+		margin-top: 25px;
+	}
+
+	.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .intec-button {
+		display: block;
+		margin-top: 10px;
+	}
+	.order-list-default .order-list-default-items .order-list-default-item .order-list-default-item-content .intec-button:first-child {
+		margin-top: 0;
+	}
+}
+@media all and (max-width: 450px) {
+	.order-list-default .order-list-default-header .order-list-default-history {
+		margin-right: 0;
+		float: none;
+		text-align: center;
+	}
+	.order-list-default .order-list-default-header .order-list-default-text {
+		margin-left: 0;
+		float: none;
+		text-align: center;
+	}
+}

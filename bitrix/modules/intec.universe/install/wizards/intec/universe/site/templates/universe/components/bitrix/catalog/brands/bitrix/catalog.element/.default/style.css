@@ -1,0 +1,307 @@
+.brand {
+	display: block;
+}
+.brand .brand-back {
+	color: #2d2d2d !important;
+}
+.brand .brand-back .brand-back-icon {
+	vertical-align: middle;
+	font-size: 27px;
+	margin-right: 15px;
+	line-height: 1;
+	padding-bottom: 4px;
+}
+.brand .brand-back .brand-back-text {
+	vertical-align: middle;
+}
+.brand .brand-information {
+	display: block;
+	margin-top: 30px;
+}
+.brand .brand-information .brand-image {
+	display: block;
+	float: left;
+	position: relative;
+	width: 250px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+}
+.brand .brand-information .brand-image .brand-image-wrapper {
+	display: block;
+	position: relative;
+	padding-top: 75%;
+	-webkit-box-shadow: 0 15px 50px #f1f1f1;
+	-moz-box-shadow: 0 15px 50px #f1f1f1;
+	box-shadow: 0 15px 50px #f1f1f1;
+}
+.brand .brand-information .brand-image .brand-image-wrapper-2 {
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	bottom: 25px;
+	left: 25px;
+}
+.brand .brand-information .brand-text {
+	font-size: 15px;
+	color: #2d2d2d;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.brand .brand-products {}
+.brand .brand-products .brand-products-title {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 25px;
+}
+
+@media all and (max-width: 500px) {
+	.intec-adaptive .brand .brand-information .brand-image {
+		float: none;
+		width: auto;
+		margin-right: 0;
+	}
+}
+
+/*.brand-container{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.brand-container #all-brands{
+	color: #111;
+}
+.brand-container a i{
+	margin-right: 10px;
+	margin-top: 2px;
+}
+.brand-container .read-more-fa{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 27px;
+	padding-bottom: 5px;
+	margin-right: 15px;
+}
+.brand-container span span{
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #474747;
+}
+.brand-container .brand-container-product-head{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.1;
+	margin: 25px auto;
+}
+.brand-container .brand-container-head{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding-top: 30px;
+}
+.brand-container .brand-container-head .brand-container-head-img{
+	display: inline-block;
+	width: 30%;
+	box-shadow: 1px 15px 50px #F1F1F1;
+	padding: 25px;
+}
+.brand-container .brand-container-head .brand-container-head-img .brand-container-head-img-wrapper{
+	position: relative;
+	background: no-repeat;
+	height: 0;
+	width: 100%;
+	padding: 25%;
+	background-position: center;
+	background-size: contain;
+}
+
+.brand-container .brand-container-head .brand-container-head-text{
+	display: inline-flex;
+	width: 70%;
+	padding: 10px 40px;
+}
+.brand-container .brand-container-head .brand-container-head-text p{
+	font-size: 15px;
+}
+.brand-container .brand-container-recommend{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element{
+	position: relative;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin: 15px 15px 0 15px;
+	border: 1px solid #F1F1F1;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-hit,
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-new{
+	position: absolute;
+	color: #fff;
+	padding: 5px 10px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-hit{
+	background: #16F384;
+	top: 12%;
+	left: 7%;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-new{
+	background: #1161fc;
+	top: 5%;
+	left: 7%;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element:hover{
+	cursor: pointer;
+
+	transition: 350ms linear;
+	box-shadow: 10px 15px 20px #F1F1F1, -10px 15px 20px #F1F1F1, -10px 5px 10px #F1F1F1, 10px 5px 10px #F1F1F1;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-img{
+	padding: 10px;
+	background-size: cover;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-img img{
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	height: 300px;
+ }
+
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-text{
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-text .price{
+	margin-top: 5px;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-text a{
+	text-decoration: none;
+	color: #333;
+	font-size: 17px;
+	margin-left: 0;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-text .new{
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 16px;
+	padding-top: 5px;
+}
+
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-text .old{
+	font-size: 13px;
+	text-decoration: line-through;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-text a:hover{
+	color: #777;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-cart{
+	position: absolute;
+	padding-bottom: 25px;
+	padding-left: 15px;
+	bottom: 0;
+	visibility: hidden;
+	transition: 100ms linear;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-cart a{
+	position: relative;
+	display: inline;
+	margin-left: 80px;
+	color: #1161fc;
+	font-size: 13px;
+	margin-bottom: 5px;
+	transition: 200ms linear;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-cart i{
+	font-size: 22px;
+	margin-right: 10px;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element .brand-container-recommend-element-cart span{
+	margin-left: -5px;
+}
+[class*='glyph-icon-']:before{
+	vertical-align: middle;
+}
+.brand-container .brand-container-recommend .brand-container-recommend-element:hover .brand-container-recommend-element-cart{
+	visibility: visible;
+	transition: 200ms linear;
+}
+.red{
+	color: red;
+}
+.quantity {
+	user-select: none;
+	display: inline;
+}
+.quantity input {
+	-webkit-appearance: none;
+	border: none;
+	text-align: center;
+	width: 25px;
+	font-size: 16px;
+	font-family: sans-serif;
+	margin-right: 5px;
+	color: #555;
+}
+.quantity  .border-count{
+	color: #ddd;
+	font-size: 30px;
+	font-weight: 100;
+
+}
+span[class*=btn] {
+	width: 15px;
+	height: 15px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	color: #555;
+	font-weight: 400;
+	display: inline-block;
+	text-align: center;
+}
+.minus-btn span , .plus-btn span{
+	margin-bottom: 10px;
+	color: #000;
+	text-align: center;
+}
+.minus-btn  , .plus-btn {
+	font-size: 16px;
+}
+.minus-btn:hover , .plus-btn:hover {
+	font-weight: bold;
+	font-size: 16px;
+}
+.rep{
+	font-size: 23px;
+	color: #ddd;
+	padding: 0 5px;
+}
+button:focus,
+input:focus {
+	outline:0;
+}
+
+@media (max-width: 1000px) {
+	.brand-container .brand-container-head{
+		flex-direction: column;
+	}
+	.brand-container .brand-container-head .brand-container-head-text{
+		width: 100%;
+	}
+	.brand-container .brand-container-head .brand-container-head-img{
+		margin-left: 30%;
+	}
+}*/

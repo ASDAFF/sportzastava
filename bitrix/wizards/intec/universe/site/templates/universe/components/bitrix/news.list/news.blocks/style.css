@@ -1,0 +1,83 @@
+.news-list.news-list-blocks {
+    display: block;
+    overflow: hidden;
+}
+
+.news-list.news-list-blocks .news-list-title {
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+}
+
+.news-list.news-list-blocks .news-list-wrapper {
+    display: block;
+    margin: -25px;
+}
+.news-list.news-list-blocks .news-list-item {
+    display: block;
+    float: left;
+    width: 33%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 25px;
+}
+.news-list.news-list-blocks.news-list-row-4 .news-list-item {
+    width: 25%;
+}
+.news-list.news-list-blocks .news-list-item .news-list-item-wrapper {
+    display: block;
+}
+.news-list.news-list-blocks .news-list-item .news-list-image {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.news-list.news-list-blocks .news-list-item .news-list-information {
+    display: block;
+    margin-left: 120px;
+}
+.news-list.news-list-blocks .news-list-item .news-list-information .news-list-name {
+    display: block;
+    margin-bottom: 15px;
+    max-height: 38px;
+    line-height: 19px;
+    overflow: hidden;
+}
+.news-list.news-list-blocks .news-list-item .news-list-information .news-list-name-wrapper {
+    color: #1e1d22;
+    text-decoration: none;
+    font-size: 14px;
+}
+.news-list.news-list-blocks .news-list-item .news-list-information .news-list-date {
+    display: block;
+    font-size: 11px;
+    line-height: 15px;
+    color: #707072;
+}
+
+@media all and (max-width: 1100px) {
+    .news-list.news-list-blocks.news-list-row-4 .news-list-item {
+        width: 33%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .news-list.news-list-blocks .news-list-item {
+        width: 50% !important;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .news-list.news-list-blocks .news-list-item {
+        width: 100% !important;
+    }
+}

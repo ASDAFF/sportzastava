@@ -1,0 +1,197 @@
+.constructor-button {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 3px 6px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color, background-color, border-color;
+    -moz-transition-property: color, background-color, border-color;
+    -ms-transition-property: color, background-color, border-color;
+    -o-transition-property: color, background-color, border-color;
+    transition-property: color, background-color, border-color;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.constructor-button.disabled, .constructor-button[disabled] {
+    opacity: 0.8
+}
+
+.constructor-button-block {
+    display: block;
+}
+
+.constructor-button.constructor-button-size-1,
+.constructor-button-group.constructor-button-size-1 > .constructor-button {
+    padding: 3px 6px;
+}
+.constructor-button.constructor-button-size-2,
+.constructor-button-group.constructor-button-size-2 > .constructor-button {
+    padding: 6px 10px;
+}
+.constructor-button.constructor-button-size-3,
+.constructor-button-group.constructor-button-size-3 > .constructor-button {
+    padding: 9px 14px;
+}
+.constructor-button.constructor-button-size-4,
+.constructor-button-group.constructor-button-size-4 > .constructor-button {
+    padding: 12px 18px;
+}
+.constructor-button.constructor-button-size-5,
+.constructor-button-group.constructor-button-size-5 > .constructor-button {
+    padding: 15px 24px;
+}
+.constructor-button.constructor-button-size-6,
+.constructor-button-group.constructor-button-size-6 > .constructor-button {
+    padding: 18px 27px;
+}
+.constructor-button.constructor-button-size-7,
+.constructor-button-group.constructor-button-size-7 > .constructor-button {
+    padding: 21px 32px;
+}
+
+.constructor-button.constructor-button-font-10,
+.constructor-button-group.constructor-button-font-10 > .constructor-button {
+    font-size: 10px;
+    line-height: 15px;
+}
+.constructor-button.constructor-button-font-12,
+.constructor-button-group.constructor-button-font-12 > .constructor-button {
+    font-size: 12px;
+    line-height: 19px;
+}
+.constructor-button.constructor-button-font-14,
+.constructor-button-group.constructor-button-font-14 > .constructor-button {
+    font-size: 14px;
+    line-height: 21px;
+}
+.constructor-button.constructor-button-font-16,
+.constructor-button-group.constructor-button-font-16 > .constructor-button {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.constructor-button.constructor-button-font-bold {
+    font-weight: bold;
+}
+.constructor-button.constructor-button-font-lighter {
+    font-weight: lighter;
+}
+.constructor-button.constructor-button-font-normal {
+    font-weight: bold;
+}
+
+.constructor-button.constructor-button-default {
+    color: #fff;
+    background: #6e7079;
+}
+.constructor-button.constructor-button-default:hover,
+.constructor-button.constructor-button-default.hover {
+    color: #fff;
+    background: #81838d;
+}
+.constructor-button.constructor-button-default:active,
+.constructor-button.constructor-button-default.active {
+    color: #fff;
+    background: #5a5c64;
+}
+.constructor-button.constructor-button-transparent-default {
+    background: transparent;
+    border: 1px solid #6e7079;
+    color: #6e7079;
+}
+.constructor-button.constructor-button-transparent-default:hover,
+.constructor-button.constructor-button-transparent-default.hover {
+    border-color: #81838d;
+    color: #81838d;
+}
+.constructor-button.constructor-button-transparent-default:active,
+.constructor-button.constructor-button-transparent-default.active {
+    border-color: #5a5c64;
+    color: #5a5c64;
+}
+
+.constructor-button.constructor-button-orange {
+    background: #ffce37;
+    border: 1px solid #ffce37;
+    color: #141615;
+}
+.constructor-button.constructor-button-orange:hover,
+.constructor-button.constructor-button-orange.hover {
+    background: #d7bf77;
+    border-color: #d7bf77;
+    color: #141615;
+}
+
+.constructor-button.constructor-button-green {
+    background: #91cc10;
+    border: 1px solid #91cc10;
+    color: #fff;
+}
+.constructor-button.constructor-button-green:hover,
+.constructor-button.constructor-button-green.hover {
+    background: #a6e41f;
+    border-color: #a6e41f;
+    color: #fff;
+}
+
+.constructor-button.constructor-button-red {
+    background: #b42e63;
+    border: 1px solid #b42e63;
+    color: #fff;
+}
+.constructor-button.constructor-button-red:hover,
+.constructor-button.constructor-button-red.hover {
+    background: #dd2e63;
+    border-color: #dd2e63;
+    color: #fff;
+}
+
+.constructor-button.constructor-button-blue {
+    background: #3761ef;
+    border: 1px solid #3761ef;
+    color: #fff;
+}
+.constructor-button.constructor-button-blue:hover,
+.constructor-button.constructor-button-blue.hover {
+    background: #5579f1;
+    border-color: #5579f1;
+}
+.constructor-button.constructor-button-blue:active,
+.constructor-button.constructor-button-blue.active {
+    background: #2E53D1;
+    border-color: #2E53D1;
+}
+
+.constructor-button.constructor-button-transparent-white {
+    background: transparent;
+    border: 1px solid #fff;
+}
+.constructor-button.constructor-button-transparent-white:hover,
+.constructor-button.constructor-button-transparent-white.hover {
+    background: #fff;
+    color: #000;
+}
+
+.constructor-button.constructor-button-transparent-blue {
+    background: transparent;
+    border: 1px solid #5579f1;
+    color: #5579f1;
+}
+.constructor-button.constructor-button-transparent-blue:hover,
+.constructor-button.constructor-button-transparent-blue.hover {
+    background: #5579f1;
+    color: #fff;
+}

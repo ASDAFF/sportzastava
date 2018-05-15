@@ -1,0 +1,19 @@
+.breadcrumbs {
+    font-size: 12px;
+}
+.breadcrumbs .breadcrumbs-item {
+    color: #116afc;
+}
+.breadcrumbs .breadcrumbs-item,
+.breadcrumbs .breadcrumbs-separator {
+    display: inline-block;
+    vertical-align: top;
+}
+.breadcrumbs .breadcrumbs-item a,
+.breadcrumbs .breadcrumbs-separator {
+    color: #9a9a9a;
+    text-decoration: none;
+}
+.breadcrumbs .breadcrumbs-separator {
+    margin: 0 10px;
+}

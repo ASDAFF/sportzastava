@@ -1,0 +1,430 @@
+.bx_compare {
+	position: relative;
+	width: 100%;
+}
+.compare-result-empty {
+	display: none;
+	color: #25a101;
+}
+.bx_compare .bx_sort_container{
+	position: relative;
+	margin-bottom: 30px;
+}
+.bx_compare .bx_sort_container .sorttext{
+	font-size: 14px;
+	display: inline-block;
+}
+.bx_compare .bx_sort_container .sortbutton{
+	display: inline-block;
+	padding: 15px 0;
+	margin-right: 40px;
+	font-size: 16px;
+	color: #969696;
+	text-decoration: none;
+}
+.bx_compare .bx_sort_container .sortbutton:hover{
+	border-bottom: 2px solid #3e6af8;
+}
+
+.bx_compare .bx_sort_container .sortbutton.current{
+	border-bottom: 2px solid #3e6af8;
+	color: #303030;
+}
+.compare-result-clear {
+	display: inline-block;
+	float: right;
+	border: 2px solid #cecece;
+	border-radius: 3px;
+	color: #929292;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 13px 15px;
+	cursor: pointer;
+	text-decoration: none !important;
+	transition: .3s;
+}.compare-result-clear:hover{
+	 background: #cecece;
+	 color: #ffffff;
+ }
+
+.compare-result-clear i {
+	margin-right: 8px;
+}
+
+.bx_compare .compare-item-td {
+	padding: 10px 10px 40px 10px;
+	border: none !important;
+}
+
+.bx_compare .compare-item {
+	position: relative;
+	padding: 35px;
+	border: 3px;
+	transition: .2s;
+}
+
+.bx_compare .compare-item > i {
+	display: none;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	color: #929292;
+	font-size: 12px;
+	cursor: pointer;
+	z-index: 10;
+}.bx_compare .compare-item:hover > i {
+	 display: inline-block;
+ }
+
+.bx_compare .compare-item:hover {
+	box-shadow: 0 8px 25px 0 rgba(0,0,0,0.15);
+}
+
+.bx_compare .compare-item-img {
+	display: block;
+	position: relative;
+	width: 195px;
+	height: 195px;
+	font-size: 0;
+	text-align: center;
+}
+.bx_compare .compare-item-img img {
+	display: inline-block;
+	max-width: 195px;
+	max-heigth: 195px;
+	vertical-align: middle;
+}
+
+.bx_compare .compare-item-name{
+	display: block;
+	width: 100%;
+	height: 44px;
+	margin-top: 25px;
+	color: #363532;
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.bx_compare .compare-item-section {
+	display: block;
+	width: 100%;
+	height: 35px;
+	margin-top: 10px;
+	color: #888b92;
+	font-size: 13px;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.bx_compare .compare-item-price {
+	display: block;
+	margin-top: 15px;
+	height: 35px;
+}
+
+.bx_compare .compare-item-price .price {
+	float: left;
+	line-height: 18px;
+}
+
+.bx_compare .compare-item-price .newprice {
+	margin-right: 10px;
+	font-size: 18px;
+	color: #363532;
+}
+
+.bx_compare .compare-item-price .oldprice {
+	font-size: 16px;
+	color: #c41633;
+	text-decoration: line-through;
+}
+.bx_compare .table_compare table tr td{
+	position: relative;
+	padding: 15px 30px 15px 25px;
+	text-align: left;
+	font-size: 14px;
+	color: #303030;
+	border: 1px solid #e8e8e8;
+}
+
+.bx_filtren_container ul {
+	font-size: 20px;
+	margin: 41px 0px 5px 0px;
+	padding: 0;
+}
+.bx_filtren_container ul li,
+.bx_filtren_container ul li:before {
+	display: none;
+}
+.bx_filtren_container ul li.visible {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 5px 5px 0px;
+}
+.bx_filtren_container ul li span {
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: none;
+}
+.bx_compare .bx_sort_container {
+	position: relative;
+}
+.bx_sort_container .wrap_remove_button {
+	position: absolute;
+	top: -7px;
+	right: 0px;
+}
+.bx_compare .frame {
+	margin: 0px 0px 0px 230px;
+	position: relative;
+}
+.bx_compare .frame .wraps {
+	width: 100%;
+	overflow: hidden;
+	font-size: 0px;
+}
+.bx_compare .frame.border:after {
+	content: "";
+	background: #E5E5E5;
+	width: 1px;
+	height: 100%;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+}
+.bx_compare .compare_view td {
+	width: 320px;
+	min-width: 320px;
+	max-width: 320px;
+	box-sizing: border-box;
+	padding: 40px 20px 20px 20px;
+	font-size:13px;
+	position:relative;
+	text-align:left;
+	vertical-align: top;
+	overflow: hidden; }
+.bx_compare .compare_view .item_block {
+	margin: 0px 20px 0px 0px;
+	position: relative;
+}
+.bx_compare .compare_view .item_block a {
+	font-weight: 500;
+}
+.bx_compare .compare_view .item_block .title {
+	display: block;
+	padding: 14px 0px 0px;
+}
+.bx_compare .compare_view.data_table_props tr td:first-child {
+	display: none;
+}
+.bx_compare .compare_view.data_table_props td {
+	border: 1px solid #e5e5e5;
+	padding: 10px 27px 13px 18px; }
+.prop_title_table {
+	position: absolute;
+	left: 0px;
+	width: 231px;
+	overflow: hidden;
+	z-index: 1; }
+.prop_title_table .data_table_props td {
+	opacity: 0;
+	visibility: hidden;
+}
+.bx_compare .prop_title_table .data_table_props tr td:first-child {
+	display: table-cell;
+	font-weight: 600;
+	opacity: 1;
+	visibility: visible;
+}
+.bx_compare .remove {
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	right: 0;
+}
+.bx_compare .compare_view.top .remove {
+	right: -13px;
+	top: -13px;
+}
+.bx_compare .compare_view.clone .remove {
+	right: 15px;
+	top: 12px;
+	display: none;
+}
+.bx_compare .compare_view.data_table_props  tr.hovered td {
+	background: #f7f7f7;
+}
+.bx_compare .compare_view.data_table_props  tr.hovered td .remove {
+	display: block;
+}
+
+.wrapp_scrollbar {
+	position: relative;
+	margin: 21px 0px 33px 230px;
+}
+.bx_compare .slider_navigation  {
+	//display: none;
+}
+/* Scrollbar */
+.wrapp_scrollbar .wr_scrollbar {
+	margin: 0 38px 1em 38px;
+	background: #e5e5e5;
+	height: 1px;
+	opacity: 1;
+}
+.wr_scrollbar .scrollbar {
+	height: 5px;
+	line-height: 0;
+	//display: none;
+	position: relative;
+	top: -3px;
+	cursor: pointer;
+}
+.wr_scrollbar .scrollbar .handle {
+	width: 100px;
+	height: 3px;
+	position: relative;
+	top: 2px;
+	background: #292a33;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.wr_scrollbar .scrollbar .handle .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.bx_compare .slider-direction-nav li {
+	position: absolute;
+	font-size: 0;
+	list-style-type: none;
+}
+.bx_compare .slider-direction-nav li span {
+	font-size: 25px;
+	line-height: 25px;
+}
+.bx_compare .slider-direction-nav li.slider-nav-prev {
+	top: -13px;
+	left: 0;
+}
+.bx_compare .slider-direction-nav li.slider-nav-next {
+	top: -13px;
+	right: 0;
+}
+
+.prop_title_table .prop_hover,
+.frame.props .prop_hover {
+	background: #f9f9f9;
+}
+
+.bx_compare .data_table_props tr td:first-of-type {
+	position: relative;
+	width: 230px;
+	min-width: 230px;
+	max-width: 230px;
+}
+
+.bx_compare .data_table_props tr td:first-of-type i {
+	display: none;
+	position: absolute;
+	right: 25px;
+	margin-top: 3px;
+	color: #929292;
+	font-size: 11px;
+	cursor: pointer;
+}.bx_compare .data_table_props tr:hover td:first-of-type i {
+	 display: inline-block;
+}
+
+.bx_filtren_container .property {
+	display: none;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.bx_filtren_container .property.property-visible {
+	display: inline-block;
+}
+
+.bx_compare .data_table_props tr.tr-property-invisible,
+.bx_compare .frame.props tr.tr-property-invisible {
+	display: none;
+}
+
+@media all and (max-width: 550px) {
+	.wrapp_scrollbar {
+		margin-left: 0px;
+	}
+	.bx_compare .data_table_props tr td:first-of-type i {
+		display: inline-block;
+		font-size: 8px;
+	}
+	.bx_compare .compare-item > i {
+		display: inline-block;
+	}
+
+	.wrapp_scrollbar .wr_scrollbar {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.bx_compare .data_table_props tr td:first-of-type {
+		width: 150px;
+		min-width: 150px;
+		max-width: 150px;
+		font-size: 10px;
+	}
+	.bx_compare .table_compare table tr td {
+		font-size: 10px;
+	}
+	.bx_compare .frame {
+		margin: 0px 0px 0px 150px;
+	}
+	.bx_compare .compare-item {
+		padding: 10px;
+	}
+	.bx_compare .compare_view td {
+		width: 230px;
+		min-width: 230px;
+		max-width: 230px;
+	}
+	.compare-result-clear {
+		float: none;
+		margin-bottom: 10px;
+		padding: 10px 13px;
+	}
+	.bx_compare .compare_view.data_table_props td {
+		padding: 5px;
+	}
+	.bx_filtren_container .property {
+		padding: 5px !important;
+		font-size: 10px;
+	}
+	.wr_scrollbar .scrollbar .handle {
+		height: 6px;
+		top: 0;
+	}
+	.bx_compare .compare-item-section {
+		height: 25px;
+		font-size: 10px;
+	}
+	.bx_compare .compare-item-name {
+		height: 28px;
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.bx_compare .compare-item-img {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+	}
+	.bx_compare .compare-item > i {
+		top: 5px;
+		right: 10px;
+	}
+}

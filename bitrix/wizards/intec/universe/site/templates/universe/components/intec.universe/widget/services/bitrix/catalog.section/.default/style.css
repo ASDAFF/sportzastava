@@ -1,0 +1,569 @@
+.widget-services {
+    display: block;
+}
+.widget-services .widget-services-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #2c2c2d;
+    margin-bottom: 5px;
+}
+.widget-services .widget-services-title.text-center {
+    text-align: center;
+}
+.widget-services .widget-services-title + .widget-services-desktop,
+.widget-services .widget-services-title + .widget-services-mobile {
+    margin-top: 20px;
+}
+.widget-services .widget-services-description {
+    font-size: 12px;
+    line-height: 17px;
+    color: #626262;
+    margin-bottom: 20px;
+}
+.widget-services .widget-services-description.text-center {
+    text-align: center;
+}
+.widget-services .widget-services-buttons {
+    display: block;
+    margin-top: 15px;
+    text-align: right;
+}
+.widget-services .widget-services-desktop {
+    display: block;
+}
+.widget-services .widget-services-mobile {
+    display: none;
+}
+.widget-services .widget-services-view {
+    display: block;
+}
+
+.widget-services .widget-services-view.widget-services-view-default {}
+.widget-services .widget-services-view.widget-services-view-default {
+    overflow: hidden;
+}
+
+/** Default **/
+.widget-services .widget-services-view.widget-services-view-default .widget-services-view-wrapper {
+    margin: -30px 0 0 0;
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-default .widget-services-element {
+    float: left;
+    padding: 30px 95px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33%;
+}
+.widget-services .widget-services-view.widget-services-view-default .widget-services-element .widget-services-element-image {
+    display: block;
+    position: relative;
+    font-size: 0;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.widget-services .widget-services-view.widget-services-view-default .widget-services-element .widget-services-element-image .widget-services-element-image-wrapper {
+    display: block;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.widget-services .widget-services-view.widget-services-view-default .widget-services-element .widget-services-element-name {
+    display: block;
+    text-decoration: none;
+    color: #3e6af8;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    text-align: center;
+    height:40px;
+}
+.widget-services .widget-services-view.widget-services-view-default .widget-services-element:hover .widget-services-element-name {
+    color: #5988f9;
+}
+
+@media all and (max-width: 1100px) {
+    .widget-services .widget-services-view.widget-services-view-default .widget-services-element {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .widget-services .widget-services-view.widget-services-view-default .widget-services-element {
+        padding-right: 25px;
+        padding-left: 25px;
+        width: 50%;
+        float:left;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .widget-services .widget-services-view.widget-services-view-default .widget-services-element {
+        width: 100%;
+        padding-bottom:0;
+    }
+}
+/** /Default **/
+
+/** Tile **/
+.widget-services .widget-services-view.widget-services-view-tile {
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-view-wrapper {
+    margin: -13px -22px;
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element {
+    float: left;
+    padding: 13px 10px;
+    width: 33%;
+}
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element {
+    padding: 0 10px;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-wrapper,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-wrapper {
+    display: block;
+    position: relative;
+    padding-top: 80%;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-wrapper-2,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-wrapper-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-background,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element:hover .widget-services-element-background,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element:hover .widget-services-element-background {
+    opacity: 0.3;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information {
+    display: block;
+    position: absolute;
+    top: auto;
+    left: 35px;
+    bottom: 30px;
+    right: 35px;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information .widget-services-element-name,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information .widget-services-element-name {
+    display: block;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information .widget-services-element-name .widget-services-element-name-wrapper,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information .widget-services-element-name .widget-services-element-name-wrapper {
+    display: inline-block;
+    padding: 12px 14px;
+    background: #3e6af8;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information .widget-services-element-name .widget-services-element-name-wrapper-2,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information .widget-services-element-name .widget-services-element-name-wrapper-2 {
+    overflow: hidden;
+    display: block;
+    max-height: 63px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information .widget-services-element-description,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information .widget-services-element-description {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -ms-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+}
+.widget-services .widget-services-view.widget-services-view-tile .widget-services-element:hover .widget-services-element-information .widget-services-element-description,
+.widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element:hover .widget-services-element-information .widget-services-element-description {
+    display: block;
+    height: 54px;
+}
+
+@media all and (max-width: 1080px) {
+    .widget-services .widget-services-view.widget-services-view-tile .widget-services-element {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .widget-services .widget-services-view.widget-services-view-tile .widget-services-element {
+        width: auto;
+        float: none;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information,
+    .widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information {
+        right: 20px;
+        left: 20px;
+    }
+    .widget-services .widget-services-view.widget-services-view-tile .widget-services-element:hover .widget-services-element-information .widget-services-element-description,
+    .widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element:hover .widget-services-element-information .widget-services-element-description {
+        max-height: 36px;
+    }
+    .widget-services .widget-services-view.widget-services-view-tile .widget-services-element .widget-services-element-information .widget-services-element-name .widget-services-element-name-wrapper-2,
+    .widget-services .widget-services-view.widget-services-view-tile-slider .widget-services-element .widget-services-element-information .widget-services-element-name .widget-services-element-name-wrapper-2 {
+        max-height: 42px;
+    }
+}
+/** /Tile **/
+
+/** Minimal **/
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-view-wrapper {
+    margin: -15px -20px;
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element {
+    display: block;
+    float: left;
+    padding: 15px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33%;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-wrapper {
+    distplay: table;
+    width: 100%;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-wrapper-2 {
+    display: table-row;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-image,
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-information {
+    display: table-cell;
+    vertical-align: middle;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-information {
+    width: 100%;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-image .widget-services-element-image-wrapper {
+    display: block;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-information .widget-services-element-information-wrapper {
+    display: block;
+    text-align: left;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-name {
+    display: block;
+    text-decoration: none;
+    color: #3e6af8;
+    font-size: 15px;
+    line-height: 18px;
+    max-height: 36px;
+    font-weight: bold;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element:hover .widget-services-element-name {
+    color: #5988f9;
+}
+.widget-services .widget-services-view.widget-services-view-minimal .widget-services-element .widget-services-element-description {
+    display: block;
+    margin-top: 10px;
+    color: #888b92;
+    font-size: 13px;
+    line-height: 16px;
+    max-height: 48px;
+    overflow: hidden;
+}
+
+@media all and (max-width: 1000px) {
+    .widget-services .widget-services-view.widget-services-view-minimal .widget-services-element {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 620px) {
+    .widget-services .widget-services-view.widget-services-view-minimal .widget-services-element {
+        width: 100%;
+    }
+}
+/** /Minimal **/
+
+/** Blocks **/
+.widget-services .widget-services-view.widget-services-view-blocks {
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-view-wrapper {
+    margin: -6px -8px;
+    overflow: hidden;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-element {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 6px 8px;
+    width: 50%;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-wrapper  {
+    display: block;
+    position: relative;
+    height: 238px;
+    border: 1px solid #e9e9e9;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-image {
+    display: block;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 286px;
+    height: 100%;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 316px;
+    padding-top: 30px;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information .widget-services-element-name {
+    display: block;
+    color: #1b1b1b;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    max-height: 42px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information .widget-services-element-description {
+    display: block;
+    color: #84878c;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 15px;
+    overflow: hidden;
+    max-height: 105px;
+}
+
+@media all and (max-width: 1200px) {
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-image {
+        width: 186px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information {
+        margin-left: 216px;
+    }
+}
+
+@media all and (max-width: 980px) {
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element {
+        float: none;
+        width: auto;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-image {
+        width: 286px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information {
+        margin-left: 316px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-image {
+        width: 186px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information {
+        margin-left: 216px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-image {
+        width: 86px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks .widget-services-element .widget-services-element-information {
+        margin-left: 116px;
+    }
+}
+/** /Blocks **/
+
+/** Blocks Small **/
+.widget-services .widget-services-view.widget-services-view-blocks-small {
+
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-view-wrapper {
+    margin: -6px -8px;
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 6px 8px;
+    width: 50%;
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-wrapper:hover {
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-wrapper  {
+    display: block;
+    position: relative;
+    height: 220px;
+    border: 1px solid #e9e9e9;
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-image {
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 148px;
+    top: 36px;
+    bottom: 36px;
+    left: 36px;
+    border-radius: 3px;
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-information {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 220px;
+    padding-top: 45px;
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-information .widget-services-element-name {
+    display: block;
+    color: #1b1b1b;
+    font-size: 17px;
+    line-height: 21px;
+    max-height: 21px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-information .widget-services-element-description {
+    display: block;
+    color: #949494;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 15px;
+    overflow: hidden;
+    max-height: 105px;
+}
+
+@media all and (max-width: 840px) {
+    .widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element {
+        float: none;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-wrapper {
+        height: 180px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-image {
+        width: 68px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-information {
+        margin-left: 140px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-information .widget-services-element-name {
+        max-height: 42px;
+    }
+    .widget-services .widget-services-view.widget-services-view-blocks-small .widget-services-element .widget-services-element-information .widget-services-element-description {
+        max-height: 42px;
+    }
+}
+/** /Blocks Small **/
+
+@media all and (max-width: 720px) {
+    .widget-services .widget-services-desktop {
+        display: none;
+    }
+    .widget-services .widget-services-mobile {
+        display: block;
+    }
+}

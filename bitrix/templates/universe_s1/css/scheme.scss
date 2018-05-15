@@ -1,0 +1,195 @@
+$show_bg: 1 !default;
+$bg_color: #fff !default;
+$font_size_titles: 20 !default;
+$font_size: 14 !default;
+$site_width: 1200 !default;
+$site_width: $site_width + 40;
+$font_family: 'Open Sans' !default;
+
+$color: #116afc !default;
+$color-hover: lighten($color, 10%);
+$color-active: lighten($color, 10%);
+$color-light: lighten($color, 10%);
+$color-dark: darken($color, 10%);
+
+a {
+    color:$color;
+}
+a:focus, a:hover {
+    color:$color-hover;
+}
+.intec-button.intec-button-cl-common {
+    background-color: $color;
+    border-color: $color;
+}
+.intec-button.intec-button-cl-common:hover, .intec-button.intec-button-cl-common.hover {
+    background-color: $color-hover;
+    border-color: $color-hover;
+}
+.intec-button.intec-button-cl-common:active, .intec-button.intec-button-cl-common.active {
+    background-color: $color-active;
+    border-color: $color-active;
+}
+.intec-button.intec-button-cl-common.intec-button-transparent {
+    color: $color;
+}
+
+.intec-button.intec-button-transparent {
+    background-color: transparent;
+}
+
+.intec-cl-text {
+    color: $color !important;
+}
+.intec-cl-text-active:active {
+    color: $color !important;
+}
+.intec-cl-text-active.active {
+    color: $color !important;
+}
+.intec-cl-text-focus:focus {
+    color: $color !important;
+}
+.intec-cl-text-hover:hover {
+    color: $color !important;
+}
+
+.intec-cl-background {
+    background-color: $color !important;
+    fill: $color !important;
+}
+.intec-cl-background-active:active {
+    background-color: $color !important;
+}
+.intec-cl-background-focus:focus {
+    background-color: $color !important;
+}
+.intec-cl-background-hover:hover {
+    background-color: $color !important;
+}
+
+.intec-cl-background-dark {
+    background-color: $color-dark !important;
+    fill: $color-dark !important;
+}
+.intec-cl-background-dark-active:active {
+    background-color: $color-dark !important;
+}
+.intec-cl-background-dark-focus:focus {
+    background-color: $color-dark !important;
+}
+.intec-cl-background-dark-hover:hover {
+    background-color: $color-dark !important;
+}
+
+.intec-cl-background-light {
+    background-color: $color-light !important;
+    fill: $color-light !important;
+}
+.intec-cl-background-light-active:active {
+    background-color: $color-light !important;
+}
+.intec-cl-background-light-focus:focus {
+    background-color: $color-light !important;
+}
+.intec-cl-background-light-hover:hover {
+    background-color: $color-light !important;
+}
+
+.intec-cl-border {
+    border-color: $color !important;
+}
+.intec-cl-border-light {
+    border-color: $color-light !important;
+}
+.intec-cl-border-active:active {
+    border-color: $color !important;
+}
+.intec-cl-border-focus:focus {
+    border-color: $color !important;
+}
+.intec-cl-border-hover:hover {
+    border-color: $color !important;
+}
+
+.intec-cl-text-light {
+    color: $color-light !important;
+}
+.intec-cl-text-light-active:active {
+    color: $color-light !important;
+}
+.intec-cl-text-light-focus:focus {
+    color: $color-light !important;
+}
+.intec-cl-text-light-hover:hover {
+    color: $color-light !important;
+}
+
+.intec-cl-text-dark {
+    color: $color-dark !important;
+}
+.intec-cl-text-dark-active:active {
+    color: $color-dark !important;
+}
+.intec-cl-text-dark-focus:focus {
+    color: $color-dark !important;
+}
+.intec-cl-text-dark-hover:hover {
+    color: $color-dark !important;
+}
+
+
+.intec-cl-background-light {
+    background-color: $color-light !important;
+    fill: $color-light !important;
+}
+.intec-cl-background-light-active:active {
+    background-color: $color-light !important;
+}
+.intec-cl-background-light-focus:focus {
+    background-color: $color-light !important;
+}
+.intec-cl-background-light-hover:hover {
+    background-color: $color-light !important;
+}
+
+.intec-tabs.nav-tabs > li.active > a,
+.intec-tabs.nav-tabs > li > a:focus,
+.intec-tabs.nav-tabs > li > a:hover {
+    border-bottom-color: $color !important;
+    color: $color!important;
+}
+
+.intec-contest-checkbox.checked:after {
+    background-color: $color!important;
+}
+
+.intec-content {
+    max-width: $site_width + px;
+}
+.intec-content .intec-content.intec-content-primary {
+    max-width: $site_width + px;
+}
+
+.intec-input.intec-input-checkbox input:checked + .intec-input-selector:before,
+.intec-input.intec-input-radio input:checked + .intec-input-selector:before {
+    background: $color !important;
+}
+
+h1,.h1 {
+    font-size: $font_size_titles + px;
+}
+
+body {
+    font-size: $font_size + px;
+    font-family: "#{$font_family}", sans-serif;
+}
+
+@if $show_bg == 1 {
+    .intec-background {
+        background: #fff;
+    }
+    body {
+        background: $bg_color;
+    }
+}

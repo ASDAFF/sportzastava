@@ -1,0 +1,4 @@
+<?php
+
+$MESS['BX_MENU_SETTINGS_LEFT'] = 'Left';
+$MESS['BX_MENU_SETTINGS_RIGHT'] = 'Right';

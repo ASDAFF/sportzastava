@@ -1,0 +1,15 @@
+.adm-submenu-item-link-icon.constructor-menu-icon {
+    background: url('../images/icons.png') no-repeat center 0;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build {
+    background: url('../images/icons.png') no-repeat center -28px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build-properties {
+    background: url('../images/icons.png') no-repeat center -56px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build-templates {
+    background: url('../images/icons.png') no-repeat center -84px;
+}
+.adm-submenu-item-link-icon.constructor-menu-icon-build-themes {
+    background: url('../images/icons.png') no-repeat center -112px;
+}

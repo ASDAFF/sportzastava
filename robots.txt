@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /
+
+Host: https://sportzastava.ru/
+Sitemap: https://sportzastava.ru/sitemap.xml

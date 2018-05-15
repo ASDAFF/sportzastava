@@ -1,0 +1,261 @@
+.startshop-basket.default {
+    display: block;
+}
+
+.startshop-basket.default .startshop-basket-notify {
+    display: block;
+    padding: 10px;
+    background: #ffd777;
+    border: 1px solid #ddaa40;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.startshop-basket.default .startshop-basket-notify.startshop-basket-notify-green {
+    background: #b6ff66;
+    border: 1px solid #59d11a;
+}
+.startshop-basket.default .startshop-basket-notify.startshop-basket-notify-red {
+    background: #ffdac4;
+    border: 1px solid #dd3638;
+}
+
+.startshop-basket.default .startshop-basket-notify .startshop-basket-notify-wrapper {
+    display: block;
+    overflow: hidden;
+    color: #1d1d1d;
+}
+
+.startshop-basket.default .startshop-basket-table-wrapper {
+    display: block;
+    position: relative;
+    overflow-x: auto;
+}
+
+.startshop-basket.default .startshop-basket-table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column {
+    border-bottom: 1px solid #e8e8e8;
+}
+.startshop-basket.default .startshop-basket-table tbody .startshop-basket-row .startshop-basket-column:first-child {
+    border-left: 1px solid #e8e8e8;
+}
+.startshop-basket.default .startshop-basket-table tbody .startshop-basket-row .startshop-basket-column:last-child {
+    border-right: 1px solid #e8e8e8;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row.startshop-basket-row-header {
+    height: auto;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-column {}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-cell {
+    display: block;
+    margin: 10px 20px;
+    overflow: hidden;
+    color: #2d2c2c;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    white-space: normal;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row.startshop-basket-row-header .startshop-basket-cell {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-cell .startshop-link {
+    text-decoration: none;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-cell .startshop-image {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-cell .startshop-button-custom.startshop-button-delete {
+    color: #d35f8b;
+    font-size: 14px;
+    text-decoration: none;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-cell .startshop-button-custom.startshop-button-delete:hover {
+    color: #F16EA0;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-cell .startshop-button-custom.startshop-button-delete:active {
+    color: #B75178;
+}
+
+.startshop-basket.default .startshop-basket-table tbody .startshop-basket-column.startshop-basket-column-price .startshop-basket-cell,
+.startshop-basket.default .startshop-basket-table tbody .startshop-basket-column.startshop-basket-column-total .startshop-basket-cell {
+    font-size: 18px;
+    color: #363532;
+}
+.startshop-basket.default .startshop-basket-table tbody .startshop-basket-column.startshop-basket-column-name .startshop-basket-cell a {
+    font-size: 16px;
+    color: #363532 !important;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-column .startshop-basket-cell-title {
+    display: none;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property {
+    display: block;
+    font-size: 0;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-property .startshop-basket-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 10px;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-text .startshop-basket-value {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-picture .startshop-basket-value {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-picture .startshop-basket-value .startshop-basket-value-wrapper {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-picture .startshop-basket-value .startshop-basket-value-wrapper img {
+    vertical-align: initial;
+}
+
+.startshop-basket.default .startshop-basket-sum {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: right;
+    font-size: 16px;
+    color: #363532;
+}
+.startshop-basket.default .startshop-basket-sum-title {}
+.startshop-basket.default .startshop-basket-sum-value {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.startshop-basket.default .startshop-basket-buttons {
+    display: block;
+    overflow: hidden;
+}
+
+.startshop-basket.default .startshop-basket-buttons .startshop-basket-buttons-wrapper {
+    display: block;
+    text-align: right;
+}
+.startshop-basket.default .intec-button .intec-button-icon.glyph-icon-cancel {
+    padding-right: 5px;
+    font-size: 8px;
+}
+
+.startshop-basket.default .startshop-basket-clear-wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.startshop-basket.default .startshop-basket-buttons {
+    margin-top: 32px;
+}
+.startshop-basket.default .startshop-basket-information + .startshop-basket-buttons {
+    margin-top: 0;
+}
+
+
+@media (max-width: 720px) {
+    .startshop-basket.default .startshop-basket-table {
+        border: 1px solid #ececec;
+    }
+    .startshop-basket.default .startshop-basket-table thead {
+        display: none;
+    }
+    .startshop-basket.default .startshop-basket-table,
+    .startshop-basket.default .startshop-basket-table tbody,
+    .startshop-basket.default .startshop-basket-table tr,
+    .startshop-basket.default .startshop-basket-table td {
+        display: block;
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-row {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ececec;
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column {
+        margin-bottom: 15px;
+        text-align: center;
+        border: none !important;
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column .startshop-basket-cell {
+        margin: 0;
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-column .startshop-basket-cell-title {
+        display: block;
+        float: left;
+        width: 45%;
+        text-align: right;
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-column .startshop-basket-cell-title:after {
+        content: ':';
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-column .startshop-basket-cell-title + .startshop-basket-cell {
+        margin-left: 50%;
+        text-align: left;
+    }
+    .startshop-basket.default .startshop-basket-table .startshop-basket-cell .startshop-image {
+        margin: 0 auto;
+    }
+}
+.empty-basket.intec-no-select {
+    text-align:center;
+}
+.content_empty_title {
+    font-weight:bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #1b1e1f;
+}
+.empty-basket .empty_basket_img {
+    width:56px;
+    height:50px;
+    background:url(images/empty_basket.png);
+    margin:0 auto;
+    margin-bottom:15px;
+}
+.empty-basket .basket-content_empty_description {
+    margin-bottom:30px;
+}
+
+@media (max-width: 500px) {
+    .startshop-basket.default .startshop-basket-buttons-wrapper .intec-button {
+        display: block;
+        float: none !important;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,133 @@
+.intec-sections-list {
+	display: block;
+	width: 100%;
+	margin: 0 0 15px 0;
+	box-sizing: border-box;
+	font-size: 0;
+	border-top: 1px solid #F2F2F2;
+	border-left: 1px solid #F2F2F2;
+}
+
+.intec-sections-list > div {
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	transition: ease 0.1s;
+}
+.intec-sections-list .clearfix {
+	border: none;
+}
+
+.intec-sections-list .element {
+	position: relative;
+	margin: 0;
+	padding: 30px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.intec-sections-list > div{
+	transition: .5s;
+}
+.intec-sections-list > div:hover{
+	border-color: #fff;
+	-moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+	-o-box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+}
+
+.intec-sections-list .image {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.intec-section-name:hover {
+	color: #116afc;
+}
+
+.intec-sections-list .image .valign {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.intec-sections-list .image img {
+	display: inline-block;
+	max-width: 120px;
+	max-height: 120px;
+	vertical-align: middle;
+}
+
+.intec-sections-list .intec-section-info {
+	box-sizing: border-box;
+	margin-left: 120px;
+	padding: 0 10px 0 25px;
+	overflow: hidden;
+}
+.intec-sections-list .intec-section-name {
+	display: inline-block;
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #222222;
+	cursor: pointer;
+    text-decoration: none;
+}
+.intec-sections-list .intec-section-name:hover {
+	text-decoration: none;
+}
+
+.intec-sections-list .intec-subsections {
+	display: block;
+	font-size: 0;
+}
+.intec-sections-list .intec-subsection {
+	padding: 0px 12px 0px 0px;
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 13px;
+	color: #666666;
+	white-space: nowrap;
+}
+
+.intec-sections-list .intec-section-name:hover,
+.intec-sections-list .intec-subsection:hover,
+.intec-sections-list .intec-subsection:hover span {
+	color: #116afc;
+}
+.intec-subsection span {
+	color: #222222;
+}
+
+.intec-sections-list .intec-section-description {
+
+	display: block;
+	margin-top: 10px;
+	font-size: 13px;
+	line-height: 21px;
+	color: #888888;
+	overflow: hidden;
+}
+
+@media (max-width:767px) {
+	.intec-sections-list .intec-section-description {
+		font-size: 12px;
+		line-height: 18px;
+		max-height: 70px;
+	}
+	.intec-sections-list .image img {
+		max-width: 80px;
+		max-height: 80px;
+	}
+	.intec-sections-list .image {
+		width: 80px;
+		height: 80px;
+	}
+	.intec-sections-list .intec-section-info {
+		margin-left: 80px;
+	}
+}

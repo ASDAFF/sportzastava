@@ -1,0 +1,361 @@
+.startshop-order.default {
+    position: relative;
+    display: block;
+}
+
+.startshop-order.default,
+.intec-form .intec-form-caption,
+.startshop-order.default .startshop-order-section.startshop-order-section-products .product-link {
+    color: #363532;
+}
+
+.startshop-order.default .startshop-order-notify {
+    display: block;
+    padding: 10px;
+    background: #ffd777;
+    border: 1px solid #ddaa40;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.startshop-order.default .startshop-order-notify.startshop-order-notify-green {
+    background: #b6ff66;
+    border: 1px solid #59d11a;
+}
+.startshop-order.default .startshop-order-notify.startshop-order-notify-red {
+    background: #ffdac4;
+    border: 1px solid #dd3638;
+}
+.startshop-order.default .startshop-order-notify .startshop-order-notify-wrapper {
+    display: block;
+    overflow: hidden;
+    color: #1d1d1d;
+}
+
+.startshop-order.default .startshop-order-section {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border: 1px solid #f1f1f1;
+}
+.startshop-order.default .startshop-order-section .startshop-order-caption {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1d1d1d;
+    border-bottom: 1px solid #e8e8e8;
+}
+.startshop-order.default .startshop-order-section.startshop-order-section-products .startshop-order-caption {
+    margin-bottom: 0;
+}
+.startshop-order.default .startshop-order-section.startshop-order-section-products thead .startshop-order-cell {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+.startshop-order.default .startshop-order-section.startshop-order-section-products a.product-link {
+    font-size: 14px;
+    text-decoration: none;
+}
+.startshop-order.default .startshop-order-section.startshop-order-section-products a.product-link:hover {
+    text-decoration: underline;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property {
+    position: relative;
+    display: block;
+    padding: 8px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property.startshop-order-property-full {
+    margin-right: 50%;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-name {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.startshop-order.default .startshop-order-required {
+    position: relative;
+    font-size: 12px;
+    color: #ff0000;
+    font-weight: bold;
+    bottom: 3px;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-field {
+    position: relative;
+    display: block;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-field input,
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-field select,
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-field textarea {
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-field select:focus {
+    outline: none;
+}
+.startshop-order.default .startshop-order-section .startshop-order-properties .startshop-order-property .startshop-order-field textarea {
+    resize: none;
+    height: 135px;
+}
+.startshop-order.default .startshop-order-field-description {
+    display: block;
+    font-size: 12px;
+    color: #494949;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.startshop-order.default .startshop-order-table-wrapper {
+    display: block;
+    position: relative;
+    overflow-x: auto;
+}
+
+.startshop-order.default .startshop-order-table {
+    width: 100%;
+}
+
+.startshop-order.default .startshop-order-table .startshop-order-row {}
+.startshop-order.default .startshop-order-table thead {}
+
+.startshop-order.default .startshop-order-table .startshop-order-row .startshop-order-column {}
+.startshop-order.default .startshop-order-table .startshop-order-row .startshop-order-column .startshop-order-cell {
+    display: block;
+    margin: 10px 20px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    white-space: normal;
+}
+.startshop-order.default .startshop-order-table .startshop-order-row .startshop-order-column.startshop-order-column-image {
+    width: 100px;
+}
+.startshop-order.default .startshop-order-table tbody .startshop-order-column.startshop-order-column-price .startshop-order-cell,
+.startshop-order.default .startshop-order-table tbody .startshop-order-column.startshop-order-column-total .startshop-order-cell {
+    font-size: 16px;
+}
+.startshop-order.default .startshop-order-table tbody .startshop-order-cell-title {
+    display: none;
+}
+
+.startshop-order.default .startshop-order-table thead td,
+.startshop-order.default .startshop-order-table tbody td {
+    border-bottom: 1px solid #e8e8e8;
+}
+.startshop-order.default .startshop-order-table thead .startshop-order-column .startshop-order-cell {
+    font-size: 14px;
+}
+.startshop-order.default .startshop-order-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.startshop-order.default .startshop-order-table .startshop-order-row .startshop-order-column .startshop-order-cell .startshop-link {
+    text-decoration: none;
+}
+.startshop-order.default .startshop-order-table .startshop-order-row .startshop-order-column .startshop-order-cell .startshop-image {
+    height: 100px;
+    width: 100px;
+}
+.startshop-order.default .startshop-order-table .startshop-order-row .startshop-order-column .startshop-order-cell .startshop-button-custom.startshop-button-delete:hover {
+    background-position: 0 -16px;
+}
+
+.startshop-order.default .startshop-order-table .startshop-order-property {
+    display: block;
+    font-size: 0;
+    line-height: 21px;
+}
+.startshop-order.default .startshop-order-table .startshop-order-property .startshop-order-name {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.startshop-order.default .startshop-order-table .startshop-order-property.startshop-order-property-text .startshop-order-value {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+}
+.startshop-order.default .startshop-order-table .startshop-order-property.startshop-order-property-picture .startshop-order-value {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+.startshop-order.default .startshop-order-table .startshop-order-property.startshop-order-property-picture .startshop-order-value .startshop-order-value-wrapper {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.startshop-order.default .startshop-order-table .startshop-order-property.startshop-order-property-picture .startshop-order-value .startshop-order-value-wrapper img {
+    vertical-align: initial;
+}
+
+.startshop-order.default .startshop-order-total-wrapper .intec-button {
+    margin: 30px auto 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.startshop-order.default .startshop-order-total,
+.startshop-order.default .startshop-order-section {
+    padding: 25px 20px;
+}
+.startshop-order.default .startshop-order-section.startshop-order-section-delivery .intec-form-field,
+.startshop-order.default .startshop-order-section.startshop-order-section-payments .intec-form-field {
+    max-width: 300px;
+}
+.startshop-order.default .startshop-order-total {
+    border-top: 1px solid #f1f1f1;
+    -webkit-box-shadow: 0 3px 4px 1px #f1f1f1;
+    -moz-box-shadow: 0 3px 4px 1px #f1f1f1;
+    box-shadow: 0 3px 4px 1px #f1f1f1;
+}
+.startshop-order.default .startshop-order-total .startshop-order-total-title {
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.startshop-order.default .startshop-order-total hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+}
+.startshop-order.default .startshop-order-total .startshop-order-field {
+    display: block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #1d1d1d;
+    font-size: 16px;
+}
+.startshop-order.default .startshop-order-total .startshop-order-field:first-child {
+    margin-top: 0;
+}
+.startshop-order.default .startshop-order-total .startshop-order-field .startshop-order-field-title {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.startshop-order.default .startshop-order-buttons {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+.startshop-order.default .startshop-order-buttons .startshop-order-buttons-wrapper {}
+.startshop-order.default .startshop-order-buttons .startshop-button {
+    display: block;
+    float: right;
+    margin: 4px;
+    padding: 11px 23px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.startshop-order.default .startshop-order-processing-personal-data-wrapper {
+    margin-bottom: 15px;
+}
+.startshop-order.default .startshop-order-processing-personal-data-wrapper label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #9a9a9a;
+}
+
+@media (max-width: 992px) {
+    .startshop-order.default.adaptability .startshop-order-buttons {
+        margin-top: 20px;
+    }
+    .startshop-order.default.adaptability .startshop-order-total-wrapper .intec-button {
+        display: none !important;
+    }
+    .startshop-order.default.adaptability .startshop-order-buttons input.intec-button,
+    .startshop-order.default.adaptability .startshop-order-buttons a.intec-button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 690px) {
+    .startshop-order.default.adaptability .startshop-order-section .startshop-order-properties .startshop-order-property {
+        float: none;
+        width: auto;
+    }
+
+    .startshop-order.default.adaptability .startshop-order-section .startshop-order-properties .startshop-order-property.startshop-order-property-full {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .startshop-order.default.adaptability .startshop-order-table thead {
+        display: none;
+    }
+    .startshop-order.default.adaptability .startshop-order-table tbody .startshop-order-cell,
+    .startshop-order.default.adaptability .startshop-order-table tbody .startshop-order-cell-title,
+    .startshop-order.default.adaptability .startshop-order-table tr,
+    .startshop-order.default.adaptability .startshop-order-table td {
+        display: block;
+    }
+    .startshop-order.default.adaptability .startshop-order-table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .startshop-order.default.adaptability .startshop-order-table tr:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    .startshop-order.default.adaptability .startshop-order-table td {
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: none !important;
+    }
+    .startshop-order.default.adaptability .startshop-order-table tbody .startshop-order-cell,
+    .startshop-order.default.adaptability .startshop-order-table tbody .startshop-order-cell-title {
+        padding: 2px 5px;
+        margin: 0 !important;
+    }
+    .startshop-order.default.adaptability .startshop-order-table tbody .startshop-order-cell-title {
+        font-size: 13px;
+        color: #7c7c7c;
+    }
+    .startshop-order.default.adaptability .startshop-order-table .startshop-order-row .startshop-order-column.startshop-order-column-image {
+        width: auto;
+    }
+    .startshop-order.default.adaptability .startshop-order-table .startshop-order-row .startshop-order-column.startshop-order-column-image .startshop-image {
+        margin: 0 auto;
+    }
+}

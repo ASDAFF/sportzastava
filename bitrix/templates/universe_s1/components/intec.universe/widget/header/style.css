@@ -1,0 +1,766 @@
+.header {
+    display: block;
+    position: relative;
+}
+.header .header-desktop {
+    display: block;
+}
+.header .header-mobile {
+    display: none;
+}
+
+.header .header-fixed {
+    display: block;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    top: -70px;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    background: #fff;
+    opacity: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.header .header-desktop .header-fixed .header-content .header-content-wrapper-2 {
+    height: 70px;
+}
+
+.header .header-desktop .header-fixed .header-content .header-content-menu .menu.menu-horizontal,
+.header .header-desktop .header-fixed .header-content .header-content-menu .menu.menu-horizontal .intec-content,
+.header .header-desktop .header-fixed .header-content .header-content-menu .menu.menu-horizontal .intec-content-wrapper,
+.header .header-desktop .header-fixed .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper {
+    height: 70px;
+}
+
+.header .header-mobile.header-fixed-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header .header-mobile.header-fixed-menu .header-panel {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.header .header-desktop .header-info {
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+}
+.header .header-desktop .header-info .header-info-left {
+    display: block;
+    float: left;
+    padding-right: 15px;
+}
+.header .header-desktop .header-info .header-info-right {
+    display: block;
+    float: right;
+    padding-left: 15px;
+}
+.header .header-desktop .header-info .header-info-button,
+.header .header-desktop .header-info .header-info-item,
+.header .header-desktop .header-info .header-info-socials{
+    height: 38px;
+}
+.header .header-desktop .header-info .header-info-button,
+.header .header-fixed .header-info-button {
+    display: block;
+    float: left;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -ms-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+}
+.header .header-desktop .header-content .header-info-button {
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 0;
+}
+.header .header-desktop .header-content .header-info-button,
+.header .header-fixed .header-info-button {
+    white-space: nowrap;
+}
+.header .header-fixed .header-info-button.intec-search-form-btn {
+    padding: 0;
+}
+.header .header-desktop .header-info .header-info-button:hover {
+    background: #f4f5f7;
+}
+.header .header-desktop .header-info .header-info-button .header-info-button-text,
+.header .header-desktop .header-info .header-info-button .header-info-button-icon,
+.header .header-desktop .header-fixed .header-info-button .header-info-button-text,
+.header .header-desktop .header-fixed .header-info-button .header-info-button-icon,
+.header .header-desktop .header-content .header-info-button .header-info-button-text,
+.header .header-desktop .header-content .header-info-button .header-info-button-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .header-desktop .header-info .header-info-button .header-info-button-icon,
+.header .header-desktop .header-content .header-info-button .header-info-button-icon {
+    font-size: 15px;
+    line-height: 1;
+    margin-right: 10px;
+    color: #116afc;
+}
+.header .header-desktop .header-fixed .header-info-button {
+    color: #bebebf;
+}
+.header .header-desktop .header-fixed .header-info-button .header-info-button-icon {
+    font-size: 20px;
+}
+.header .header-desktop .header-info .header-info-button .header-info-button-text,
+.header .header-desktop .header-content .header-info-button .header-info-button-text {
+    color: #5b5b5b;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-top: 2px;
+}
+.header .header-desktop .header-fixed .header-info-button .header-info-button-text,
+.header .header-desktop .header-fixed .header-info-button .header-info-button-icon {
+    color: inherit;
+}
+.header .header-desktop .header-fixed .header-info-button .header-info-button-text {
+    font-size: 14px;
+}
+.header .header-desktop .header-info .header-info-stickers {
+    display: block;
+}
+.header .header-desktop .header-info .header-info-stickers .header-info-stickers-wrapper {
+    display: block;
+    margin: -4px 0;
+}
+.header .header-desktop .header-info .header-info-stickers .header-info-sticker {
+    display: block;
+    float: left;
+    padding: 4px 60px 4px 0;
+    vertical-align: middle;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.header .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-wrapper {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+}
+.header .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-icon,
+.header .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-icon {
+    font-size: 15px;
+    line-height: 1;
+    margin-right: 10px;
+    color: #116afc;
+}
+.header .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999999;
+    padding-top: 2px;
+}
+.header .header-desktop .header-info .header-info-phone {}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-wrapper {
+    position: relative;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999999;
+    margin-left: 10px;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu .header-info-phone-menu-button {
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    color: inherit;
+    cursor: pointer;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu:hover {
+    color: #116afc;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu .header-info-phone-menu-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: 10px;
+    min-width: 100%;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    z-index: 1;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu .header-info-phone-menu-content .header-info-phone-menu-phone {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #2d2d2d;
+    text-decoration: none;
+    border-top: 1px solid #f1f1f1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu .header-info-phone-menu-content .header-info-phone-menu-phone:first-child {
+    border-top: none;
+}
+.header .header-desktop .header-info .header-info-phone .header-info-phone-menu .header-info-phone-menu-content .header-info-phone-menu-phone:hover {
+    color: #116afc;
+}
+
+.header .header-desktop .header-info .header-info-social {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #D8D8D8;
+}
+
+.header .header-desktop .header-content {
+    display: block;
+    border-bottom: 1px solid #F2F2F2;
+}
+.header .header-desktop .popup-menu-wrapper .header-content {
+    border: none;
+}
+.header .header-desktop .header-content .intec-content {
+    overflow: visible;
+}
+.header .header-desktop .header-content .header-content-wrapper {
+    display: block;
+    position: relative;
+    margin: 0 -20px;
+}
+.header .header-desktop .header-content .header-content-wrapper-2 {
+    display: table;
+    height: 86px;
+}
+.header .header-desktop .header-content .header-content-wrapper-3 {
+    display: table-row;
+}
+.header .header-desktop .header-content .header-content-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+.header .header-desktop .header-content .header-content-sticker-wrapper {
+    display: block;
+    padding: 5px;
+    font-size: 0;
+    white-space: nowrap;
+}
+.header .header-desktop .header-content .header-content-sticker-wrapper.header-content-sticker-wrapper-in-phone {
+    padding: 0;
+    text-align: left;
+}
+.header .header-desktop .header-content .header-content-sticker-wrapper .header-content-sticker-text {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    margin-right: 10px;
+}
+.header .header-desktop .header-content .header-content-sticker-wrapper .header-content-sticker-icon {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 8px;
+}
+.header .header-desktop .header-content .header-content-sticker-wrapper .header-content-sticker-text {
+    color: #acacac;
+}
+.header .header-desktop .header-content .header-content-item .glyph-icon-menu {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.header .header-desktop .header-content .header-content-item.header-content-item-full {
+    width: 100%;
+}
+.header .header-desktop .header-content .header-content-item .header-content-item-wrapper {
+    display: block;
+    margin: 0 20px;
+}
+.header .header-desktop .header-content .header-content-logotype {
+    display: block;
+    width: 130px;
+    margin-right: 0!important;
+}
+.header .header-desktop .header-content .header-content-tagline {
+    display: block;
+    position: relative;
+}
+.header .header-desktop .header-content .header-content-tagline .header-content-tagline-delimiter {
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 1px;
+    background: #e8e8e8;
+}
+.header .header-desktop .header-content .header-content-tagline .header-content-tagline-text {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999999;
+    margin-left: 20px;
+    min-width: 140px;
+}
+.header .header-desktop .header-content .header-content-menu,
+.header .header-desktop .header-content .header-content-menu .header-content-menu-wrapper {
+    height: 100%;
+}
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal,
+.header .header-desktop .header-menu .menu.menu-horizontal.menu-horizontal-transparent {
+    background: transparent !important;
+}
+.header .header-desktop .header-menu .menu.menu-horizontal.menu-horizontal-transparent .menu-item.menu-item-active .intec-cl-text,
+.header .header-desktop .header-menu .menu.menu-horizontal.menu-horizontal-transparent .menu-item:hover .intec-cl-text {
+    color: #000000 !important;
+}
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal,
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .intec-content,
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .intec-content-wrapper,
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper {
+    height: 86px;
+}
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper {
+    position: static;
+}
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item:hover,
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item.menu-item-active,
+.header .header-desktop .header-menu .menu.menu-horizontal.menu-horizontal-transparent .menu-wrapper .menu-item:hover,
+.header .header-desktop .header-menu .menu.menu-horizontal.menu-horizontal-transparent .menu-wrapper .menu-item.menu-item-active{
+    background: transparent !important;
+}
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item .menu-item-text {}
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item .menu-item-text .menu-item-text-wrapper {
+    color: #2d2d2d;
+    font-weight: bold;
+}
+
+.header .header-desktop .header-content .header-content-phone {
+    display: block;
+    position: relative;
+    text-align: right;
+    margin-left: 30px;
+    font-size: 0;
+    white-space: nowrap;
+}
+.header .header-desktop .header-content .header-content-phone-button-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+    text-align: left;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text.header-content-phone-text-inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #116afc;
+    margin-right: 8px;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-content {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d2d2d!important;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-content:hover {
+    color: #116afc;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu {
+    display: inline-block;
+    vertical-align: middle;
+    color: #2d2d2d;
+    margin-left: 10px;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu .header-content-phone-text-menu-button {
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: bold;
+    color: inherit;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu:hover {
+    color: #116afc;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu .header-content-phone-text-menu-content {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    min-width: 100%;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    z-index: 1;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu .header-content-phone-text-menu-phone {
+    display: block;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #2d2d2d;
+    text-decoration: none;
+    border-top: 1px solid #f1f1f1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -ms-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu .header-content-phone-text-menu-phone:first-child {
+    border-top: none;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-menu .header-content-phone-text-menu-phone:hover {
+    color: #116afc;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-call {
+    display: block;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-call .header-content-phone-call-wrapper {
+    color: #116afc;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-call .header-content-phone-call-wrapper:hover {
+    color: #000000 !important;
+}
+.header .header-desktop .header-content .header-content-phone .header-content-phone-call-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .header-desktop .header-content .header-content-sale {
+    white-space: nowrap;
+    margin-left: 40px;
+}
+
+.header .header-mobile .header-panel {
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #e8e8e8;
+    height: 62px;
+    background: #fff;
+    z-index: 100;
+    min-width: 320px;
+}
+.header .header-mobile .header-panel.header-panel-colored {
+    background: #116afc;
+    border-color: #116afc;
+}
+.header .header-panel .header-panel-item {
+    display: block;
+    height: 100%;
+}
+.header .header-panel .header-panel-item.header-panel-menu {
+    width: 62px;
+    float: left;
+}
+.header .header-panel .header-panel-item.header-panel-menu .menu.menu-header-mobile .menu-button .menu-button-icon {
+    color: #000000;
+}
+.header .header-panel.header-panel-colored .header-panel-item.header-panel-menu .menu.menu-header-mobile .menu-button .menu-button-icon {
+    color: #fff;
+}
+.header .header-panel .header-panel-item.header-panel-logotype {
+    margin-left: 62px;
+    margin-right: 100px;
+}
+.header .header-panel .header-panel-item.header-panel-logotype .header-panel-logotype-wrapper {
+    display: block;
+    margin: 0 20px;
+    height: 100%;
+}
+.header .header-panel .header-panel-item.header-panel-logotype .header-panel-logotype-wrapper-2 {
+    display: inline-block;
+    height: 100%;
+}
+.header .header-panel .header-panel-item.header-panel-logotype.header-panel-logotype-center .header-panel-logotype-wrapper {
+    text-align: center;
+}
+.header .header-panel .header-panel-item.header-panel-icons {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.header .header-panel .header-panel-item.header-panel-icons .header-panel-icons-wrapper {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header .header-panel .header-panel-item.header-panel-icons .header-panel-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1;
+    color: #116afc;
+    text-decoration: none;
+}
+.header .header-panel.header-panel-colored .header-panel-item.header-panel-icons .header-panel-icon {
+    color: #fff !important;
+}
+
+/*popup menu*/
+.button-popup-menu-open,
+.button-popup-menu-close{
+    margin: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button-popup-menu-close {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    margin-right: 2px;
+    transition: 0.4s;
+}
+
+.popup-menu-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 0;
+    z-index: -1;
+    background: #fff;
+}
+.popup-menu-wrapper .header-content:first-child .intec-content-wrapper-popup {
+    border-bottom: 1px solid #F2F2F2;
+}
+.popup-menu-wrapper .header-content:first-child .intec-content-wrapper-popup .header-content-item.hci-logo {
+    width: 100%;
+    text-align: center;
+    padding-right: 58px;
+}
+.popup-menu-wrapper .header-content:first-child .intec-content-wrapper-popup .header-content-item.hci-logo .header-content-logotype {
+    display: inline-block;
+    vertical-align: middle;
+}
+.catalog-menu-popup {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+/**/
+
+
+/* ---------- With banner ---------- */
+.header.with-banner .header-desktop,
+.header.with-banner .header-mobile {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header.with-banner .intec-search-input,
+.header.with-banner .menu.menu-horizontal .menu-item:hover,
+.header.with-banner .menu.menu-horizontal .menu-item.menu-item-active {
+    background-color: transparent !important;
+}
+.header.with-banner .header-desktop .header-info .header-info-button:hover {
+    background: none;
+}
+.header.with-banner .menu.menu-horizontal {
+    background: none !important;
+}
+.header.with-banner .menu.menu-horizontal .menu-item-border {
+    border-left: none;
+    border-right: none;
+}
+.header.with-banner .header-desktop .header-content,
+.header.with-banner .header-desktop .header-info {
+    border-bottom: none;
+}
+.header.with-banner .header-desktop .header-content .header-content-tagline .header-content-tagline-delimiter {
+    display: none;
+}
+.header.with-banner .header-static .menu.menu-horizontal .menu-item .menu-item-text .menu-item-text-wrapper,
+.header.with-banner .header-desktop .header-static .header-menu .menu.menu-horizontal.menu-horizontal-transparent .menu-item.menu-item-active .intec-cl-text,
+.header.with-banner .header-desktop .header-static .header-menu .menu.menu-horizontal.menu-horizontal-transparent .menu-item:hover .intec-cl-text {
+    color: inherit !important;
+}
+.header.with-banner .header-desktop .header-static .menu.menu-horizontal .menu-catalog-icon,
+.header.with-banner .header-desktop .header-static .menu.menu-horizontal .menu-item-arrow-down {
+    color: inherit;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+/*.header.with-banner .header-static .sale-icons .sale-icons-icon {
+    color: #777;
+}*/
+.header.with-banner .intec-search-normal input {
+    color: #fff;
+    background: rgba(95, 95, 95, 0.24) !important;
+}
+.header.with-banner .header-static .intec-search-form .intec-search-icon {
+    color: #fff !important;
+}
+.header.with-banner .header-static .intec-search-form-popup .intec-search-icon {
+    color: #808080 !important;
+}
+.header.with-banner .intec-search-input::-webkit-input-placeholder {
+    color: #fff;
+}
+.header.with-banner .intec-search-input::-moz-placeholder {
+    color: #fff;
+}
+.header.with-banner .intec-search-input:-moz-placeholder {
+    color: #fff;
+}
+.header.with-banner .intec-search-input:-ms-input-placeholder {
+    color: #fff;
+}
+
+/* Black */
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-text,
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .header-info-button .header-info-button-text,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-info-button .header-info-button-text,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-content-tagline .header-content-tagline-text,
+.header.with-banner[data-banner-color=black] .intec-search .search-title,
+.header.with-banner[data-banner-color=black] .header-static .menu.menu-header-info .menu-item .menu-item-text .menu-item-text-wrapper,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item .menu-item-text .menu-item-text-wrapper,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-content-sticker-wrapper .header-content-sticker-text,
+.header.with-banner[data-banner-color=black] .header-static .button-popup-menu-open,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .menu-item .menu-item-text,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .intec-search-header-fixed .header-info-button,
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .header-info-social
+{
+    color: #fff;
+}
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-content,
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-icon,
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .header-info-button .header-info-button-icon,
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .intec-search .header-info-button .intec-search-icon,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-info-button .header-info-button-icon,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-content-phone .header-content-phone-call .header-content-phone-call-wrapper,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-icon,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-content-sticker-wrapper .header-content-sticker-icon,
+.header.with-banner[data-banner-color=black] .header-static .sale-icons .sale-icons-icon
+{
+    color: #fff !important;
+}
+.header.with-banner[data-banner-color=black] .header-static .header-content-logotype svg path {
+    fill: #fff !important;
+}
+.header.with-banner[data-banner-color=black] .header-static .intec-button.intec-button-cl-common {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+.header.with-banner[data-banner-color=black] .header-static .sale-icons a.sale-icons-item.active .sale-icons-count {
+    color: #fff !important;
+    background-color: #858585 !important;
+    border-color: #fff !important;
+}
+
+/* White */
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .header-content .header-content-tagline .header-content-tagline-text,
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .intec-search-header-fixed .header-info-button
+{
+    color: #777;
+}
+.header.with-banner[data-banner-color=white] .header-desktop .header-info .header-info-stickers .header-info-sticker .header-info-sticker-text,
+.header.with-banner[data-banner-color=white] .header-desktop .header-info .header-info-button .header-info-button-text,
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .header-content .header-info-button .header-info-button-text,
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .header-content .header-content-phone .header-content-phone-text .header-content-phone-text-content,
+.header.with-banner[data-banner-color=white] .header-static .menu.menu-header-info .menu-item .menu-item-text .menu-item-text-wrapper,
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .menu.menu-horizontal .menu-item .menu-item-text,
+.header.with-banner[data-banner-color=white] .header-static .button-popup-menu-open,
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .header-content .header-content-sticker-wrapper .header-content-sticker-text,
+.header.with-banner[data-banner-color=white] .header-desktop .header-info .header-info-social
+{
+    color: #222;
+}
+.header.with-banner[data-banner-color=white] .header-desktop .header-static .header-content .header-content-phone .header-content-phone-call .header-content-phone-call-wrapper,
+.header.with-banner[data-banner-color=white] .intec-search .search-title
+{
+    color: #222 !important;
+}
+.header.with-banner[data-banner-color=white] .intec-search-normal input {
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+.header.with-banner[data-banner-color=white] .header-static .sale-icons .sale-icons-icon {
+    color: inherit;
+}
+
+/* ---------- /With banner ---------- */
+
+
+@media all and (max-width: 720px) {
+    .header .header-desktop {
+        display: none;
+    }
+    .header .header-mobile {
+        display: block;
+    }
+}

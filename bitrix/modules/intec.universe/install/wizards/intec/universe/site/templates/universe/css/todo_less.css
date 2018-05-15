@@ -1,0 +1,22 @@
+.intec-news-sections.template-puzzle .intec-news-sections_name {
+    color: #2a2c2f;
+    background-color: #fff;
+}
+.intec-news-sections.template-puzzle .intec-news-sections_item:hover .intec-news-sections_name,
+.intec-news-sections.template-chess .intec-news-sections_item:hover .intec-news-sections_name,
+.intec-news-sections.template-tiles .intec-news-sections_item:hover .intec-news-sections_name {
+    color: #fff;
+    background-color: #116afc;
+}
+.intec-breadcrumb .intec-breadcrumb-item {
+    color: #116afc;
+}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.delay .deleay-item {
+    color: #d2d8db;
+}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.delay .deleay-item:hover {
+    color: #116afc;
+}
+.bx-soa-editstep {
+    color: #116afc;
+}

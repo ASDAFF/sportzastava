@@ -1,0 +1,36 @@
+.menu-settings {
+    display: block;
+}
+.menu-settings .menu-settings-panel {
+    display: block;
+    margin-bottom: 5px;
+    padding: 15px 0;
+    background-color: #f8f8f8;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.menu-settings.menu-settings-child {
+    margin-left: 40px;
+}
+.menu-settings .menu-settings-panel:hover {
+    background-color: #f6f6f6;
+}
+.menu-settings .menu-settings-panel .separator {
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    margin: 0 8px;
+    border-left: 1px solid #ddd;
+}
+.menu-settings .menu-settings-panel .menu-settings-column.menu-settings-column-side,
+.menu-settings .menu-settings-panel .menu-settings-column.menu-settings-column-switch {
+    text-align: right;
+}

@@ -1,0 +1,138 @@
+.ocb-form {
+	position: relative;
+	overflow: hidden;
+}
+.ocb-form .title {
+	font-size: 30px;
+	font-weight: 900;
+	color: #262626;
+}
+
+.ocb-form .ocb-form-wrap .ocb-params textarea {
+    height: 112px;
+}
+.ocb-form .ocb-form-wrap .ocb-params .ocb-form-field label {
+	font-size: 14px;
+	line-height: 25px
+}
+.ocb-form .ocb-form-wrap .ocb-params .ocb-form-field {
+	margin-bottom: 15px;
+}
+.ocb-form .ocb-form-wrap .ocb-params button.button {
+	padding: 10px 55px;
+}
+.ocb-form .ocb-form-wrap .promt {
+	font-size: 11px;
+	color: #575757;
+}
+
+.ocb-form .ocb-modules-button {
+	margin-top: 30px;
+}
+.ocb-form .ocb-button-wrapper {
+	margin-top: 10px;
+}
+.ocb-form .ocb-button-wrapper button {
+	float: left;
+	margin-right: 25px;
+}
+.ocb-form .ocb-button-wrapper .ocb-disclaimer {
+	padding-top: 5px;
+	font-size: 13px;
+	color: #808080;
+}
+
+.ocb-form .starrequired {
+	color: #ff0000;
+}
+.ocb-form .required {
+	position: absolute;
+	display: none;
+	margin-top: 2px;
+	font-size: 11px;
+	color: #f10000;
+}
+.ocb-form .intec-form-field.intec-form-field-error .required {
+	display: block;
+}
+.ocb-form .intec-form-field.intec-form-field-error input[type="text"],
+.ocb-form .intec-form-field.intec-form-field-error textarea,
+.ocb-form .intec-form-field.intec-form-field-error select {
+	border-color: #f10000;
+}
+
+.ocb-form .ocb-form-result {}
+.ocb-form .ocb-result-icon-fail {
+	color: red;
+}
+.ocb-form .ocb-result-text {
+	margin-top: 5px;
+}
+
+.ocb-form .product-wrapper{
+	float: left;
+	width: 40%;
+	padding-top: 50px;
+	padding-right: 40px;
+	text-align: center;
+	color: #33312e;
+}
+.ocb-form .product-wrapper + form {
+	float: left;
+	width: 60%;
+	padding-left: 45px;
+	border-left: 1px solid #e8e8e8;
+}
+.ocb-form .product-name {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+.ocb-form .product-quantity {
+	margin-bottom: 15px;
+	font-size: 13px;
+	color: #808080;
+}
+.ocb-form .product-image {
+	margin-bottom: 15px;
+}
+.ocb-form .product-image img {
+	max-width: 100%;
+	max-height: 300px;
+	margin: 0 auto;
+}
+.ocb-form .product-price {
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.ocb-form .consent {
+	font-size: 14px;
+}
+.ocb-form .consent input {
+	margin: 0;
+}
+
+.ocb-form .ocb-result-icon-success {
+	margin-top: 30px;
+}
+
+
+@media all and (max-width: 620px) {
+	.ocb-form .ocb-button-wrapper button {
+		float: none;
+	}
+	.ocb-form .ocb-disclaimer {
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 460px) {
+	.ocb-form .product-wrapper {
+		display: none;
+	}
+	.ocb-form .product-wrapper + form {
+		float: none;
+		width: auto;
+		padding-left: 0;
+	}
+}

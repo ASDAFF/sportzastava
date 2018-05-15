@@ -1,0 +1,17 @@
+.yml-btn{height: 26px!important; margin-top: -1px;}
+.yml-btn-del{margin-left: 10px;}
+.wrap_sku_prop, .wrap_link_prop{margin-bottom: 10px;}
+.input_sku_prop{width: 220px;}
+
+.wrap_link_prop input:first-child{margin-right: 10px;}
+
+.bx-core-adm-dialog a{text-decoration: none; color: #000000;}
+.bx-core-adm-dialog a:hover{color: #000000;}
+
+.yakus_admin_small_button{height: 20px!important; margin: 0px 3px 0px 3px;}
+
+
+.section_name{}
+.section_name:hover{color: #000000 !important; cursor: default!important;}
+
+.adm-workarea-page{opacity: 1;}

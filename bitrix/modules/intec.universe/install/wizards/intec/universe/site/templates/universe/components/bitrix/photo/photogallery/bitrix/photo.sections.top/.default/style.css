@@ -1,0 +1,89 @@
+.photo-sections {
+	margin: 0 -10px;
+}
+.photo-sections .section-element-wrapper {
+	width: 33.333333%;
+	padding: 10px;
+	float: left;
+}
+.photo-sections .section-element {
+	position: relative;
+	padding-top: 70%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.4s;
+}
+.photo-sections .section-element:hover {
+	margin-top: -10px;
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+}
+.photo-sections .section-element .element-fade {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: 0.4s;
+}
+.photo-sections .section-element:hover .element-fade {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.photo-sections .section-element .element-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+}
+.photo-sections .section-element .element-name {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	background-color: #FFF;
+	border-radius: 3px;
+	max-width: 70%;
+	font-size: 15px;
+	line-height: 1.7;
+}
+.photo-sections .section-element:hover .element-name {
+	background-color: inherit;
+	color: #FFF;
+}
+.photo-sections .section-element .element-count {
+	position: absolute;
+	color: #FFF;
+	opacity: 0;
+	right: 20px;
+	bottom: 0;
+	font-size: 15px;
+	line-height: 1.7;
+	transition: 0.4s;
+}
+.photo-sections .section-element:hover .element-count {
+	opacity: 1;
+	bottom: 20px;
+}
+.photo-sections .section-element .element-name,
+.photo-sections .section-element .element-count {
+	padding: 5px 8px;
+}
+
+@media all and (max-width: 800px) {
+	.photo-sections .section-element-wrapper {
+		width: 50%;
+	}
+}
+@media all and (max-width: 550px) {
+	.photo-sections .section-element-wrapper {
+		width: 100%;
+	}
+	.photo-sections .section-element .element-fade {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.photo-sections .section-element .element-count {
+		opacity: 1;
+		bottom: 20px;
+	}
+}

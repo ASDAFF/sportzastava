@@ -1,0 +1,98 @@
+.services-sections.services-sections-blocks .services-sections-items {
+    overflow: hidden;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-items-wrapper {
+    margin: -10px;
+    overflow: hidden;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-wrapper {
+    display: block;
+    position: relative;
+    border: 1px solid #f1f1f1;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-image {
+    display: block;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-circle .services-sections-item-image,
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-square-small .services-sections-item-image {
+    margin: 36px 36px 0 36px;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-image .services-sections-item-image-wrapper {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-circle .services-sections-item-image .services-sections-item-image-wrapper {
+    padding-top: 100%;
+    border-radius: 50%;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-square-small .services-sections-item-image .services-sections-item-image-wrapper {
+    padding-top: 100%;
+    border-radius: 3px;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-square-big .services-sections-item-image .services-sections-item-image-wrapper {
+    padding-top: 85%;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-information {
+    display: block;
+    margin: 18px 45px 40px 45px;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-square-small .services-sections-item-information {
+    margin: 18px 36px 40px 36px;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-information-name {
+    display: block;
+    overflow: hidden;
+    height: 42px;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item.services-sections-item-image-circle .services-sections-item-information .services-sections-item-information-name {
+    text-align: center;
+}
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-information-name .services-sections-item-information-name-wrapper {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.services-sections.services-sections-blocks .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-information-description {
+    display: block;
+    overflow: hidden;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #505457;
+    height: 84px;
+}
+
+@media all and (max-width: 1040px) {
+    .services-sections.services-sections-blocks .services-sections-items .services-sections-item {
+        width: 33.333333%;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .services-sections.services-sections-blocks .services-sections-items .services-sections-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .services-sections.services-sections-blocks .services-sections-items .services-sections-item {
+        width: auto;
+        float: none;
+    }
+}

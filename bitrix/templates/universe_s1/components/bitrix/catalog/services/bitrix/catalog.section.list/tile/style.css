@@ -1,0 +1,119 @@
+.services-sections.services-sections-tile .services-sections-items {
+    overflow: hidden;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-items-wrapper {
+    margin: -13px -10px;
+    overflow: hidden;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item {
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 13px 10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.services-sections.services-sections-tile .services-sections-items.services-sections-items-4 .services-sections-item {
+    width: 25%;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-wrapper {
+    display: block;
+    position: relative;
+    padding-top: 80%;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-wrapper-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item:hover .services-sections-item-background {
+    opacity: 0.3;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-information {
+    display: block;
+    position: absolute;
+    top: auto;
+    left: 35px;
+    bottom: 30px;
+    right: 35px;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-name {
+    display: block;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-name .services-sections-item-name-wrapper {
+    display: inline-block;
+    padding: 12px 14px;
+    background: #3e6af8;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-name .services-sections-item-name-wrapper-2 {
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    max-height: 63px;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item .services-sections-item-information .services-sections-item-description {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -ms-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+}
+.services-sections.services-sections-tile .services-sections-items .services-sections-item:hover .services-sections-item-information .services-sections-item-description {
+    display: block;
+    height: 54px;
+}
+
+@media all and (max-width: 1040px) {
+    .services-sections.services-sections-tile .services-sections-items.services-sections-items-4 .services-sections-item {
+        width: 33.333333%;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .services-sections.services-sections-tile .services-sections-items .services-sections-item {
+        width: auto !important;
+        float: none;
+    }
+}

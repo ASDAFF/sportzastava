@@ -1,0 +1,1 @@
+<?define("intec_constructor_TEMPORARY_CACHE", "I2EBWnwwCQdsAHs3V2RXcAAg");?>

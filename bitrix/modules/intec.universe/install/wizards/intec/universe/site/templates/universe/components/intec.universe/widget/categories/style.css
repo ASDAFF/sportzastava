@@ -1,0 +1,25 @@
+.widget-categories .title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #2c2c2d;
+    margin-bottom: 5px;
+}
+.widget-categories .title.text-center {
+    text-align:center;
+}
+.widget-categories .title + .intec-sections-tile-1 {
+    margin-top: 20px;
+}
+.widget-categories .title + .intec-sections-list-1 {
+    margin-top: 25px;
+}
+.widget-categories .description {
+    font-size: 13px;
+    line-height: 17px;
+    color: #626262;
+    margin-bottom: 20px;
+}
+.widget-categories .description.text-center {
+    text-align:center;
+}

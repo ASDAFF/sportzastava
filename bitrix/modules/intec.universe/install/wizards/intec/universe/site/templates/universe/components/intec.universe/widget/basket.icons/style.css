@@ -1,0 +1,70 @@
+.sale-icons .sale-icons-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+    padding: 7px 8px 1px 1px;
+}
+.sale-icons a.sale-icons-item {
+    text-decoration: none;
+}
+.sale-icons .sale-icons-item,
+.sale-icons .sale-icons-count {
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.sale-icons .sale-icons-icon-wrap {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+.sale-icons .sale-icons-icon {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #bebebf;
+
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.sale-icons a.sale-icons-item:active .sale-icons-icon {
+    margin-top: 0;
+    font-size: 24px;
+}
+.sale-icons a.sale-icons-item:hover .sale-icons-icon, .sale-icons a.sale-icons-item.hover .sale-icons-icon,
+.sale-icons a.sale-icons-item:active .sale-icons-icon, .sale-icons a.sale-icons-item.active .sale-icons-icon {
+    color: #3e6af8;
+}
+.sale-icons .sale-icons-count {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    display: block;
+    width: 19px;
+    height: 19px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1;
+    color: #fff;
+    background-color: #888;
+    border: 2px solid #fff;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.sale-icons a.sale-icons-item:hover .sale-icons-count, .sale-icons a.sale-icons-item.hover .sale-icons-count,
+.sale-icons a.sale-icons-item:active .sale-icons-count, .sale-icons a.sale-icons-item.active .sale-icons-count {
+    background-color: #001e7f;
+}

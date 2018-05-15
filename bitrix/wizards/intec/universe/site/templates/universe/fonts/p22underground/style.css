@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'P22 underground';
+    font-style: normal;
+    font-weight: normal;
+    src: url(P22UNDERGROUNDCYPRO-BOOK.OTF);
+}
+
+@font-face {
+    font-family: 'P22 underground';
+    font-style: normal;
+    font-weight: 100;
+    src: url(P22UNDERGROUNDCYPRO-THIN.OTF);
+}
+
+@font-face {
+    font-family: 'P22 underground';
+    font-style: normal;
+    font-weight: 500;
+    src: url(P22UNDERGROUNDCYPRO-MEDIUM.OTF);
+}
+
+@font-face {
+    font-family: 'P22 underground';
+    font-style: normal;
+    font-weight: 700;
+    src: url(P22UNDERGROUNDCYPRO-DEMI.OTF);
+}
+
+@font-face {
+    font-family: 'P22 underground';
+    font-style: normal;
+    font-weight: 900;
+    src: url(P22UNDERGROUNDCYPRO-HEAVY.OTF);
+}

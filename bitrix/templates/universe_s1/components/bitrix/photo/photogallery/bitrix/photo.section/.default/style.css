@@ -1,0 +1,111 @@
+.photo-gallery-section{
+	display: block;
+	width: 100%;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper{
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 25%;
+	height: 0;
+	padding-bottom: 25%;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper:hover {
+	cursor:pointer;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper .photo-gallery-section-item-wrapper-wrapper2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.photo-gallery-section-header {
+	margin-bottom: 20px;
+}
+.photo-gallery-section-header .photo-gallery-section-name{
+	display: inline-block;
+	font-size: 30px;
+	line-height: 1.5em;
+	max-height: 45px;
+	max-width: 65%;
+	overflow: hidden;
+}
+.photo-gallery-section-header .photo-gallery-section-name-right{
+	display: inline-block;
+	margin-top: 20px;
+	float: right;
+}
+.photo-gallery-section-header .photo-gallery-section-name-right .photo-gallery-section-name-right-count{
+	margin-right: 20px;
+	margin-top: 5px;
+	color: #555;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper .photo-section-item-wrapper-img{
+	display: none;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper:hover{
+	transition: 300ms linear;
+	box-shadow: 1px 9px 24px  rgba(93, 95, 97, 0.56);
+	z-index: 101;
+}
+.btn-block{
+	margin-top: 20px;
+	clear: left;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper .photo-gallery-section-item-search-plus{
+	position: absolute;
+	top: 38%;
+	left: 38%;
+	opacity: 0;
+	transition: 300ms linear;
+	padding: 20px;
+	background: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	font-size: 32px;
+	font-weight: 100;
+}
+.photo-gallery-section .photo-gallery-section-item-wrapper:hover .photo-gallery-section-item-search-plus{
+	position: absolute;
+	opacity: 0.8;
+	transition: 300ms linear;
+}
+
+.photo-section-list-sections-a .photo-section-btn-list-sections{
+	margin-right: 10px;
+	font-weight: bold;
+	color: #555;
+}
+.photo-section-list-sections-a .photo-section-list-sections-a-read-more-angle{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 27px;
+	padding-bottom: 5px;
+	margin-right: 15px;
+	margin-left: 10px;
+}
+
+@media all and (max-width: 1200px) {
+	.photo-gallery-section-header .photo-gallery-section-name-right{
+		display: inline-block;
+		float: none;
+		margin-top: 0;
+	}
+}
+@media all and (max-width: 720px) {
+	.photo-gallery-section .photo-gallery-section-item-wrapper{
+		width: 33.33333%;
+		padding-bottom: 33.33333%;
+	}
+}
+@media all and (max-width: 480px) {
+	.photo-gallery-section .photo-gallery-section-item-wrapper{
+		width: 50%;
+		padding-bottom: 50%;
+	}
+}

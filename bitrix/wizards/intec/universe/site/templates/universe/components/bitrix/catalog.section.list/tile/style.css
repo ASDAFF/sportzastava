@@ -1,0 +1,119 @@
+.intec-sections-tile {
+	display: block;
+	box-sizing: border-box;
+	font-size: 0;
+}
+.intec-sections-tile.row{
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.intec-sections-tile > div{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.intec-sections-tile .element {
+	position: relative;
+	margin: 0 0 20px 0;
+	box-sizing: border-box;
+}
+.intec-sections-tile .element-shadow{
+	transition: .5s;
+}
+.intec-sections-tile .image-wrap {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-top: 80%;
+	text-align: center;
+	font-size: 0;
+}
+
+.intec-sections-tile .image {
+	display: block;
+	position: absolute;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.intec-sections-tile .intec-section-name {
+	color: #116afc;
+}
+.intec-sections-tile .intec-section-name:hover {
+	color: #116afc;
+}
+
+.intec-sections-tile .image .valign {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.intec-sections-tile .image img {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+.intec-sections-tile .intec-section-info {
+	box-sizing: border-box;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.intec-sections-tile .intec-section-info.without_submenu {
+	padding: 0;
+	margin: 20px 10px;
+	height: 35px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.intec-sections-tile .intec-section-subsections {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.intec-sections-tile .intec-section-subsection {
+	display: block;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: #6b6b6b;
+	line-height: 18px;
+	padding: 2px 0;
+	text-decoration: none;
+}
+
+.intec-sections-tile .intec-section-name {
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.intec-sections-tile .intec-section-name:hover {
+	text-decoration: none;
+}
+
+@media (max-width:800px) {
+	.intec-sections-tile .intec-section-name {
+		font-size: 13px;
+	}
+	.intec-sections-tile .intec-section-info.without_submenu {
+		margin: 10px 5px;
+	}
+}
+@media (max-width:450px) {
+	.intec-sections-tile .image-wrap {
+		padding-top: 70%;
+	}
+	.intec-sections-tile .intec-section-info.without_submenu {
+		height: 33px;
+	}
+}

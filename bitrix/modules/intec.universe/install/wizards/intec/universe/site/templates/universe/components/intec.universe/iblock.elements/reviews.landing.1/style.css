@@ -1,0 +1,213 @@
+.reviews.landing-1 {
+    display: block;
+}
+.picture-text-block {
+	text-align:center;
+	margin-top:9px;
+}
+.reviews.landing-1 .reviews-clear {
+    clear: both;
+}
+
+.reviews.landing-1 .reviews-main {
+    display: block;
+}
+
+.reviews.landing-1 .reviews-hideable {
+    display: none;
+}
+
+.reviews.landing-1 .reviews-review {
+    display: block;
+    clear: both;
+    margin-left: 107px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 3px;
+    margin-top: 30px;
+	border:1px solid #e8e8e8;
+}
+
+.reviews.landing-1 .reviews-review.reviews-review-first {
+    margin-top: 0px;
+}
+.review-picture-block {
+	float:left;
+	background:#fff;
+	width:200px;
+	margin-left: -107px;
+	padding: 16px 0;
+}
+.reviews.landing-1 .reviews-review .reviews-review-image {
+    display: block;
+    position: relative;
+    width: 81px;
+    height: 81px;
+    border-radius: 100%;
+    overflow: hidden; 
+	margin:0 auto;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.reviews.landing-1 .reviews-review .reviews-review-image .uni-image {
+    width: 100%;
+    height: 100%;
+}
+
+.reviews.landing-1 .reviews-review .reviews-review-information {
+    display: block;
+    margin-left: 89px;
+    margin-right: 32px;
+    text-align: left;
+    background: url(images/quota.png) no-repeat;
+    background-position: 5px 0;
+    padding-left: 40px;
+}
+
+.reviews.landing-1 .reviews-review .reviews-review-information-author {
+    display: block;
+    font-size: 15px;    
+    line-height: 25px;
+}
+
+.reviews.landing-1 .reviews-review .reviews-review-information-company {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    color: #4e4e4e;
+}
+
+.reviews.landing-1 .reviews-review .reviews-review-information-description {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2c2c2c;
+	margin-top:36px;
+}
+
+.reviews.landing-1 .reviews-buttons {
+    display: block;
+    width: auto;
+    text-align: right;
+}
+
+.reviews.landing-1 .reviews-buttons-more {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.reviews.landing-1 .reviews-buttons-more .reviews-buttons-more-text {
+    display: block;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 26px;
+    padding-right: 17px;
+    position: relative;
+}
+.reviews.landing-1 .reviews-buttons-more .reviews-buttons-more-text:after {
+	content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 4px;
+    height: 8px;
+	background:url(images/arrow.png);
+}
+
+.reviews.landing-1 .reviews-buttons-more .reviews-buttons-more-icon {
+    display: inline-block;
+    position: relative;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    -webkit-transition: background-color 0.3s;
+       -moz-transition: background-color 0.3s;
+        -ms-transition: background-color 0.3s;
+         -o-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+}.reviews.landing-1 .reviews-buttons-more:hover .reviews-buttons-more-icon {
+    background-color: #e8e8e8;
+}
+
+.reviews.landing-1 .reviews-buttons-more .reviews-buttons-more-icon .reviews-buttons-more-icon-picture {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    background-image: url('images/arrow.sprite.png');
+}
+
+.reviews.landing-1 .reviews-buttons-more.ui-state-active .reviews-buttons-more-icon .reviews-buttons-more-icon-picture {
+    background-position: 0px -15px;
+}
+
+.reviews.landing-1 .reviews-buttons-more-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 15px 20px;
+    font-size: 0px;
+    border: 1px solid #1a58d7;
+    border-radius: 3px;
+    transition: 0.2s;
+    transition-property: background-color, border;
+}
+
+.reviews.landing-1 .reviews-buttons-more-link:hover {
+    color: #ffffff;
+}
+
+.reviews.landing-1 .reviews-buttons-more-link .reviews-buttons-more-link-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 14px;
+}
+.reviews.landing-1 .reviews-buttons-more-link .reviews-buttons-more-link-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    background: url('images/arrow.png') no-repeat;
+    margin-left: 7px;
+}
+@media (max-width:550px) {
+    .review-picture-block {
+        float: none!important;
+        position: absolute;
+        top: -98px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .reviews.landing-1 .reviews-review ,
+    .reviews.landing-1 .reviews-review.reviews-review-first{
+        position: relative;
+        padding: 0;
+        margin-top: 106px;
+        margin-left: 0;
+        padding-top: 32px;
+        border-radius:0;
+    }
+    .reviews.landing-1 .reviews-review .reviews-review-information {
+        margin: 0;
+        padding: 18px;
+    }
+    .reviews.landing-1 .reviews-review .reviews-review-information {
+        padding-top: 0;
+        margin-top: 15px;
+        background-position: 17px 0;
+    }
+    .reviews.landing-1 .reviews-review .reviews-review-information-description {
+        padding-top: 27px;
+    }
+}

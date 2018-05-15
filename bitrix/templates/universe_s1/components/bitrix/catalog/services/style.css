@@ -1,0 +1,13 @@
+.services-sections {
+    display: block;
+}
+.services-section {
+    display: block;
+}
+.services-section .services-section-description {
+    display: block;
+    color: #616267;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}

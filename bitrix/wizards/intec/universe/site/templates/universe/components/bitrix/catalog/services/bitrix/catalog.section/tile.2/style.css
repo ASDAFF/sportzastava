@@ -1,0 +1,145 @@
+.services-section.services-section-tile .services-section-items {
+    overflow: hidden;
+}
+.services-section.services-section-tile .services-section-items .services-section-items-wrapper {
+    margin: -13px -10px;
+    overflow: hidden;
+}
+.services-section.services-section-tile .services-section-items .services-section-item {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 13px 11px 13px 11px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.services-section.services-section-tile .services-section-items.services-section-items-2 .services-section-item {
+    width: 50%;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-wrapper {
+    display: block;
+    position: relative;
+    padding-top: 60%;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-wrapper-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    border-radius: 7px;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-sections-item-background-gradient {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(224, 224, 224, 0.0) );
+    border-radius: 7px;
+}
+.services-section.services-section-tile .services-section-items .services-section-item:hover .services-section-item-background {
+    opacity: 0.3;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-information {
+    display: block;
+    position: absolute;
+    top: auto;
+    left: 35px;
+    bottom: 30px;
+    right: 35px;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-information .services-section-item-name {
+    display: block;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-information .services-section-item-name .services-section-item-name-wrapper {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-information .services-section-item-name .services-section-item-name-wrapper-2 {
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    max-height: 63px;
+}
+.services-section.services-section-tile .services-section-items .services-section-item .services-section-item-information .services-section-item-description {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -ms-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+}
+.services-section.services-section-tile .services-section-items .services-section-item:hover .services-section-item-information .services-section-item-description {
+    display: block;
+    height: 54px;
+}
+
+@media all and (max-width: 1080px) {
+    .services-section.services-section-tile .services-section-items .services-section-item {
+        width: 50% !important;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .services-section.services-section-tile .services-section-items .services-section-item {
+        width: auto !important;
+        float: none;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .services-section.services-section-tile .services-section-items .services-section-item {
+        width: 50% !important;
+        float: left;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .services-section.services-section-tile .services-section-items .services-section-item {
+        width: auto !important;
+        float: none;
+    }
+}

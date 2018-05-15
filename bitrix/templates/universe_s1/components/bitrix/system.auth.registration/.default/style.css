@@ -1,0 +1,73 @@
+.registration_page {
+	padding: 20px;
+	border: 1px solid #EBEBEB;
+
+}
+.bx_registration_page {
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	max-width: 600px;
+	text-align: left;
+}
+.bx_registration_page input[type="text"],
+.bx_registration_page input[type="password"] {
+	max-width: 400px;
+	border-radius: 2px;
+	border: 1px solid #E6E6E6;
+	box-shadow: none;
+	height: 45px;
+}
+.bx_registration_page .form-group label {
+	font-weight: normal;
+	font-size: 15px;
+}
+.bx_registration_page .starrequired  {
+	color:red;
+}
+.bx_registration_page .registration-info {
+	width: 100%;
+	display: inline-block;
+	margin: 15px 0;
+}
+.bx_registration_page .registration-info .registration-info-text{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	float: left;
+	width: 80%;
+}
+.bx_registration_page .registration-info:before{
+	float: left;
+	content: '!';
+	vertical-align: middle;
+	font-size: 22px;
+	font-weight: bold;
+	background: #138eee;
+	color: #fff;
+	margin-right: 15px;
+	border-radius: 15px;
+	margin-bottom: 1px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 34px;
+}
+.bx_registration_page img {
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.bx_registration_page .reg-button {
+	float:left;
+	margin-right:24px;
+}
+.bx_registration_page .consent {
+	float:left;
+	margin-top: 13px;
+}
+.bx_registration_page .intec-contest-checkbox {
+	display: inline-block;
+	margin-right: 8px;
+	vertical-align: middle;
+}

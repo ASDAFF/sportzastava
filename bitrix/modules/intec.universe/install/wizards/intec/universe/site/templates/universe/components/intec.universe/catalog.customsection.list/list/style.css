@@ -1,0 +1,142 @@
+.intec-sections-tile-1 {
+	display: block;
+	font-size: 0;
+	box-sizing: border-box;
+}
+.intec-sections-list-1 {
+	display: block;
+	width: 100%;
+	margin: 0 0 15px 0;
+	font-size: 0;
+	box-sizing: border-box;
+}
+.intec-sections-list-1 .col {
+	display: inline-block;
+	vertical-align: top;
+}
+.intec-sections-list-1 .col-2 { width: 50%; }
+.intec-sections-list-1 .col-3 { width: 33.33%; }
+.intec-sections-list-1 .col-4 { width: 25%; }
+.intec-sections-list-1 .col-5 { width: 20%; }
+.intec-sections-list-1 .col-6 { width: 16.66%; }
+
+.intec-sections-list-1 > div {
+	padding: 0;
+	margin: 0;
+	transition: 0.5s;
+}
+
+.intec-sections-list-1 .element {
+	position: relative;
+	height: auto;
+	padding: 0 30px 30px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.intec-sections-list-1 .image {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.intec-sections-list-1 .intec-section-name:hover {
+	color: #116afc;
+}
+
+.intec-sections-list-1 .image .valign {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.intec-sections-list-1 .image img {
+	display: inline-block;
+	max-width: 120px;
+	max-height: 120px;
+	vertical-align: middle;
+}
+
+.intec-sections-list-1 .intec-section-info {
+	box-sizing: border-box;
+	margin-left: 120px;
+	padding: 0 10px 0 25px;
+	overflow: hidden;
+}
+.intec-sections-list-1 .intec-section-name {
+	display: inline-block;
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #222222;
+	cursor: pointer;
+    text-decoration: none;
+}
+.intec-sections-list-1 .intec-section-name:hover {
+	text-decoration: none;
+}
+
+.intec-sections-list-1 .intec-subsections {
+	display: block;
+	font-size: 0;
+}
+.intec-sections-list-1 .intec-subsection {
+	display: inline-block;
+	padding: 0 12px 0 0;
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 13px;
+	color: #666666;
+}
+
+.intec-sections-list-1 .intec-section-name:hover,
+.intec-sections-list-1 .intec-subsection:hover,
+.intec-sections-list-1 .intec-subsection:hover span {}
+.intec-sections-list-1 .intec-subsection span {
+	color: #222222;
+}
+
+.intec-sections-list-1 .intec-section-description {
+	display: block;
+	max-height: 65px;
+	margin-top: 10px;
+	font-size: 13px;
+	line-height: 21px;
+	color: #888888;
+	overflow: hidden;
+}
+
+@media (max-width:767px) {
+	.intec-sections-list-1 .col {
+		width: 50%
+	}
+	.intec-sections-list-1 .col.col-2 {
+		width: 100%;
+	}
+	.intec-sections-list-1 .intec-section-description {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.intec-sections-list-1 .image img {
+		max-width: 80px;
+		max-height: 80px;
+	}
+	.intec-sections-list-1 .image {
+		width: 80px;
+		height: 80px;
+	}
+	.intec-sections-list-1 .intec-section-info {
+		margin-left: 80px;
+	}
+}
+@media (max-width:450px) {
+	.intec-sections-list-1 .element {
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.intec-sections-list-1 .col {
+		width: 100%
+	}
+}

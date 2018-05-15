@@ -1,0 +1,55 @@
+.share-conditions {
+    background-color: #fbf9fd;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.share-conditions .share-container {
+    padding:40px 0;
+}
+.share-conditions .share-container .share-condition-name {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.share-conditions .share-container .share-elements {
+    font-size: 0;
+    text-align: left;
+}
+.share-conditions .share-elements .share-element-wrapper {
+    display: inline-block;
+    width: 33.333333%;
+    vertical-align: top;
+}
+.share-conditions .share-elements .share-element {
+    text-align: center;
+}
+.share-conditions .share-element .share-element-img {
+    display: block;
+    max-width: 150px;
+    margin: auto;
+}
+.share-conditions .share-element .share-element-name {
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 250px;
+    padding-top: 15px;
+    margin: auto;
+}
+@media all and (max-width: 500px) {
+    .share-conditions .share-container .share-elements {
+        text-align: center;
+    }
+    .share-conditions .share-elements .share-element-wrapper {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 400px) {
+    .share-conditions .share-elements .share-element-wrapper {
+        width: 100%;
+    }
+    .share-conditions .share-elements .share-element-wrapper:last-child {
+        margin-bottom: 0;
+    }
+}

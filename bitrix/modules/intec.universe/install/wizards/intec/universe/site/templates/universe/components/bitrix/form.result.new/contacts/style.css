@@ -1,0 +1,44 @@
+.contacts-form {
+	display: block;
+}
+.contacts-form .contacts-form-title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #1c1c1c;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contacts-form .contacts-form-fields {
+	display: block;
+	overflow: hidden;
+}
+.contacts-form .contacts-form-fields .contacts-form-fields-wrapper {
+	display: block;
+	margin: -10px -7px;
+}
+.contacts-form .contacts-form-fields .contacts-form-field {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 10px 7px;
+}
+.contacts-form .contacts-form-fields .contacts-form-field.contacts-form-field-textarea {
+	float: right;
+}
+.contacts-form .contacts-form-fields .contacts-form-field.contacts-form-field-textarea textarea {
+	height: 216px;
+	resize: none;
+}
+.contacts-form .contacts-form-fields .contacts-form-field .contacts-form-field-title {
+	color: #969696;
+	font-size: 13px;
+	line-height: 17px;
+	margin-bottom: 5px;
+}
+.contacts-form .contacts-form-fields .contacts-form-field .contacts-form-field-content {}
+.contacts-form .contacts-form-fields .contacts-form-field .contacts-form-field-content .contacts-form-captcha-image {
+	margin-bottom: 10px;
+}
+.contacts-form .contacts-form-footer {
+	margin-top: 10px;
+}

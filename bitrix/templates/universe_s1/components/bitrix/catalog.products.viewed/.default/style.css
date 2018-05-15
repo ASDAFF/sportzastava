@@ -1,0 +1,85 @@
+.catalog-products-viewed {
+    display: block;
+    overflow: hidden;
+}
+.catalog-products-viewed .catalog-products-viewed-title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e2c2c;
+    line-height: 30px;
+}
+.catalog-products-viewed .catalog-products-viewed-wrapper {
+    display: block;
+    overflow: hidden;
+    margin: -10px -15px;
+    min-height: 20px;
+    min-width: 30px;
+    font-size: 0;
+    text-align: left;
+}
+.catalog-products-viewed .catalog-products-viewed-product {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+.catalog-products-viewed .catalog-products-viewed-product .catalog-products-viewed-product-wrapper {
+    display: block;
+}
+.catalog-products-viewed .catalog-products-viewed-product .catalog-products-viewed-image {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.catalog-products-viewed .catalog-products-viewed-product .catalog-products-viewed-information {
+    display: block;
+    margin-left: 120px;
+    padding-top: 15px;
+}
+.catalog-products-viewed .catalog-products-viewed-product .catalog-products-viewed-information .catalog-products-viewed-name {
+    display: block;
+    height: 34px;
+    overflow: hidden;
+}
+.catalog-products-viewed .catalog-products-viewed-product .catalog-products-viewed-information .catalog-products-viewed-name-wrapper {
+    font-size: 12px;
+    line-height: 17px;
+    text-decoration: underline;
+    color: #343638;
+}
+.catalog-products-viewed .catalog-products-viewed-product .catalog-products-viewed-information .catalog-products-viewed-price {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    height: 24px;
+    overflow: hidden;
+}
+
+@media all and (max-width: 1200px) {
+    .catalog-products-viewed .catalog-products-viewed-product {
+        width: 33.333333%;
+    }
+}
+
+@media all and (max-width: 840px) {
+    .catalog-products-viewed .catalog-products-viewed-product {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .catalog-products-viewed .catalog-products-viewed-product {
+        width: auto;
+        float: none;
+    }
+}

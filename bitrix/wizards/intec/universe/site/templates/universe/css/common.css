@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'P22 underground', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,.h1 {
+    line-height: normal;
+}
+
+.public .intec-template {
+    display: block;
+    height: 100%;
+    min-height: 320px;
+}
+.public .intec-template .intec-template-content {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    background: #fff;
+}
+.public .intec-template .intec-template-content:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.public .intec-template .intec-template-footer {
+    display: block;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.intec-no-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+.intec-aligner {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+}
+
+.intec-image {
+    position: relative;
+    font-size: 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+.intec-image img  {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.intec-cursor {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('../images/cursor.png');
+}
+
+.intec-bt-button {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    background: #116afc;
+    text-shadow: 0 1px 0 #006cae;
+    white-space: nowrap;
+    cursor: pointer;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.intec-bt-button, .intec-bt-button:hover, .intec-bt-button:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.intec-bt-button:hover {
+    background: #3C85F3;
+}
+.intec-bt-button.button-big {
+    height: 47px;
+    line-height: 47px;
+    padding: 0 32px;
+    font-weight: bold;
+}
+
+/*Кнопки сравнения и отложенных*/
+.intec-min-button {
+    opacity: 0.7;
+}
+
+.intec-min-button.add:hover {
+    color: #116afc;
+}
+.intec-min-button.added {
+    opacity: 1 !important;
+    color: #116afc;
+}
+
+.intec-min-button {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: #e3e4e4;
+    font-size: 0;
+    cursor: pointer;
+}
+.intec-min-button i {
+    display: inline-block;
+    height: 27px;
+    font-size: 18px;
+    line-height: 27px;
+    transition: 0.1s;
+}
+.intec-min-button i:active {
+    font-size: 20px;
+}
+.intec-min-button.intec-min-button-compare {
+    margin-right: 15px;
+}
+
+/**/
+
+.intec-compare,
+.intec-like {
+    cursor: pointer;
+}
+.intec-compare.glyph-icon-compare,
+.intec-like {
+    line-height: 1;
+    color: #A6B1B7;
+
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+.intec-compare.glyph-icon-compare:hover, .intec-like:hover,
+.intec-compare.glyph-icon-compare.hover, .intec-like.hover,
+.intec-compare.glyph-icon-compare:active, .intec-like:active,
+.intec-compare.glyph-icon-compare.active, .intec-like.added {
+    color: #116AFC;
+}
+
+.intec-bt-button .intec-basket.glyph-icon-cart {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.item-image-stick-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    opacity: 0.9;
+
+    pointer-events: none;
+}
+.item-image-stick {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 100% 5px 0;
+    font-size: 12px;
+    color: #fff;
+    cursor: default;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.item-image-stick.is-new {
+    background: #0a71ff;
+    background: -moz-linear-gradient(top, #0a71ff 0%, #0478ff 50%, #017cff 100%);
+    background: -webkit-linear-gradient(top, #0a71ff 0%,#0478ff 50%,#017cff 100%);
+    background: linear-gradient(to bottom, #0a71ff 0%,#0478ff 50%,#017cff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a71ff', endColorstr='#017cff',GradientType=0 );
+}
+
+.item-image-stick.is-popular {
+    background: #1bcda1;
+}
+
+.item-image-stick.is-recommendation {
+    background: #f8862a;
+    background: -moz-linear-gradient(top, #f8862a 0%, #f85954 50%, #f82880 100%);
+    background: -webkit-linear-gradient(top, #f8862a 0%,#f85954 50%,#f82880 100%);
+    background: linear-gradient(to bottom, #f8862a 0%,#f85954 50%,#f82880 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8862a', endColorstr='#f82880',GradientType=0 );
+}
+
+.intec-form form {
+    padding: 0;
+    margin: 0;
+}
+.intec-form .intec-form-field {
+    margin: 20px 0;
+}
+.intec-form .intec-form-caption {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 14px;
+}
+.intec-form .intec-form-description {
+    color: #424242;
+}
+.intec-form .intec-form-buttons-wrap {
+    margin-top: 20px;
+}
+.intec-form .intec-form-value > input[type="text"],
+.intec-form .intec-form-value > select,
+.intec-form .intec-form-value > textarea {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.intec-form .intec-form-value > input[type="text"]:focus,
+.intec-form .intec-form-value > select:focus,
+.intec-form .intec-form-value > textarea:focus {
+    border-color: #7b7b80;
+}
+.intec-form .intec-form-value > textarea {
+    max-width: 100%;
+}
+
+/* ---------- Bootstrap Tabs ---------- */
+.intec-tabs.nav-tabs {
+    border-color: #ebebeb;
+}
+.intec-tabs.nav-tabs > li > a,
+.intec-tabs.nav-tabs > li > a:focus,
+.intec-tabs.nav-tabs > li > a:hover {
+    margin: 0;
+    color: #2c2c2c;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.intec-tabs.nav-tabs > li.active > a,
+.intec-tabs.nav-tabs > li > a:focus,
+.intec-tabs.nav-tabs > li > a:hover {
+    border-bottom-color: #116afc;
+}
+/* ---------- /Bootstrap Tabs ---------- */
+
+/* ---------- Bitrix popup window ---------- */
+.popup-window {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 5px 0;
+    font-family: inherit;
+}
+.popup-window,
+.popup-window.popup-window-with-titlebar {
+    padding: 25px 35px 30px;
+    min-width: 320px;
+}
+.popup-window .popup-window-titlebar {
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-window .popup-window-buttons {
+    text-align: left;
+}
+.popup-window .popup-window-button {
+    font-family: inherit;
+    text-transform: none;
+}
+.popup-window .popup-window-close-icon:after {
+    background-image: url('../images/cancel.png');
+}
+.popup-window .popup-window-content {
+    max-width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    max-width:100%;
+}
+/* ---------- /Bitrix popup window ---------- */
+
+/* ---------- LightGallery ----------*/
+.lg-backdrop {
+    background-color: rgba(27, 30, 37, 0.9);
+}
+/* ---------- /LightGallery ----------*/
+
+
+/* ---------- Loader ----------*/
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.loading-container {
+    position: relative;
+}
+.loading-container > * {
+    visibility: hidden;
+}
+.loading-container > .loader {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Folding */
+@keyframes sk-foldCubeAngle {
+    0%, 10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%, 100% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+.loader.folding {
+    display: block;
+    width: 12px !important;
+    height: 12px !important;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+
+    transform: rotateZ(45deg);
+}
+.loader.folding > i {
+    position: relative;
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+
+    transform: scale(1.1);
+}
+.loader.folding > i:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: sk-foldCubeAngle 1.6s infinite linear both;
+    transform-origin: 100% 100%;
+}
+.loader.folding > i:first-child + i { transform: scale(1.1) rotateZ(90deg); }
+.loader.folding > i:first-child + i + i { transform: scale(1.1) rotateZ(270deg); clear: left; }
+.loader.folding > i:first-child + i + i + i { transform: scale(1.1) rotateZ(180deg); }
+.loader.folding > i:first-child + i:before { animation-delay: 0.2s; }
+.loader.folding > i:first-child + i + i:before { animation-delay: 0.6s; }
+.loader.folding > i:first-child + i + i + i:before { animation-delay: 0.4s; }
+
+/* Bounce */
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+.loader.bounce {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.loader.bounce:after {
+    content: '';
+    width: 0;
+    height: 100%;
+}
+.loader.bounce > i {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.loader.bounce:after,
+.loader.bounce > i {
+    display: inline-block;
+    vertical-align: middle;
+}
+.loader.bounce > i:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    animation: sk-bouncedelay 1.2s infinite ease-in-out both;
+}
+.loader.bounce > i:first-child {
+    margin-left: 0;
+}
+.loader.bounce > i:last-child {
+    margin-right: 0;
+}
+.loader.bounce > i:first-child:before {
+    margin-left: 0;
+    animation-delay: -0.32s;
+}
+.loader.bounce > i:first-child + i:before {
+    animation-delay: -0.16s;
+}
+/* ---------- /Loader ----------*/
+
+@media all and (max-width: 720px) {
+    .intec-about-company-title {
+        text-align: center;
+    }
+    .intec-about-company-more {
+        text-align: center;
+    }
+}

@@ -1,0 +1,152 @@
+$color: #116afc !default;
+$color-hover: lighten($color, 10%);
+$color-active: lighten($color, 10%);
+$color-light: lighten($color, 10%);
+$color-dark: darken($color, 10%);
+
+.sale-icons a.sale-icons-item:hover .sale-icons-icon,
+.sale-icons a.sale-icons-item.hover .sale-icons-icon,
+.sale-icons a.sale-icons-item:active .sale-icons-icon,
+.sale-icons a.sale-icons-item.active .sale-icons-icon,
+.intec-sections-tile > div:hover .intec-section-name,
+.menu.menu-horizontal .menu-item.menu-item-default .menu-submenu .menu-submenu-item:hover > .menu-submenu-item-text,
+.widget-catalog-categories .widget-catalog-categories-tabs .widget-catalog-categories-tab a:hover,
+.widget-catalog-categories .widget-catalog-categories-tabs .widget-catalog-categories-tab.active a,
+.widget-catalog-categories .widget-catalog-categories-desktop .widget-catalog-categories-navigation .widget-catalog-categories-navigation-next:hover,
+.widget-catalog-categories .widget-catalog-categories-desktop .widget-catalog-categories-navigation .widget-catalog-categories-navigation-previous:hover,
+.widget-reviews .widget-reviews-view.widget-reviews-view-slider .widget-reviews-navigation .widget-reviews-navigation-next:hover,
+.widget-reviews .widget-reviews-view.widget-reviews-view-slider .widget-reviews-navigation .widget-reviews-navigation-previous:hover,
+.widget-news .widget-news-view.widget-news-view-extend .widget-news-navigation .widget-news-navigation-next:hover,
+.widget-news .widget-news-view.widget-news-view-extend .widget-news-navigation .widget-news-navigation-previous:hover,
+.footer-menu a.child-link.active,
+.bx-filter .bx-filter-popup-result a ,
+.intec-button.intec-button-link,
+.intec-sections-list .intec-section-name:hover,
+.intec-sections-list .intec-subsection:hover,
+.intec-sections-list .intec-subsection:hover span,
+.intec-catalog-section-tile .price-block .element-buys,
+.intec-min-button.added,
+.intec-catalog-section-tile .catalog-section-element .intec-min-button:hover,
+.intec-min-button.add:hover,
+.intec-catalog-section .element-properties li,
+.intec-like:hover, .intec-like.hover,
+.intec-like:active, .intec-like.added,
+.intec-compare.glyph-icon-compare:hover, .intec-compare.glyph-icon-compare.hover,
+.intec-compare.glyph-icon-compare:active, .intec-compare.glyph-icon-compare.active,
+.intec-item-detail .show-all-characteristics,
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-email a:hover .active.widget-reviews .widget-reviews-mobile .widget-reviews-view.widget-reviews-view-blocks-2 .widget-reviews-item .widget-reviews-item-header .widget-reviews-item-name ,
+.bx_compare .table_compare table tr td a,
+.news-list-filter .news-list-filter-button.news-list-filter-button-active,
+.news-list-filter .news-list-filter-button:hover,
+.bx_ordercart .bx_ordercart_order_table_container tbody td.control .delay-item:hover,
+.bx_ordercart .bx_ordercart_order_table_container tbody td.control .to-cart-item:hover,
+.bx-soa-editstep,
+.bx-soa-item-title a,
+.subscribe-block .email-block-subscribe .subscribe-info:before,
+.project .project-services .project-service .project-service-information .project-service-name,
+.widget-reviews .widget-reviews-mobile .widget-reviews-view.widget-reviews-view-blocks-2 .widget-reviews-item .widget-reviews-item-header .widget-reviews-item-name,
+.intec-certificates.desktop-template.template-tiles .intec-certificates_item:hover .intec-certificates_name,
+.intec-sections-tile-1 > div:hover .intec-section-name,
+.intec-certificates.desktop-template.template-tiles .intec-certificates_item:hover .intec-certificates_name,
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item:hover .menu-item-text .menu-item-text-wrapper,
+.header .header-desktop .header-content .header-content-menu .menu.menu-horizontal .menu-wrapper .menu-item.menu-item-active .menu-item-text .menu-item-text-wrapper,
+.intec-item-detail .item-bind-items .item-bind-items-list .owl-nav .owl-prev:hover,
+.intec-item-detail .item-bind-items .item-bind-items-list .owl-nav .owl-next:hover,
+.bx-filter .bx-filter-popup-result a,
+.intec-panel-sort .sort-value.sort-state-active a,
+.header.with-banner .header-desktop .header-static .header-content .header-content-phone .header-content-phone-call .header-content-phone-call-wrapper:hover,
+.header.with-banner[data-banner-color=black] .header-desktop .header-info .header-info-button:hover .header-info-button-text,
+.header.with-banner[data-banner-color=black] .header-desktop .header-static .header-content .header-info-button:hover .header-info-button-text,
+.header.with-banner[data-banner-color=black] .header-static .intec-search-icon:hover,
+.header.with-banner[data-banner-color=white]  .header-desktop .header-info .header-info-social:hover,
+.header.with-banner .header-desktop .header-static .menu.menu-horizontal .menu-item:hover .menu-item-text:hover,
+.header.with-banner .header-desktop .header-static .menu.menu-horizontal .menu-item.menu-item-active .menu-item-text,
+.header .header-desktop .header-static .header-info .header-info-button .header-info-button-icon,
+.header .header-desktop .header-static .header-content .header-info-button .header-info-button-icon
+{
+  color: $color !important;
+}
+
+.widget-catalog-categories .widget-catalog-categories-tabs .widget-catalog-categories-tab a:hover,
+.widget-catalog-categories .widget-catalog-categories-tabs .widget-catalog-categories-tab.active a,
+.widget-catalog-categories .widget-catalog-categories-dots .owl-dot.active,
+.news-list-slider .slider-dots .owl-dot .slider-dot:hover,
+.news-list-slider .slider-dots .owl-dot.active .slider-dot,
+.intec-item-detail .slider-item.active,
+.bx_compare .bx_sort_container .sortbutton.current,
+.bx_compare .bx_sort_container .sortbutton:hover,
+.bx_ordercart .bx_sort_container a.current,
+.bx-soa-section.bx-selected,
+.bx-soa-pp-company.bx-selected  .bx-soa-pp-company-graf-container,
+.news-list-slider-cb .slider-dots .owl-dot .slider-dot:hover,
+.news-list-slider-cb .slider-dots .owl-dot.active .slider-dot {
+  border-color: $color !important;
+}
+.arrow-right {
+  border-right: 25px solid $color !important;
+}
+.sale-icons a.sale-icons-item:hover .sale-icons-count,
+.sale-icons a.sale-icons-item.hover .sale-icons-count,
+.sale-icons a.sale-icons-item:active .sale-icons-count,
+.sale-icons a.sale-icons-item.active .sale-icons-count,
+.widget-catalog-categories .widget-catalog-categories-dots .owl-dot.active,
+.intec-news-sections.template-chess .intec-news-sections_item:hover .intec-news-sections_name,
+.intec-news-sections.template-puzzle .intec-news-sections_item:hover .intec-news-sections_name,
+.intec-news-sections.template-tiles .intec-news-sections_item:hover .intec-news-sections_name ,
+input[type=checkbox]:checked + span ,
+.ask-question-container .ask-question-title:after {
+  background-color: $color-dark;
+}
+.intec-catalog-section-tile .price-block .element-buys.active,
+.intec-catalog-section-tile .price-block .element-buys.added,
+.share-products-block .products-element .price-block .price .element-buy.active,
+.news-list-slider .slider-dots .owl-dot.active .slider-dot,
+.bx-filter .body-filter .bx-filter-parameters-box .bx-filter-popup-result,
+.news-list-slider .slider-dots .owl-dot .slider-dot:hover,
+.intec-item-detail .properties-list > li:before,
+.intec-bt-button,
+.news-list-slider:hover .slider-wrapper .owl-nav .owl-prev:hover, .news-list-slider:hover .slider-wrapper .owl-nav .owl-next:hover ,
+.widget-reviews .widget-reviews-view.widget-reviews-view-slider .widget-reviews-dots .owl-dot.active,
+.widget-news .widget-news-view.widget-news-view-extend .widget-news-dots .owl-dot.active,
+.owl-carusel-gallery.owl-theme .owl-dots .owl-dot.active span,
+.owl-carusel-gallery.owl-theme .owl-dots .owl-dot:hover span,
+.carusel-products.owl-theme .owl-dots .owl-dot.active span,
+.carusel-products.owl-theme .owl-dots .owl-dot:hover span,
+.widget-flying-basket .flying-basket-mobile-buttons-wrap .flying-basket_button_count,
+.bx_forgotpassword_page .description:before,
+.bx_registration_page .registration-info:before,
+.news-list-slider-cb:hover .slider-wrapper .owl-nav .owl-prev:hover,
+.news-list-slider-cb:hover .slider-wrapper .owl-nav .owl-next:hover,
+.news-list-slider-cb .slider-dots .owl-dot .slider-dot:hover,
+.news-list-slider-cb .slider-dots .owl-dot.active .slider-dot,
+.subscribe-block .checkbox input[type=checkbox]:checked + label:after,
+.news-list.news-list-blocks-2 .news-list-item.news-list-item-first .news-list-item-wrapper:hover .news-list-name-wrapper,
+.binded-products .owl-dots .owl-dot.active,
+.binded-products .owl-dots .owl-dot:hover,
+.loading-container.active
+{
+  background-color: $color !important;
+}
+.intec-bt-button {
+  text-shadow: 0 1px 0 $color !important;
+}
+.intec-bt-button:hover {
+  background-color: $color-light !important;
+}
+.contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-email a,
+.widget-reviews .widget-reviews-view.widget-reviews-view-slider .widget-reviews-dots .owl-dot.active,
+.widget-news .widget-news-view.widget-news-view-extend .widget-news-dots .owl-dot.active,
+.project .project-services .project-service .project-service-information .project-service-name,
+.checkbox input[type=checkbox]:checked + label:after,
+.intec-item-detail .sku-property-value:hover, .intec-item-detail .sku-property-value.active,
+.news-list-slider-cb .slider-dots .owl-dot .slider-dot:hover,
+.news-list-slider-cb .slider-dots .owl-dot.active .slider-dot,
+.binded-products .owl-dots .owl-dot.active,
+.binded-products .owl-dots .owl-dot:hover
+{
+  border-color: $color !important;
+}
+.widget-articles-content .widget-articles .element-big:hover .element-wrapper .header span
+{
+  background-color: $color !important;
+}

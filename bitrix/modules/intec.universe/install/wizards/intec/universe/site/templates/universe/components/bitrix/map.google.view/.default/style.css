@@ -1,0 +1,8 @@
+.google-map-layout {
+    display: block;
+    height: 100%;
+}
+.google-map-layout .google-map-view {
+    display: block;
+    height: 100%;
+}

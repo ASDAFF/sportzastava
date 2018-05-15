@@ -1,0 +1,1 @@
+<?define("intec_universe_TEMPORARY_CACHE", "IGcIACgxAgQ7BnhkBWVULFJ7");?>

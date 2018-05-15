@@ -1,0 +1,61 @@
+.share-promo .promo-element-wrapper {
+
+}
+.share-promo .promo-element-wrapper.fill {
+    background-color: #f6f6f6;
+}
+.share-promo .promo-element {
+    padding: 40px 0;
+    font-size: 0;
+}
+.share-promo .promo-element .element-text,
+.share-promo .promo-element .element-image {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.share-promo .promo-element .element-image {
+    text-align: center;
+}
+.share-promo .promo-element .element-image img {
+    max-width: 100%;
+}
+.share-promo .promo-element .element-text {
+    text-align: center;
+}
+.share-promo .promo-element .element-text .text-wrapper {
+    display: inline-block;
+    text-align: left;
+}
+.share-promo .promo-element .element-text .text-name {
+    font-size: 24px;
+    font-weight: 500;
+}
+.share-promo .promo-element .element-text .text-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    padding-top: 15px;
+}
+
+@media all and (max-width: 720px) {
+    .intec-adaptive .share-promo .promo-element .element-text .text-name {
+        font-size: 18px;
+    }
+    .intec-adaptive .share-promo .promo-element .element-text .text-description {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 600px) {
+    .intec-adaptive .share-promo .promo-element {
+        padding: 30px 0;
+    }
+    .intec-adaptive .share-promo .promo-element .element-image {
+        display: none;
+    }
+    .intec-adaptive .share-promo .promo-element .element-text {
+        display: block;
+        width: initial;
+        text-align: left;
+    }
+}

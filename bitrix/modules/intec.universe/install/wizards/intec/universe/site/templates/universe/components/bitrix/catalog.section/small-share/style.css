@@ -1,0 +1,153 @@
+.share-products-block .products-element {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+.share-products-block .products-element .element-wrapper {
+    padding: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.share-products-block .products-element .element-wrapper:hover {
+    box-shadow: 3px 3px 15px rgba(0,0,0, 0.25);
+    margin: -10px;
+    padding: 35px;
+}
+.share-products-block .products-element .element-img {
+    position: relative;
+    display: block;
+    padding-top: 100%;
+}
+.share-products-block .products-element .element-img a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.share-products-block .products-element .element-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.share-products-block .products-element .element-text {
+    padding-top: 5px;
+    height: 72px;
+}
+.share-products-block .products-element .element-text .text-name {
+    display: block;
+    font-size: 17px;
+    max-height: 48px;
+    overflow: hidden;
+}
+.share-products-block .products-element .element-text .text-name a {
+    color: #343434;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.share-products-block .products-element .element-text .text-section {
+    display: block;
+    line-height: 1;
+    padding-top: 5px;
+}
+.share-products-block .products-element .element-text .text-section a {
+    display: inline-block;
+    color: #777;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.share-products-block .products-element .price-block {
+    padding-top: 15px;
+}
+.share-products-block .products-element .price-block .price {
+    height: 30px;
+    padding-top: 10px;
+    padding-right: 40px;
+    position: relative;
+}
+.share-products-block .products-element .price-block .price .new-price {
+    display: inline-block;
+    font-size: 18px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.share-products-block .products-element .price-block .price .old-price {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1;
+    color: #f00;
+    vertical-align: middle;
+}
+.share-products-block .products-element .price-block .price .element-buy {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.share-products-block .products-element .price-block .price .element-buy.add[data-basket-add][data-basket-in=false],
+.share-products-block .products-element .price-block .price .element-buy.added[data-basket-add][data-basket-in=true] {
+    display: inline-block;
+}
+.share-products-block .products-element .price-block .price .element-buy.add[data-basket-add][data-basket-in=true],
+.share-products-block .products-element .price-block .price .element-buy.added[data-basket-add][data-basket-in=false] {
+    display: none;
+}
+.share-products-block .products-element .price-block .price .element-buy.active {
+    background: #116afc;
+}
+.share-products-block .products-element .price-block .price .element-buy.added {
+    color: #fff;
+}
+
+
+@media all and (max-width: 800px) {
+    .share-products-block .products-element {
+        width: 33.333333%;
+    }
+}
+@media all and (max-width: 700px) {
+    .share-products-block .products-element {
+        width: 50%;
+    }
+    .share-products-block .products-element .element-text .text-name {
+        font-size: 15px;
+        max-height: 42px;
+    }
+    .share-products-block .products-element .element-text .text-section {
+        font-size: 13px;
+    }
+    .share-products-block .products-element .price-block .price .new-price {
+        font-size: 15px;
+    }
+    .share-products-block .products-element .price-block .price .old-price {
+        font-size: 11px;
+    }
+    .share-products-block .products-element .price-block {
+        padding-top: 0;
+    }
+}
+@media all and (max-width: 500px) {
+    .share-products-block .products-element {
+        width: 100%;
+    }
+    .share-products-block .products-element .element-img {
+        padding-top: 70%;
+    }
+}
