@@ -19,6 +19,7 @@ $values = ArrayHelper::getValue($arParams, ['PROPERTY', 'value']);
 if (!Type::isArray($values))
     $values = [];
 
+
 ?>
 <?php $fDraw = function ($items, $level = 0) use (&$expression, &$fDraw, &$property, &$values) { ?>
     <?php foreach ($items as $item) { ?>
@@ -125,6 +126,7 @@ if (!Type::isArray($values))
         </div>
     <?php } ?>
 <?php } ?>
+
 <?php if (!empty($arResult)) { ?>
     <?php $fDraw($arResult) ?>
 <?php }

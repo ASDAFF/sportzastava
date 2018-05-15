@@ -1,22 +1,15 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Покупки", 
-		"/help/buys/",
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Вопрос - ответ",
-		"/help/faq/",
+		"Вопрос - ответ", 
+		"/help/faq/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Бренды", 
-		"/help/brands/",
+		"/help/brands/", 
 		Array(), 
 		Array(), 
 		"" 

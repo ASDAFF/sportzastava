@@ -2,14 +2,14 @@
 $aMenuLinks = Array(
 	Array(
 		"Условия оплаты", 
-		"/help/buys/payment/",
+		"/pokupatelyam/buys/payment/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Условия доставки", 
-		"/help/buys/delivery/",
+		"/pokupatelyam/buys/delivery/",
 		Array(), 
 		Array(), 
 		"" 
