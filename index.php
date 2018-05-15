@@ -8,7 +8,7 @@ use intec\constructor\models\Build;
  * @global $APPLICATION
  */
 
-$APPLICATION->SetTitle("Universe");?>
+$APPLICATION->SetTitle("Спорт Застава");?>
 <? if (Loader::includeModule('intec.constructor') || Loader::includeModule('intec.constructorlite')) {
     if (Constructor::isLite()) {
         $build = Build::getCurrent();
