@@ -11,7 +11,6 @@ global $data;
  * @global array $settings
  * @global Template $template
  */
-
 ?>
 <?php $data = $APPLICATION->IncludeComponent(
     'intec.constructor:template',
@@ -26,3 +25,4 @@ global $data;
     false,
     array('HIDE_ICONS' => 'Y')
 ); ?>
+

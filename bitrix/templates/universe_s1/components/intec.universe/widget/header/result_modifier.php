@@ -164,9 +164,9 @@ if (
                         $arParams['PHONE_FORM_DISPLAY'] = 'Y';
                         $arParams['PHONE_FORM_BUTTON_TYPE'] = 'text';
                         $arParams['MENU_MAIN_DISPLAY_IN'] = 'default';
-                        $arParams['MENU_MAIN_ROOT_TYPE'] = 'catalog';
-                        $arParams['MENU_MAIN_CHILD_TYPE'] = 'catalog';
-                        $arParams['MENU_DEFAULT_VIEW'] = 'transparent';
+                        $arParams['MENU_MAIN_ROOT_TYPE'] = 'top';
+                        $arParams['MENU_MAIN_CHILD_TYPE'] = 'left';
+                        $arParams['MENU_DEFAULT_VIEW'] = 'color';
                         $arParams['HEADER_SHOW_SOCIAL'] = 'N';
                         break;
                     case 7:
@@ -324,7 +324,7 @@ if ($arParams['WITH_BANNER'] == 'GLOBAL')
 
 $sDisplayIn = ArrayHelper::getValue($arParams, 'MENU_MAIN_DISPLAY_IN');
 $sDisplayIn = ArrayHelper::fromRange(array('default', 'header', 'popup'), $sDisplayIn);
-$arParams['MENU_MAIN_DISPLAY_IN'] = $sDisplayIn;
+//$arParams['MENU_MAIN_DISPLAY_IN'] = $sDisplayIn;
 
 $sDisplayIn = ArrayHelper::getValue($arParams, 'PHONE_DISPLAY_IN');
 $sDisplayIn = ArrayHelper::fromRange(array('default', 'header'), $sDisplayIn);
@@ -416,3 +416,4 @@ switch ($properties->get('search_mode')) {
         $arParams['SEARCH_PAGE'] = $arParams['SEARCH_PAGE_CATALOG'];
         break;
 }
+

@@ -51,18 +51,18 @@ $containers = ArrayHelper::getValue($data, 'containers');
 
 if (!$containers instanceof Containers)
     $containers = $template->getContainers(true);
-
 /**
  * Корневой контейнер.
  * @var Container $container
  */
 $container = ArrayHelper::getValue($data, 'container');
-
 if (!$container instanceof Container)
     $container = $containers->getTree($build, $template);
 
 if (empty($container))
     return null;
+
+
 
 $arResult['TEMPLATE'] = $template;
 $arResult['CONTAINER'] = $container;

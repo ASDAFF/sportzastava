@@ -21,6 +21,7 @@ $this->setFrameMode(true);
 
 /** @var Template $template */
 $template = $arResult['TEMPLATE'];
+
 /** @var Container $container */
 $container = $arResult['CONTAINER'];
 
@@ -51,7 +52,6 @@ $draw = function ($container) use (&$draw, &$flag, &$isHeader, &$isFooter) {
     if ($container->hasComponent()) {
         /** @var Component $component */
         $component = $container->getComponent(true);
-
         if ($isHeader || $isFooter && $flag) {
             $component->render(true);
         }

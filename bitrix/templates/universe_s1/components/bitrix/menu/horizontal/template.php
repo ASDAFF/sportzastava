@@ -26,6 +26,7 @@ $iSubItemsLimit = !empty($iSubItemsLimit) ? $iSubItemsLimit : 3;
 
 $isDefaultMenu = ($arParams['POSITION_MENU'] == 'default') ? true : false;
 $isTransparent = ($isDefaultMenu && $arParams['DEFAULT_VIEW'] == 'transparent') ? true : false;
+
 ?>
 <?php $fDraw = function ($arItem, $iLevel, $bIsIBlock = false) use (&$fDraw, &$arParams, &$arResult, &$iSubItemsLimit) { ?>
 <?php
@@ -44,7 +45,8 @@ $isTransparent = ($isDefaultMenu && $arParams['DEFAULT_VIEW'] == 'transparent') 
         <div class="intec-content">
             <div class="intec-content-wrapper">
                 <div class="menu-wrapper" data-role="items">
-                    <?php foreach ($arResult as $arItem) { ?>
+                    <?php foreach ($arResult as $arItem) {
+                        ?>
                     <?php
                         $bIsIBlock = false;
 
