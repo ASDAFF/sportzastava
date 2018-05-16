@@ -108,12 +108,6 @@ if ($arParams['BRAND_USE'] == 'Y' && $brandId) {
 // Photos
 $morePhotoList = array();
 
-if (!empty($arResult['DETAIL_PICTURE'])) {
-    $morePhotoList[] = $arResult['DETAIL_PICTURE'];
-} else if (!empty($arResult['PREVIEW_PICTURE'])) {
-    $morePhotoList[] = $arResult['PREVIEW_PICTURE'];
-}
-
 foreach ($arResult['MORE_PHOTO'] as $photo) {
     $morePhotoList[] = array_merge($photo, ['SRC' => $photo['SRC']]);
 }

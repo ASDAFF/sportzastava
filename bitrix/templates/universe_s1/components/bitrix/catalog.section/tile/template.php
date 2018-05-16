@@ -191,6 +191,7 @@ if (!empty($arResult['ITEMS'])) {?>
                                     'HIDE_ICONS' => 'Y'
                                 )
                             ) ?>
+
                             <a href="<?= $sDetailPage ?>" class="element-img">
                                 <div class="intec-aligner"></div>
                                 <?= Html::img($sPictureSrc, $arPictureAttributes) ?>

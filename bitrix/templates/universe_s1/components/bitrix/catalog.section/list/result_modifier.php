@@ -28,3 +28,7 @@ if (Loader::includeModule('catalog')) {
 } else if (Loader::includeModule('intec.startshop')) {
     include(__DIR__.'/modifiers/lite.php');
 }
+
+foreach ($arResult['ITEMS'] as $cell => &$arElement) {
+    $arElement['PICTURE']['src'] = CFile::GetPath(array_shift($arElement['PROPERTIES']['SYSTEM_IMAGES']['VALUE']));
+}

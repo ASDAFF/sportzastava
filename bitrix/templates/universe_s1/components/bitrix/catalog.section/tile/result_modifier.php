@@ -23,8 +23,13 @@ $sRecommendationCode = ArrayHelper::getValue($arParams, 'PROPERTY_IS_RECOMMENDAT
 $sBasketUrl = trim(ArrayHelper::getValue($arParams, 'BASKET_URL'));
 $sBasketUrl = StringHelper::replaceMacros($sBasketUrl, ['SITE_DIR' => SITE_DIR]);
 
+
 if (Loader::includeModule('catalog')) {
     include(__DIR__.'/modifiers/base.php');
 } else if (Loader::includeModule('intec.startshop')) {
     include(__DIR__.'/modifiers/lite.php');
+}
+
+foreach ($arResult['ITEMS'] as $cell => &$arElement) {
+    $arElement['PICTURE']['src'] = CFile::GetPath(array_shift($arElement['PROPERTIES']['SYSTEM_IMAGES']['VALUE']));
 }
