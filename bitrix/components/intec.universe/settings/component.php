@@ -126,5 +126,4 @@ $templateValues = ArrayHelper::getValue($arResult, 'VALUES');
 
 if (Type::isArray($templateValues))
     $values = ArrayHelper::merge($values, $templateValues);
-
 return $values;
