@@ -37,6 +37,8 @@ if (
                 $bannerUse = ArrayHelper::getValue($blocks, ['templates', 'main_banner']) == 5;
                 $basketUse = $properties->get('use_basket');
                 $template = $properties->get('template_menu');
+                $arParams['TEMPLATE_CUSTOM'] = "horizontal";
+                $arParams['FIXED_LOGO'] = "Y";
 
                 switch ($template) {
                     case 1:
@@ -148,18 +150,18 @@ if (
                         break;
                     case 6:
                         $arParams['POSITION_STICKERS'] = 'top_left';
-                        $arParams['LOCATION_DISPLAY'] = 'Y';
-                        $arParams['MAIL_DISPLAY'] = 'Y';
+                        $arParams['LOCATION_DISPLAY'] = 'N';
+                        $arParams['MAIL_DISPLAY'] = 'N';
                         $arParams['MENU_INFO_DISPLAY'] = 'N';
                         $arParams['AUTH_DISPLAY'] = 'Y';
-                        $arParams['POSITION_AUTH'] = 'top';
+                        $arParams['POSITION_AUTH'] = 'header';
                         $arParams['DISPLAY_SEARCH'] = 'Y';
                         $arParams['TYPE_SEARCH'] = 'normal';
                         $arParams['POSITION_SEARCH'] = 'header';
-                        $arParams['TAGLINE_DISPLAY'] = 'Y';
-                        $arParams['BASKET_DISPLAY'] = 'Y';
-                        $arParams['BASKET_DELAY_DISPLAY'] = 'Y';
-                        $arParams['COMPARE_DISPLAY'] = 'Y';
+                        $arParams['TAGLINE_DISPLAY'] = 'N';
+                        $arParams['BASKET_DISPLAY'] = 'N';
+                        $arParams['BASKET_DELAY_DISPLAY'] = 'N';
+                        $arParams['COMPARE_DISPLAY'] = 'N';
                         $arParams['PHONE_DISPLAY_IN'] = 'header';
                         $arParams['PHONE_FORM_DISPLAY'] = 'Y';
                         $arParams['PHONE_FORM_BUTTON_TYPE'] = 'text';
@@ -168,6 +170,8 @@ if (
                         $arParams['MENU_MAIN_CHILD_TYPE'] = 'left';
                         $arParams['MENU_DEFAULT_VIEW'] = 'color';
                         $arParams['HEADER_SHOW_SOCIAL'] = 'N';
+                        $arParams['TEMPLATE_CUSTOM'] = 'horizontal-custom';
+                        $arParams['FIXED_LOGO'] = 'N';
                         break;
                     case 7:
                         $arParams['POSITION_STICKERS'] = 'top_left';

@@ -45,6 +45,8 @@ $bIconsDisplay =
                 <div class="header-content-wrapper">
                    <div class="header-content-wrapper-2">
                         <div class="header-content-wrapper-3">
+
+                            <?if($arParams['FIXED_LOGO'] == "Y"):?>
                             <div class="header-content-item">
                                 <a href="<?= SITE_DIR ?>" class="header-content-item-wrapper header-content-logotype intec-image">
                                     <div class="intec-aligner"></div>
@@ -60,6 +62,8 @@ $bIconsDisplay =
                                     );?>
                                 </a>
                             </div>
+                            <?endif;?>
+
                             <div class="header-content-item header-content-item-full header-content-menu">
                                 <div class="header-content-item-wrapper header-content-menu-wrapper">
                                     <?php include('menu_fixed.component.php') ?>

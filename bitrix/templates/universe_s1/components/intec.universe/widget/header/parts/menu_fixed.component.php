@@ -7,11 +7,10 @@
  * @global CMain $APPLICATION
  * @var string $sTemplateId
  */
-
 ?>
 <?php $APPLICATION->IncludeComponent(
     'bitrix:menu',
-    'horizontal',
+    $arParams['TEMPLATE_CUSTOM'],
     array(
         'ROOT_MENU_TYPE' => $arParams['MENU_MAIN_ROOT_TYPE'],
         'MENU_CACHE_TYPE' => 'N',
