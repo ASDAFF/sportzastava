@@ -326,11 +326,11 @@
 }
 
 .intec-catalog-section-tile .element-buys {
+	background-color: #e05615;
+	border-color: #e05615;
+	color: #FFFFFF;
 	display: inline-block;
 	padding: 9px;
-	line-height: 16px;
-	width: 40px;
-	height: 40px;
 	border-radius: 3px;
 	text-decoration: none;
 	font-size: 0;
@@ -339,9 +339,9 @@
 }
 .intec-catalog-section-tile .element-buys span{
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	font-size: 20px;
+	font-size: 14px;
+	line-height: 19px;
+	margin: 0 5px;
 }
 .intec-catalog-section-tile .element-buys.add[data-basket-add][data-basket-in=true],
 .intec-catalog-section-tile .element-buys.added[data-basket-added][data-basket-in=false] {

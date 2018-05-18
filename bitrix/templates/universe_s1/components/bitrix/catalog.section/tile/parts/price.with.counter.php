@@ -54,24 +54,27 @@ use intec\core\helpers\Html;
                 <?php } ?>
                 <div class="buttons-block">
                     <?php if (!$bOffersExist) { ?>
+
                         <?= Html::beginTag('a', [
                             'class' => 'element-buys add',
                             'data-basket-add' => $arElement['ID'],
                             'data-basket-in' => 'false',
                             'data-basket-quantity' => $sMeasureRatio
                         ]) ?>
-                            <div class="intec-aligner"></div>
-                            <span class="intec-basket glyph-icon-cart"></span>
+                        <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                        <span class="intec-basket-text">Купить</span>
                         <?= Html::endTag('a') ?>
+
                         <?= Html::beginTag('a', [
                             'class' => 'element-buys added intec-cl-background',
                             'href' => $sBasketUrl,
                             'data-basket-added' => $arElement['ID'],
                             'data-basket-in' => 'false'
                         ]) ?>
-                            <div class="intec-aligner"></div>
-                            <span class="intec-basket glyph-icon-cart"></span>
+                        <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                        <span class="intec-basket-text">Добавлено</span>
                         <?= Html::endTag('a') ?>
+
                     <?php } else { ?>
                         <a class="more-info" href="<?= $sDetailPage ?>">
                             <span class="element-buys intec-cl-text">
