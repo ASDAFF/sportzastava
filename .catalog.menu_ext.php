@@ -20,7 +20,8 @@ $aMenuLinksExt = $APPLICATION->IncludeComponent(
 		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "36000000",
 		"ID" => $_REQUEST["ID"],
-		"SECTION_URL" => "//catalog/?SECTION_ID=#ID#"
+		"SECTION_URL" => "//catalog/?SECTION_ID=#ID#",
+		"USUAL" => "N"
 	),
 	false
 );
