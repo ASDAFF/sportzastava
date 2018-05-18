@@ -9,6 +9,7 @@
 
 .prime-incut {
     display: block;
+    margin: 0 auto;
     height: 27px !important;
     width: 145px !important;
     /*overflow: hidden !important;*/

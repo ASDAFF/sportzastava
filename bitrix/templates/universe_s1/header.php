@@ -90,6 +90,7 @@ Core::$app->web->js->addFile($directory.'/js/plugins/picturefill.min.js');
 Core::$app->web->js->addFile($directory.'/js/plugins/jquery.zoom.min.js');
 Core::$app->web->js->addFile($directory.'/js/plugins/jquery.scrollTo.min.js');
 Core::$app->web->js->addFile($directory.'/js/plugins/sly.min.js');
+Core::$app->web->js->addFile($directory.'/js/plugins/readmore.js');
 
 $page->execute(['state' => 'loaded']);
 $files = ArrayHelper::merge($files, [
@@ -108,7 +109,7 @@ if (FileHelper::isFile($directory.'/css/custom.scss'))
     $files[] = new File($build, File::TYPE_SCSS, 'css/custom.scss');
 
 if (FileHelper::isFile($directory.'/js/custom.js'))
-    $files[] = new File($build, File::TYPE_CSS, 'js/custom.js');
+    $files[] = new File($build, File::TYPE_JAVASCRIPT, 'js/custom.js');
 
 if ($request->getIsAjax() && $request->getIsPost() && $request->post('ajax-mode') == 'Y') {
     $response = null;
