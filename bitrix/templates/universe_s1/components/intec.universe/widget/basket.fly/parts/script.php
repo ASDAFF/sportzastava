@@ -208,7 +208,7 @@ use intec\core\helpers\JavaScript;
 
             <?php if ($arParams['OPEN_AFTER_ADD'] == 'Y') { ?>
                 universe.basket.once('add', function(event, data){
-                    if (data.delay !== 'Y')
+                    //if (data.delay !== 'Y')
                         update(true);
                 });
             <?php } ?>
