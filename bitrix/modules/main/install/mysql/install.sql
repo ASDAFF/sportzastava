@@ -1123,7 +1123,7 @@ CREATE TABLE b_urlpreview_metadata
 CREATE TABLE b_urlpreview_route
 (
 	ID int(11) NOT NULL AUTO_INCREMENT,
-	ROUTE varchar(2000) NOT NULL,
+	ROUTE varchar(255) NOT NULL,
 	MODULE varchar(50) NOT NULL,
 	CLASS varchar(150) NOT NULL,
 	PARAMETERS mediumtext,

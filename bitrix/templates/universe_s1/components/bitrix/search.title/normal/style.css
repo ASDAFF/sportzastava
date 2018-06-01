@@ -143,7 +143,9 @@
 	margin-top: -5px;
 	max-height: 400px;
 	overflow-y: auto;
-	z-index: 3000;
+}
+.title-search-result.nano{
+	background: #ffffff;
 }
 .title-search-result.nano .nano-pane .nano-slider {
 	background: #999;

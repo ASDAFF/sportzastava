@@ -9,15 +9,23 @@ foreach ($arParams as $key=>$value) {
         $arParamsSearch[$new_key] = $value;
     }
 }
-$arParamsSearch["COMPONENT_TEMPLATE"] = ".default";
+$arParamsSearch["COMPONENT_TEMPLATE"] = "normal";
 $arParamsSearch["NUM_CATEGORIES"] = 1;
 $arParamsSearch["TYPE_SEARCH_FORM"] = $arParams['TYPE_SEARCH'];
 $arParamsSearch['POSITION_SEARCH'] = $arParams['POSITION_SEARCH'];
+
+$arParamsSearch['INPUT_ID'] = "title-search-input-normal";
+$arParamsSearch['CONTAINER_ID'] = "title-search-normal";
+//$arParamsSearch['CATEGORY_0_iblock_catalogs'] = array(38);
+//$arParamsSearch['CATEGORY_0'] = array("iblock_catalogs");
+$arParamsSearch['ORDER'] = "rank";
+
 ?>
 <?php
 $APPLICATION->IncludeComponent(
 	"bitrix:search.title", 
-	".default",
+	"normal",
     $arParamsSearch,
 	false
-);?>
+);
+?>

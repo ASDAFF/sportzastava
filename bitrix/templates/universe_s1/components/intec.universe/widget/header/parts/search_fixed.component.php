@@ -18,6 +18,13 @@ if ($arParams['TYPE_SEARCH'] == 'popup' && $arParams['DISPLAY_SEARCH'] == 'Y') {
 }
 
 $arParamsSearch['POSITION_SEARCH'] = $arParams['POSITION_SEARCH'];
+
+$arParamsSearch['INPUT_ID'] = "title-search-input";
+$arParamsSearch['CONTAINER_ID'] = "title-search";
+//$arParamsSearch['CATEGORY_0_iblock_catalogs'] = array(38);
+//$arParamsSearch['CATEGORY_0'] = array("iblock_catalogs");
+$arParamsSearch['ORDER'] = "rank";
+
 ?>
 <?php
 $APPLICATION->IncludeComponent(
