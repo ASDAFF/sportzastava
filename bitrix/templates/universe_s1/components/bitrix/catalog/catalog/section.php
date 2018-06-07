@@ -208,6 +208,19 @@ $this->setFrameMode(true);
                 <?php } ?>
             <?php } ?>
 
+            <div class="intec-section-banner">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/include/catalog/banner.first.php"
+                    )
+                );?>
+            </div>
+
             <?php if ($bMenuDisplay) { ?>
                 <div class="intec-section-menu">
                     <?php $APPLICATION->IncludeComponent("bitrix:menu", "vertical", array(
@@ -233,6 +246,20 @@ $this->setFrameMode(true);
                     ); ?>
                 </div>
             <?php } ?>
+
+            <div class="intec-section-banner">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/include/catalog/banner.last.php"
+                    )
+                );?>
+            </div>
+
         </div><!--left_col_index-->
 
         <div class="intec-content-right">
