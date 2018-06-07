@@ -7,13 +7,13 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-    Array(
+    /*Array(
         "Статьи",
         "/company/articles/",
         Array(),
         Array(),
         ""
-    ),
+    ),*/
 	Array(
 		"Отзывы", 
 		"/company/reviews/",
@@ -28,26 +28,33 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
-	Array(
-		"Сотрудники", 
+	/*Array(
+		"Сотрудники",
 		"/company/staff/",
-		Array(), 
-		Array(), 
+		Array(),
+		Array(),
 		"" 
-	),
+	),*/
 	Array(
-		"Политика конфидециальности", 
-		"/company/consent/",
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Сертификаты", 
+		"Сертификаты",
 		"/company/sertifikaty/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Политика конфидециальности",
+		SITE_TEMPLATE_PATH."/policy/politics.pdf",
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Согласие на обработку персональных данных",
+		SITE_TEMPLATE_PATH."/policy/compliance.pdf",
+		Array(),
+		Array(),
+		""
 	)
 );
 ?>
