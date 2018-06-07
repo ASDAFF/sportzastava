@@ -25,3 +25,22 @@
 .asd_iblock_input_backlight {
 	background-color:#e0e9ec!important;
 }
+
+.adm-list-table-cell input[type="text"]:focus {
+	border-color: red !important;
+}
+.adm-list-table-cell select:focus {
+	border-color: red !important;
+}
+.adm-list-table-cell textarea:focus {
+	border-color: red !important;
+}
+.adm-workarea .adm-list-table-cell input[type="text"]:focus {
+	border-color: red !important;
+}
+.adm-workarea .adm-list-table-cell select:focus {
+	border-color: red !important;
+}
+.adm-workarea .adm-list-table-cell textarea:focus {
+	border-color: red !important;
+}

@@ -52,6 +52,7 @@ class asd_iblock extends CModule {
 
 		if (strlen($this->NEED_MAIN_VERSION)<=0 || version_compare(SM_VERSION, $this->NEED_MAIN_VERSION)>=0) {
 			RegisterModuleDependences('main', 'OnAdminListDisplay', 'asd.iblock', 'CASDiblockInterface', 'OnAdminListDisplayHandler');
+			RegisterModuleDependences('main', 'OnAdminSubListDisplay', 'asd.iblock', 'CASDiblockInterface', 'OnAdminSubListDisplayHandler');
 			RegisterModuleDependences('main', 'OnBeforeProlog', 'asd.iblock', 'CASDiblockAction', 'OnBeforePrologHandler');
 			RegisterModuleDependences('main', 'OnAdminContextMenuShow', 'asd.iblock', 'CASDiblockInterface', 'OnAdminContextMenuShowHandler');
 			RegisterModuleDependences('main', 'OnAdminTabControlBegin', 'asd.iblock', 'CASDiblockInterface', 'OnAdminTabControlBeginHandler');
@@ -72,6 +73,7 @@ class asd_iblock extends CModule {
 
 	public function DoUninstall() {
 		UnRegisterModuleDependences('main', 'OnAdminListDisplay', 'asd.iblock', 'CASDiblockInterface', 'OnAdminListDisplayHandler');
+		UnRegisterModuleDependences('main', 'OnAdminSubListDisplay', 'asd.iblock', 'CASDiblockInterface', 'OnAdminSubListDisplayHandler');
 		UnRegisterModuleDependences('main', 'OnBeforeProlog', 'asd.iblock', 'CASDiblockAction', 'OnBeforePrologHandler');
 		UnRegisterModuleDependences('main', 'OnAdminContextMenuShow', 'asd.iblock', 'CASDiblockInterface', 'OnAdminContextMenuShowHandler');
 		UnRegisterModuleDependences('main', 'OnAdminTabControlBegin', 'asd.iblock', 'CASDiblockInterface', 'OnAdminTabControlBeginHandler');

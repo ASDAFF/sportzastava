@@ -30,6 +30,11 @@ $arJSAsdIBlockConfig = array(
 		'css' => '/bitrix/panel/asd.iblock/interface.css',
 		'rel' => array('jquery'),
 	),
+	'asd_element_list' => array(
+		'js' => '/bitrix/js/asd.iblock/admin/elementlist.js',
+		'css' => '/bitrix/panel/asd.iblock/interface.css',
+		'rel' => array('core')
+	),
 	'asd_palette' => array(
 		'js' => '/bitrix/js/asd.iblock/jpicker/jpicker-1.1.6.min.js',
 		'css' => '/bitrix/js/asd.iblock/jpicker/css/jPicker-1.1.6.min.css',

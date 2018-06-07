@@ -719,6 +719,8 @@ class CASDiblockAction {
 		) {
 			$intSectionID = (int)$_REQUEST['find_section_section'];
 			if ($intSectionID > 0) {
+				$elementObj = new CIBlockElement();
+				$workflowMode = (CIBlock::GetArrayByID($IBLOCK_ID, 'WORKFLOW') != 'N' && CModule::IncludeModule('workflow'));
 				$strCurPage = $GLOBALS['APPLICATION']->GetCurPage();
 				$bElemPage = ($strCurPage=='/bitrix/admin/iblock_element_admin.php' ||
 							$strCurPage=='/bitrix/admin/cat_product_admin.php'
@@ -736,23 +738,46 @@ class CASDiblockAction {
 						}
 						if ($ID <= 0)
 							continue;
+						$iterator = CIBlockElement::GetList(
+							array(),
+							array('ID' => $ID, 'IBLOCK_ID' => $IBLOCK_ID),
+							false,
+							false,
+							array('ID', 'IBLOCK_ID', 'IBLOCK_SECTION_ID')
+						);
+						$currentElement = $iterator->Fetch();
+						if (empty($currentElement))
+							continue;
 						if (CASDIblockRights::IsElementEdit($IBLOCK_ID, $ID)) {
+							$currentElement['IBLOCK_SECTION_ID'] = (int)$currentElement['IBLOCK_SECTION_ID'];
+							$checkMainSection = ($currentElement['IBLOCK_SECTION_ID'] == $intSectionID);
+							$minSectionId = null;
 							$arSectionList = array();
 							$rsSections = CIBlockElement::GetElementGroups($ID, true);
 							while ($arSection = $rsSections->Fetch()) {
 								$arSection['ID'] = (int)$arSection['ID'];
 								if ($arSection['ID'] != $intSectionID) {
 									$arSectionList[] = $arSection['ID'];
+									if ($minSectionId === null || $minSectionId > $arSection['ID']) {
+										$minSectionId = $arSection['ID'];
+									}
 								}
 							}
-							CIBlockElement::SetElementSection($ID, $arSectionList, false);
-							if (CASDiblockVersion::checkMinVersion('15.0.1')) {
-								\Bitrix\Iblock\PropertyIndex\Manager::updateElementIndex($IBLOCK_ID, $ID);
+
+							$fields = array(
+								'IBLOCK_SECTION' => $arSectionList
+							);
+							if (CASDiblockVersion::checkMinVersion('15.5.11') && $checkMainSection) {
+								$fields['IBLOCK_SECTION_ID'] = $minSectionId;
 							}
+							$result = $elementObj->Update($ID, $fields, $workflowMode);
+							if (!$result)
+								CASDiblock::$error .= '['.$ID.'] '.$elementObj->LAST_ERROR."\n";
 							$successRedirect = true;
 						}
 					}
 				}
+				unset($elementObj);
 			}
 			unset($_REQUEST['action']);
 			if (isset($_REQUEST['action_button'])) {

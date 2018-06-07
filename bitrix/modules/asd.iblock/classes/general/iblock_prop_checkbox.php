@@ -164,7 +164,7 @@ class CASDiblockPropCheckbox {
 		);
 	}
 
-	protected function GetDefaultListValues() {
+	protected static function GetDefaultListValues() {
 		return array(
 			ASD_UT_CHECKBOX_VAL_FALSE => GetMessage('ASD_UT_CHECKBOX_VALUE_N'),
 			ASD_UT_CHECKBOX_VAL_TRUE => GetMessage('ASD_UT_CHECKBOX_VALUE_Y')

@@ -90,7 +90,7 @@ class CASDiblockPropSection {
 		return $arResult;
 	}
 
-	public function ConvertToDB($arProperty, $value) {
+	public static function ConvertToDB($arProperty, $value) {
 		if (isset($value['VALUE']) && $value['VALUE']>0) {
 			$value['VALUE'] = intval($value['VALUE']);
 		}

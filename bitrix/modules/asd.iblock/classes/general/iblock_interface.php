@@ -9,6 +9,10 @@ class CASDiblock {
 
 class CASDiblockInterface {
 
+	/**
+	 * @param CAdminList &$list
+	 * @return void
+	 */
 	public static function OnAdminListDisplayHandler(&$list) {
 
 
@@ -26,6 +30,16 @@ class CASDiblockInterface {
 			CJSCore::Init(array('asd_iblock'));
 			$strSomeScripts  = '<script type="text/javascript">sListTable = \''.$list->table_id.'\';</script>';
 			$list->arActions['asd_checkbox_manager'] = array('type' => 'html', 'value' => $strSomeScripts);
+		}
+
+		if ($bRightPage && !$list->bEditMode && !isset($_REQUEST['mode'])) {
+			CJSCore::Init(array('asd_element_list'));
+			$jsParams = array(
+				'resultDiv' => $list->table_id.'_result_div'
+			);
+			$list->sPrologContent .= '<script type="text/javascript">
+var asdElementList'.$list->table_id.' = new AsdIblockElementList('.CUtil::PhpToJSObject($jsParams, false, true, true).');
+</script>';
 		}
 
 		if ($bMixPage || $strCurPage=='/bitrix/admin/iblock_element_admin.php' ||
@@ -205,6 +219,27 @@ class CASDiblockInterface {
 				$list->arActionsParams['select_onchange'] .= "ASDSelIBChange(this.value);";
 			}
 		}
+	}
+
+	/**
+	 * @param CAdminSubList &$list
+	 * @return void
+	 */
+	public static function OnAdminSubListDisplayHandler(&$list) {
+		$strCurPage = $GLOBALS['APPLICATION']->GetCurPage();
+		$bElemPage = ($strCurPage=='/bitrix/admin/iblock_element_edit.php' ||
+			$strCurPage=='/bitrix/admin/cat_product_edit.php'
+		);
+
+		if ($bElemPage && !$list->bEditMode && !isset($_REQUEST['mode'])) {
+			CJSCore::Init(array('asd_element_list'));
+			$jsParams = array(
+				'resultDiv' => $list->table_id.'_result_div'
+			);
+			$list->sPrologContent .= '<script type="text/javascript">
+var asdElementList'.$list->table_id.' = new AsdIblockElementList('.CUtil::PhpToJSObject($jsParams, false, true, true).');
+</script>';
+			}
 	}
 
 	public static function OnAdminContextMenuShowHandler(&$items) {
