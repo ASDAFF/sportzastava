@@ -103,12 +103,18 @@ use intec\core\helpers\ArrayHelper;
                     </div>
                 <?php } ?>
                 <?php if ($arResult['CONSENT']['SHOW']) { ?>
-                    <div class="consent" style="margin-bottom: 15px;">
-                        <div class="intec-contest-checkbox checked" style="margin-right: 5px; float: left;"></div>
-                        <?= GetMessage('SOF_CONTEST', array(
-                            '#URL#' => $arResult['CONSENT']['URL']
-                        )) ?>
-                    </div>
+                    <?$APPLICATION->IncludeComponent("bitrix:main.userconsent.request", "userconsent.request",
+                        array(
+                            "ID" => 1,
+                            "IS_CHECKED" => "Y",
+                            "AUTO_SAVE" => "N",
+                            "IS_LOADED" => "Y",
+                            "INPUT_NAME" => "RULE",
+                            "REPLACE" => array(
+                                "button_caption" => $arParams['SEND'],
+                            ),
+                        )
+                    );?>
                 <?php } ?>
                 <div class="order-fast_bottom">
                     <button class="order-fast_send intec-button intec-button-cl-common intec-button-lg">

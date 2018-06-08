@@ -74,6 +74,21 @@ if (!empty($oBuild)) {
 							</label>
 							<input type="text" name="USER_EMAIL" maxlength="255" value="<?=$arResult["USER_EMAIL"]?>" class="form-control form-control-local" />
 						</div>
+
+						<div class="form-group">
+							<?$APPLICATION->IncludeComponent("bitrix:main.userconsent.request", "userconsent.request.checkbox",
+								array(
+									"ID" => 1,
+									"IS_CHECKED" => "Y",
+									"AUTO_SAVE" => "N",
+									"IS_LOADED" => "Y",
+									"INPUT_NAME" => "RULE",
+									"REPLACE" => array(
+										"button_caption" => GetMessage("AUTH_REGISTER"),
+									),
+								)
+							);?>
+						</div>
 						<!-- User properties -->
 						<?if($arResult["USER_PROPERTIES"]["SHOW"] == "Y"):?>
 						<?=strLen(trim($arParams["USER_PROPERTY_NAME"])) > 0 ? $arParams["USER_PROPERTY_NAME"] : GetMessage("USER_TYPE_EDIT_TAB")?>
@@ -103,12 +118,6 @@ if (!empty($oBuild)) {
 							<br>
 							<input type="submit" name="Register" value="<?=GetMessage("AUTH_REGISTER")?>" class="reg-button intec-button intec-button-s-7 intec-button-cl-common" />
 							<!-- /CAPTCHA -->
-							<?if($personal_data) { ?>
-								<div class="consent">
-									<div class="intec-contest-checkbox checked"></div>
-									<?=GetMessage("CONSENT")?>
-								</div>
-							<?}?>
 							<div style="clear:both;"></div>
 					</form>
 					<!--/noindex-->

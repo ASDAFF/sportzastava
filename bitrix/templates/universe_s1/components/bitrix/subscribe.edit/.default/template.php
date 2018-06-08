@@ -126,21 +126,24 @@ $sEmail = !empty($sEmail) ? $sEmail : ArrayHelper::getValue($arResult, ['REQUEST
                                     </div>
                                 </div>
                             </div>
+                            <?php if ($arResult['CONSENT']['SHOW']) { ?>
+
+                                <?$APPLICATION->IncludeComponent("bitrix:main.userconsent.request", "userconsent.request.checkbox",
+                                    array(
+                                        "ID" => 1,
+                                        "IS_CHECKED" => "Y",
+                                        "AUTO_SAVE" => "N",
+                                        "IS_LOADED" => "Y",
+                                        "INPUT_NAME" => "RULE",
+                                        "REPLACE" => array(
+                                            "button_caption" => $bSubscribed ? Loc::getMessage('SE_DEFAULT_BUTTONS_EDIT') : Loc::getMessage('SE_DEFAULT_BUTTONS_ADD'),
+                                        ),
+                                    )
+                                );?>
+
+                            <?php } ?>
                             <div class="subscribe-edit-buttons">
                                 <input type="submit" class="intec-button intec-button-md intec-button-cl-common" value="<?= $bSubscribed ? Loc::getMessage('SE_DEFAULT_BUTTONS_EDIT') : Loc::getMessage('SE_DEFAULT_BUTTONS_ADD') ?>" style="margin-right: 20px;" />
-                                <?php if ($arResult['CONSENT']['SHOW']) { ?>
-                                    <label class="intec-input intec-input-checkbox">
-                                        <?= Html::checkbox(null, true, [
-                                            'disabled' => 'disabled'
-                                        ]) ?>
-                                        <span class="intec-input-selector"></span>
-                                        <span class="intec-input-text">
-                                            <?= Loc::getMessage('SE_DEFAULT_CONSENT', [
-                                                '#URL#' => $arResult['CONSENT']['URL']
-                                            ]) ?>
-                                        </span>
-                                    </label>
-                                <?php } ?>
                             </div>
                         </form>
                     </div>

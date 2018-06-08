@@ -60,10 +60,18 @@ if (!empty($oBuild)) {
 				</div>
 			<?php } ?>
 			<?if($personal_data){?>
-				<div class="consent">
-					<div class="intec-contest-checkbox checked" style="margin-right: 5px; float: left;"></div>
-					<?=GetMessage("SOF_CONTEST");?>
-				</div>
+				<?$APPLICATION->IncludeComponent("bitrix:main.userconsent.request", "userconsent.request",
+					array(
+						"ID" => 1,
+						"IS_CHECKED" => "Y",
+						"AUTO_SAVE" => "N",
+						"IS_LOADED" => "Y",
+						"INPUT_NAME" => "RULE",
+						"REPLACE" => array(
+							"button_caption" => htmlspecialcharsbx(strlen(trim($arResult['arForm']['BUTTON'])) <= 0 ? GetMessage('FORM_ADD') : $arResult['arForm']['BUTTON']),
+						),
+					)
+				);?>
 			<?}?>
 			<div class="row control">
 				<input type="submit"

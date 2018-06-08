@@ -29,7 +29,7 @@ use \intec\core\helpers\Html;
                     <?= $question['CAPTION'] . ($question['REQUIRED'] == 'Y' ? $arResult['REQUIRED_SIGN'] : '') ?>
                     <?= $question['IS_INPUT_CAPTION_IMAGE'] == 'Y' ? '<br />'. $question['IMAGE']['HTML_CODE'] : '' ?>
                 </div>
-                <div class="intec-form-value">
+                <div class="intec-form-value <?=($question['REQUIRED'] == "Y") ? "req" : ""?>">
                     <?= $question['HTML_CODE'] ?>
                 </div>
             </div>
@@ -51,20 +51,26 @@ use \intec\core\helpers\Html;
         <?php } ?>
 
         <? if ($arResult['CONSENT']['SHOW']) { ?>
-            <div class="consent">
-                <label class="intec-input intec-input-checkbox">
-                    <input type="checkbox" checked="checked" disabled="disabled" />
-                    <label class="intec-input-selector"></label>
-                    <label class="intec-input-text"><?= GetMessage('FRN_DEFAULT_CONSENT', [
-                        '#URL#' => $arResult['CONSENT']['URL']
-                    ]) ?></label>
-                </label>
-            </div>
+
+            <?$APPLICATION->IncludeComponent("bitrix:main.userconsent.request", "userconsent.request",
+                array(
+                    "ID" => 1,
+                    "IS_CHECKED" => "Y",
+                    "AUTO_SAVE" => "N",
+                    "IS_LOADED" => "Y",
+                    "INPUT_NAME" => "RULE",
+                    "REPLACE" => array(
+                        "button_caption" => htmlspecialcharsbx(strlen(trim($arResult['arForm']['BUTTON'])) <= 0 ? GetMessage('FORM_ADD') : $arResult['arForm']['BUTTON']),
+                    ),
+                )
+            );?>
+
         <? } ?>
 
         <div class="intec-form-buttons-wrap">
             <input <?= intval($arResult['F_RIGHT']) < 10 ? "disabled=\"disabled\"" : '' ?>
                    class="intec-button intec-button-cl-common intec-button-s-6"
+                   id="intec_button_event"
                    type="submit"
                    name="web_form_submit"
                    value="<?= htmlspecialcharsbx(strlen(trim($arResult['arForm']['BUTTON'])) <= 0 ? GetMessage('FORM_ADD') : $arResult['arForm']['BUTTON']) ?>" />

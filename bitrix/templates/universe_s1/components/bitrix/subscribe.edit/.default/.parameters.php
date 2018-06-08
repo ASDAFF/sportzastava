@@ -4,6 +4,7 @@
 use Bitrix\Main\Localization\Loc;
 
 $arTemplateParameters = [
+    "USER_CONSENT" => [],
     'CONSENT_URL' => [
         'PARENT' => 'URL_TEMPLATES',
         'TYPE' => 'STRING',
