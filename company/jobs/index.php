@@ -1,6 +1,10 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle('Вакансии');?>
-<?$APPLICATION->IncludeComponent(
+$APPLICATION->SetTitle("Вакансии");?><div class="intec-content">
+	<div class="intec-content-wrapper">
+		На данный момент открытых вакансий нет...
+	</div></div>
+<?$APPLICATION->
+IncludeComponent(
 	"bitrix:news.list", 
 	"vacancies", 
 	array(
@@ -64,7 +68,6 @@ $APPLICATION->SetTitle('Вакансии');?>
 		"FORM_SUMMARY_ID" => "14",
 		"PROPERTY_FORM_SUMMARY_VACANCY" => "form_text_55",
 		"CONSENT_URL" => "/company/consent/"
-	),
-	false
+	)
 );?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
