@@ -112,7 +112,7 @@ $APPLICATION->SetTitle("Бренды");?>
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Товары",
-		"PAGE_ELEMENT_COUNT" => "30",
+		"PAGE_ELEMENT_COUNT" => "15",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
 		"PRICE_CODE" => array(
 			0 => "BASE",
@@ -139,9 +139,9 @@ $APPLICATION->SetTitle("Бренды");?>
 		"SECTION_TOP_DEPTH" => "2",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
-		"SET_STATUS_404" => "N",
+		"SET_STATUS_404" => "Y",
 		"SET_TITLE" => "Y",
-		"SHOW_404" => "N",
+		"SHOW_404" => "Y",
 		"SHOW_DEACTIVATED" => "N",
 		"SHOW_DISCOUNT_PERCENT" => "Y",
 		"SHOW_MAX_QUANTITY" => "N",
@@ -268,6 +268,7 @@ $APPLICATION->SetTitle("Бренды");?>
 		"COMPARE_ELEMENT_SORT_FIELD" => "sort",
 		"COMPARE_ELEMENT_SORT_ORDER" => "asc",
 		"DISPLAY_ELEMENT_SELECT_BOX" => "N",
+		"FILE_404" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "",

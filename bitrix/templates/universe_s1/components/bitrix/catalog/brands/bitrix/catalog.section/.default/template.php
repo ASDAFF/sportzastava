@@ -54,11 +54,15 @@ $sTemplateId = spl_object_hash($this);
             <div class="brand" id="<?= $sAreaId ?>">
                 <a href="<?= $arItem['DETAIL_PAGE_URL'] ?>" class="brand-wrapper">
                     <div class="brand-wrapper-2" style="background-image: url('<?= $sImage ?>')"></div>
+                    <div class="brand-wrapper-name"><?=$arItem['NAME']?></div>
                 </a>
             </div>
         <?php } ?>
     </div>
 </div>
 <div class="clearfix"></div>
+<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
+    <br /><?=$arResult["NAV_STRING"]?>
+<?endif;?>
 
 

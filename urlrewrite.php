@@ -56,6 +56,14 @@ $arUrlRewrite=array (
     'PATH' => '/desktop_app/router.php',
     'SORT' => 100,
   ),
+  0 => 
+  array (
+    'CONDITION' => '#^/stssync/calendar/#',
+    'RULE' => '',
+    'ID' => 'bitrix:stssync.server',
+    'PATH' => '/bitrix/services/stssync/calendar/index.php',
+    'SORT' => 100,
+  ),
   24 => 
   array (
     'CONDITION' => '#^/personal/profile/#',
@@ -70,14 +78,6 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/company/articles/index.php',
-    'SORT' => 100,
-  ),
-  0 => 
-  array (
-    'CONDITION' => '#^/stssync/calendar/#',
-    'RULE' => '',
-    'ID' => 'bitrix:stssync.server',
-    'PATH' => '/bitrix/services/stssync/calendar/index.php',
     'SORT' => 100,
   ),
   5 => 
@@ -120,20 +120,20 @@ $arUrlRewrite=array (
     'PATH' => '/company/news/index.php',
     'SORT' => 100,
   ),
+  29 => 
+  array (
+    'CONDITION' => '#^/help/brands/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/help/brands/index.php',
+    'SORT' => 100,
+  ),
   18 => 
   array (
     'CONDITION' => '#^/s2/services/#',
     'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/s2/services/index.php',
-    'SORT' => 100,
-  ),
-  23 => 
-  array (
-    'CONDITION' => '#^/help/brands/#',
-    'RULE' => '',
-    'ID' => 'bitrix:catalog',
-    'PATH' => '/help/brands/index.php',
     'SORT' => 100,
   ),
   10 => 

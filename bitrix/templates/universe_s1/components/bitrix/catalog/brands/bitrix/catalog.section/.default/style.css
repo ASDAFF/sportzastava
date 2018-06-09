@@ -14,19 +14,19 @@
 }
 .brands .brands-wrapper {
 	display: block;
-	margin: -8px;
+	margin: -7px;
 	min-width: 16px;
 	min-height: 16px;
 }
 .brands .brand {
 	display: block;
 	float: left;
-	width: 25%;
+	width: 20%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 8px;
 }
+
 .brands .brand .brand-wrapper {
 	display: block;
 	position: relative;
@@ -41,6 +41,8 @@
 	-ms-transition-property: box-shadow;
 	-o-transition-property: box-shadow;
 	transition-property: box-shadow;
+	border: 1px solid #e8e8e8;
+	margin: 5px;
 }
 .brands .brand .brand-wrapper-2 {
 	display: block;
@@ -66,20 +68,27 @@
 	filter: gray;
 	-webkit-filter: grayscale(1);
 }
-.brands .brand .brand-wrapper:hover {
-	-webkit-box-shadow: 0 10px 30px 10px #f1f1f1;
-	-moz-box-shadow: 0 10px 30px 10px #f1f1f1;
-	box-shadow: 0 10px 30px 10px #f1f1f1;
+
+.brands .brand .brand-wrapper-name {
+	text-align: center;
+	line-height: 2.5;
+	color: black;
+	border-top: 1px solid #e8e8e8;
+	margin-left: 20px;
+	margin-right: 20px;
+	white-space: nowrap;
 }
-.brands .brand .brand-wrapper:hover .brand-wrapper-2 {
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	-ms-filter: grayscale(0%);
-	-o-filter: grayscale(0%);
-	filter: grayscale(0%);
-	filter: none;
-	-webkit-filter: grayscale(0);
+
+.brands .brand .brand-wrapper:hover,
+.brands .brand:hover .brand-wrapper-name
+{
+	border-color: #e05615;
 }
+
+a:hover{
+	text-decoration: none!important;
+}
+
 
 @media all and (max-width: 1200px) {
 	.intec-adaptive .brands .brand {
