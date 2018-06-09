@@ -451,7 +451,7 @@ if (strlen($request->get('ORDER_ID')) > 0) {
 								if ($arParams['USER_CONSENT'] === 'Y') {
 									$APPLICATION->IncludeComponent(
 										'bitrix:main.userconsent.request',
-										'userconsent.request.checkbox',
+										'userconsent.request',
 										array(
 											'ID' => $arParams['USER_CONSENT_ID'],
 											'IS_CHECKED' => $arParams['USER_CONSENT_IS_CHECKED'],
