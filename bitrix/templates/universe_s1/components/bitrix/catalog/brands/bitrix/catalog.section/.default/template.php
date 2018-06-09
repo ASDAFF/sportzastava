@@ -52,7 +52,7 @@ $sTemplateId = spl_object_hash($this);
             }
         ?>
             <div class="brand" id="<?= $sAreaId ?>">
-                <a href="<?= $arItem['DETAIL_PAGE_URL'] ?>" class="brand-wrapper">
+                <a href="<?= $arItem['DETAIL_PAGE_URL'] ?>" class="brand-wrapper" title="<?=$arItem['NAME']?>">
                     <div class="brand-wrapper-2" style="background-image: url('<?= $sImage ?>')"></div>
                     <div class="brand-wrapper-name"><?=$arItem['NAME']?></div>
                 </a>
