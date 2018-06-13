@@ -57,7 +57,7 @@
                     <ul class="properties-list">
                         <?php foreach ($characteristics as $key => $property) { ?>
                             <li class="col-xs-12 col-md-6">
-                                <span><?= $property['NAME'] ?> - <?= $property['VALUE'] ?>;</span>
+                                <span><?= $property['NAME'] ?> - <?= $property['DISPLAY_VALUE'] ?>;</span>
                             </li>
                         <?php } ?>
                     </ul>
@@ -66,7 +66,7 @@
                         <?php foreach ($characteristics as $key => $property) { ?>
                             <div class="clearfix characteristic">
                                 <div class="col-xs-6 characteristic-name"><?= $property['NAME'] ?></div>
-                                <div class="col-xs-6 characteristic-value"><?= $property['VALUE'] ?></div>
+                                <div class="col-xs-6 characteristic-value"><?= $property['DISPLAY_VALUE'] ?></div>
                             </div>
                         <?php } ?>
                     </div>
