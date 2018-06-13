@@ -410,7 +410,8 @@ $APPLICATION->SetTitle("Каталог товаров");?>
 			"compare" => array(
 				"ACTION_CODE" => "action",
 			),
-		)
+		),
+		"MESS_BTN_LAZY_LOAD" => "Показать ещё"
 	),
 	false
 );?>
