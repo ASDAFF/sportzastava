@@ -81,3 +81,10 @@ git status
 git pull
 git status
 git pull
+ls
+git pull
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git pull

@@ -1,5 +1,5 @@
 User-Agent: *
 Disallow: /
-
+Crawl-delay: 5
 Host: https://sportzastava.ru/
 Sitemap: https://sportzastava.ru/sitemap.xml

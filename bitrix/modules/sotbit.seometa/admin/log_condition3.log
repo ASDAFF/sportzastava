@@ -1,0 +1,39 @@
+Array
+(
+    [ID] => 2
+    [NAME] => Бренд AMMITY
+    [ACTIVE] => Y
+    [SEARCH] => Y
+    [SORT] => 100
+    [DATE_CHANGE] => Bitrix\Main\Type\DateTime Object
+        (
+            [value:protected] => DateTime Object
+                (
+                    [date] => 2018-06-10 14:54:44.000000
+                    [timezone_type] => 3
+                    [timezone] => Europe/Moscow
+                )
+
+        )
+
+    [SITES] => a:1:{i:0;s:2:"s1";}
+    [TYPE_OF_CONDITION] => 
+    [FILTER_TYPE] => default
+    [TYPE_OF_INFOBLOCK] => catalogs
+    [INFOBLOCK] => 38
+    [SECTIONS] => N;
+    [RULE] => a:3:{s:8:"CLASS_ID";s:9:"CondGroup";s:4:"DATA";a:2:{s:3:"All";s:2:"OR";s:4:"True";s:4:"True";}s:8:"CHILDREN";a:1:{i:0;a:2:{s:8:"CLASS_ID";s:17:"CondIBProp:38:157";s:4:"DATA";a:2:{s:5:"logic";s:5:"Equal";s:5:"value";i:3699;}}}}
+    [META] => a:12:{s:13:"ELEMENT_TITLE";s:62:"{=this.Name} {=concat {=ProductProperty "SYSTEM_BRAND" } ", "}";s:16:"ELEMENT_KEYWORDS";s:0:"";s:19:"ELEMENT_DESCRIPTION";s:0:"";s:18:"ELEMENT_PAGE_TITLE";s:62:"{=this.Name} {=concat {=ProductProperty "SYSTEM_BRAND" } ", "}";s:24:"ELEMENT_BREADCRUMB_TITLE";s:62:"{=this.Name} {=concat {=ProductProperty "SYSTEM_BRAND" } ", "}";s:16:"TEMPLATE_NEW_URL";s:40:"{=this.Name} {=concat {=ProductProperty ";s:16:"ELEMENT_TOP_DESC";s:0:"";s:19:"ELEMENT_BOTTOM_DESC";s:49:"{=concat {=OfferProperty "SYSTEM_BRAND" } ", "}
+";s:16:"ELEMENT_ADD_DESC";s:53:"{=concat {=OfferProperty "SYSTEM_BRAND" } ", "}
+
+
+";s:21:"ELEMENT_TOP_DESC_TYPE";s:4:"html";s:24:"ELEMENT_BOTTOM_DESC_TYPE";s:4:"html";s:21:"ELEMENT_ADD_DESC_TYPE";s:4:"html";}
+    [NO_INDEX] => N
+    [STRONG] => N
+    [PRIORITY] => 0
+    [CHANGEFREQ] => always
+    [CATEGORY_ID] => 0
+    [TAG] => 
+    [CONDITION_TAG] => N;
+    [STRICT_RELINKING] => N
+)
