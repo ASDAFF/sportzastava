@@ -72,6 +72,20 @@ $request = Core::$app->request;
             </div>
         </div>
         <div class="clearfix"></div>
+        <?if($personal_data){?>
+            <?$APPLICATION->IncludeComponent("bitrix:main.userconsent.request", "userconsent.request",
+                array(
+                    "ID" => 1,
+                    "IS_CHECKED" => "Y",
+                    "AUTO_SAVE" => "N",
+                    "IS_LOADED" => "Y",
+                    "INPUT_NAME" => "RULE",
+                    "REPLACE" => array(
+                        "button_caption" => GetMessage('F_R_N_CONTACTS_BUTTON_SEND'),
+                    ),
+                )
+            );?>
+        <?}?>
         <div class="contacts-form-footer clearfix">
             <input type="hidden" name="web_form_apply" value="Y" />
             <input type="submit"
@@ -79,14 +93,6 @@ $request = Core::$app->request;
                    style="float: right;"
                    value="<?= GetMessage('F_R_N_CONTACTS_BUTTON_SEND') ?>"
             />
-            <?if($personal_data){?>
-                <div class="consent" style="float: left; margin-right: 13px; margin-top: 9px;">
-                    <div class="intec-contest-checkbox checked" style="margin-right: 5px; float: left;"></div>
-                    <?=GetMessage("F_R_N_CONTEST", [
-                        '#URL#' => $arParams['CONSENT_URL']
-                    ]);?>
-                </div>
-            <?}?>
         </div>
         <div class="clearfix"></div>
         <?= $arResult["FORM_FOOTER"] ?>

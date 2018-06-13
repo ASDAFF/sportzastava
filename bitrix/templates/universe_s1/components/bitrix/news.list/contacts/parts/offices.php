@@ -10,10 +10,12 @@ use intec\core\helpers\Type;
  * @var string $sTemplateId
  * @var Closure $getMapCoordinates
  */
+
+
 ?>
 <div class="contacts-offices">
-    <div class="contacts-title"><?= GetMessage('N_L_CONTACTS_LIST_OFFICES') ?></div>
-    <div class="contacts-description"><?= GetMessage('N_L_CONTACTS_LIST_OFFICES_DESCRIPTION') ?></div>
+    <div class="contacts-title"><?= $arResult['NAME'] ?></div>
+    <div class="contacts-description"><?= $arResult['DESCRIPTION'] ?></div>
     <div class="contacts-sections">
         <?php foreach($arResult['SECTIONS'] as $arSection) { ?>
             <?php if (count($arSection['ITEMS']) <= 0) continue; ?>

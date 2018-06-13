@@ -61,61 +61,7 @@ $getMapCoordinates = function ($arItem) {
 <div class="contacts" id="<?= $sTemplateId ?>">
     <?php if ($arParams['SHOW_MAP'] == 'Y') { ?>
         <div class="contacts-map" id="<?= $sTemplateId ?>_map">
-            <?php
-            $arContact = $arResult['CONTACT'];
-            $arData = array();
-
-            if (!empty($arContact)) {
-                $arCoordinates = $getMapCoordinates($arContact);
-
-                if (!empty($arCoordinates)) {
-                    $arData['google_lat'] = $arCoordinates[0];
-                    $arData['google_lon'] = $arCoordinates[1];
-                    $arData['google_scale'] = 16;
-                }
-            }
-
-            $arData['PLACEMARKS'] = array();
-
-            foreach ($arResult['ITEMS'] as $arItem) {
-                if (!empty($arItem['SYSTEM_PROPERTIES']['MAP']['VALUE'])) {
-                    $arCoordinates = $getMapCoordinates($arItem);
-
-                    if (!empty($arCoordinates)) {
-                        $arPlaceMark = array();
-
-                        $arPlaceMark['LAT'] = $arCoordinates[0];
-                        $arPlaceMark['LON'] = $arCoordinates[1];
-                        $arPlaceMark['TEXT'] = $arItem['NAME'];
-
-                        $arData['PLACEMARKS'][] = $arPlaceMark;
-                    }
-                }
-            }
-            ?>
-            <?php $APPLICATION->IncludeComponent(
-                "bitrix:map.google.view",
-                ".default",
-                array(
-                    'MAP_ID' => $arParams['MAP_ID'],
-                    'API_KEY' => $arParams['API_KEY_MAP'],
-                    'INIT_MAP_TYPE' => 'ROADMAP',
-                    'MAP_DATA' => serialize($arData),
-                    'CONTROLS' => array(
-                        'SMALL_ZOOM_CONTROL',
-                        'TYPECONTROL',
-                        'SCALELINE'
-                    ),
-                    'OPTIONS' => array(
-                        'ENABLE_SCROLL_ZOOM',
-                        'ENABLE_DBLCLICK_ZOOM',
-                        'ENABLE_DRAGGING',
-                        'ENABLE_KEYBOARD'
-                    )
-                ),
-                $component,
-                array('HIDE_ICONS' => 'Y')
-            );?>
+            <img src="<?=CFile::GetPath($arResult['PICTURE'])?>" title="<?=$arResult['NAME']?>" alt="<?=$arResult['NAME']?>">
         </div>
     <?php } ?>
     <div class="intec-content contacts-contact-wrap">
@@ -152,7 +98,7 @@ $getMapCoordinates = function ($arItem) {
                                     <div class="contacts-contact-parameter-wrapper">
                                         <div class="contacts-contact-icon-wrap">
                                             <div class="intec-aligner"></div>
-                                            <div class="contacts-contact-icon" style="background-image: url('<?= $this->GetFolder().'/images/phone.png' ?>')"></div>
+                                            <div class="contacts-contact-icon" style="background-image: url('<?= $this->GetFolder().'/images/phone-old.png' ?>')"></div>
                                         </div>
                                         <div class="contacts-contact-text-wrap">
                                             <div class="intec-aligner"></div>
@@ -169,7 +115,7 @@ $getMapCoordinates = function ($arItem) {
                                     </div>
                                 </div>
                             <?php } ?>
-                            <?php if (!empty($arContact['SYSTEM_PROPERTIES']['PHONE_HELP']['VALUE'])) { ?>
+                            <?php if (!empty($arContact['SYSTEM_PROPERTIES']['WORK_TIME']['VALUE'])) { ?>
                                 <div class="contacts-contact-parameter">
                                     <div class="contacts-contact-parameter-wrapper">
                                         <div class="contacts-contact-icon-wrap">
@@ -183,7 +129,9 @@ $getMapCoordinates = function ($arItem) {
                                                     <?= GetMessage('N_L_CONTACTS_PROPERTY_PHONE_HELP') ?>:
                                                 </div>
                                                 <span itemprop="telephone">
-                                                    <?= $arContact['SYSTEM_PROPERTIES']['PHONE_HELP']['VALUE'] ?>
+                                                    <? foreach($arContact['SYSTEM_PROPERTIES']['WORK_TIME']['VALUE'] as $desc => $value): ?>
+                                                    <?= $arContact['SYSTEM_PROPERTIES']['WORK_TIME']['DESCRIPTION'][$desc] ?>: <?= $value ?><br>
+                                                    <? endforeach; ?>
                                                 </span>
                                             </div>
                                         </div>

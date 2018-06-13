@@ -1,6 +1,6 @@
 <?
 $MESS['N_L_CONTACTS_PROPERTY_PHONE'] = 'Телефон';
-$MESS['N_L_CONTACTS_PROPERTY_PHONE_HELP'] = 'Справочная служба';
+$MESS['N_L_CONTACTS_PROPERTY_PHONE_HELP'] = 'Режим работы менеджеров';
 $MESS['N_L_CONTACTS_PROPERTY_EMAIL'] = 'Электронная почта';
 $MESS['N_L_CONTACTS_LIST_SHOPS'] = 'Наши магазины';
 $MESS['N_L_CONTACTS_LIST_SHOPS_PHONE'] = 'Тел.';
