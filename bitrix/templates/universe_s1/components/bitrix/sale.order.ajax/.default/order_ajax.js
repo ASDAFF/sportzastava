@@ -5131,7 +5131,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 				]
 			});
 
-			if (currentDelivery.PRICE >= 0)
+			if (currentDelivery.PRICE > 0)
 			{
 				price = BX.create('LI', {
 					children: [
@@ -5328,7 +5328,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 			}
 			labelNodes.push(logoNode);
 
-			if (item.PRICE >= 0 || typeof item.DELIVERY_DISCOUNT_PRICE !== 'undefined')
+			if (item.PRICE > 0 || typeof item.DELIVERY_DISCOUNT_PRICE !== 'undefined')
 			{
 				labelNodes.push(
 					BX.create('DIV', {
@@ -5338,7 +5338,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 							: item.PRICE_FORMATED})
 				);
 			}
-			else if (deliveryCached && (deliveryCached.PRICE >= 0 || typeof deliveryCached.DELIVERY_DISCOUNT_PRICE !== 'undefined'))
+			else if (deliveryCached && (deliveryCached.PRICE > 0 || typeof deliveryCached.DELIVERY_DISCOUNT_PRICE !== 'undefined'))
 			{
 				labelNodes.push(
 					BX.create('DIV', {
@@ -5425,12 +5425,6 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 					BX.create('DIV', {
 						props: {className: 'col-sm-9 bx-soa-pp-company-selected'},
 						children: arNodes
-					})
-				);
-				node.appendChild(
-					BX.create('DIV', {
-						props: {className: 'col-sm-3 bx-soa-pp-price'},
-						children: this.getDeliveryPriceNodes(selectedDelivery)
 					})
 				);
 			}
@@ -7885,10 +7879,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 			}
 			else if (params.free)
 			{
-				totalValue = [BX.create('SPAN', {
-					props: {className: 'bx-soa-price-free'},
-					html: value
-				})];
+				totalValue = false;
 			}
 			else
 			{
@@ -7904,11 +7895,11 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 			{
 				className += ' bx-soa-cart-total-line-highlighted';
 			}
-
+			
 			return BX.create('DIV', {
 				props: {className: className},
 				children: [
-					BX.create('SPAN', {props: {className: 'bx-soa-cart-t'}, text: name}),
+					(totalValue) ? BX.create('SPAN', {props: {className: 'bx-soa-cart-t'}, text: name}) : "",
 					BX.create('SPAN', {
 						props: {
 							className: 'bx-soa-cart-d' + (!!params.total && this.options.totalPriceChanged ? ' bx-soa-changeCostSign' : '')
