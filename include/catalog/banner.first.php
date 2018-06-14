@@ -1,3 +1,3 @@
 <a href="#">
-    <img src="/images/faq.jpg">
+    <img src="/images/ban-1.jpg">
 </a>
