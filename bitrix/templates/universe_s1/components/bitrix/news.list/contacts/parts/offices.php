@@ -14,7 +14,6 @@ use intec\core\helpers\Type;
 
 ?>
 <div class="contacts-offices">
-    <div class="contacts-title"><?= $arResult['NAME'] ?></div>
     <div class="contacts-description"><?= $arResult['DESCRIPTION'] ?></div>
     <div class="contacts-sections">
         <?php foreach($arResult['SECTIONS'] as $arSection) { ?>

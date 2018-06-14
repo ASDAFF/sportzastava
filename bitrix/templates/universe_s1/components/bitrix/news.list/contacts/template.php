@@ -77,17 +77,22 @@ $getMapCoordinates = function ($arItem) {
                     <div class="contacts-contact<?= $arParams['SHOW_MAP'] == 'Y' ? ' contacts-contact-with-map' : null ?>"
                          itemscope="" itemtype="http://schema.org/Organization">
                         <div class="contacts-contact-wrapper">
-                            <?php if (!empty($arContact['SYSTEM_PROPERTIES']['ADDRESS']['VALUE'])) { ?>
+                            <?php if (!empty($arContact['SYSTEM_PROPERTIES']['EMAIL']['VALUE'])) { ?>
                                 <div class="contacts-contact-parameter">
                                     <div class="contacts-contact-parameter-wrapper">
                                         <div class="contacts-contact-icon-wrap">
                                             <div class="intec-aligner"></div>
-                                            <div class="contacts-contact-icon" style="background-image: url('<?= $this->GetFolder().'/images/location.png' ?>')"></div>
+                                            <div class="contacts-contact-icon" style="background-image: url('<?= $this->GetFolder().'/images/email.png' ?>')"></div>
                                         </div>
                                         <div class="contacts-contact-text-wrap">
                                             <div class="intec-aligner"></div>
-                                            <div class="contacts-contact-text" itemprop="address">
-                                                <?= $arContact['SYSTEM_PROPERTIES']['ADDRESS']['VALUE'] ?>
+                                            <div class="contacts-contact-text">
+                                                <div class="contacts-contact-title">
+                                                    <?= GetMessage('N_L_CONTACTS_PROPERTY_EMAIL') ?>:
+                                                </div>
+                                                <span itemprop="email">
+                                                     <?= $arContact['SYSTEM_PROPERTIES']['EMAIL']['VALUE'] ?>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -138,22 +143,17 @@ $getMapCoordinates = function ($arItem) {
                                     </div>
                                 </div>
                             <?php } ?>
-                            <?php if (!empty($arContact['SYSTEM_PROPERTIES']['EMAIL']['VALUE'])) { ?>
+                            <?php if (!empty($arContact['SYSTEM_PROPERTIES']['ADDRESS']['VALUE'])) { ?>
                                 <div class="contacts-contact-parameter">
                                     <div class="contacts-contact-parameter-wrapper">
                                         <div class="contacts-contact-icon-wrap">
                                             <div class="intec-aligner"></div>
-                                            <div class="contacts-contact-icon" style="background-image: url('<?= $this->GetFolder().'/images/email.png' ?>')"></div>
+                                            <div class="contacts-contact-icon" style="background-image: url('<?= $this->GetFolder().'/images/location.png' ?>')"></div>
                                         </div>
                                         <div class="contacts-contact-text-wrap">
                                             <div class="intec-aligner"></div>
-                                            <div class="contacts-contact-text">
-                                                <div class="contacts-contact-title">
-                                                    <?= GetMessage('N_L_CONTACTS_PROPERTY_EMAIL') ?>:
-                                                </div>
-                                                <span itemprop="email">
-                                                     <?= $arContact['SYSTEM_PROPERTIES']['EMAIL']['VALUE'] ?>
-                                                </span>
+                                            <div class="contacts-contact-text" itemprop="address">
+                                                <?= $arContact['SYSTEM_PROPERTIES']['ADDRESS']['VALUE'] ?>
                                             </div>
                                         </div>
                                     </div>
