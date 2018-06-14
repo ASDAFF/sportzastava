@@ -91,6 +91,7 @@ Core::$app->web->js->addFile($directory.'/js/plugins/jquery.zoom.min.js');
 Core::$app->web->js->addFile($directory.'/js/plugins/jquery.scrollTo.min.js');
 Core::$app->web->js->addFile($directory.'/js/plugins/sly.min.js');
 Core::$app->web->js->addFile($directory.'/js/plugins/readmore.js');
+Core::$app->web->js->addFile($directory.'/js/plugins/jquery.maskinput.js');
 
 $page->execute(['state' => 'loaded']);
 $files = ArrayHelper::merge($files, [

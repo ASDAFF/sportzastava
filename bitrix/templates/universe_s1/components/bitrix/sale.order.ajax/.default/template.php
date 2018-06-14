@@ -558,6 +558,9 @@ if (strlen($request->get('ORDER_ID')) > 0) {
 		$messages = Loc::loadLanguageFile(__FILE__);
 	?>
 	<script>
+		$(function(){
+			$('input[autocomplete="tel"]').mask("+7 (999) 999-99-99");
+		});
 		BX.message(<?= CUtil::PhpToJSObject($messages) ?>);
 		BX.Sale.OrderAjaxComponent.init({
 			result: <?= CUtil::PhpToJSObject($arResult['JS_DATA']) ?>,
