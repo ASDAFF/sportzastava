@@ -75,104 +75,12 @@ if (!empty($ar))
 						<?= Loc::getMessage('SOA_ORDER_SUC1', array(
 							'#LINK#' => $arParams['PATH_TO_PERSONAL']
 						)) ?>
+						<br/><br/>
+						<div class=""><b><?=Loc::getMessage("SOA_PAY") ?></b></div>
+						<div class="paysystem_name"><?=$arResult['PAYMENT'][$arResult['ORDER']['PAYMENT_ID']]['PAY_SYSTEM_NAME'] ?></div>
 					</td>
 				</tr>
 			</table>
-
-			<?php
-			if ($arResult['ORDER']['IS_ALLOW_PAY'] === 'Y') {
-				if (!empty($arResult['PAYMENT'])) {
-					foreach ($arResult['PAYMENT'] as $payment) {
-						if ($payment['PAID'] != 'Y') {
-							if (!empty($arResult['PAY_SYSTEM_LIST'])
-								&& array_key_exists($payment['PAY_SYSTEM_ID'], $arResult['PAY_SYSTEM_LIST'])
-							) {
-								$arPaySystem = $arResult['PAY_SYSTEM_LIST'][$payment['PAY_SYSTEM_ID']];
-
-								if (empty($arPaySystem['ERROR'])) { ?>
-									<div class="sale_order_payment_table_wrap">
-										<table class="sale_order_full_table">
-											<tr>
-												<td class="ps_logo">
-													<div class="pay_name"><?= Loc::getMessage('SOA_PAY') ?></div>
-													<div class="paysystem_image"><?= CFile::ShowImage($arPaySystem['LOGOTIP'], 100, 100, 'border=0" style="width:100px"', '', false) ?></div>
-													<div class="paysystem_name"><?= $arPaySystem['NAME'] ?></div>
-													<br/>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<?php if (strlen($arPaySystem['ACTION_FILE']) > 0 && $arPaySystem['NEW_WINDOW'] == 'Y' && $arPaySystem['IS_CASH'] != 'Y') {
-														$orderAccountNumber = urlencode(urlencode($arResult['ORDER']['ACCOUNT_NUMBER']));
-														$paymentAccountNumber = $payment['ACCOUNT_NUMBER'];
-														?>
-														<script>
-															window.open('<?= $arParams['PATH_TO_PAYMENT'] ?>?ORDER_ID=<?= $orderAccountNumber ?>&PAYMENT_ID=<?= $paymentAccountNumber ?>');
-														</script>
-														<?= Loc::getMessage('SOA_PAY_LINK', array('#LINK#' => $arParams['PATH_TO_PAYMENT'] . '?ORDER_ID=' . $orderAccountNumber . '&PAYMENT_ID=' . $paymentAccountNumber)) ?>
-														<?php if (CSalePdf::isPdfAvailable() && $arPaySystem['IS_AFFORD_PDF']) { ?>
-															<br/>
-															<?= Loc::getMessage('SOA_PAY_PDF', array('#LINK#' => $arParams['PATH_TO_PAYMENT'] . '?ORDER_ID=' . $orderAccountNumber . '&pdf=1&DOWNLOAD=Y')) ?>
-														<?php }
-													} else {
-														// Payment form... SURPRISE!
-														echo str_replace('sale-paysystem-yandex-button-item', 'intec-button intec-button-cl-common intec-button-md', $arPaySystem['BUFFERED_OUTPUT']);
-													} ?>
-												</td>
-											</tr>
-										</table>
-									</div>
-								<?php } else { ?>
-									<span style="color:red;"><?= Loc::getMessage('SOA_ORDER_PS_ERROR') ?></span>
-								<?php }
-							} else { ?>
-								<span style="color:red;"><?= Loc::getMessage('SOA_ORDER_PS_ERROR') ?></span>
-							<?php }
-						}
-					}
-				}
-			} else { ?>
-				<br/><strong><?= $arParams['MESS_PAY_SYSTEM_PAYABLE_ERROR'] ?></strong>
-			<?php } ?>
-
-			<div class="intec-sale-order_info row">
-				<div class="intec-sale-order_info_category col-md-4 col-xs-12">
-					<div class="intec-sale-order_info_category_wrap">
-						<div class="intec-sale-order_info_title"><?= Loc::GetMessage('SOA_USER_DATA') ?></div>
-						<ul class="intec-sale-order_field_list">
-							<li class="intec-sale-order_field">
-								<span class="intec-sale-order_field_name"><?= Loc::GetMessage('STOF_NAME') ?></span>
-								<span class="intec-sale-order_field_value"><?= $user['NAME'] .' '. $user['SECOND_NAME'] .' '. $user['LAST_NAME'] ?></span>
-							</li>
-							<li class="intec-sale-order_field">
-								<span class="intec-sale-order_field_name"><?= Loc::GetMessage('SOA_PICKUP_PHONE') ?></span>
-								<span class="intec-sale-order_field_value"><?= $user['PERSONAL_PHONE'] ?></span>
-							</li>
-							<li class="intec-sale-order_field">
-								<span class="intec-sale-order_field_name"><?= Loc::GetMessage('STOF_EMAIL') ?></span>
-								<span class="intec-sale-order_field_value"><?= $user['EMAIL'] ?></span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="intec-sale-order_info_category col-md-4 col-xs-12">
-					<div class="intec-sale-order_info_category_wrap">
-						<div class="intec-sale-order_info_title"><?= Loc::GetMessage('SOA_DELIVERY') ?></div>
-						<div><?= $delivery['NAME'] ?></div>
-						<?php if ($arResult['DELIVERY_PRICE_FORMATED']) { ?>
-							<div><?= $arResult['DELIVERY_PRICE_FORMATED'] ?></div>
-						<?php } ?>
-					</div>
-				</div>
-                <?php if (!empty($deliveryAddress)) { ?>
-                    <div class="intec-sale-order_info_category col-md-4 col-xs-12">
-                        <div class="intec-sale-order_info_category_wrap">
-                            <div class="intec-sale-order_info_title"><?= Loc::GetMessage('SOA_DELIVERY_ADDRESS') ?></div>
-                            <div><?= $deliveryAddress ?></div>
-                        </div>
-                    </div>
-                <?php } ?>
-			</div>
 
 			<div class="intec-sale-order_products">
 				<table>
