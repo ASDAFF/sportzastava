@@ -354,7 +354,7 @@
     height: 50%;
 }
 
-@media (max-width:700px) {
+@media (max-width:1000px) {
     .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-contacts .contacts-information-content {
         margin:0;
     }
