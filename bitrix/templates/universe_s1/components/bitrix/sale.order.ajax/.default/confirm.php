@@ -78,6 +78,7 @@ if (!empty($ar))
 						<br/><br/>
 						<div class=""><b><?=Loc::getMessage("SOA_PAY") ?></b></div>
 						<div class="paysystem_name"><?=$arResult['PAYMENT'][$arResult['ORDER']['PAYMENT_ID']]['PAY_SYSTEM_NAME'] ?></div>
+						<div>—чет будет направлен на электронный €щик, при необходимости мы св€жемс€ с вами по контактным данным дл€ уточнений.</div>
 					</td>
 				</tr>
 			</table>
