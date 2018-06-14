@@ -276,10 +276,6 @@ if (strlen($request->get('ORDER_ID')) > 0) {
 				<div id="bx-soa-order" class="row bx-<?= $arParams['TEMPLATE_THEME'] ?>" style="opacity: 0;">
 					<!--	MAIN BLOCK	-->
 					<div class="col-md-9 bx-soa">
-						<div id="bx-soa-main-notifications">
-							<div class="alert alert-danger" style="display:none;"></div>
-							<div data-type="informer" style="display:none;"></div>
-						</div>
 						<!--	AUTH BLOCK	-->
 						<div id="bx-soa-auth" class="bx-soa-section bx-soa-auth" style="display:none;">
 							<div class="bx-soa-section-title-container">
@@ -443,6 +439,11 @@ if (strlen($request->get('ORDER_ID')) > 0) {
 								<div class="bx-soa-section-content container-fluid"></div>
 							</div>
 						<?php } ?>
+
+						<div id="bx-soa-main-notifications">
+							<div class="alert alert-danger" style="display:none;"></div>
+							<div data-type="informer" style="display:none;"></div>
+						</div>
 
 						<!--	ORDER SAVE BLOCK	-->
 						<div id="bx-soa-orderSave">

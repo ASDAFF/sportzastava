@@ -619,7 +619,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 				{
 					case 'MAIN':
 						this.showError(this.mainErrorsNode, blockErrors);
-						this.animateScrollTo(this.mainErrorsNode, 800, 20);
+						//this.animateScrollTo(this.mainErrorsNode, 800, 20);
 						scroll = false;
 						break;
 					case 'AUTH':
