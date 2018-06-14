@@ -1,6 +1,13 @@
 User-Agent: *
-Crawl-delay: 5
-Host: https://sportzastava.ru/
-Sitemap: https://sportzastava.ru/sitemap.xml
+Disallow: /*?
 Disallow: /bitrix/
-Disallow: /bitrix/admin/
+Disallow: /basket/
+Disallow: /workshop/
+Disallow: /about/
+Disallow: /constructor/
+Disallow: /index.php
+Disallow: /index.html
+Disallow: /search/
+Crawl-delay: 5
+Sitemap: https://sportzastava.ru/sitemap.xml
+Host: https://sportzastava.ru

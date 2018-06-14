@@ -26,8 +26,7 @@ $APPLICATION->SetTitle("Корзина");?>
 		"AUTO_CALCULATION" => "Y",
 		"SET_TITLE" => "Y",
 		"ACTION_VARIABLE" => "basketAction",
-		"OFFERS_PROPS" => array(
-		),
+		"OFFERS_PROPS" => "",
 		"USE_GIFTS" => "Y",
 		"GIFTS_PLACE" => "BOTTOM",
 		"GIFTS_BLOCK_TITLE" => "Выберите один из подарков",
@@ -51,14 +50,25 @@ $APPLICATION->SetTitle("Корзина");?>
 		"FAST_ORDER_SHOW_COMMENT" => "Y",
 		"FAST_ORDER_PRICE_TYPE" => "1",
 		"FAST_ORDER_DELIVERY_TYPE" => "2",
-		"FAST_ORDER_PAYMET_TYPE" => "1",
+		"FAST_ORDER_PAYMET_TYPE" => "3",
 		"FAST_ORDER_PAYER_TYPE" => "1",
 		"FAST_ORDER_SHOW_PROPERTIES" => array(
 		),
 		"FAST_ORDER_PROPERTY_PHONE" => "3",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
-		"CONSENT_URL" => "/company/consent/"
+		"CONSENT_URL" => "/company/consent/",
+		"COLUMNS_LIST_EXT" => array(
+			0 => "PREVIEW_PICTURE",
+			1 => "DISCOUNT",
+			2 => "DELETE",
+			3 => "DELAY",
+			4 => "TYPE",
+			5 => "SUM",
+		),
+		"COMPATIBLE_MODE" => "Y",
+		"ADDITIONAL_PICT_PROP_38" => "-",
+		"BASKET_IMAGES_SCALING" => "adaptive"
 	),
 	false
 );?>
