@@ -362,7 +362,7 @@
         width:100%!important;
     }
     .contacts .contacts-contact .contacts-contact-parameter {
-        width:100%;
+        width:100%!important;
     }
     .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-address,
     .contacts .contacts-offices .contacts-office .contacts-information-section.contacts-work-time,
@@ -380,5 +380,10 @@
     }
     .contacts .contacts-offices .contacts-office .contacts-information-section .contacts-information-title {
         margin-bottom: 6px;
+    }
+    .intec-content-right .contacts .contacts-contact,
+    .contacts .contacts-map
+    {
+        height: 100%;
     }
 }
