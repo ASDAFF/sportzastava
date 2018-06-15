@@ -70,7 +70,8 @@ $this->setFrameMode(true);
                                                             type="text"
                                                             name="<?= $arItem["VALUES"]["MIN"]["CONTROL_NAME"]?>"
                                                             id="<?= $arItem["VALUES"]["MIN"]["CONTROL_ID"]?>"
-                                                            value="<?= $min_price_from_js?($min_price_from_js):'0'?>"
+                                                            placeholder="<?= $min_price_from_js?($min_price_from_js):'0'?>"
+                                                            value="<?=$min_price_from_js;?>"
                                                             size="5"/>
                                                 </div>
                                             </div>
@@ -86,7 +87,8 @@ $this->setFrameMode(true);
                                                             type="text"
                                                             name="<?= $arItem["VALUES"]["MAX"]["CONTROL_NAME"]?>"
                                                             id="<?= $arItem["VALUES"]["MAX"]["CONTROL_ID"]?>"
-                                                            value="<?= $max_price_from_js?($max_price_from_js):(int)$arItem["VALUES"]["MAX"]['VALUE']?>"
+                                                            placeholder="<?= $max_price_from_js?($max_price_from_js):(int)$arItem["VALUES"]["MAX"]['VALUE']?>"
+                                                            value="<?=$max_price_from_js;?>"
                                                     />
                                                 </div>
                                             </div>
@@ -177,7 +179,8 @@ $this->setFrameMode(true);
                                                         type="text"
                                                         name="<?= $arItem["VALUES"]["MIN"]["CONTROL_NAME"]?>"
                                                         id="<?= $arItem["VALUES"]["MIN"]["CONTROL_ID"]?>"
-                                                        value="<?= $min_price_from_js?($min_price_from_js):'0'?>"
+                                                        placeholder="<?= $min_price_from_js?($min_price_from_js):'0'?>"
+                                                        value="<?=$min_price_from_js;?>"
                                                         size="5"/>
                                                     </div>
                                                 </div>
@@ -192,7 +195,8 @@ $this->setFrameMode(true);
                                                         type="text"
                                                         name="<?= $arItem["VALUES"]["MAX"]["CONTROL_NAME"]?>"
                                                         id="<?= $arItem["VALUES"]["MAX"]["CONTROL_ID"]?>"
-                                                        value="<?= $max_price_from_js?($max_price_from_js):(int)$arItem["VALUES"]["MAX"]['VALUE']?>"
+                                                        placeholder="<?= $max_price_from_js?($max_price_from_js):(int)$arItem["VALUES"]["MAX"]['VALUE']?>"
+                                                        value="<?=$max_price_from_js?>"
                                                         />
                                                     </div>
                                                 </div>
