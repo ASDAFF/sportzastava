@@ -149,6 +149,13 @@ if (!empty($ar))
 				</table>
 			</div>
 
+			<script type="text/javascript">
+				$(window).load(function() {
+					yaCounter49185655.reachGoal('zakaz39053065',function(){
+						console.log('order goal done');
+					});
+				});
+			</script>
 			<?php
 		} else { ?>
 

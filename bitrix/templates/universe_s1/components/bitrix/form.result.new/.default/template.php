@@ -12,6 +12,24 @@ use \intec\core\helpers\Html;
         <div class="contacts-form-note">
             <?= $arResult["FORM_NOTE"] ?>
         </div>
+
+        <?
+        switch ($arResult['arForm']['ID']) {
+            case "8":
+                $goal_id = "zakaz_zvonka39052900";
+                break;
+            case "12":
+                $goal_id = "zadat_vopros";
+                break;
+        }
+        ?>
+        <script type="text/javascript">
+            $(function() {
+                yaCounter49185655.reachGoal('<?=$goal_id;?>',function(){
+                    console.log('form goal <?=$goal_id?>');
+                });
+            });
+        </script>
     <?php } else { ?>
         <?= $arResult['FORM_HEADER'] ?>
 
