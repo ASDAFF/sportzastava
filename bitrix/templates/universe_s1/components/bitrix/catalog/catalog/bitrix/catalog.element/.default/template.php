@@ -207,6 +207,26 @@ $showAddBtn = in_array('ADD', $arParams['ADD_TO_BASKET_ACTION']);
 $showSubscribeBtn = $arResult['CATALOG_SUBSCRIBE'] == 'Y';
 
 ?>
+<script type="text/javascript">
+    var viewedCounter = {
+        path: '/bitrix/components/bitrix/catalog.element/ajax.php',
+        params: {
+            AJAX: 'Y',
+            SITE_ID: "<?= SITE_ID ?>",
+            PRODUCT_ID: "<?= $arResult['ID'] ?>",
+            PARENT_ID: "<?= $arResult['ID'] ?>"
+        }
+    };
+    BX.ready(
+        BX.defer(function(){
+            BX.ajax.post(
+                viewedCounter.path,
+                viewedCounter.params
+            );
+        })
+    );
+</script>
+
 <div class="intec-item-detail <?= $templateData['TEMPLATE_CLASS'] ?>"
      id="<?= $strMainID ?>"
      data-offer-id="<?= $currentOfferId ?>"
@@ -255,6 +275,7 @@ $showSubscribeBtn = $arResult['CATALOG_SUBSCRIBE'] == 'Y';
             </div>
         </div>
 
+
         <?php
         if (!empty($arParams['DETAIL_VIEW'])) {
             switch ($arParams['DETAIL_VIEW']) {
@@ -267,6 +288,11 @@ $showSubscribeBtn = $arResult['CATALOG_SUBSCRIBE'] == 'Y';
             }
         }
 
+        ?>
+
+
+
+        <?php
         /** Ask questions web form */
         if ($arParams['FEEDBACK_FORM_SHOW'] === 'Y' && !empty($arParams['FEEDBACK_FORM_ID'])) {
             $APPLICATION->IncludeComponent(
