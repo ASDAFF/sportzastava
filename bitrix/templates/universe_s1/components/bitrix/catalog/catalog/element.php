@@ -641,6 +641,78 @@ $sView = ArrayHelper::fromRange(array('tabless', 'tabs', 'tabs_bottom', 'tabs_ri
             false
         );?>
 
+
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:catalog.bigdata.products",
+            "bigdata.products",
+            array(
+                "ACTION_VARIABLE" => "action_cbdp",
+                "ADDITIONAL_PICT_PROP_38" => "SYSTEM_IMAGES",
+                "ADDITIONAL_PICT_PROP_51" => "",
+                "ADD_PROPERTIES_TO_BASKET" => "Y",
+                "BASKET_URL" => "/personal/basket.php",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "3600",
+                "CACHE_TYPE" => "A",
+                "CART_PROPERTIES_38" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "CART_PROPERTIES_51" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "CONVERT_CURRENCY" => "N",
+                "DEPTH" => "2",
+                "DETAIL_URL" => "",
+                "HIDE_NOT_AVAILABLE" => "N",
+                "IBLOCK_ID" => $arParams['IBLOCK_ID'],
+                "IBLOCK_TYPE" => "catalogs",
+                "ID" => $_REQUEST["PRODUCT_ID"],
+                "LABEL_PROP_38" => "-",
+                "LINE_ELEMENT_COUNT" => "4",
+                "MESS_BTN_BUY" => "Купить",
+                "MESS_BTN_DETAIL" => "Подробнее",
+                "MESS_BTN_SUBSCRIBE" => "Подписаться",
+                "OFFER_TREE_PROPS_51" => array(
+                ),
+                "PAGE_ELEMENT_COUNT" => "20",
+                "PARTIAL_PRODUCT_PROPERTIES" => "N",
+                "PRICE_CODE" => array(
+                    0 => "BASE",
+                ),
+                "PRICE_VAT_INCLUDE" => "Y",
+                "PRODUCT_ID_VARIABLE" => "id",
+                "PRODUCT_PROPS_VARIABLE" => "prop",
+                "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+                "PRODUCT_SUBSCRIPTION" => "N",
+                "PROPERTY_CODE_38" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "PROPERTY_CODE_51" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "RCM_TYPE" => "any",
+                "SECTION_CODE" => "",
+                "SECTION_ELEMENT_CODE" => "",
+                "SECTION_ELEMENT_ID" => "",
+                "SECTION_ID" => "",
+                "SHOW_DISCOUNT_PERCENT" => "N",
+                "SHOW_FROM_SECTION" => "N",
+                "SHOW_IMAGE" => "Y",
+                "SHOW_NAME" => "Y",
+                "SHOW_OLD_PRICE" => "N",
+                "SHOW_PRICE_COUNT" => "1",
+                "SHOW_PRODUCTS_38" => "Y",
+                "TEMPLATE_THEME" => "blue",
+                "USE_PRODUCT_QUANTITY" => "N",
+                "COMPONENT_TEMPLATE" => "bigdata.products"
+            ),
+            false
+        );?>
+
             </div>
             <? if ($isSidebar): ?>
             <div class="col-md-3 col-sm-4">
