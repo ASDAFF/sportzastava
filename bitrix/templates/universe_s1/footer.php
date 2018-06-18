@@ -16,6 +16,9 @@ if (empty($template))
         <?php include($directory.'/parts/'.$part.'/footer.php'); ?>
         <?php if (FileHelper::isFile($directory.'/parts/custom/body.end.php')) include($directory.'/parts/custom/body.end.php') ?>
 
+<!-- envybox.io -->
+<link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=124d218e3879cac2696e01bc95409ec1" charset="UTF-8" async></script>
 
 <!-- Yandex.Metrika counter от Prime -->
 <script type="text/javascript" >

@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Акции на спортивное оборудование от интернет-магазина Спорт Застава");
 $APPLICATION->SetTitle("Акции"); ?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 

@@ -1,4 +1,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "Покупай качественное  спортивное оборудование в Спорт Заставе с доставкой по всей России. Официальный дилер!");
+$APPLICATION->SetPageProperty("keywords", "Спортивное оборудование, интернет магазин");
+$APPLICATION->SetPageProperty("title", "Спорт Застава интернет-магазин спортивного оборудования с доставкой по всей РФ");
 
 use Bitrix\Main\Loader;
 use intec\constructor\Module as Constructor;

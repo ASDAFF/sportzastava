@@ -164,6 +164,18 @@ if (FileHelper::isFile($directory.'/parts/custom/start.php'))
             <script type="text/javascript"><?= $template->getJs() ?></script>
         <?php } ?>
         <?php if (FileHelper::isFile($directory.'/parts/custom/header.end.php')) include($directory.'/parts/custom/header.end.php') ?>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115054-45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62115054-45');
+</script>
+
     </head>
     <body class="public intec-adaptive">
         <?php if (FileHelper::isFile($directory.'/parts/custom/body.start.php')) include($directory.'/parts/custom/body.start.php') ?>
