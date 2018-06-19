@@ -140,3 +140,13 @@ ls
 git status
 git pull
 git status
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git push
+git status
+git pull
+git status
+git status
+git pull
