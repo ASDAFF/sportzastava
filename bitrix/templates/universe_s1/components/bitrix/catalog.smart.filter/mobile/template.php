@@ -131,20 +131,6 @@ $this->setFrameMode(true);
                         <div class="bx-filter-parameters-box-title" onclick="smartFilterM.hideFilterProps(this)">
 							<span class="bx-filter-parameters-box-hint"><i data-role="prop_angle" class="fa-left-element-filter fa fa-angle-<?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>up<?else:?>down<?endif?>"></i>
                                 <?=$arItem["NAME"]?>
-                                <?if ($arItem["FILTER_HINT"] <> ""):?>
-                                    <i id="item_title_hint_<?echo $arItem["ID"]?>" class="fa fa-question-circle"></i>
-                                    <script type="text/javascript">
-                                        new top.BX.CHint({
-                                            parent: top.BX("item_title_hint_<?echo $arItem["ID"]?>"),
-                                            show_timeout: 10,
-                                            hide_timeout: 200,
-                                            dx: 2,
-                                            preventHide: true,
-                                            min_width: 250,
-                                            hint: '<?= CUtil::JSEscape($arItem["FILTER_HINT"])?>'
-                                        });
-                                    </script>
-                                <?endif?>
                             </span>
                         </div>
                         <div class="bx-filter-block" data-role="bx_filter_block">
