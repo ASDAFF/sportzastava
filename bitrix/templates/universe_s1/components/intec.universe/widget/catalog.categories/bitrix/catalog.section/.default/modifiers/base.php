@@ -80,13 +80,14 @@ foreach ($arResult['ITEMS'] as &$arItem) {
     }
 
     if (!empty($sId) && !empty($sValue)) {
-        if (!ArrayHelper::keyExists($sId, $arSections))
-            $arSections[$sId] = array(
-                'NAME' => $sValue,
-                'CODE' => $sId,
-                'ITEMS' => array()
-            );
-
-        $arSections[$sId]['ITEMS'][] = $arItem;
+        foreach($sId as $key => $id){
+            if (!ArrayHelper::keyExists($id, $arSections))
+                $arSections[$id] = array(
+                    'NAME' => $sValue[$key],
+                    'CODE' => $id,
+                    'ITEMS' => array()
+                );
+            $arSections[$id]['ITEMS'][] = $arItem;
+        }
     }
 }
