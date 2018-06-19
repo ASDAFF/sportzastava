@@ -8,6 +8,13 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Доставка и оплата", 
+		"/pokupatelyam/buy-delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Акции и скидки", 
 		"/shares/", 
 		Array(), 
@@ -15,15 +22,8 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Покупателям", 
-		"/pokupatelyam/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Доставка и оплата", 
-		"/pokupatelyam/buy-delivery/", 
+		"Вопрос - ответ", 
+		"/help/faq/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -36,8 +36,8 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Вопрос - ответ", 
-		"/help/faq/", 
+		"Покупателям", 
+		"/pokupatelyam/", 
 		Array(), 
 		Array(), 
 		"" 
