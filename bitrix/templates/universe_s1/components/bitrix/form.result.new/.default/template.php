@@ -16,7 +16,7 @@ use \intec\core\helpers\Html;
         <?
         switch ($arResult['arForm']['ID']) {
             case "8":
-                $goal_id = "zakaz_zvonka39052900";
+                $goal_id = "zakaz_zvonka";
                 break;
             case "12":
                 $goal_id = "zadat_vopros";

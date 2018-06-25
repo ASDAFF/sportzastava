@@ -55,7 +55,7 @@ use intec\core\helpers\ArrayHelper;
                             <?= GetMessage('SOF_FORM_RESULT_SUCCESS') ?>
                         </div>
                         <script type="text/javascript">
-                            yaCounter49185655.reachGoal('bystryj_zakaz39052942',function(){
+                            yaCounter49185655.reachGoal('bystryj_zakaz',function(){
                                 console.log('fast order goal done');
                             });
 

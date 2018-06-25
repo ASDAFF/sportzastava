@@ -151,7 +151,7 @@ if (!empty($ar))
 
 			<script type="text/javascript">
 				$(window).load(function() {
-					yaCounter49185655.reachGoal('zakaz39053065',function(){
+					yaCounter49185655.reachGoal('zakaz',function(){
 						console.log('order goal done');
 					});
 				});
