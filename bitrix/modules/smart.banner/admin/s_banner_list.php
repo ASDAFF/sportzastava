@@ -134,7 +134,7 @@ while($res = $resData->NavNext(true, "f_"))
 
     $arActions[] = array(
         "ICON" =>  "copy",
-        "TEXT" =>  "Копировать",
+        "TEXT" =>  GetMessage("COPY"),
         "ACTION"=> $itemAdmin->ActionDoGroup($f_ID, "copy")
     );
 

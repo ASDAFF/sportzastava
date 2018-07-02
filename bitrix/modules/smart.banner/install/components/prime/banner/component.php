@@ -53,6 +53,8 @@ if($arParams['ACTIVE'] == "Y"){
 
     if(!$arParams['PAUSE']){
         $arResult['PAUSE'] = 5000;
+    }else{
+        $arResult['PAUSE'] = ($arParams['PAUSE']*1000);
     }
 
     $this->IncludeComponentTemplate();

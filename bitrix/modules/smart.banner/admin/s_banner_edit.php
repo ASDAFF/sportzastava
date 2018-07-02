@@ -203,12 +203,12 @@ elseif($classes->LAST_ERROR!="")
     </tr>
 
     <tr>
-        <td>Символьный код:</td>
+        <td><?echo GetMessage("BANNER_URL")?></td>
         <td><input type="text" name="URL" value="<?echo $str_URL;?>" size="30" maxlength="100"></td>
     </tr>
 
     <tr>
-        <td width="40%"><label for="active">Открывать в новом окне</label></td>
+        <td width="40%"><label for="active"><?echo GetMessage("BANNER_TARGET")?></label></td>
         <td width="60%">
             <?
             echo InputType("checkbox", "OPEN_NEW_WINDOW", "Y", $str_OPEN_NEW_WINDOW, false, "", 'id="open_new_window"');
@@ -217,7 +217,7 @@ elseif($classes->LAST_ERROR!="")
     </tr>
 
     <tr>
-        <td>Отложить показ баннера</td>
+        <td><?echo GetMessage("BANNER_WEIGHT")?></td>
         <td><input type="text" name="PAUSE" value="<?echo $str_PAUSE;?>" size="30" maxlength="100"></td>
     </tr>
 
@@ -229,19 +229,19 @@ elseif($classes->LAST_ERROR!="")
     </tr>
 
     <tr>
-        <td>Разместить баннер</td>
+        <td><?=GetMessage("POSITION")?></td>
         <td>
             <input type="radio" onclick="changeType('top');" id="SHOW_TOP" name="SHOW_POSITION" value="top"<?if (((($ID && $str_SHOW_POSITION=='top')|| !$ID) && !isset($SHOW_POSITION)) || (isset($SHOW_POSITION) && ($SHOW_POSITION == 'top'))): ?> checked="checked"<? endif; ?>>
-            <label>Сверху</label><br>
+            <label><?=GetMessage("POSITION_TOP")?></label><br>
             <input type="radio" onclick="changeType('bottom');" id="SHOW_BOTTOM" name="SHOW_POSITION" value="bottom"<?if (($ID && $str_SHOW_POSITION=='bottom') || (isset($SHOW_POSITION) && ($SHOW_POSITION == 'bottom'))): ?> checked="checked"<? endif; ?>>
-            <label>Снизу</label><br>
+            <label><?=GetMessage("POSITION_BOTTOM")?></label><br>
             <input type="radio" onclick="changeType('custom');" id="SHOW_CUSTOM" name="SHOW_POSITION" value="center"<?if (($ID && $str_SHOW_POSITION=='center') || (isset($SHOW_POSITION) && ($SHOW_POSITION == 'center'))): ?> checked="checked"<? endif; ?>>
-            <label>По центру</label>
+            <label><?=GetMessage("POSITION_CENTER")?></label>
         </td>
     </tr>
 
     <tr>
-        <td width="40%"><label for="active">Показ баннера при уходе с сайта</label></td>
+        <td width="40%"><label for="active"><?=GetMessage("BANNER_SHOW_OUT_SITE")?></label></td>
         <td width="60%">
             <?
             echo InputType("checkbox", "SHOW_OUT_SITE", "Y", $str_SHOW_OUT_SITE, false, "", 'id="show_out_site"');

@@ -127,7 +127,7 @@ Class smart_banner extends CModule
         $this->UnInstallDB();
         UnRegisterModule($this->MODULE_ID);
         UnRegisterModuleDependences("main", "OnEpilog",$this->MODULE_ID, "Nb_class", "ShowBanner");
-        $APPLICATION->IncludeAdminFile("Деинсталляция модуля", $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/dv_module/install/unstep.php");
+        $APPLICATION->IncludeAdminFile(GetMessage("MOD_UNINST_OK"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/unstep.php");
     }
 }
 ?>
