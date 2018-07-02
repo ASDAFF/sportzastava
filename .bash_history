@@ -157,3 +157,15 @@ git commit -a -m 'srv'
 git push
 git status
 git pull
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git pull
+git status
+ls
+git pull
+ls
+git status
+git pull

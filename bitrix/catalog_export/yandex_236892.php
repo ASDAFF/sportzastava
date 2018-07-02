@@ -6,7 +6,7 @@ $strReferer2 = htmlspecialchars($_GET["referer2"]);
 header("Content-Type: text/xml; charset=windows-1251");
 echo "<"."?xml version=\"1.0\" encoding=\"windows-1251\"?".">"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2018-06-19 14:44">
+<yml_catalog date="2018-07-02 04:14">
 <shop>
 <name>Интернет-магазин Спорт застава</name>
 <company>sportzastava.ru</company>
@@ -5511,19 +5511,6 @@ echo "<"."?xml version=\"1.0\" encoding=\"windows-1251\"?".">"?>
 <description></description>
 <manufacturer_warranty>2</manufacturer_warranty>
 <country_of_origin>Китай</country_of_origin>
-</offer>
-<offer id="2489" available="true">
-<url>http://sportzastava.ru/catalog/ellipticheskie_trenazhery/ellipticheskiy_trenazher_spirit_fitness_xe580_kopiya_ot_19_12_2017_17_17_30/?r1=<?=$strReferer1; ?>&amp;r2=<?=$strReferer2; ?></url>
-<price>119990</price>
-<currencyId>RUB</currencyId>
-<categoryId>155</categoryId>
-<picture>http://sportzastava.ru/upload/iblock/85f/85f80dc3e432e88e69dab1fda3062ee5.png</picture>
-<vendor>Spirit Fitness</vendor>
-<vendorCode></vendorCode>
-<name>Эллиптический тренажер Spirit Fitness XE580 [Копия от 19.12.2017 17:17:30]</name>
-<description></description>
-<manufacturer_warranty>2 года (1 год от производителя + 1 год* дополнительная)</manufacturer_warranty>
-<country_of_origin>Тайвань</country_of_origin>
 </offer>
 <offer id="2490" available="true">
 <url>http://sportzastava.ru/catalog/ellipticheskie_trenazhery/ellipticheskiy_trenazher_spirit_fitness_ce900ent/?r1=<?=$strReferer1; ?>&amp;r2=<?=$strReferer2; ?></url>
