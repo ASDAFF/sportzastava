@@ -65,7 +65,7 @@ $bIconsDisplay =
                             <?endif;?>
 
                             <div class="header-content-item header-content-item-full header-content-menu">
-                                <div class="header-content-item-wrapper header-content-menu-wrapper">
+                                <div class="header-content-item-wrapper header-content-menu-wrapper" style="margin: 0">
                                     <?php include('menu_fixed.component.php') ?>
                                 </div>
                             </div>
@@ -108,6 +108,9 @@ $bIconsDisplay =
                                     ) ?>
                                 </div>
                             <?}?>
+                                <div class="header-content-item">
+                                    <?php include('phone_fixed.component.php')?>
+                                </div>
                         </div>
                     </div>
                 </div>

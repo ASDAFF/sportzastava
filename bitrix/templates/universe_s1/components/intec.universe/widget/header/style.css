@@ -753,6 +753,24 @@
     color: inherit;
 }
 
+
+.header-content-item .fixed-phone{
+    margin: 0 20px;
+    padding: 13px 20px;
+    background: #e05615;
+    color: #FFF;
+    white-space: nowrap;
+    height: 100%;
+}
+.header-content-item .fixed-phone .phone-top{
+    font-size: 18px;
+    font-weight: 600;
+}
+.header-content-item .fixed-phone .text-phone-top{
+    font-size: 13px;
+}
+
+
 /* ---------- /With banner ---------- */
 
 
