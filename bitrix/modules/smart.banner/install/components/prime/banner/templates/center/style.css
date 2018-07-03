@@ -1,14 +1,12 @@
 
 .prime-banner-center{
+    display: none;
     position: fixed;
-    width: 900px;
-    height: 500px;
+    left: 50%;
+    height: auto;
     overflow: hidden;
     top: 100px;
-    left: 50%;
-    margin-left: -450px;
     z-index: 99999999999999;
-    border: 1px solid #e05615;
     opacity: 0;
     transition: opacity 1s, visibility 0s linear 1s;
 }
@@ -26,11 +24,8 @@
     cursor: pointer;
 }
 
-.prime-banner-center img{
-    width: 100%;
-}
 .prime-window-bgr{
-    display: block;
+    display: none;
     opacity: 0;
     position: fixed !important;
     width: 100% !important;

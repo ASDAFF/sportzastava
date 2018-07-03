@@ -66,4 +66,5 @@ $MESS['POSITION_TOP'] = "Сверху";
 $MESS['POSITION_BOTTOM'] = "Снизу";
 $MESS['POSITION_CENTER'] = "По центру";
 $MESS['BANNER_SHOW_OUT_SITE'] = "Показ баннера при уходе с сайта:";
+$MESS['BANNER_SHOW_TIME'] = "Показ баннера по времени:";
 ?>

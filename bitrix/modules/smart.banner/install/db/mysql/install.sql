@@ -12,6 +12,7 @@ create table if not exists b_smart_banner
 	SHOW_OFF text,
 	SHOW_POSITION text,
 	SHOW_OUT_SITE char(1),
+	SHOW_TIME char(1),
 	OPEN_NEW_WINDOW char(1),
 	SHOWS int(18) not null DEFAULT 0,
 	CLICKS int(18) not null DEFAULT 0,

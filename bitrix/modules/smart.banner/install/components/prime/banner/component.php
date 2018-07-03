@@ -3,7 +3,7 @@
 
 $arResult = Array();
 global $DB;
-$curPage = $GLOBALS['APPLICATION']->GetCurPage(true);
+$curPage = $GLOBALS['APPLICATION']->GetCurUri(true);
 if($arParams['ACTIVE'] == "Y"){
 
     $arResult['ID'] = $arParams['ID'];
@@ -17,6 +17,7 @@ if($arParams['ACTIVE'] == "Y"){
     $arResult['URL'] = $arParams['URL'];
     $arResult['OPEN_NEW_WINDOW'] = $arParams['OPEN_NEW_WINDOW'];
     $arResult['SHOW_OUT_SITE'] = $arParams['SHOW_OUT_SITE'];
+    $arResult['SHOW_TIME'] = $arParams['SHOW_TIME'];
 
     if($_COOKIE['primeBannerClose-'.$arResult['ID']] AND !$_REQUEST["prime-test"])
         return false;
@@ -57,6 +58,7 @@ if($arParams['ACTIVE'] == "Y"){
         $arResult['PAUSE'] = ($arParams['PAUSE']*1000);
     }
 
+    $this->AbortResultCache();
     $this->IncludeComponentTemplate();
 }
 

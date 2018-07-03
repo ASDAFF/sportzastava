@@ -17,11 +17,9 @@
     var alert_flag = true;
     document.onmouseout = handler;
     function handler(event){
-        if (event.clientY < 0) {
-            if (alert_flag) {
-                showBannerBottom();
+        if (event.clientY < 0 && alert_flag) {
                 alert_flag = false;
-            }
+                showBannerBottom();
         }
     }
     <?endif;?>
@@ -55,7 +53,10 @@
         statBannerBottom("SHOWS");
         document.getElementById('show-<?=$arResult['ID']?>').style.bottom='0px';
     }
+
+    <?if($arResult['SHOW_TIME'] == "Y"):?>
     setTimeout(showBannerBottom, <?=$arResult['PAUSE'];?>);
+    <?endif;?>
 
 </script>
 

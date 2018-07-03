@@ -20,6 +20,7 @@ class Nb_class
                     "SHOW_POSITION",
                     "SHOW_OFF",
                     "SHOW_OUT_SITE",
+                    "SHOW_TIME",
                     "OPEN_NEW_WINDOW"
                 );
         }
@@ -72,7 +73,7 @@ class Nb_class
             $sql = "
 				SELECT
 					ID,SID,NAME,URL,ACTIVE,
-					IMAGE_ID,PAUSE,SHOW_FROM,SHOW_TO,SHOW_POSITION,SHOW_OFF,SHOW_OUT_SITE,OPEN_NEW_WINDOW
+					IMAGE_ID,PAUSE,SHOW_FROM,SHOW_TO,SHOW_POSITION,SHOW_OFF,SHOW_OUT_SITE,SHOW_TIME,OPEN_NEW_WINDOW
 				FROM b_smart_banner WHERE ID=".$ID
             ;
             global $DB;
@@ -97,6 +98,7 @@ class Nb_class
                     SHOW_OFF,
                     SHOW_POSITION,
                     SHOW_OUT_SITE,
+                    SHOW_TIME,
                     OPEN_NEW_WINDOW
 	        FROM b_smart_banner WHERE ID=".$ID;
             global $DB;

@@ -37,6 +37,9 @@ check_bitrix_sessid()
     if($SHOW_OUT_SITE != "Y")
         $SHOW_OUT_SITE = 'N';
 
+    if($SHOW_TIME != "Y")
+        $SHOW_TIME = 'N';
+
 
     $SID = $_POST["SID"];
     if(!empty($SID))
@@ -62,6 +65,7 @@ check_bitrix_sessid()
         "SHOW_POSITION"	 => $SHOW_POSITION,
         "SHOW_OFF"	     => $SHOW_OFF,
         "SHOW_OUT_SITE"	 => $SHOW_OUT_SITE,
+        "SHOW_TIME"	 => $SHOW_TIME,
         "OPEN_NEW_WINDOW"	 => $OPEN_NEW_WINDOW,
     );
     if($ID > 0)
@@ -245,6 +249,15 @@ elseif($classes->LAST_ERROR!="")
         <td width="60%">
             <?
             echo InputType("checkbox", "SHOW_OUT_SITE", "Y", $str_SHOW_OUT_SITE, false, "", 'id="show_out_site"');
+            ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td width="40%"><label for="active"><?=GetMessage("BANNER_SHOW_TIME")?></label></td>
+        <td width="60%">
+            <?
+            echo InputType("checkbox", "SHOW_TIME", "Y", $str_SHOW_TIME, false, "", 'id="show_time"');
             ?>
         </td>
     </tr>
