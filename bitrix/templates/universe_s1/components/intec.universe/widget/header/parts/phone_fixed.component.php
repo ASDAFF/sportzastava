@@ -1,7 +1,7 @@
 <div class="fixed-phone">
     <div class="phone-top">
         <? foreach($arParams['PHONE'] as $phone){
-           print str_replace("-"," - ",$phone);
+           print $phone;
         }?>
     </div>
     <div class="text-phone-top">
