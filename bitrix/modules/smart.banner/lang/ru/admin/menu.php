@@ -1,7 +1,7 @@
 <?
-$MESS ['NB_MENU_MAIN'] = "Óìíûé áàííåð";
-$MESS ['NB_MENU_MAIN_TITLE'] = "Óäîáíûå áàííåðû äëÿ ñàéòà";
-$MESS ['NB_BANNERS_LIST'] = "Ñïèñîê áàííåðîâ";
-$MESS ['NB_BANNERS_LIST_TITLE'] = "Ñïèñîê âñåõ áàííåðîâ";
-$MESS ['NB_BANNERS_STAT'] = "Ñòàòèñòèêà";
+$MESS ['NB_MENU_MAIN'] = "Ð£Ð¼Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ð½ÐµÑ€";
+$MESS ['NB_MENU_MAIN_TITLE'] = "Ð£Ð´Ð¾Ð±Ð½Ñ‹Ðµ Ð±Ð°Ð½Ð½ÐµÑ€Ñ‹ Ð´Ð»Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS ['NB_BANNERS_LIST'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±Ð°Ð½Ð½ÐµÑ€Ð¾Ð²";
+$MESS ['NB_BANNERS_LIST_TITLE'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð²ÑÐµÑ… Ð±Ð°Ð½Ð½ÐµÑ€Ð¾Ð²";
+$MESS ['NB_BANNERS_STAT'] = "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°";
 ?>
