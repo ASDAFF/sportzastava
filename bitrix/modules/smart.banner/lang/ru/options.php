@@ -1,15 +1,15 @@
 <?
-$MESS ['RKLITE_ACCESS'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿";
-$MESS ['RKLITE_ACCESS_TITLE'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
-$MESS ['RKLITE_OPTIONS'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
-$MESS ['RKLITE_OPTIONS_TITLE'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
-$MESS ['FORM_SAVE'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
-$MESS ['FORM_RESET'] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
-$MESS ['MAIN_RESTORE_DEFAULTS'] = "ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
+$MESS ['RKLITE_ACCESS'] = "Äîñòóï";
+$MESS ['RKLITE_ACCESS_TITLE'] = "Ïàðàìåòðû äîñòóïà";
+$MESS ['RKLITE_OPTIONS'] = "Íàñòðîéêè";
+$MESS ['RKLITE_OPTIONS_TITLE'] = "Íàñòðîéêè ìîäóëÿ";
+$MESS ['FORM_SAVE'] = "Ñîõðàíèòü";
+$MESS ['FORM_RESET'] = "Ñáðîñèòü";
+$MESS ['MAIN_RESTORE_DEFAULTS'] = "Ïî óìîë÷àíèþ";
 
-$MESS ['MAIN_SETTINGS'] = "ÐžÑÐ½Ð¾Ð²Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
-$MESS ['RK_STAT_DAYS'] = "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ð´Ð½ÐµÐ¹ Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ";
-$MESS ['RKLITE_DONT_IGNORE_SECURITY'] = "ÐÐµ Ð¸Ð³Ð½Ð¾Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ 'Ð—Ð°Ñ‰Ð¸Ñ‚Ñƒ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ð² Ð¾Ñ‚ Ñ„Ð¸ÑˆÐ¸Ð½Ð³Ð°' Ð¿Ñ€Ð¸ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ðµ";
-$MESS ['RKLITE_SET_SUBDOMAIN_KEYWORDS'] = "ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ ÑƒÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ ÐºÐ»ÑŽÑ‡ÐµÐ²Ñ‹Ðµ ÑÐ»Ð¾Ð²Ð° Ð´Ð»Ñ Ð¿Ð¾Ð´Ð´Ð¾Ð¼Ð¼ÐµÐ½Ð¾Ð² 3 ÑƒÑ€Ð¾Ð²Ð½Ñ";
+$MESS ['MAIN_SETTINGS'] = "Îñíîâíûå íàñòðîéêè";
+$MESS ['RK_STAT_DAYS'] = "Ñêîëüêî äíåé õðàíèòü ñòàòèñòèêó";
+$MESS ['RKLITE_DONT_IGNORE_SECURITY'] = "Íå èãíîðèðîâàòü 'Çàùèòó ðåäèðåêòîâ îò ôèøèíãà' ïðè ðåäèðåêòå";
+$MESS ['RKLITE_SET_SUBDOMAIN_KEYWORDS'] = "Àâòîìàòè÷åñêè óñòàíàâëèâàòü êëþ÷åâûå ñëîâà äëÿ ïîääîììåíîâ 3 óðîâíÿ";
 
 ?>
