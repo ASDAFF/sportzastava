@@ -1,4 +1,4 @@
-<?
+<?php
 
 global $DBType;
 $module_id = 'smart.banner';

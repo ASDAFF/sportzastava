@@ -17,11 +17,10 @@ $module_id = "smart.banner";
 	);
 
 
-
 	$aMenu["items"][] = array(
 		"text" => GetMessage("NB_BANNERS_LIST"),
 		"url" => "nb_s_banner_list.php?lang=".LANGUAGE_ID,
-		"more_url"=> array("nb_s_banner_list.php?lang=".LANGUAGE_ID),
+		"more_url"=> array("nb_s_banner_list.php?lang=".LANGUAGE_ID,"nb_s_banner_edit.php?lang=".LANGUAGE_ID),
 		"module_id" => $module_id,
 		"title" => GetMessage("NB_BANNERS_LIST_TITLE"),
 		"items_id" => "nb_banners_list",
