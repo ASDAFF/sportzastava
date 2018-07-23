@@ -155,7 +155,7 @@ class Filter
         {
             return array('PROPERTY_' . $pr['ID'] => $vals);
         }
-        elseif ($pr['PROPERTY_TYPE'] != 'L' || $pr['PROPERTY_TYPE'] == 'E')
+        elseif ($pr['PROPERTY_TYPE'] == 'L' || $pr['PROPERTY_TYPE'] == 'E')
         {
             return array('PROPERTY_' . $pr['ID'] => $prop_string_values[$pr['ID']] ?: $vals);
         }

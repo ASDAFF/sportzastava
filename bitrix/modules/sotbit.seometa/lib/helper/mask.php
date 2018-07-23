@@ -44,7 +44,7 @@ class Mask
                 $MASK = $sectionMask;
         }
 
-//        $this->mask = $MASK;
+        // $this->mask = $MASK;
         $this->template = $MASK;
 
         if($this->HasIblockPlaceholders())
@@ -71,7 +71,8 @@ class Mask
 
     public function SetTemplate($template = true)
     {
-        if(is_string($template)) {
+        if(is_string($template))
+        {
             $this->mask = $template;
             $this->template = $template;
         }
@@ -84,7 +85,8 @@ class Mask
         $iblock = \CIBlock::GetById($IblockId)->Fetch();
         $keys = $this->placeholders['IBLOCK'];
         $result = array();
-        foreach($keys as &$key) {
+        foreach($keys as &$key)
+        {
             $clearKey = str_replace(array('#IBLOCK_', '#'), '', $key);
             echo $clearKey.'<br>';
             if (isset($iblock[$clearKey]) && $clearKey != 'TYPE_ID')
@@ -126,7 +128,8 @@ class Mask
     {
        if(is_array($arFields))
             foreach ($arFields as &$arField)
-                if (is_array($arField)){
+                if(is_array($arField))
+                {
                     $arField = implode($this->delimiter, $arField);
                 }
 

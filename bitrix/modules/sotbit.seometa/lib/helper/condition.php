@@ -83,7 +83,9 @@ class Condition
 
         foreach($newConditions as $Condition)
             if(isset($Condition['DATA']['All']) && $Condition['DATA']['All'] == $key)
-                $result = array_merge($result, $Condition['CHILDREN']);
+                $result = array_merge($result, array($Condition['CHILDREN']));
+
+        //$result = array_merge($result, $Condition['CHILDREN']);
 
         return $result;
     }
@@ -366,7 +368,7 @@ class Condition
                 default:
                     //$prop_values = self::GetValuesIfEmptyValue($IdIblock, $IdProperty, $ConditionSections);
 
-                    if (is_array(\CCatalogSKU::GetInfoByProductIBlock($property['IBLOCK_ID'])))
+                    if (!class_exists('CCatalogSKU') || is_array(\CCatalogSKU::GetInfoByProductIBlock($property['IBLOCK_ID'])))
                     {
                         $prop_values = self::AllEnteredProperties($IdIblock, $ConditionSections, $IdProperty, $property);
                     }
@@ -402,7 +404,7 @@ class Condition
             "!PROPERTY_$code" => false
         );
         $filterBySection = true;
-        if(is_array(\CCatalogSKU::GetInfoByOfferIBlock($IdIblock)))
+        if(!class_exists('CCatalogSKU') || is_array(\CCatalogSKU::GetInfoByOfferIBlock($IdIblock)))
             $filterBySection = false;
 
         $prop_values = array();
@@ -486,34 +488,19 @@ class Condition
 
         if ($IdIblock == $CatalogResult['PRODUCT_IBLOCK_ID']) // If property of product
         {
-            if(!self::$isGenerateChpu){
-                $res = \CIBlockElement::GetList( Array(), Array(
-                    "IBLOCK_ID" => $IdIblock,
-                    "ACTIVE" => "Y",
-                    "SECTION_ID" => $ConditionSections,
-                    "INCLUDE_SUBSECTIONS" => "Y"
-                ), false, false, array(
-                    'PROPERTY_' . $IdProperty
-                ) );
-                while ( $ob = $res->GetNextElement() )
-                {
-                    $arFields = $ob->GetFields();
-                    $return[] = $arFields;
-                }
-            } else {
-                $res = \CIBlockProperty::GetPropertyEnum(
-                    $IdProperty,
-                    array(),
-                    array(
-                        'IBLOCK_ID'=>$IdIblock,
-                    )
-                );
-                while ( $arFields = $res->fetch() )
-                {
-                    $return[] = $arFields;
-                }
+            $res = \CIBlockElement::GetList( Array(), Array(
+                "IBLOCK_ID" => $IdIblock,
+                "ACTIVE" => "Y",
+                "SECTION_ID" => $ConditionSections,
+                "INCLUDE_SUBSECTIONS" => "Y"
+            ), false, false, array(
+                'PROPERTY_' . $IdProperty
+            ) );
+            while ( $ob = $res->GetNextElement() )
+            {
+                $arFields = $ob->GetFields();
+                $return[] = $arFields;
             }
-
         }
         elseif ($IdIblock == $OffersResult['IBLOCK_ID']) // If property of offer
         {

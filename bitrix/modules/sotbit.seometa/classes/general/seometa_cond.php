@@ -2718,7 +2718,8 @@ class SMCatalogCondCtrlIBlockFields extends SMCatalogCondCtrlComplex
 				array()
 			);
 
-			while($arPriceType = $dbPriceType->Fetch()){
+            while($arPriceType = $dbPriceType->Fetch())
+            {
 				$name = (!empty($arPriceType['NAME_LANG'])) ? $arPriceType['NAME_LANG'] : $arPriceType['NAME'];
 
 				$arControlListPrice=array(

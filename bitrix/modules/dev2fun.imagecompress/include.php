@@ -1,11 +1,10 @@
 <?php
 /**
-* 
-* @author dev2fun (darkfriend)
-* @copyright darkfriend
-* @version 0.1.12
-* 
-*/
+ * @author darkfriend <hi@darkfriend.ru>
+ * @copyright dev2fun
+ * @version 0.2.1
+ */
+
 defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
 \Bitrix\Main\Localization\Loc::loadMessages(__FILE__);
 
@@ -14,6 +13,7 @@ global $DBType;
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\EventManager;
+use Bitrix\Main\Localization\Loc;
 
 Loader::registerAutoLoadClasses(
 	"dev2fun.imagecompress",
@@ -23,10 +23,15 @@ Loader::registerAutoLoadClasses(
 	    'Dev2fun\ImageCompress\Check' => 'lib/Check.php',
 	    'Dev2fun\ImageCompress\Compress' => 'lib/Compress.php',
 		"Dev2funImageCompress" => __FILE__,
+
+		"Dev2fun\ImageCompress\Jpegoptim" => 'lib/Jpegoptim.php',
+		"Dev2fun\ImageCompress\Optipng" => 'lib/Optipng.php',
 	)
 );
 
 class Dev2funImageCompress {
+
+	const MODULE_ID = 'dev2fun.imagecompress';
 
     public function DoBuildGlobalMenu(&$aGlobalMenu, &$aModuleMenu) {
         $aModuleMenu[] = array(
@@ -34,8 +39,8 @@ class Dev2funImageCompress {
             "icon" => "dev2fun_compressimage_menu_icon",
             "page_icon" => "dev2fun_compressimage_page_icon",
             "sort"=>"900",
-            "text"=> GetMessage("DEV2FUN_IMAGECOMPRESS_MENU_TEXT"),
-            "title"=> GetMessage("DEV2FUN_IMAGECOMPRESS_MENU_TITLE"),
+            "text"=> Loc::getMessage("DEV2FUN_IMAGECOMPRESS_MENU_TEXT"),
+            "title"=> Loc::getMessage("DEV2FUN_IMAGECOMPRESS_MENU_TITLE"),
             "url"=>"/bitrix/admin/dev2fun_imagecompress_files.php",
             "items_id" => "menu_dev2fun_compressimage",
             "section" => "dev2fun_imagecompress",

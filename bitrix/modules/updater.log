@@ -619,3 +619,30 @@
 2018-06-05 18:18:46 -  - exec CUpdateClient::ParseServerData
 2018-06-05 19:21:17 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1528215677/asd.iblock/updater4.6.7.php': CopyFiles(install/js, js/)
 2018-06-05 19:21:17 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1528215677/asd.iblock/updater4.6.7.php': CopyFiles(install/panel, panel/)
+2018-07-20 12:23:27 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1532078607/sotbit.seometa/updater1.4.3.php': CopyFiles(install/admin, admin/)
+2018-07-20 12:23:27 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1532078607/sotbit.seometa/updater1.4.3.php': CopyFiles(install/components, components/)
+2018-07-20 12:23:27 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1532078607/sotbit.seometa/updater1.4.3.php': Query(CREATE TABLE IF NOT EXISTS `b_sotbit_seometa_autogeneration`
+            (
+                `ID` int(11) NOT NULL auto_increment,
+                `NAME` varchar(255) NOT NULL,
+                `SITES` varchar(255),
+                `TYPE_OF_INFOBLOCK` varchar(255),
+                `INFOBLOCK` varchar(255),
+                `SECTIONS` varchar(255),
+                `RULE` text,
+                `LOGIC` varchar(10) DEFAULT 'AND',
+                `FILTER_TYPE` varchar(255),
+                `NAME_TEMPLATE` varchar(255),
+                `ACTIVE` char(1) DEFAULT 'Y',
+                `SEARCH` char(1) DEFAULT 'Y',
+                `NO_INDEX` char(1) DEFAULT 'N',
+                `STRICT` char(1) DEFAULT 'Y',
+                `CATEGORY` int(11) DEFAULT 0,
+                `META` text,
+                `TAGS` text,
+                `NEW_URL_TEMPLATE` varchar(255),
+                `GENERATE_CHPU` char(1) DEFAULT 'N',
+                `DATE_CHANGE` datetime,
+                PRIMARY KEY (`ID`)
+            );, )
+2018-07-20 12:23:29 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1532078609/asd.iblock/updater4.6.8.php': CopyFiles(install/js, js/asd.iblock/)

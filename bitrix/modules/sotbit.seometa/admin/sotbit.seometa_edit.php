@@ -108,6 +108,9 @@ if($ID > 0)
 	$condition = $conditionRes->fetch();
 }
 
+//printr($condition);
+
+//printr(unserialize($condition["RULE"]));
 
 if (isset( $_REQUEST["NAME"] ) && $_REQUEST["NAME"])
 	$condition["NAME"] = $_REQUEST["NAME"];
@@ -205,12 +208,22 @@ if (isset( $_REQUEST['action'] ))
 // POST
 if ($REQUEST_METHOD == "POST" && ($save != "" || $apply != "") && $POST_RIGHT == "W" && check_bitrix_sessid())
 {
+    $bVarsFromForm = true;
+	
+	$arELEMENT_FILE = \CIBlock::makeFileArray(
+			$ELEMENT_FILE,
+			${"ELEMENT_FILE_del"} === "Y",
+			$_REQUEST['ELEMENT_FILE_descr']
+			);
+    $fid = CFile::SaveFile($arELEMENT_FILE, "seometa");
+    
 	$META_TEMPLATE['ELEMENT_TOP_DESC'] = $ELEMENT_TOP_DESC;
 	$META_TEMPLATE['ELEMENT_BOTTOM_DESC'] = $ELEMENT_BOTTOM_DESC;
 	$META_TEMPLATE['ELEMENT_ADD_DESC'] = $ELEMENT_ADD_DESC;
 	$META_TEMPLATE['ELEMENT_TOP_DESC_TYPE'] = $ELEMENT_TOP_DESC_TYPE;
 	$META_TEMPLATE['ELEMENT_BOTTOM_DESC_TYPE'] = $ELEMENT_BOTTOM_DESC_TYPE;
-	$META_TEMPLATE['ELEMENT_ADD_DESC_TYPE'] = $ELEMENT_ADD_DESC_TYPE;
+    $META_TEMPLATE['ELEMENT_ADD_DESC_TYPE'] = $ELEMENT_ADD_DESC_TYPE;
+    $META_TEMPLATE['ELEMENT_FILE'] = $fid;
 
 	$CONDITIONS = '';
 	$obCond3 = new SMCondTree();
@@ -325,7 +338,8 @@ $aMenu[]= array(
 	"ICON" => "btn_list",
 	'MENU' =>$arrSubmenu,
 );
-if ($ID > 0) {
+if ($ID > 0)
+{
 	$aMenu[] = array(
 		"SEPARATOR" => "Y"
 	);
@@ -348,6 +362,7 @@ if ($ID > 0) {
 		"ICON" => "btn_delete"
 	);
 }
+
 $context = new CAdminContextMenu( $aMenu );
 $context->Show();
 
@@ -440,8 +455,9 @@ $FilterType = array(
 	'bitrix_not_chpu' => GetMessage('SEO_META_FILTERS_bitrix_not_chpu'),
 	'misshop_chpu' => GetMessage('SEO_META_FILTERS_misshop_chpu'),
 	'combox_chpu' => GetMessage('SEO_META_FILTERS_combox_chpu'),
-	'combox_not_chpu' => GetMessage('SEO_META_FILTERS_combox_not_chpu'),
+	'combox_not_chpu' => GetMessage('SEO_META_FILTERS_combox_not_chpu')
 );
+
 $Priority = array(
 	'0.0' => '0.0',
 	'0.1' => '0.1',
@@ -455,6 +471,7 @@ $Priority = array(
 	'0.9' => '0.9',
 	'1.0' => '1.0'
 );
+
 $ChangeFreq = array(
 	'always' => GetMessage( "SEO_META_EDIT_CHANGEFREQ_ALWAYS" ),
 	'hourly' => GetMessage( "SEO_META_EDIT_CHANGEFREQ_HOURLY" ),
@@ -494,6 +511,7 @@ $tabControl->Begin( array(
 ) );
 
 $tabControl->BeginNextFormTab();
+
 
 $tabControl->AddViewField( 'ID', GetMessage( "SEO_META_EDIT_ID" ), $ID, false ); // ID
 $tabControl->AddCheckBoxField( "ACTIVE", GetMessage( "SEO_META_EDIT_ACT" ), false, "Y", ($condition['ACTIVE'] == "Y" || !isset( $condition['ACTIVE'] )) );
@@ -538,7 +556,7 @@ $tabControl->EndCustomField( "STRONG_NOTE" );
 
 
 $tabControl->AddEditField( "NAME", GetMessage( "SEO_META_EDIT_NAME" ), true, array(
-	"size" => 50,
+	"size" => 44,
 	"maxlength" => 255
 ), htmlspecialcharsbx( $condition['NAME'] ) );
 
@@ -596,7 +614,7 @@ $tabControl->BeginCustomField( "TYPE_OF_INFOBLOCK", GetMessage( 'SEO_META_EDIT_T
 	<td width="40%"><? echo $tabControl->GetCustomLabelHTML(); ?></td>
 	<td width="60%">
 		<?
-		echo SelectBoxFromArray( 'TYPE_OF_INFOBLOCK', $arIBlockTypeSel, $condition['TYPE_OF_INFOBLOCK'], '', 'style="min-width:350px"', false, '' );
+		echo SelectBoxFromArray( 'TYPE_OF_INFOBLOCK', $arIBlockTypeSel, $condition['TYPE_OF_INFOBLOCK'], '', 'style="min-width: 350px; margin-right: 7px;"', false, '' );
 		echo '<input type="submit" name="refresh" value="OK" />';
 		?>
 	</td>
@@ -610,7 +628,7 @@ $tabControl->BeginCustomField( "INFOBLOCK", GetMessage( 'SEO_META_EDIT_INFOBLOCK
 	<td width="40%"><? echo $tabControl->GetCustomLabelHTML(); ?></td>
 	<td width="60%">
 		<?
-		echo SelectBoxFromArray( 'INFOBLOCK', $arIBlockSel, $condition['INFOBLOCK'], '', 'style="min-width:350px"', false, '' );
+		echo SelectBoxFromArray( 'INFOBLOCK', $arIBlockSel, $condition['INFOBLOCK'], '', 'style="min-width: 350px; margin-right: 7px;"', false, '' );
 		echo '<input type="submit" name="refresh" value="OK" />';
 		?>
 	</td>
@@ -618,26 +636,26 @@ $tabControl->BeginCustomField( "INFOBLOCK", GetMessage( 'SEO_META_EDIT_INFOBLOCK
 
 <?
 $tabControl->EndCustomField( "INFOBLOCK" );
+
 $tabControl->BeginCustomField( "SECTIONS", GetMessage( 'SEO_META_EDIT_SECTIONS' ), false );
 ?>
 <tr id="SECTIONS">
 	<td width="40%"><? echo $tabControl->GetCustomLabelHTML(); ?></td>
 	<td width="60%">
-		<?echo SelectBoxMFromArray('SECTIONS'.'[]', $sectionLinc, is_array($condition['SECTIONS'])?$condition['SECTIONS']:unserialize($condition['SECTIONS']),'',false,'','style="min-width:350px"');?>
+		<?echo SelectBoxMFromArray('SECTIONS'.'[]', $sectionLinc, is_array($condition['SECTIONS'])?$condition['SECTIONS']:unserialize($condition['SECTIONS']),'',false,'','style="min-width: 350px;"');?>
 	</td>
 </tr>
+<?$tabControl->EndCustomField( "SECTIONS" );?>
 
-<?
-$tabControl->EndCustomField( "SECTIONS" );
 
-$tabControl->BeginCustomField( "CONDITIONS", GetMessage( 'SEO_META_EDIT_SECTIONS_COND' ) . ":", false );
-?>
+
+<?$tabControl->BeginCustomField("CONDITIONS", GetMessage('SEO_META_EDIT_SECTIONS_COND') . ":", false);?>
 <tr id="tr_CONDITIONS">
 	<td width="40%"><? echo $tabControl->GetCustomLabelHTML(); ?></td>
 	<td width="60%">
 		<div id="tree" style="position: relative; z-index: 1;"></div>
 		<?
-		if (!is_array( $condition['RULE'] ))
+		if(!is_array( $condition['RULE'] ))
 		{
 			if (CheckSerializedData( $condition['RULE'] ))
 			{
@@ -650,22 +668,21 @@ $tabControl->BeginCustomField( "CONDITIONS", GetMessage( 'SEO_META_EDIT_SECTIONS
 		}
 		$obCond = new SMCondTree();
 		$boolCond = $obCond->Init( BT_COND_MODE_DEFAULT, BT_COND_BUILD_CATALOG, array(
-				'FORM_NAME' => 'tabControl_form',
-				'CONT_ID' => 'tree',
-				'JS_NAME' => 'JSCond'
-		));
-		if (!$boolCond)
+            'FORM_NAME' => 'tabControl_form',
+            'CONT_ID' => 'tree',
+            'JS_NAME' => 'JSCond'
+        ));
+		if(!$boolCond)
 		{
-
 			if ($ex = $APPLICATION->GetException())
 				echo $ex->GetString() . "<br>";
 		}
 		else
 		{
 		    if(Loader::includeModule('catalog'))
-		        $product_block = CCatalog::GetList(array(), array('IBLOCK_ID'=>$condition['INFOBLOCK']), false, false, array('OFFERS_IBLOCK_ID'))->fetch();
+		        $product_block = CCatalog::GetList(array(), array('IBLOCK_ID' => $condition['INFOBLOCK']), false, false, array('OFFERS_IBLOCK_ID'))->fetch();
 		    else
-		        $product_block = CIBlockElement::GetList(array(), array('IBLOCK_ID'=>$condition['INFOBLOCK']), false, false, array('OFFERS_IBLOCK_ID'))->fetch();
+		        $product_block = CIBlockElement::GetList(array(), array('IBLOCK_ID' => $condition['INFOBLOCK']), false, false, array('OFFERS_IBLOCK_ID'))->fetch();
 
 			$obCond->Show( $condition['RULE'], array($condition['INFOBLOCK'], $product_block['OFFERS_IBLOCK_ID']));
 		}
@@ -673,32 +690,35 @@ $tabControl->BeginCustomField( "CONDITIONS", GetMessage( 'SEO_META_EDIT_SECTIONS
 	</td>
 </tr>
 <script>
-	BX.ready(function(){
+	BX.ready(function() {
 		<?
-		CJSCore::Init( array(
+		CJSCore::Init(array(
 			"jquery"
-		) );
+		));
 		?>
-		$('body').on('click', 'a[id*="add_link"]', function (e){
+		$('body').on('click', 'a[id*="add_link"]', function(e) {
 			e.preventDefault();
 			$(this).next('select').show();
 			$(this).hide();
-		})
+		});
 	});
 </script>
-<?$APPLICATION->AddHeadString('<style>span.condition-alert{display:none !important;}</style>', true)?>
+<?
+$APPLICATION->AddHeadString('<style>span.condition-alert{display: none !important;}</style>', true);
+$tabControl->EndCustomField("CONDITIONS");
+?>
+
+
 
 <?
-$tabControl->EndCustomField( "CONDITIONS" );
+$tabControl->AddDropDownField("FILTER_TYPE", GetMessage('SEO_META_EDIT_FILTER_TYPE'), false, $FilterType, $condition['FILTER_TYPE']);
 
-
-$tabControl->AddDropDownField( "FILTER_TYPE", GetMessage( 'SEO_META_EDIT_FILTER_TYPE' ), false, $FilterType, $condition['FILTER_TYPE'] );
-
-
-$tabControl->AddDropDownField( "PRIORITY", GetMessage( 'SEO_META_EDIT_PRIORITY' ), true, $Priority, $condition['PRIORITY'] );
-
-$tabControl->BeginCustomField( "PRIORITY_NOTE", "");
+$tabControl->AddDropDownField("PRIORITY", GetMessage('SEO_META_EDIT_PRIORITY'), true, $Priority, $condition['PRIORITY']);
 ?>
+
+
+
+<?$tabControl->BeginCustomField("PRIORITY_NOTE", "");?>
 <tr>
 	<td></td>
 	<td>
@@ -707,10 +727,11 @@ $tabControl->BeginCustomField( "PRIORITY_NOTE", "");
 		<?=EndNote();?>
 	</td>
 </tr>
+<?$tabControl->EndCustomField("PRIORITY_NOTE");?>
+
+
+
 <?
-$tabControl->EndCustomField( "PRIORITY_NOTE" );
-
-
 $tabControl->AddDropDownField( "CHANGEFREQ", GetMessage( 'SEO_META_EDIT_CHANGEFREQ' ), true, $ChangeFreq, $condition['CHANGEFREQ'] );
 
 $tabControl->BeginCustomField( "CHANGEFREQ_NOTE", "");
@@ -936,6 +957,32 @@ $tabControl->BeginNextFormTab(); // Metatags ?>
 	</td>
 </tr>
 <?$tabControl->EndCustomField("ELEMENT_ADD_DESC");?>
+
+
+
+<?
+$tabControl->BeginCustomField("ELEMENT_FILE", GetMessage('SEO_META_EDIT_FILE'),false);
+?>
+	<tr class="adm-detail-file-row">
+		<td><?echo $tabControl->GetCustomLabelHTML()?></td>
+		<td><?echo \Bitrix\Main\UI\FileInput::createInstance(array(
+            "name" => "ELEMENT_FILE",
+            "description" => true,
+            "upload" => true,
+            "allowUpload" => "I",
+            "medialib" => true,
+            "fileDialog" => true,
+            "cloud" => true,
+            "delete" => true,
+            "maxCount" => 1
+            ))->show(($bVarsFromForm ? $_REQUEST["ELEMENT_FILE"] : $Meta['ELEMENT_FILE']), $bVarsFromForm);?>
+        </td>
+    </tr>
+<?
+$tabControl->EndCustomField("ELEMENT_FILE");
+?>
+
+
 
 <?
 $tabControl->BeginCustomField("TAG", GetMessage('SEO_META_EDIT_TAG'),false);?>

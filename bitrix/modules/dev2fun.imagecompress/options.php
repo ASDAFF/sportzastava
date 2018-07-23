@@ -1,9 +1,9 @@
 <?
 /**
-* @author dev2fun (darkfriend)
-* @copyright darkfriend
-* @version 0.1.12
-*/
+ * @author darkfriend <hi@darkfriend.ru>
+ * @copyright dev2fun
+ * @version 0.2.1
+ */
 
 defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
 
@@ -21,6 +21,8 @@ $request = $context->getRequest();
 $curModuleName = "dev2fun.imagecompress";
 Loc::loadMessages($context->getServer()->getDocumentRoot()."/bitrix/modules/main/options.php");
 Loc::loadMessages(__FILE__);
+
+\Bitrix\Main\Loader::includeModule(\Dev2funImageCompress::MODULE_ID);
 
 $aTabs = array(
     array(
@@ -67,10 +69,12 @@ if ($request->isPost() && check_bitrix_sessid()) {
     if($request->getPost('test_module')) {
         $text = array();
         $error = false;
-        if(!Check::isJPEGOptim()) {
+		$algorithmJpeg = Option::get($curModuleName,'opti_algorithm_jpeg');
+		$algorithmPng = Option::get($curModuleName,'opti_algorithm_png');
+        if(!Check::isJPEGOptim($algorithmJpeg)) {
             $text[] = Loc::getMessage('D2F_IMAGECOMPRESS_ERROR_CHECK_NOFOUND',array('#MODULE#'=>'jpegoptim'));
         }
-        if(!Check::isPNGOptim()) {
+        if(!Check::isPNGOptim($algorithmPng)) {
             $text[] = Loc::getMessage('D2F_IMAGECOMPRESS_ERROR_CHECK_NOFOUND',array('#MODULE#'=>'optipng'));
         }
         if(!$text) {
@@ -90,40 +94,71 @@ if ($request->isPost() && check_bitrix_sessid()) {
             "TYPE" => (!$error?'OK':'ERROR'),
         ));
     } else {
-        if($pthJpeg = $request->getPost('path_to_jpegoptim')) {
-            $pthJpeg = rtrim($pthJpeg,'/');
-            Option::set($curModuleName,'path_to_jpegoptim',$pthJpeg);
+        try {
+            $success = false;
+			if($algorithmJpeg = $request->getPost('opti_algorithm_jpeg')) {
+//			    if(!Check::isJPEGOptim($algorithmJpeg)) {
+//			        if(!$error = Check::$lastError){
+//						$error = Loc::getMessage('D2F_IMAGECOMPRESS_ERROR_NOT_FOUND_ALGORITHM',array('#MODULE#'=>'jpeg'));
+//                    }
+//                    throw new Exception($error);
+//                }
+				Option::set($curModuleName,'opti_algorithm_jpeg',$algorithmJpeg);
+			} else {
+			    throw new Exception(Loc::getMessage('D2F_IMAGECOMPRESS_ALGORITHM_NOT_CHOICE',array('#MODULE#'=>'jpeg')));
+            }
+			if($algorithmPng = $request->getPost('opti_algorithm_png')) {
+//				if(!Check::isPNGOptim($algorithmPng)) {
+//					if(!$error = Check::$lastError) {
+//						$error = Loc::getMessage('D2F_IMAGECOMPRESS_ERROR_NOT_FOUND_ALGORITHM',array('#MODULE#'=>'png'));
+//					}
+//					throw new Exception($error);
+//				}
+				Option::set($curModuleName,'opti_algorithm_png',$algorithmPng);
+			} else {
+				throw new Exception(Loc::getMessage('D2F_IMAGECOMPRESS_ALGORITHM_NOT_CHOICE',array('#MODULE#'=>'png')));
+            }
+
+			if($pthJpeg = $request->getPost('path_to_jpegoptim')) {
+				$pthJpeg = rtrim($pthJpeg,'/');
+				Option::set($curModuleName,'path_to_jpegoptim',$pthJpeg);
+			}
+
+			if($pthPng = $request->getPost('path_to_optipng')) {
+				$pthPng = rtrim($pthPng,'/');
+				Option::set($curModuleName,'path_to_optipng',$pthPng);
+			}
+
+			$cntStep = $request->getPost('cnt_step');
+			if(!$cntStep) $cntStep = 30;
+			Option::set($curModuleName,'cnt_step',$cntStep);
+
+			$enableElement = $request->getPost('enable_element');
+			Option::set($curModuleName,'enable_element',($enableElement?'Y':'N'));
+
+			$enableSection = $request->getPost('enable_section');
+			Option::set($curModuleName,'enable_section',($enableSection?'Y':'N'));
+
+			$enableResize = $request->getPost('enable_resize');
+			Option::set($curModuleName,'enable_resize',($enableResize?'Y':'N'));
+
+			$enableSave = $request->getPost('enable_save');
+			Option::set($curModuleName,'enable_save',($enableSave?'Y':'N'));
+
+			Option::set($curModuleName,'jpegoptim_compress',$request->getPost('jpegoptim_compress'));
+			Option::set($curModuleName,'optipng_compress',$request->getPost('optipng_compress'));
+
+			$jpegCompress = $request->getPost('jpeg_progressive');
+			Option::set($curModuleName,'jpeg_progressive',($jpegCompress?'Y':'N'));
+			$msg = Loc::getMessage("D2F_COMPRESS_REFERENCES_OPTIONS_SAVED");
+			$success = true;
+        } catch (Exception $e) {
+            $msg = $e->getMessage();
         }
-
-        if($pthPng = $request->getPost('path_to_optipng')) {
-            $pthPng = rtrim($pthPng,'/');
-            Option::set($curModuleName,'path_to_optipng',$pthPng);
-        }
-
-		$cntStep = $request->getPost('cnt_step',30);
-		Option::set($curModuleName,'cnt_step',$cntStep);
-
-        $enableElement = $request->getPost('enable_element');
-        Option::set($curModuleName,'enable_element',($enableElement?'Y':'N'));
-
-        $enableSection = $request->getPost('enable_section');
-        Option::set($curModuleName,'enable_section',($enableSection?'Y':'N'));
-
-        $enableResize = $request->getPost('enable_resize');
-        Option::set($curModuleName,'enable_resize',($enableResize?'Y':'N'));
-
-        $enableSave = $request->getPost('enable_save');
-        Option::set($curModuleName,'enable_save',($enableSave?'Y':'N'));
-
-        Option::set($curModuleName,'jpegoptim_compress',$request->getPost('jpegoptim_compress'));
-        Option::set($curModuleName,'optipng_compress',$request->getPost('optipng_compress'));
-
-        $jpegCompress = $request->getPost('jpeg_progressive');
-        Option::set($curModuleName,'jpeg_progressive',($jpegCompress?'Y':'N'));
 
         CAdminMessage::showMessage(array(
-            "MESSAGE" => Loc::getMessage("D2F_COMPRESS_REFERENCES_OPTIONS_SAVED"),
-            "TYPE" => "OK",
+            "MESSAGE" => $msg,
+            "TYPE" => ($success?'OK':'ERROR'),
         ));
     }
 }
@@ -140,14 +175,36 @@ $tabControl->begin();
     <?php
     echo bitrix_sessid_post();
     $tabControl->beginNextTab();
+    $optiAlgorithmJpeg = [
+		'jpegoptim' => 'Jpegoptim',
+    ];
+	$optiAlgorithmPng = [
+		'optipng' => 'Optipng',
+	];
     ?>
-<!--    <tr class="heading">-->
-<!--        <td colspan="2"><b>--><?//echo GetMessage("D2F_COMPRESS_HEADER_SETTINGS")?><!--</b></td>-->
-<!--    </tr>-->
+    <tr class="heading">
+        <td colspan="2">
+            <b><?=Loc::getMessage('D2F_IMAGECOMPRESS_HEADING_TEXT_SETTINGS',array('#MODULE#'=>'JPEG'))?></b>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+            <label><?=Loc::getMessage('D2F_IMAGECOMPRESS_HEADING_TEXT_ALGORITHM_SELECT')?>:</label>
+        </td>
+        <td width="60%">
+            <select name="opti_algorithm_jpeg">
+				<?
+				$selectAlgorithmJpeg = Option::get($curModuleName, "opti_algorithm_jpeg");
+				foreach($optiAlgorithmJpeg as $k=>$v){ ?>
+                    <option value="<?=$k?>" <?=($k==$selectAlgorithmJpeg?'selected':'')?>><?=$v?></option>
+				<? } ?>
+            </select>
+        </td>
+    </tr>
     <tr>
         <td width="40%">
             <label for="path_to_jpegoptim">
-                <?=Loc::getMessage("D2F_COMPRESS_REFERENCES_PATH_JPEGOPTI") ?>:
+				<?=Loc::getMessage("D2F_COMPRESS_REFERENCES_PATH_JPEGOPTI") ?>:
             </label>
         </td>
         <td width="60%">
@@ -158,11 +215,71 @@ $tabControl->begin();
             /> /jpegoptim
         </td>
     </tr>
+    <tr>
+        <td width="40%">
+            <label for="jpegoptim_compress">
+				<?=Loc::getMessage("D2F_COMPRESS_REFERENCES_JPEG_COMPRESS") ?>:
+            </label>
+        </td>
+        <td width="60%">
+            <select name="jpegoptim_compress">
+				<?
+				$jpgCompress = Option::get($curModuleName, "jpegoptim_compress", '80');
+				for($i=0;$i<=100;$i+=5){ ?>
+                    <option value="<?=$i?>" <?=($i==$jpgCompress?'selected':'')?>><?=$i?></option>
+				<? } ?>
+            </select>
+            <!--            <input type="text"-->
+            <!--                   name="jpegoptim_compress"-->
+            <!--                   value="--><?//=Option::get($curModuleName, "jpegoptim_compress", '80');?><!--"-->
+            <!--            />-->
+        </td>
+    </tr>
 
     <tr>
         <td width="40%">
+            <label for="enable_element">
+				<?=Loc::getMessage("D2F_COMPRESS_REFERENCES_JPEG_PROGRESSIVE") ?>:
+            </label>
+        </td>
+        <td width="60%">
+            <input type="checkbox"
+                   name="jpeg_progressive"
+                   value="Y"
+				<?
+				if(Option::get($curModuleName, "jpeg_progressive")=='Y') {
+					echo 'checked';
+				}
+				?>
+            />
+        </td>
+    </tr>
+
+
+
+    <tr class="heading">
+        <td colspan="2">
+            <b><?=Loc::getMessage('D2F_IMAGECOMPRESS_HEADING_TEXT_SETTINGS',array('#MODULE#'=>'PNG'))?></b>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
+            <label><?=Loc::getMessage('D2F_IMAGECOMPRESS_HEADING_TEXT_ALGORITHM_SELECT')?>:</label>
+        </td>
+        <td width="60%">
+            <select name="opti_algorithm_png">
+				<?
+				$selectAlgorithmPng = Option::get($curModuleName, "opti_algorithm_png");
+				foreach($optiAlgorithmPng as $k=>$v){ ?>
+                    <option value="<?=$k?>" <?=($k==$selectAlgorithmPng?'selected':'')?>><?=$v?></option>
+				<? } ?>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td width="40%">
             <label for="path_to_optipng">
-                <?=Loc::getMessage("D2F_COMPRESS_REFERENCES_PATH_PNGOPTI") ?>:
+				<?=Loc::getMessage("D2F_COMPRESS_REFERENCES_PATH_PNGOPTI") ?>:
             </label>
         </td>
         <td width="60%">
@@ -173,7 +290,29 @@ $tabControl->begin();
             /> /optipng
         </td>
     </tr>
+    <tr>
+        <td width="40%">
+            <label for="optipng_compress">
+				<?=Loc::getMessage("D2F_COMPRESS_REFERENCES_PNG_COMPRESS") ?>:
+            </label>
+        </td>
+        <td width="60%">
+            <select name="optipng_compress">
+				<?
+				$pngCompress = Option::get($curModuleName, "optipng_compress", '3');
+				for($i=1;$i<=7;$i++){ ?>
+                    <option value="<?=$i?>" <?=($i==$pngCompress?'selected':'')?>><?=$i?></option>
+				<? } ?>
+            </select>
+        </td>
+    </tr>
 
+
+    <tr class="heading">
+        <td colspan="2">
+            <b><?=Loc::getMessage('D2F_IMAGECOMPRESS_HEADING_TEXT_BASE_SETTINGS')?></b>
+        </td>
+    </tr>
     <tr>
         <td width="40%">
             <label for="enable_element">
@@ -264,62 +403,6 @@ $tabControl->begin();
         </td>
     </tr>
 
-    <tr>
-        <td width="40%">
-            <label for="jpegoptim_compress">
-                <?=Loc::getMessage("D2F_COMPRESS_REFERENCES_JPEG_COMPRESS") ?>:
-            </label>
-        </td>
-        <td width="60%">
-            <select name="jpegoptim_compress">
-                <?
-                $jpgCompress = Option::get($curModuleName, "jpegoptim_compress", '80');
-                for($i=0;$i<=100;$i+=5){ ?>
-                    <option value="<?=$i?>" <?=($i==$jpgCompress?'selected':'')?>><?=$i?></option>
-                <? } ?>
-            </select>
-<!--            <input type="text"-->
-<!--                   name="jpegoptim_compress"-->
-<!--                   value="--><?//=Option::get($curModuleName, "jpegoptim_compress", '80');?><!--"-->
-<!--            />-->
-        </td>
-    </tr>
-
-    <tr>
-        <td width="40%">
-            <label for="enable_element">
-                <?=Loc::getMessage("D2F_COMPRESS_REFERENCES_JPEG_PROGRESSIVE") ?>:
-            </label>
-        </td>
-        <td width="60%">
-            <input type="checkbox"
-                   name="jpeg_progressive"
-                   value="Y"
-                <?
-                if(Option::get($curModuleName, "jpeg_progressive")=='Y') {
-                    echo 'checked';
-                }
-                ?>
-            />
-        </td>
-    </tr>
-
-    <tr>
-        <td width="40%">
-            <label for="optipng_compress">
-                <?=Loc::getMessage("D2F_COMPRESS_REFERENCES_PNG_COMPRESS") ?>:
-            </label>
-        </td>
-        <td width="60%">
-            <select name="optipng_compress">
-                <?
-                $pngCompress = Option::get($curModuleName, "optipng_compress", '3');
-                for($i=1;$i<=7;$i++){ ?>
-                    <option value="<?=$i?>" <?=($i==$pngCompress?'selected':'')?>><?=$i?></option>
-                <? } ?>
-            </select>
-        </td>
-    </tr>
 
 	<?$tabControl->BeginNextTab();?>
     <tr>

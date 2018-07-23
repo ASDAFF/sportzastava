@@ -1,7 +1,8 @@
 <?php
 /**
  * @author darkfriend <hi@darkfriend.ru>
- * @version 0.1.12
+ * @copyright dev2fun
+ * @version 0.2.1
  */
 namespace Dev2fun\ImageCompress;
 
@@ -425,6 +426,7 @@ class AdminList {
 
 	public function compressAll() {
 	    global $APPLICATION, $recCompress;
+		$navPageCount= 0;
         if($_REQUEST['compress_all']) {
             \CJSCore::Init(array('ajax'));
             echo '<div id="compressAllStatus">';
@@ -453,7 +455,9 @@ class AdminList {
                 }
                 $stepOnPage = 0;
                 while($arFile = $rsRes->NavNext(true)) {
+//                    var_dump($arFile);
                     $strFilePath = \CFile::GetPath($arFile["ID"]);
+					$stepOnPage++;
                     if(!file_exists($_SERVER['DOCUMENT_ROOT'].$strFilePath)) {
                         Compress::getInstance()->addCompressTable($arFile['ID'],Array(
                             'FILE_ID' => $arFile['ID'],
@@ -463,7 +467,6 @@ class AdminList {
                         continue;
                     }
                     $recCompress = Compress::getInstance()->compressImageByID($arFile['ID']);
-                    $stepOnPage++;
 //                    $recCompress = true;
                 }
                 $progressValue = (100/$navPageCount)*$rsRes->NavPageNomer;
@@ -496,7 +499,7 @@ class AdminList {
 					"TYPE"=> "OK",
 				));
             }
-			if(($rsRes->NavPageNomer+1)>=$navPageCount) {
+			if($rsRes->NavPageNomer>=$navPageCount) {
 				$_SESSION['DEV2FUN_COMPRESS_NAVPAGECOUNT'] = false;
 				unset($_SESSION['DEV2FUN_COMPRESS_NAVPAGECOUNT']);
 			}

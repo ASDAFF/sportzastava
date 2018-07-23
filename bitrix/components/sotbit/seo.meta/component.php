@@ -17,6 +17,7 @@ global $sotbitSeoMetaH1;//for set h1
 global $sotbitSeoMetaBottomDesc;//for set bottom description
 global $sotbitSeoMetaTopDesc;//for set top description
 global $sotbitSeoMetaAddDesc;//for set additional description
+global $sotbitSeoMetaFile;
 global $sotbitSeoMetaBreadcrumbLink;
 global $sotbitSeoMetaBreadcrumbTitle;
 global ${$arParams['FILTER_NAME']};
@@ -25,7 +26,7 @@ global $SeoMetaWorkingConditions;
 
 $SeoMetaWorkingConditions= array();
 
-if(Option::get("sotbit.seometa", "NO_INDEX_".SITE_ID, "N") != "N")
+if((Option::get("sotbit.seometa", "NO_INDEX_".SITE_ID, "N") != "N") && (!empty(${$arParams['FILTER_NAME']})))
 {
 	$APPLICATION->SetPageProperty("robots", 'noindex, nofollow');
 }
@@ -181,6 +182,12 @@ if(is_array($results))
 				}
 				$arResult['ELEMENT_ADD_DESC']=$sotbitSeoMetaAddDesc;
 			}
+			$issetCondition = true;
+        }
+        if(isset($result['ELEMENT_FILE']) && $result['ELEMENT_FILE'] > 0)
+		{
+			$arResult['ELEMENT_FILE'] = CFile::GetPath($result['ELEMENT_FILE']);
+            $sotbitSeoMetaFile = '<img src="' . $arResult['ELEMENT_FILE'] . '" alt="">';
 			$issetCondition = true;
 		}
 

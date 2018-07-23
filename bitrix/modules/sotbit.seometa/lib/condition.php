@@ -189,9 +189,9 @@ class ConditionTable extends Entity\DataManager
 	{
         @set_time_limit(0);
 		if ($id == 0)
-			return array ();
+			return array();
 
-		$writer = \Sotbit\Seometa\Link\ChpuWriter::getInstance($id);
+        $writer = \Sotbit\Seometa\Link\ChpuWriter::getInstance($id);
 		$link = \Sotbit\Seometa\Helper\Link::getInstance();
 		$link->Generate($id, $writer);
 

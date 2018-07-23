@@ -11,6 +11,7 @@ use Sotbit\Seometa\ConditionTable;
 		'CSeoMetaTagsProperty' => '/classes/general/seometa_tags_property.php',
 		'CSeoMetaTagsPrice' => '/classes/general/seometa_tags_price.php',
 		'CSeoMetaScaner' => '/classes/general/seometa_scaner.php',
+		'CSeoMetaAutogenerator' => '/classes/general/seometa_autogenerator.php',
 		//'CSeoMetaExcel' => '/classes/general/seometa_excel.php',
 		'CSeoMetaSitemap' => '/classes/general/seometa_sitemap.php',
 		'CSeoMetaEvents' => '/classes/general/seometa_event_handler.php',
@@ -26,19 +27,19 @@ global $DB;
 class CCSeoMeta
 {
 	private static $DEMO = 0;
-    
+
 	public function __construct()
 	{
 		$this->setDemo();
 	}
-    
+
 	private static function setDemo()
 	{
 		$module_id = "sotbit.seometa";
 		$seometa_DEMO = CModule::IncludeModuleEx( $module_id );
 		static::$DEMO = $seometa_DEMO;
 	}
-    
+
 	public function getDemo()
 	{
 		if (static::$DEMO == 0 || static::$DEMO == 3)
@@ -46,12 +47,12 @@ class CCSeoMeta
 		else
 			return true;
 	}
-    
+
 	public function ReturnDemo()
 	{
 		return static::$DEMO;
 	}
-    
+
 	public function PropMenu($IBLOCK_ID)
 	{
 	    /*if(!Loader::includeModule( 'catalog' ))
@@ -63,10 +64,10 @@ class CCSeoMeta
 	    $ProductIblock = $IBLOCK_ID;
 	    $OffersIblock = $IBLOCK_ID;
 	    // Find Iblocks product and offers
-	    $return .= '
-                    <input type="button" value="..." id="SotbitSeoMenuButton" style="float:left;">
+	    $return .= '<input type="button" value="..." id="SotbitSeoMenuButton" style="float:left;">
                     <div style="clear:both"></div>
                     <ul class="navmenu-v">';
+        
 	    if(Loader::includeModule( 'catalog' ))
 	    {
 	        $mxResult = CCatalogSKU::GetInfoByProductIBlock( $IBLOCK_ID );
@@ -124,7 +125,8 @@ class CCSeoMeta
 	    while ( $property = $rsProperty->fetch() )
 	    {
 	        $return .= "<li class='with-prop' data-prop='{=concat {=ProductProperty \"" . $property['CODE'] . "\" } \", \"}'>" . $property['NAME'] . "</li>";
-	    }
+        }
+        
 	    $return .= '
                         </ul>
                     </li>';
@@ -151,6 +153,8 @@ class CCSeoMeta
                         </li>
                         <li>' . GetMessage( "MENU_STORES" ) . '
                             <ul>';
+            
+            
 	        $rsStore = CCatalogStore::GetList( array (
 	            'NAME' => 'asc'
 	        ), array (
@@ -166,7 +170,8 @@ class CCSeoMeta
 	        $return .= '
                             </ul>
                         </li>';
-	        
+            
+            
 	        $rsPriceType = CCatalogGroup::GetList( array (
 	            "NAME" => "ASC"
 	        ), array () );
@@ -181,15 +186,17 @@ class CCSeoMeta
                                 <li class=\"with-prop\" data-prop='{=Price \"MAX_FILTER\" \"" . $PriceType['NAME'] . "\"}'>" . GetMessage( "MENU_PRICES_FILTER_MAX" ) . "</li>
                             </ul>
                         </li>";
-	        }
-	        $return .= "
-                        <li>" . GetMessage( "MENU_ADD" ) . "
-                            <ul>
-                                <li class='with-prop' data-prop='{=concat this.sections.name this.name \" / \"}'>" . GetMessage( "MENU_ADD_PATH" ) . "</li>
-                                <li class='with-prop' data-prop='{=concat catalog.store \", \"}'>" . GetMessage( "MENU_ADD_STORES" ) . "</li>
-                            </ul>
-                        </li>";
-	    }
+            }
+            
+            $return .= "
+                    <li>" . GetMessage( "MENU_ADD" ) . "
+                        <ul>
+                            <li class='with-prop' data-prop='{=concat this.sections.name this.name \" / \"}'>" . GetMessage( "MENU_ADD_PATH" ) . "</li>
+                            <li class='with-prop' data-prop='{=concat catalog.store \", \"}'>" . GetMessage( "MENU_ADD_STORES" ) . "</li>
+                        </ul>
+                    </li>";
+        }
+        
 	    $return .= "
                     <li>" . GetMessage( "MENU_USER_FIELD" ) . "<ul>";
 	    $rsUserFields = CUserTypeEntity::GetList( array (
@@ -216,65 +223,68 @@ class CCSeoMeta
 	    $return .= "</ul>";
 	    return $return;
 	}
-    
+
 	public function PropMenuTemplate($IBLOCK_ID)
 	{
 	    if(!CModule::IncludeModule("catalog"))
 	        return;
-	        
-	        $return = '';
-	        
-	        $ProductIblock = $IBLOCK_ID;
-	        $OffersIblock = $IBLOCK_ID;
-	        // Find Iblocks product and offers
-	        $mxResult = CCatalogSKU::GetInfoByProductIBlock( $IBLOCK_ID );
-	        if (is_array( $mxResult ))
-	        {
-	            $ProductIblock = $mxResult['PRODUCT_IBLOCK_ID'];
-	            $OffersIblock = $mxResult['IBLOCK_ID'];
-	        }
-	        else
-	        {
-	            $mxResult = CCatalogSKU::GetInfoByOfferIBlock( $IBLOCK_ID );
-	            if (is_array( $mxResult ))
-	            {
-	                $ProductIblock = $mxResult['PRODUCT_IBLOCK_ID'];
-	                $OffersIblock = $mxResult['IBLOCK_ID'];
-	            }
-	        }
-	        
-	        $return .= '
-                <input type="button" value="..." id="SotbitSeoMenuButton" style="float:left;">
-                <div style="clear:both"></div>
-                <ul class="navmenu-v">
-                    <li>' . GetMessage( "MENU_SECTION_FIELDS_SECTION" ) . '
-                        <ul>
-                            <li class="with-prop" data-prop="#SECTION_ID#">' . GetMessage( "MENU_SECTION_FIELDS_SECTION_ID" ) . '</li>
-                            <li class="with-prop" data-prop="#SECTION_CODE#">' . GetMessage( "MENU_SECTION_FIELDS_SECTION_CODE" ) . '</li>
-                            <li class="with-prop" data-prop="#SECTION_CODE_PATH#">' . GetMessage( "MENU_SECTION_FIELDS_SECTION_CODE_PATH" ) . '</li>
-                        </ul>
-                    </li>
-                    <li>' . GetMessage( "MENU_SECTION_FIELDS_PROP" ) . '
-                        <ul>
-                            <li class="with-prop" data-prop="#PROPERTY_ID#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_ID" ) . '</li>
-                            <li class="with-prop" data-prop="#PROPERTY_CODE#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_CODE" ) . '</li>
-                        </ul>
-                    </li>
-                    <li>' . GetMessage( "MENU_SECTION_FIELDS_PROP_VALUE" ) . '
-                        <ul>
-                            <li class="with-prop" data-prop="#PROPERTY_VALUE#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_VALUE_CODE" ) . '</li>
-                        </ul>
-                    </li>
-                    <li>' . GetMessage( "MENU_SECTION_FIELDS_ELSE" ) . '
-                        <ul>
-                            <li class="with-prop" data-prop="#FILTER#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_FILTER" ) . '</li>
-                            <li class="with-prop" data-prop="#PRICES#">' . GetMessage( "MENU_SECTION_FIELDS_PRICES" ) . '</li>
-                        </ul>
-                    </li>
-                </ul>';
-	        return $return;
-	}    
-    
+	    
+        $return = '';
+        
+        $ProductIblock = $IBLOCK_ID;
+        $OffersIblock = $IBLOCK_ID;
+
+        // Find Iblocks product and offers
+        $mxResult = CCatalogSKU::GetInfoByProductIBlock( $IBLOCK_ID );
+        if (is_array( $mxResult ))
+        {
+            $ProductIblock = $mxResult['PRODUCT_IBLOCK_ID'];
+            $OffersIblock = $mxResult['IBLOCK_ID'];
+        }
+        else
+        {
+            $mxResult = CCatalogSKU::GetInfoByOfferIBlock( $IBLOCK_ID );
+            if (is_array( $mxResult ))
+            {
+                $ProductIblock = $mxResult['PRODUCT_IBLOCK_ID'];
+                $OffersIblock = $mxResult['IBLOCK_ID'];
+            }
+        }
+        
+        $return .= '
+            <input type="button" value="..." id="SotbitSeoMenuButton">
+            <div style="clear:both"></div>
+            <ul class="navmenu-v">
+                <li>' . GetMessage( "MENU_SECTION_FIELDS_SECTION" ) . '
+                    <ul>
+                        <li class="with-prop" data-prop="#SECTION_ID#">' . GetMessage( "MENU_SECTION_FIELDS_SECTION_ID" ) . '</li>
+                        <li class="with-prop" data-prop="#SECTION_CODE#">' . GetMessage( "MENU_SECTION_FIELDS_SECTION_CODE" ) . '</li>
+                        <li class="with-prop" data-prop="#SECTION_CODE_PATH#">' . GetMessage( "MENU_SECTION_FIELDS_SECTION_CODE_PATH" ) . '</li>
+                    </ul>
+                </li>
+                <li>' . GetMessage( "MENU_SECTION_FIELDS_PROP" ) . '
+                    <ul>
+                        <li class="with-prop" data-prop="#PROPERTY_ID#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_ID" ) . '</li>
+                        <li class="with-prop" data-prop="#PROPERTY_CODE#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_CODE" ) . '</li>
+                    </ul>
+                </li>
+                <li>' . GetMessage( "MENU_SECTION_FIELDS_PROP_VALUE" ) . '
+                    <ul>
+                        <li class="with-prop" data-prop="#PROPERTY_VALUE#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_VALUE_CODE" ) . '</li>
+                    </ul>
+                </li>
+                <li>' . GetMessage( "MENU_SECTION_FIELDS_ELSE" ) . '
+                    <ul>
+                        <li class="with-prop" data-prop="#FILTER#">' . GetMessage( "MENU_SECTION_FIELDS_PROPERTY_FILTER" ) . '</li>
+                        <li class="with-prop" data-prop="#PRICES#">' . GetMessage( "MENU_SECTION_FIELDS_PRICES" ) . '</li>
+                    </ul>
+                </li>
+            </ul>
+        ';
+
+        return $return;
+	}
+
 	public function AllCombinationsOfArrayElements($array)
 	{
 		$col_el = count( $array );
@@ -303,7 +313,6 @@ class CCSeoMeta
 		}
 		return $return;
 	}
-
 }
 
 ?>

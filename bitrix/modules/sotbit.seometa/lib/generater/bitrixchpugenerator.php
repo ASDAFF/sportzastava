@@ -84,7 +84,7 @@ class BitrixChpuGenerator extends Common
 
         foreach($CondValProps['BITRIX'][1] as $idProp => $PropVal)
         {
-            if(isset($prop['PROPERTY_TYPE']) && $prop['PROPERTY_TYPE'] == "S")
+            if(isset($prop['PROPERTY_TYPE']) && $prop['PROPERTY_TYPE'] == "S"/* && empty($prop['USER_TYPE'])*/)
             {
                 $FilterParams[] = mb_strtolower($PropVal);
                 $values[] = \CUtil::translit(urldecode($PropVal), "ru", array("replace_space" => "-", "replace_other" => "-"));

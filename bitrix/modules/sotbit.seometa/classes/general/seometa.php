@@ -352,7 +352,7 @@ class CSeoMeta extends Bitrix\Iblock\Template\Functions\FunctionBase
                 }
 
                 $property_enums = CIBlockProperty::GetList(Array("ID"=>"ASC", "SORT"=>"ASC"), $Filter);
-                while($enum_fields = $property_enums->GetNext())
+                /*while($enum_fields = $property_enums->GetNext())
                 {
                     $bool=true;
                     if(isset(self::$FilterResult['ITEMS'][$enum_fields['ID']]['VALUES']))
@@ -387,7 +387,7 @@ class CSeoMeta extends Bitrix\Iblock\Template\Functions\FunctionBase
                     {
 
                     }
-                }
+                }*/
             }
         }
     }
@@ -472,6 +472,7 @@ class CSeoMeta extends Bitrix\Iblock\Template\Functions\FunctionBase
             $return['ELEMENT_BOTTOM_DESC_TYPE'] = self::UserFields($rule['META']['ELEMENT_BOTTOM_DESC_TYPE'], $SectionId, $IblockId);
             $return['ELEMENT_TOP_DESC_TYPE'] = self::UserFields($rule['META']['ELEMENT_TOP_DESC_TYPE'], $SectionId, $IblockId);
             $return['ELEMENT_ADD_DESC_TYPE'] = self::UserFields($rule['META']['ELEMENT_ADD_DESC_TYPE'], $SectionId, $IblockId);
+            $return['ELEMENT_FILE'] = self::UserFields($rule['META']['ELEMENT_FILE'], $SectionId, $IblockId);
 
             if($rule['NO_INDEX'] == 'Y')
             {

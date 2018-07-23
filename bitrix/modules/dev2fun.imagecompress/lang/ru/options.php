@@ -15,7 +15,21 @@ $MESS["D2F_COMPRESS_REFERENCES_CNT_STEP"] = "Количество картино
 $MESS["D2F_COMPRESS_REFERENCES_JPEG_COMPRESS"] = "Качество jpeg-файлов при сжатии";
 $MESS["D2F_COMPRESS_REFERENCES_PNG_COMPRESS"] = "Степень сжатия у png-файлов";
 $MESS["D2F_COMPRESS_REFERENCES_TEST_BTN"] = "Тестировать конфигурацию сервера";
+
 $MESS["D2F_IMAGECOMPRESS_ERROR_CHECK_NOFOUND"] = "Не найден #MODULE#. Установите на сервере #MODULE#";
+$MESS["D2F_IMAGECOMPRESS_ERROR_NOT_FOUND_ALGORITHM"] = "Не известная проблема с алгоритмом для #MODULE#";
+$MESS["D2F_IMAGECOMPRESS_ALGORITHM_NOT_CHOICE"] = "Алгоритм для #MODULE# не выбран!";
+
+
+$MESS["D2F_IMAGECOMPRESS_HEADING_TEXT_SETTINGS"] = "Настройки оптимизации для #MODULE#";
+$MESS["D2F_IMAGECOMPRESS_HEADING_TEXT_ALGORITHM_SELECT"] = "Алгоритм оптимизации";
+$MESS["D2F_IMAGECOMPRESS_HEADING_TEXT_ALGORITHM_SETTING"] = "Настройка для #MODULE#";
+$MESS["D2F_IMAGECOMPRESS_HEADING_TEXT_BASE_SETTINGS"] = "Общие настройки";
+
+$MESS["D2F_IMAGECOMPRESS_JPEGOPTIM_NOTE_TEXT"] = "Путь до jpegoptim обязательно нужно указывать, если выбран алгоритм jpegoptim для jpeg-картинок.<br>В ином случае оставьте поле пустым.";
+$MESS["D2F_IMAGECOMPRESS_OPTIPNG_NOTE_TEXT"] = "Путь до optipng обязательно нужно указывать, если выбран алгоритм optipng для png-картинок.<br>В ином случае оставьте поле пустым.";
+
+
 $MESS["D2F_COMPRESS_OPTIONS_TESTED"] = "Конфигурация сервера успешно протестировна";
 $MESS["D2F_COMPRESS_OPTIONS_NO_TESTED"] = "Конфигурация сервера не соответствует!";
 $MESS["D2F_IMAGECOMPRESS_COMPRESS_IMAGE_PROGRESSBAR"] = "Процесс оптимизации картинок";

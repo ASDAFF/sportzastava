@@ -1,10 +1,10 @@
 <?
 /**
- * Created by PhpStorm.
- * @author  darkfriend <hi@darkfriend.ru>
- * @date 04.05.2017
- * @version 0.1.12
+ * @author darkfriend <hi@darkfriend.ru>
+ * @copyright dev2fun
+ * @version 0.2.1
  */
+
 defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
 if(!check_bitrix_sessid()) return;
 
@@ -24,7 +24,10 @@ Loader::registerAutoLoadClasses(
         'Dev2fun\ImageCompress\AdminList' => 'lib/AdminList.php',
         'Dev2fun\ImageCompress\Check' => 'lib/Check.php',
         'Dev2fun\ImageCompress\Compress' => 'lib/Compress.php',
-        "Dev2funImageCompress" => 'include.php'
+        "Dev2funImageCompress" => 'include.php',
+
+		"Dev2fun\ImageCompress\Jpegoptim" => 'lib/Jpegoptim.php',
+		"Dev2fun\ImageCompress\Optipng" => 'lib/Optipng.php',
     )
 );
 echo BeginNote();

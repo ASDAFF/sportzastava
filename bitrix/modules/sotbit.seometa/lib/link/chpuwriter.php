@@ -19,11 +19,11 @@ class ChpuWriter extends AbstractWriter
         return self::$Writer;
     }
 
-    /*public function getWriterForSitemap($id)
+    public function getWriterForAutogenerator($id)
     {
         self::$Writer = new ChpuWriter($id);
         return self::$Writer;
-    }*/
+    }
 
     public function AddRow(array $arFields)
     {

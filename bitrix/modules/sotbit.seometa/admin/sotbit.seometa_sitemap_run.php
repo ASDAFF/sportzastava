@@ -83,7 +83,8 @@ else
 if (file_exists( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . $arSitemap['SETTINGS']['FILENAME_INDEX'] ))
 {
     $FoundSeoMetaSitemap = false;
-    $xml = simplexml_load_file( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . 'sitemap.xml' );
+    //$xml = simplexml_load_file( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . 'sitemap.xml' );
+    $xml = simplexml_load_file( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . $arSitemap['SETTINGS']['FILENAME_INDEX'] );
 
     foreach ( $xml->sitemap as $sitemap ) // search if exist seometa sitemap in main sitemap
     {
@@ -96,7 +97,8 @@ if (file_exists( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . $arSitemap['SETTINGS
         $NewSitemap = $xml->addChild( "sitemap" );
         $NewSitemap->addChild( "loc", $SiteUrl . '/sitemap_seometa_' . $ID . '.xml' );
         $NewSitemap->addChild( "lastmod", (isset($arSitemap['DATE_RUN']) && !empty($arSitemap['DATE_RUN']))?str_replace( ' ', 'T', date( 'Y-m-d H:i:sP', strtotime( $arSitemap['DATE_RUN'] ) ) ):str_replace( ' ', 'T', date( 'Y-m-d H:i:sP', strtotime( $arSitemap['TIMESTAMP_CHANGE'] ) ) ) );
-        file_put_contents( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . 'sitemap.xml', $xml->asXML() );
+        //file_put_contents( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . 'sitemap.xml', $xml->asXML() );
+        file_put_contents( $arSite['ABS_DOC_ROOT'] . $arSite['DIR'] . $arSitemap['SETTINGS']['FILENAME_INDEX'], $xml->asXML() );
     }
 
     // START GENERATE XML ARRAY

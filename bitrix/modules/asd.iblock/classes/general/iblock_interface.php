@@ -305,7 +305,13 @@ var asdElementList'.$list->table_id.' = new AsdIblockElementList('.CUtil::PhpToJ
 			(!isset($_REQUEST['action']) && $_REQUEST['action']!='copy')
 		) {
 			if ($arElement = CIBlockElement::GetByID($_REQUEST['ID'])->GetNext()) {
-				if (strlen($arElement['DETAIL_PAGE_URL'])) {
+				if (strlen($arElement['CANONICAL_PAGE_URL'])) {
+					$items[] = array('ICON' => 'asd_iblock_show_element',
+									'TEXT' => GetMessage('ASD_ACTION_VIEW_DETAIL'),
+									'LINK' => str_replace('%2F', '/', $arElement['CANONICAL_PAGE_URL']),
+									);
+				}
+				else if (strlen($arElement['DETAIL_PAGE_URL'])) {
 					$items[] = array('ICON' => 'asd_iblock_show_element',
 									'TEXT' => GetMessage('ASD_ACTION_VIEW_DETAIL'),
 									'LINK' => str_replace('%2F', '/', $arElement['DETAIL_PAGE_URL']),
