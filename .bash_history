@@ -207,3 +207,11 @@ ls
 git status
 git pull
 git pull
+ls
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git status
+git status

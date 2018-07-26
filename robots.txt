@@ -11,4 +11,3 @@ Disallow: /search/
 Crawl-delay: 5
 Sitemap: https://sportzastava.ru/sitemap.xml
 Host: https://sportzastava.ru
-Sitemap: https://sportzastava.ru/s2/sitemap.xml
