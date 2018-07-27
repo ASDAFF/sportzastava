@@ -20,7 +20,6 @@ $MESS['BANNER_SHOW_OFF'] = "Где НЕ показывать:<br/>(относи�
 $MESS['BANNER_LIST_TITLE'] = "Вернуться к списку баннеров";
 $MESS['SHOW_DATE'] = "Интервал показа:";
 $MESS['BANNER_WEIGHT'] = "Отложить показ баннера(в секундах):";
-$MESS['BANNER_SHOW'] = "Свойтва баннера";
 $MESS['BANNER_SHOW_IMAGE'] = "Изображение";
 $MESS['BANNER_SHOW_FLASH'] = "Flash";
 $MESS['BANNER_SHOW_HTML'] = "HTML";

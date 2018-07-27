@@ -1,4 +1,4 @@
-<?
+<?php
 global $MESS;
 $strPath2Lang = str_replace("\\", "/", __FILE__);
 $strPath2Lang = substr($strPath2Lang, 0, strlen($strPath2Lang)-strlen("/install/index.php"));
@@ -35,7 +35,7 @@ Class prime_smartbanners extends CModule
         $this->MODULE_NAME = GetMessage("NB_MODULE_NAME");
         $this->MODULE_DESCRIPTION = GetMessage("NB_MODULE_DESC");
         $this->PARTNER_NAME = GetMessage("NB_PARTNER_NAME");;
-        $this->PARTNER_URI = "";
+        $this->PARTNER_URI = "https://prime-ltd.su/";
     }
 
     function InstallDB($arParams = array())
@@ -131,4 +131,5 @@ Class prime_smartbanners extends CModule
         $APPLICATION->IncludeAdminFile(GetMessage("MOD_UNINST_OK"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/unstep.php");
     }
 }
+
 ?>

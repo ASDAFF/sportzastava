@@ -117,7 +117,6 @@ class Nb_class
         global $DB;
         $arFields["IMAGE_ID"] = $this->SaveFile($arFields["IMAGE_ID"]);
         return $ID = $DB->Add("b_prime_smartbanners",$arFields);
-
     }
 
     function Update($ID,$arFields)
@@ -151,7 +150,7 @@ class Nb_class
         return true;
     }
 
-    function SaveFile($arImage,$ID)
+    function SaveFile($arImage,$ID = 0)
     {
         if (is_array($arImage))
         {

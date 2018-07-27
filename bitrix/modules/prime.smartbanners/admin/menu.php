@@ -2,6 +2,9 @@
 IncludeModuleLangFile(__FILE__);
 $module_id = "prime.smartbanners";
 
+if(CModule::IncludeModuleEx($module_id) == 3)
+	return false;
+
 {
 	$aMenu = array(
 		"parent_menu" => "global_menu_services",

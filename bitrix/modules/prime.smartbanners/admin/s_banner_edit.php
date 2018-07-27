@@ -262,9 +262,7 @@ elseif($classes->LAST_ERROR!="")
         </td>
     </tr>
 
-    <tr class="heading">
-        <td colspan="2"><b><?=GetMessage("BANNER_SHOW")?></b></td>
-    </tr>
+    
 
     <tr valign="top" id="eFile">
         <td><?=GetMessage("BANNER_FILE")?></td>
