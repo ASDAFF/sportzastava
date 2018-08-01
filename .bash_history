@@ -215,3 +215,15 @@ git push
 git status
 git status
 git status
+ls
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git pull
+git status
+ls
+git status
+git pull
+git status

@@ -646,3 +646,9 @@
                 PRIMARY KEY (`ID`)
             );, )
 2018-07-20 12:23:29 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1532078609/asd.iblock/updater4.6.8.php': CopyFiles(install/js, js/asd.iblock/)
+2018-07-30 13:16:32 -  - exec CUpdateClient::GetUpdatesList
+2018-07-30 13:16:32 -  - exec CUpdateClient::CollectRequestData
+2018-07-30 13:16:32 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.0.0&VERSION=17.5.15&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=sportzastava.ru&CHHB=sportzastava.ru&CSAB=87.236.16.4&SUID=91ddf2b250c74e751dc6375800a249b3&CANGZIP=Y&CLIENT_PHPVER=5.6.30&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.5.15&bitm_currency=17.5.4&bitm_workflow=17.0.1&bitm_eshopapp=16.5.0&bitm_mobileapp=17.5.1&bitm_abtest=17.5.0&bitm_lists=17.0.17&bitm_search=17.5.0&bitm_storeassist=16.0.1&bitm_compression=16.0.0&bitm_clouds=17.0.2&bitm_learning=17.5.0&bitm_subscribe=17.5.0&bitm_webservice=17.0.0&bitm_forum=17.5.3&bitm_form=17.0.1&bitm_bitrixcloud=17.5.0&bitm_scale=17.5.0&bitm_bizprocdesigner=17.5.2&bitm_mail=17.5.6&bitm_vote=17.5.1&bitm_seo=17.5.3&bitm_pull=17.5.4&bitm_photogallery=17.0.2&bitm_report=18.0.3&bitm_socialnetwork=17.6.1&bitm_advertising=17.0.1&bitm_iblock=17.6.1&bitm_statistic=17.0.1&bitm_highloadblock=17.5.0&bitm_bizproc=17.5.11&bitm_b24connector=17.5.0&bitm_im=18.0.0&bitm_blog=17.5.8&bitm_support=16.0.0&bitm_wiki=17.5.1&bitm_conversion=17.5.0&bitm_fileman=17.5.10&bitm_sender=17.1.4&bitm_translate=16.0.0&bitm_security=17.0.2&bitm_ui=17.5.5&bitm_ldap=17.0.1&bitm_catalog=17.6.1&bitm_sale=17.8.15&bitm_calendar=17.5.11&bitm_socialservices=17.5.4&bitm_perfmon=17.0.1&bitm_idea=17.5.0&bitm_cluster=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=0&SUPD_CMP=Y&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2018-07-30 13:16:32 -  - exec CUpdateClient::GetHTTPPage
+2018-07-30 13:16:32 -  - TIME GetUpdatesList(request) 0.326 sec
+2018-07-30 13:16:32 -  - exec CUpdateClient::ParseServerData
