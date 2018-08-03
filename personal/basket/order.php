@@ -107,4 +107,16 @@ $APPLICATION->SetTitle("Оформление заказа");?>
 	),
 	false
 );?>
+
+<?$APPLICATION->IncludeComponent(
+	"prime:gifts.cart",
+	"",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "300",
+		"CACHE_TYPE" => "A"
+	)
+);?>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
