@@ -72,11 +72,34 @@ Class prime_gifts extends CModule
 
     function InstallFiles($arParams = array()){
         CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+        CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components/", true, true);
+        copyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/install/themes', $_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes', true, true);
         return true;
     }
 
     function UnInstallFiles($arParams = array()){
         global $APPLICATION,$DB;
+        if (is_dir($p = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/install/components'))
+        {
+            if ($dir = opendir($p))
+            {
+                while (false !== $item = readdir($dir))
+                {
+                    if ($item == '..' || $item == '.' || !is_dir($p0 = $p.'/'.$item))
+                        continue;
+
+                    $dir0 = opendir($p0);
+                    while (false !== $item0 = readdir($dir0))
+                    {
+                        if ($item0 == '..' || $item0 == '.')
+                            continue;
+                        DeleteDirFilesEx('/bitrix/components/'.$item.'/'.$item0);
+                    }
+                    closedir($dir0);
+                }
+                closedir($dir);
+            }
+        }
         DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
         return true;
     }

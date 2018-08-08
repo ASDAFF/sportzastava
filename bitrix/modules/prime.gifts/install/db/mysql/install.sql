@@ -9,3 +9,14 @@ create table if not exists b_prime_gifts
 	PRICE_TO int(18),
 	primary key (ID)
 );
+
+create table if not exists b_prime_gifts_settings
+(
+	ID int(18) not null auto_increment,
+	NAME varchar(255),
+	VALUE varchar(255),
+	primary key (ID)
+);
+
+INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('IMAGE_ID', NULL);
+INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('DESCRIPTION', NULL);

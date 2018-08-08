@@ -20,6 +20,15 @@ if(CModule::IncludeModuleEx($module_id) == 3)
 		"items" => array(),
 	);
 
+	$aMenu["items"][] = array(
+		"text" => GetMessage("PRIME_GIFTS_SETTINGS"),
+		"url" => "prime_gifts_settings.php?lang=".LANGUAGE_ID,
+		"more_url"=> array("prime_gifts_settings.php?lang=".LANGUAGE_ID),
+		"module_id" => $module_id,
+		"title" => GetMessage("PRIME_GIFTS_SETTINGS"),
+		"items_id" => "menu_prime_settings",
+	);
+
 
 	return $aMenu;
 }

@@ -26,7 +26,7 @@ class Gifts
     }
 
     function GetMaxGifts($sum){
-        $sql = "SELECT * FROM $this->TABLE_NAME WHERE PRICE_FROM = (SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE PRICE_FROM >= $sum LIMIT 1)";
+        $sql = "SELECT * FROM $this->TABLE_NAME WHERE ACTIVE = 'Y' AND PRICE_FROM = (SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE PRICE_FROM >= $sum LIMIT 1)";
         global $DB;
         return $DB->Query($sql,false);
     }
@@ -176,6 +176,47 @@ class Gifts
 
     }
 
+    function addSettings($arFields){
+        global $DB;
+
+        if (is_array($arFields["IMAGE_ID"]))
+        {
+            $arImage = $arFields["IMAGE_ID"];
+            $arImage["MODULE_ID"] = $this->MODULE_ID;
+
+            if (strlen($arImage["name"])>0 || strlen($arImage["del"])>0)
+            {
+                $fileID = CFile::SaveFile($arImage, $arImage["MODULE_ID"]);
+
+                if (intval($fileID)>0)
+                    $arFields["IMAGE_ID"] = intval($fileID);
+                else
+                    $arFields["IMAGE_ID"] = "NAN";
+            }
+
+        }
+
+        foreach($arFields as $field => $value){
+            if($value!="" and !is_array($value))
+            {
+                $strSql = "UPDATE b_prime_gifts_settings SET VALUE = '$value' WHERE NAME = '$field'";
+                $DB->Query($strSql, false, "File: ".__FILE__."<br>Line: ".__LINE__);
+            }
+        }
+        return true;
+    }
+
+    function getSettings(){
+        $sql = "SELECT * FROM b_prime_gifts_settings";
+        global $DB;
+        return $DB->Query($sql,false);
+    }
+
+    function getSettingsMorePrice($sum = false){
+        $sql = "SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE PRICE_FROM >= $sum LIMIT 1";
+        global $DB;
+        return $DB->Query($sql,false);
+    }
 
     function copyRow($ID){
 
@@ -237,13 +278,16 @@ class Gifts
     }
 
     function SendOrder(Main\Event $event){
-        $order = $event->getParameter("ENTITY");
-        $order->setField('COMMENTS', GetMessage("PRIME_GIFTS").$_SESSION['PRIME_GIFTS_CHANGE'][Main\Context::getCurrent()->getSite()][Sale\Fuser::getId()]);
-        $event->addResult(
-            new Main\EventResult(
-                Main\EventResult::SUCCESS, $order
-            )
-        );
+        if($gift = $_SESSION['PRIME_GIFTS_CHANGE'][Main\Context::getCurrent()->getSite()][Sale\Fuser::getId()]){
+            $order = $event->getParameter("ENTITY");
+            $order->setField('COMMENTS', GetMessage("PRIME_GIFTS").$gift);
+            $event->addResult(
+                new Main\EventResult(
+                    Main\EventResult::SUCCESS, $order
+                )
+            );
+        }
+        unset($_SESSION['PRIME_GIFTS_CHANGE'][Main\Context::getCurrent()->getSite()][Sale\Fuser::getId()]);
     }
 
 }

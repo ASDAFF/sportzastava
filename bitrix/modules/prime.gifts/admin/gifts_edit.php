@@ -194,7 +194,7 @@ $tabControl->BeginNextTab();
 <?
 $tabControl->Buttons(
     array(
-        "back_url" => "nb_s_banner_list.php?lang=".LANG,
+        "back_url" => "prime_gifts_list.php?lang=".LANG,
     )
 );
 ?>
