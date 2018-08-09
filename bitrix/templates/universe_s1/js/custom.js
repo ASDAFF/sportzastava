@@ -8,7 +8,7 @@ $('.readmore').readmore({
 });
 
 $('.intec-min-button-compare.add').click(function(){
-    $(this).closest('.catalog-section-element').find('.element-img img').effect("transfer", { to: $('.flying-basket_buttons_wrap a[href="\/catalog\/compare.php"]'), className: "transfer_class" }, 800);
+    $(this).closest('.catalog-section-element').find('.element-img img').effect("transfer", { to: $('.widget-flying-basket-footer a[href="\/catalog\/compare.php"]'), className: "transfer_class" }, 800);
     var img = $('<img />', {
         src: $(this).closest('.catalog-section-element').find('.element-img img').attr('src')
     });

@@ -12,6 +12,7 @@ Loc::loadMessages(__FILE__);
 
 class CatalogViewedProductTable extends Main\Entity\DataManager
 {
+
 	/**
 	 * Returns DB table name for entity.
 	 *

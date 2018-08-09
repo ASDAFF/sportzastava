@@ -284,12 +284,14 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                 <span class="intec-small-buttons-wrapper">
                                     <?php if ($arParams['DISPLAY_COMPARE']) { ?>
                                         <span class="intec-compare glyph-icon-compare add"
+                                              title="Сравнить"
                                               data-compare-add="<?= $arOffer['ID'] ?>"
                                               data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                               data-compare-list="<?= $compareList ?>"
                                               data-compare-iblock="<?= $iIBlockId ?>">
                                         </span>
                                         <span class="intec-compare glyph-icon-compare active added"
+                                              title="Сравнить"
                                               data-compare-added="<?= $arOffer['ID'] ?>"
                                               data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                               data-compare-list="<?= $compareList ?>"
@@ -298,10 +300,12 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                     <?php } ?>
                                     <?php if ($displayDelay) { ?>
                                         <span class="intec-like fa fa-heart add"
+                                              title="Отложить"
                                               data-basket-delay="<?= $arOffer['ID'] ?>"
                                               data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                         </span>
                                         <span class="intec-like fa fa-heart added active"
+                                              title="Отложить"
                                               data-basket-delayed="<?= $arOffer['ID'] ?>"
                                               data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                         </span>
@@ -385,19 +389,23 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                         <span class="intec-small-buttons-wrapper">
                             <?php if ($arParams['DISPLAY_COMPARE']) { ?>
                                 <span class="intec-compare glyph-icon-compare add"
+                                      title="Сравнить"
                                       data-compare-add="<?= $arResult['ID'] ?>"
                                       data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                       data-compare-list="<?= $compareList ?>"></span>
                                 <span class="intec-compare glyph-icon-compare active added"
+                                      title="Сравнить"
                                       data-compare-added="<?= $arResult['ID'] ?>"
                                       data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                       data-compare-list="<?= $compareList ?>"></span>
                             <?php } ?>
                             <?php if ($displayDelay) { ?>
                                 <span class="intec-like fa fa-heart add <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                      title="Отложить"
                                       data-basket-delay="<?= $arResult['ID'] ?>"
                                       data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>"></span>
                                 <span class="intec-like fa fa-heart added active <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                      title="Отложить"
                                       data-basket-delayed="<?= $arResult['ID'] ?>"
                                       data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>"></span>
                             <?php } ?>
@@ -443,12 +451,14 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                 <span class="intec-small-buttons-wrapper">
                                     <?php if ($arParams['DISPLAY_COMPARE']) { ?>
                                         <span class="intec-compare glyph-icon-compare add"
+                                              title="Сравнить"
                                               data-compare-add="<?= $arOffer['ID'] ?>"
                                               data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                               data-compare-list="<?= $compareList ?>"
                                               data-compare-iblock="<?= $iIBlockId ?>">
                                         </span>
                                         <span class="intec-compare glyph-icon-compare active added"
+                                              title="Сравнить"
                                               data-compare-added="<?= $arOffer['ID'] ?>"
                                               data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                               data-compare-list="<?= $compareList ?>"
@@ -457,10 +467,12 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                     <?php } ?>
                                     <?php if ($displayDelay) { ?>
                                         <span class="intec-like fa fa-heart add"
+                                              title="Отложить"
                                               data-basket-delay="<?= $arOffer['ID'] ?>"
                                               data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                         </span>
                                         <span class="intec-like fa fa-heart added active"
+                                              title="Отложить"
                                               data-basket-delayed="<?= $arOffer['ID'] ?>"
                                               data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                         </span>
@@ -502,11 +514,13 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                         <span class="intec-small-buttons-wrapper">
                             <?php if ($arParams['DISPLAY_COMPARE']) { ?>
                                 <span class="intec-compare glyph-icon-compare add"
+                                      title="Сравнить"
                                       data-compare-add="<?= $arResult['ID'] ?>"
                                       data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                       data-compare-list="<?= $compareList ?>">
                                 </span>
                                 <span class="intec-compare glyph-icon-compare active added"
+                                      title="Сравнить"
                                       data-compare-added="<?= $arResult['ID'] ?>"
                                       data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
                                       data-compare-list="<?= $compareList ?>">
@@ -514,10 +528,12 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                             <?php } ?>
                             <?php if ($displayDelay) { ?>
                                 <span class="intec-like fa fa-heart add <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                      title="Отложить"
                                       data-basket-delay="<?= $arResult['ID'] ?>"
                                       data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                 </span>
                                 <span class="intec-like fa fa-heart added active <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                      title="Отложить"
                                       data-basket-delayed="<?= $arResult['ID'] ?>"
                                       data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                 </span>

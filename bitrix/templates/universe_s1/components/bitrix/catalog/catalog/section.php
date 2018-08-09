@@ -598,7 +598,11 @@ $this->setFrameMode(true);
             $resSection = CIBlockSection::GetByID($arResult["VARIABLES"]["SECTION_ID"]);
             if ($arrSection = $resSection->GetNext())
                 $sectionDescription = $arrSection['DESCRIPTION'];
-            if (!empty($sectionDescription) AND empty($arResult["VARIABLES"]["SMART_FILTER_PATH"])) { ?>
+            if (
+                !empty($sectionDescription) AND
+                empty($arResult["VARIABLES"]["SMART_FILTER_PATH"]) AND
+                empty($_REQUEST['PAGEN_1'])
+                ) { ?>
                 <div class="intec-section-desription"><?= $sectionDescription ?></div>
             <?php } ?>
 

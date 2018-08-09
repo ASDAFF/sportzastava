@@ -263,18 +263,18 @@ if (!empty($arResult['ITEMS'])) { ?>
                             <div class="min-button-block">
                                 <?php if ($bDisplayCompare) { ?>
                                     <?= Html::beginTag('div', $arCompareAdd) ?>
-                                    <i class="glyph-icon-compare" aria-hidden="true"></i>
+                                    <i class="glyph-icon-compare" title="Сравнить" aria-hidden="true"></i>
                                     <?= Html::endTag('div') ?>
                                     <?= Html::beginTag('div', $arCompareAdded) ?>
-                                    <i class="glyph-icon-compare" aria-hidden="true"></i>
+                                    <i class="glyph-icon-compare" title="Сравнить" aria-hidden="true"></i>
                                     <?= Html::endTag('div') ?>
                                 <?php } ?>
                                 <?php if ($bDisplayDelay) { ?>
                                     <?= Html::beginTag('div', $arDelayAdd) ?>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                        <i class="fa fa-heart" title="Отложить" aria-hidden="true"></i>
                                     <?= Html::endTag('div') ?>
                                     <?= Html::beginTag('div', $arDelayAdded) ?>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                        <i class="fa fa-heart" title="Отложить" aria-hidden="true"></i>
                                     <?= Html::endTag('div') ?>
                                 <?php } ?>
                             </div>
