@@ -23,8 +23,8 @@
     font-size: 17px;
     color: #000;
     border-right: 1px solid #e8e8e8;
-    padding: 0px 20px;
     text-decoration: none;
+    text-align: center;
 }
 
 .flying-basket-footer-wrapper a:first-child{
