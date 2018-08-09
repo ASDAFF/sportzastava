@@ -18,7 +18,7 @@ $this->setFrameMode(true);
     <? if($arResult['ITEM']): ?>
     <div class="prime-gifts-main">
 
-        <div class="prime-gifts-h1"><?=$arParams['PRIME_YOUR_GIFT_TEXT']?><?=CurrencyFormat($arResult['SUM_FROM'],'RUB')?></div>
+        <div class="prime-gifts-h1"><?=(strlen($arResult['GIFT_TEXT']) > 1) ? $arResult['GIFT_TEXT'] : $arParams['PRIME_YOUR_GIFT_TEXT']?><?=CurrencyFormat($arResult['SUM_FROM'],'RUB')?></div>
 
         <ul class="prime-gifts-list">
 
@@ -43,7 +43,7 @@ $this->setFrameMode(true);
     <? if($arResult['ITEM_MAX']): ?>
     <div class="prime-gifts-main disabled">
 
-        <div class="prime-gifts-h1"><?=$arParams['PRIME_YOUR_GIFT_TEXT_MORE']?><?=CurrencyFormat($arResult['SUM_ADD'],'RUB')?><?=$arParams['PRIME_YOUR_GIFT_TEXT_MORE_FROM']?><?=CurrencyFormat($arResult['SUM_TO'],'RUB')?></div>
+        <div class="prime-gifts-h1"><?=(strlen($arResult['GIFT_TEXT_MORE']) > 1) ? $arResult['GIFT_TEXT_MORE'] : $arParams['PRIME_YOUR_GIFT_TEXT_MORE']?><?=CurrencyFormat($arResult['SUM_ADD'],'RUB')?><?=(strlen($arResult['GIFT_TEXT_MORE_FROM']) > 1) ? $arResult['GIFT_TEXT_MORE_FROM'] : $arParams['PRIME_YOUR_GIFT_TEXT_MORE_FROM']?><?=CurrencyFormat($arResult['SUM_TO'],'RUB')?></div>
 
         <ul class="prime-gifts-list">
 

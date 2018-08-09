@@ -19,13 +19,22 @@ use Bitrix\Main\Loader,
 
 
 
-$basket = \Bitrix\Sale\Basket::loadItemsForFUser(
-	\Bitrix\Sale\Fuser::getId(),
-	\Bitrix\Main\Context::getCurrent()->getSite()
-);
+$arBasketItems = [];
+$rsBasketItems = CSaleBasket::GetList(array(), array(
+	'FUSER_ID' => CSaleBasket::GetBasketUserID(),
+	'LID' => SITE_ID,
+	'DELAY' => 'N',
+	'ORDER_ID' => 'NULL'
+));
+while ($arBasketItem = $rsBasketItems->GetNext())
+	$arBasketItems[$arBasketItem['PRODUCT_ID']] = $arBasketItem;
 
+$price = 0;
+foreach ($arBasketItems as $iId => $arBasketItem) {
+	$price += $arBasketItem['PRICE']*$arBasketItem['QUANTITY'];
+}
 
-if($price = $basket->getPrice()){
+if($price){
 
 	$arResult = array();
 

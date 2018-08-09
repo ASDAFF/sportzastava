@@ -5,7 +5,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$MODULE_ID."/include.p
 IncludeModuleLangFile(__FILE__);
 
 $tabs = array(
-    array("DIV" => "edit1", "TAB" => GetMessage("PRIME_GIFTS_SETTING"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("PRIME_GIFTS_SETTING")),
+    array("DIV" => "edit1", "TAB" => GetMessage("PRIME_GIFTS_SETTING_ONE"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("PRIME_GIFTS_SETTING_ONE")),
+    array("DIV" => "edit2", "TAB" => GetMessage("PRIME_GIFTS_SETTING"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("PRIME_GIFTS_SETTING")),
 );
 $tabControl = new CAdminTabControl("tabControl", $tabs);
 $gifts = new Gifts();
@@ -21,6 +22,9 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && check_bitrix_sessid
     $arFields = Array(
         "DESCRIPTION"		 =>	$DESCRIPTION,
         "IMAGE_ID"		 => $arIMAGE,
+        "GIFT_TEXT"		 => $GIFT_TEXT,
+        "GIFT_TEXT_MORE"		 => $GIFT_TEXT_MORE,
+        "GIFT_TEXT_MORE_FROM"		 => $GIFT_TEXT_MORE_FROM,
     );
 
     $res = $gifts->addSettings($arFields);
@@ -68,6 +72,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
     // отобразим заголовки закладок
     $tabControl->Begin();
     ?>
+    <!--Content-->
     <?
     //********************
     // первая закладка - форма редактирования баннера
@@ -76,7 +81,24 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
     ?>
 
 
-    <!--Content-->
+    <tr>
+        <td></span><?echo GetMessage("PRIME_YOUR_GIFT_TEXT")?></td>
+        <td><input type="text" name="GIFT_TEXT" value="<?echo $arValue[GIFT_TEXT];?>" size="30" maxlength="100"></td>
+    </tr>
+
+    <tr>
+        <td></span><?echo GetMessage("PRIME_YOUR_GIFT_TEXT_MORE")?></td>
+        <td><input type="text" name="GIFT_TEXT_MORE" value="<?echo $arValue[GIFT_TEXT_MORE];?>" size="30" maxlength="100"></td>
+    </tr>
+
+    <tr>
+        <td></span><?echo GetMessage("PRIME_YOUR_GIFT_TEXT_MORE_FROM")?></td>
+        <td><input type="text" name="GIFT_TEXT_MORE_FROM" value="<?echo $arValue[GIFT_TEXT_MORE_FROM];?>" size="30" maxlength="100"></td>
+    </tr>
+
+
+
+    <?$tabControl->BeginNextTab();?>
 
     <tr valign="top" id="eFile">
         <td width="40%"><?=GetMessage("PRIME_GIFTS_SETTINGS_IMAGE")?></td>
