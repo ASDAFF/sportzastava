@@ -45,6 +45,9 @@ if($price){
 	if($rowMax = $gResultMax->Fetch())
 	{
 		$price = $rowMax['PRICE_FROM'] - $price;
+		$arResult['PRICE_FROM'] = true;
+	}else{
+		$arResult['PRICE_FROM'] = false;
 	}
 
 

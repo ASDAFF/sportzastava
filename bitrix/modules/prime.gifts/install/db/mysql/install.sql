@@ -20,6 +20,7 @@ create table if not exists b_prime_gifts_settings
 
 INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('IMAGE_ID', NULL);
 INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('DESCRIPTION', NULL);
+INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('DESCRIPTION_ONE', NULL);
 INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('GIFT_TEXT', NULL);
 INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('GIFT_TEXT_MORE', NULL);
 INSERT INTO b_prime_gifts_settings (NAME, VALUE) VALUES ('GIFT_TEXT_MORE_FROM', NULL);

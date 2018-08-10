@@ -14,11 +14,15 @@ $this->setFrameMode(true);
 ?>
 
 <div class="prime-gift-el">
-    <?if($arResult['DESCRIPTION']):?>
-    <div class="pg-text">
-        <?=$arResult['DESCRIPTION']?>
-    </div>
-    <?endif;?>
+    <?if($arResult['PRICE_FROM']):?>
+        <div class="pg-text">
+            <?=$arResult['DESCRIPTION']?>
+        </div>
+    <? else:?>
+        <div class="pg-text">
+            <?=$arResult['DESCRIPTION_ONE']?>
+        </div>
+    <? endif; ?>
 
     <?if($arResult['SRC']):?>
     <div class="pg-img">

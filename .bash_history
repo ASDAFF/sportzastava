@@ -250,3 +250,16 @@ git status
 git pull
 git status
 git pull
+git status
+git pull
+git pull
+git status
+git add .
+git pull
+git commit -a -m 'serv'
+git push
+git status
+git status
+git pull
+ls
+git pull

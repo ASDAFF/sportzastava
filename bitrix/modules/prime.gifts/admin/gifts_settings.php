@@ -21,6 +21,7 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && check_bitrix_sessid
 
     $arFields = Array(
         "DESCRIPTION"		 =>	$DESCRIPTION,
+        "DESCRIPTION_ONE"		 =>	$DESCRIPTION_ONE,
         "IMAGE_ID"		 => $arIMAGE,
         "GIFT_TEXT"		 => $GIFT_TEXT,
         "GIFT_TEXT_MORE"		 => $GIFT_TEXT_MORE,
@@ -122,8 +123,36 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
             <?CFileMan::AddHTMLEditorFrame(
                 "DESCRIPTION",
                 $arValue[DESCRIPTION],
-                "html",
-                "html",
+                "DESCRIPTION_TYPE_HTML",
+                "DESCRIPTION_TYPE_HTML",
+                array(
+                    'height' => 450,
+                    'width' => '100%'
+                ),
+                "N",
+                0,
+                "",
+                "",
+                false,
+                true,
+                false,
+                array()
+            );?>
+        </td>
+    </tr>
+
+    <tr class="heading">
+        <td colspan="2"><?=GetMessage("PRIME_GIFTS_SETTINGS_DESCRIPTION_ONE")?></td>
+    </tr>
+
+    <tr>
+
+        <td colspan="2" align="center">
+            <?CFileMan::AddHTMLEditorFrame(
+                "DESCRIPTION_ONE",
+                $arValue[DESCRIPTION_ONE],
+                "DESCRIPTION_ONE_TYPE_HTML",
+                "DESCRIPTION_ONE_TYPE_HTML",
                 array(
                     'height' => 450,
                     'width' => '100%'
