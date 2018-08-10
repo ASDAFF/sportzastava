@@ -8,11 +8,11 @@ function deleteMetaTags(&$content)
 }
 
 
-function getCityForIp($ip = false){
+function getCityForIp($ip){
     $xml = new CDataXML();
     if(!$ip)
     $ip = $_SERVER['REMOTE_ADDR'];
-    var_dump($ip);
+
     $result = file_get_contents('http://ipgeobase.ru:7020/geo?ip='.$ip);
     $xml->LoadString(iconv("Windows-1251", "UTF-8", $result));
     if ($node = $xml->SelectNodes('/ip-answer/ip/city')) {
