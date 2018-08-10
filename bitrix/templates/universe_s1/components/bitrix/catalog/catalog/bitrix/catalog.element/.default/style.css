@@ -174,37 +174,34 @@
 .intec-item-detail .item-info-tabs .tab-pane {
     padding-top: 20px;
 }
-.intec-item-detail .properties-list {
+.intec-item-detail .properties-list-custom {
     list-style: circle;
     padding: 0;
     margin: 0;
     font-size: 0;
 }
-.intec-item-detail .properties-list > li {
+.intec-item-detail .properties-list-custom > li {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 10px 25px;
+    padding: 10px 40px;
     font-size: 14px;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.intec-item-detail .properties-list > li:before {
+.intec-item-detail .properties-list-custom > li:before {
     content: ' ';
     position: absolute;
-    top: 17px;
-    left: 8px;
+    left: 0px;
     display: block;
-    width: 4px;
-    height: 4px;
-    background: #116afc;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    width: 30px;
+    height: 25px;
 }
+.intec-item-detail .properties-list-custom > li:nth-child(1):before {  background: url("images/1.png") no-repeat;  }
+.intec-item-detail .properties-list-custom > li:nth-child(2):before {  background: url("images/2.png") no-repeat;  }
+.intec-item-detail .properties-list-custom > li:nth-child(3):before {  background: url("images/3.png") no-repeat;  }
 
 .intec-item-detail .item-file-list {
     font-size: 0;
@@ -335,16 +332,21 @@
 
 /* ----- /Binded items ----- */
 
+.column-price-value .item-price{
+    display: inline-block;
+    vertical-align: super;
+}
+
 .intec-item-detail .item-info-section {
     padding-right: 5px;
-    text-align: right;
     font-size: 0;
+    display: inline-block;
 }
+
 .intec-item-detail .item-info-section > *,
 .intec-item-detail .item-info-section .item-buttons-block > * {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 15px;
     font-size: 14px;
 }
 .intec-item-detail .item-info-section .item-buttons-block {
@@ -373,7 +375,6 @@
     font-size: 19px;
 }
 .intec-item-detail .item-info-section .intec-small-buttons-wrapper {
-    float: right;
     vertical-align: top;
 }
 .intec-item-detail .item-info-section .intec-small-buttons-wrapper:before {
@@ -415,7 +416,7 @@
 .intec-item-detail .item-brand {
     float: right;
     display: block;
-    margin: -10px 5px 25px 0;
+    margin: 10px 0;
 }
 .intec-item-detail .item-brand .intec-icon-brand {
     max-width: 200px;

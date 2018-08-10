@@ -65,271 +65,179 @@ $price = $actualItem['ITEM_PRICES'][$actualItem['ITEM_PRICE_SELECTED']];
 $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RATIO_SELECTED']]['RATIO'];
 
 ?>
-<div class="row">
-    <div class="col-xs-5 column-price-value">
-        <div class="item-price">
-            <div class="item-current-price-wrap">
-                <?php if ('Y' == $arParams['SHOW_MAX_QUANTITY']) {
-                    if (!empty($arResult['OFFERS'])) { ?>
-                        <div class="item-quantity text-muted" id="<?= $arItemIDs['QUANTITY_LIMIT'] ?>">
-                            <?= GetMessage('OSTATOK').': ' ?>
-                            <span></span>
-                        </div>
-                    <?php } else { ?>
-                        <div class="item-quantity text-muted" id="<? $arItemIDs['QUANTITY_LIMIT'] ?>">
-                            <?= GetMessage('OSTATOK').': ' ?>
-                            <?php if ($bShowQuantityMarkers && !empty($sQuantityMarkerMany) && !empty($sQuantityMarkerFew)) { ?>
-                                <span><?= $sQuantityMarker ?></span>
-                            <?php } else { ?>
-                                <?php if ($sQuantity > 0) { ?>
-                                    <span>
-                                        <?= $arResult['CATALOG_QUANTITY'] .' '. $arResult['CATALOG_MEASURE_NAME'] ?>
-                                    </span>
-                                <?php } else { ?>
-                                    <span>
-                                        <?= $notAvailableMessage ?>
-                                    </span>
-                                <?php } ?>
-                            <?php } ?>
-                        </div>
-                    <?php }
-                } ?>
-                <div class="item-current-price">
-                    <?= $minPrice['PRINT_DISCOUNT_VALUE']?>
-                </div>
 
-                <?php if ($bShowSelectedPrices) { ?>
-                    <div class="item-additional-price">
-                        <?php foreach ($arPricesSelectedList as $selectedPrice) { ?>
-                            <div class="price-<?= strtolower($selectedPrice) ?>">
-                                <?php if (!empty($arAdditionalPrices[$selectedPrice])) { ?>
-                                    <?= $arAdditionalPrices[$selectedPrice]['TITLE'] . ':' ?>
-                                    <?= $arAdditionalPrices[$selectedPrice]['PRINT_DISCOUNT_VALUE'] ?>
-                                <?php } ?>
-                            </div>
+<div class="col-xs-12 column-price-value column-buy-button" style="<?= !$currentOffer['CAN_BUY'] ? 'display: none;' : '' ?>">
+    <div class="item-price">
+        <div class="item-current-price-wrap">
+            <?php if ('Y' == $arParams['SHOW_MAX_QUANTITY']) {
+                if (!empty($arResult['OFFERS'])) { ?>
+                    <div class="item-quantity text-muted" id="<?= $arItemIDs['QUANTITY_LIMIT'] ?>">
+                        <?= GetMessage('OSTATOK').': ' ?>
+                        <span></span>
+                    </div>
+                <?php } else { ?>
+                    <div class="item-quantity text-muted" id="<? $arItemIDs['QUANTITY_LIMIT'] ?>">
+                        <?= GetMessage('OSTATOK').': ' ?>
+                        <?php if ($bShowQuantityMarkers && !empty($sQuantityMarkerMany) && !empty($sQuantityMarkerFew)) { ?>
+                            <span><?= $sQuantityMarker ?></span>
+                        <?php } else { ?>
+                            <?php if ($sQuantity > 0) { ?>
+                                <span>
+                                    <?= $arResult['CATALOG_QUANTITY'] .' '. $arResult['CATALOG_MEASURE_NAME'] ?>
+                                </span>
+                            <?php } else { ?>
+                                <span>
+                                    <?= $notAvailableMessage ?>
+                                </span>
+                            <?php } ?>
                         <?php } ?>
                     </div>
-                <?php } ?>
+                <?php }
+            } ?>
+            <div class="item-current-price">
+                <?= $minPrice['PRINT_DISCOUNT_VALUE']?>
             </div>
-            <div class="item-old-price-wrap">
-                <?php if ($arParams['SHOW_OLD_PRICE'] == 'Y') {
-                    $boolDiscountShow = $minPrice['DISCOUNT_DIFF'] > 0;
-                ?>
-                    <div class="item-old-price" style="<?= $boolDiscountShow ? '' : 'display: none' ?>">
-                        <?= $boolDiscountShow ? $minPrice['PRINT_VALUE'] : '' ?>
-                    </div>
-                <?php } ?>
 
-                <?php if ($arParams['SHOW_DISCOUNT_PERCENT'] == 'Y') {
-                    if (empty($arResult['OFFERS'])) {
-                        if ($arResult['MIN_PRICE']['DISCOUNT_DIFF'] > 0) { ?>
-                            <div class="item-discount-percents" id="<?= $arItemIDs['DISCOUNT_PICT_ID'] ?>">
-                                <?= -$arResult['MIN_PRICE']['DISCOUNT_DIFF_PERCENT'] ?>%
-                            </div>
-                        <?php }
-                    } elseif ($currentOffer) {
-                        if ($currentOffer['MIN_PRICE']['DISCOUNT_DIFF'] > 0) { ?>
-                            <div class="item-discount-percents" id="<?= $arItemIDs['DISCOUNT_PICT_ID'] ?>">
-                                <?= -$currentOffer['MIN_PRICE']['DISCOUNT_DIFF_PERCENT'] ?>%
-                            </div>
-                        <?php }
-                    }
-                } ?>
-            </div>
-            <?php
-            if ($arParams['USE_PRICE_COUNT'])
-            {
-                $showRanges = count($actualItem['ITEM_QUANTITY_RANGES']) > 1;
-                $useRatio = $arParams['USE_RATIO_IN_RANGES'] === 'Y';
+            <?php if ($bShowSelectedPrices) { ?>
+                <div class="item-additional-price">
+                    <?php foreach ($arPricesSelectedList as $selectedPrice) { ?>
+                        <div class="price-<?= strtolower($selectedPrice) ?>">
+                            <?php if (!empty($arAdditionalPrices[$selectedPrice])) { ?>
+                                <?= $arAdditionalPrices[$selectedPrice]['TITLE'] . ':' ?>
+                                <?= $arAdditionalPrices[$selectedPrice]['PRINT_DISCOUNT_VALUE'] ?>
+                            <?php } ?>
+                        </div>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </div>
+        <? if($minPrice['DISCOUNT_DIFF'] > 0): ?>
+        <div class="item-old-price-wrap">
+            <?php if ($arParams['SHOW_OLD_PRICE'] == 'Y') {
+                $boolDiscountShow = $minPrice['DISCOUNT_DIFF'] > 0;
+            ?>
+                <div class="item-old-price" style="<?= $boolDiscountShow ? '' : 'display: none' ?>">
+                    <?= $boolDiscountShow ? $minPrice['PRINT_VALUE'] : '' ?>
+                </div>
+            <?php } ?>
 
-                ?>
-                <div class="item-current-price-ranges-block"
-                    <?=$showRanges ? '' : 'style="display: none;"'?>
-                     data-entity="price-ranges-block">
-                    <div class="item-current-price-ranges-block-title">
-                        <?=$arParams['MESS_PRICE_RANGES_TITLE']?>
-                        <span data-entity="price-ranges-ratio-header">
-                                                    (<?=(Loc::getMessage(
-                                'CT_BCE_CATALOG_RATIO_PRICE',
-                                array('#RATIO#' => ($useRatio ? $measureRatio : '1').' '.$actualItem['ITEM_MEASURE']['TITLE'])
-                            ))?>)
-                                                </span>
-                    </div>
-                    <div class="price-ranges-block-items" data-entity="price-ranges-body">
-                        <?
-                        if ($showRanges)
+            <?php if ($arParams['SHOW_DISCOUNT_PERCENT'] == 'Y') {
+                if (empty($arResult['OFFERS'])) {
+                    if ($arResult['MIN_PRICE']['DISCOUNT_DIFF'] > 0) { ?>
+                        <div class="item-discount-percents" id="<?= $arItemIDs['DISCOUNT_PICT_ID'] ?>">
+                            <?= -$arResult['MIN_PRICE']['DISCOUNT_DIFF_PERCENT'] ?>%
+                        </div>
+                    <?php }
+                } elseif ($currentOffer) {
+                    if ($currentOffer['MIN_PRICE']['DISCOUNT_DIFF'] > 0) { ?>
+                        <div class="item-discount-percents" id="<?= $arItemIDs['DISCOUNT_PICT_ID'] ?>">
+                            <?= -$currentOffer['MIN_PRICE']['DISCOUNT_DIFF_PERCENT'] ?>%
+                        </div>
+                    <?php }
+                }
+            } ?>
+        </div>
+        <? endif; ?>
+        <?php
+        if ($arParams['USE_PRICE_COUNT'])
+        {
+            $showRanges = count($actualItem['ITEM_QUANTITY_RANGES']) > 1;
+            $useRatio = $arParams['USE_RATIO_IN_RANGES'] === 'Y';
+
+            ?>
+            <div class="item-current-price-ranges-block"
+                <?=$showRanges ? '' : 'style="display: none;"'?>
+                 data-entity="price-ranges-block">
+                <div class="item-current-price-ranges-block-title">
+                    <?=$arParams['MESS_PRICE_RANGES_TITLE']?>
+                    <span data-entity="price-ranges-ratio-header">
+                                                (<?=(Loc::getMessage(
+                            'CT_BCE_CATALOG_RATIO_PRICE',
+                            array('#RATIO#' => ($useRatio ? $measureRatio : '1').' '.$actualItem['ITEM_MEASURE']['TITLE'])
+                        ))?>)
+                                            </span>
+                </div>
+                <div class="price-ranges-block-items" data-entity="price-ranges-body">
+                    <?
+                    if ($showRanges)
+                    {
+                        foreach ($actualItem['ITEM_QUANTITY_RANGES'] as $range)
                         {
-                            foreach ($actualItem['ITEM_QUANTITY_RANGES'] as $range)
+                            if ($range['HASH'] !== 'ZERO-INF')
                             {
-                                if ($range['HASH'] !== 'ZERO-INF')
+                                $itemPrice = false;
+
+                                foreach ($actualItem['ITEM_PRICES'] as $itemPrice)
                                 {
-                                    $itemPrice = false;
-
-                                    foreach ($actualItem['ITEM_PRICES'] as $itemPrice)
+                                    if ($itemPrice['QUANTITY_HASH'] === $range['HASH'])
                                     {
-                                        if ($itemPrice['QUANTITY_HASH'] === $range['HASH'])
-                                        {
-                                            break;
-                                        }
+                                        break;
                                     }
+                                }
 
-                                    if ($itemPrice)
-                                    {
-                                        ?>
-                                        <div class="price-ranges-block-item">
-                                            <?
-                                            echo Loc::getMessage(
-                                                    'CT_BCE_CATALOG_RANGE_FROM',
-                                                    array('#FROM#' => $range['SORT_FROM'].' '.$actualItem['ITEM_MEASURE']['TITLE'])
-                                                ).' ';
-
-                                            if (is_infinite($range['SORT_TO']))
-                                            {
-                                                echo Loc::getMessage('CT_BCE_CATALOG_RANGE_MORE');
-                                            }
-                                            else
-                                            {
-                                                echo Loc::getMessage(
-                                                    'CT_BCE_CATALOG_RANGE_TO',
-                                                    array('#TO#' => $range['SORT_TO'].' '.$actualItem['ITEM_MEASURE']['TITLE'])
-                                                );
-                                            }
-                                            ?>
-                                            <span class="price-ranges-block-item-value"><?=($useRatio ? $itemPrice['PRINT_RATIO_PRICE'] : $itemPrice['PRINT_PRICE'])?></span>
-                                        </div>
+                                if ($itemPrice)
+                                {
+                                    ?>
+                                    <div class="price-ranges-block-item">
                                         <?
-                                    }
+                                        echo Loc::getMessage(
+                                                'CT_BCE_CATALOG_RANGE_FROM',
+                                                array('#FROM#' => $range['SORT_FROM'].' '.$actualItem['ITEM_MEASURE']['TITLE'])
+                                            ).' ';
+
+                                        if (is_infinite($range['SORT_TO']))
+                                        {
+                                            echo Loc::getMessage('CT_BCE_CATALOG_RANGE_MORE');
+                                        }
+                                        else
+                                        {
+                                            echo Loc::getMessage(
+                                                'CT_BCE_CATALOG_RANGE_TO',
+                                                array('#TO#' => $range['SORT_TO'].' '.$actualItem['ITEM_MEASURE']['TITLE'])
+                                            );
+                                        }
+                                        ?>
+                                        <span class="price-ranges-block-item-value"><?=($useRatio ? $itemPrice['PRINT_RATIO_PRICE'] : $itemPrice['PRINT_PRICE'])?></span>
+                                    </div>
+                                    <?
                                 }
                             }
                         }
-                        ?>
-                    </div>
+                    }
+                    ?>
                 </div>
-                <?
-                unset($showRanges, $useRatio, $itemPrice, $range);
-            }
-            ?>
-        </div>
+            </div>
+            <?
+            unset($showRanges, $useRatio, $itemPrice, $range);
+        }
+        ?>
     </div>
-    <div class="col-xs-7 column-buy-button" style="<?= !$currentOffer['CAN_BUY'] ? 'display: none;' : '' ?>">
-        <div class="item-info-section clearfix">
-            <?php if ($arParams['USE_BASKET'] == 'Y') { ?>
-                <?php if ($bUseProductQuantity) { ?>
-                    <?php if (!empty($arResult['OFFERS'])) { ?>
-                        <?php foreach($arResult['OFFERS'] as $key => $arOffer) {
-                            $bInBasket = ArrayHelper::getValue($arOffer, ['BASKET', 'IN']);
-                            $bInDelay = ArrayHelper::getValue($arOffer, ['BASKET', 'DELAY']);
-                            $bInCompare = !empty(ArrayHelper::getValue($_SESSION, [$arParams['COMPARE_NAME'], 'ITEMS', $arResult['ID']]));
-                            $bCanBuyZero = ArrayHelper::getValue($arOffer, 'CAN_BUY_ZERO');
-                            $bOfferCanBuy = ArrayHelper::getValue($arOffer, ['CAN_BUY']);
 
-                            if ($bOfferCanBuy) {
-                                $arCounterSettings = Json::encode([
-                                    'bounds' => [
-                                        'minimum' => $arOffer['CATALOG_MEASURE_RATIO'],
-                                        'maximum' => $bCanBuyZero ? false : $arOffer['CATALOG_QUANTITY']
-                                    ],
-                                    'step' => $arOffer['CATALOG_MEASURE_RATIO'],
-                                    'value' => $arOffer['CATALOG_MEASURE_RATIO']
-                                ]);
 
-                            ?>
-                            <div class="item-buttons-block block-<?= $arOffer['ID'] ?>" style="display: none;">
-                                <div class="item-buttons vam">
-                                    <span class="item-quantity-wrap" data-settings="<?= Html::encode($arCounterSettings) ?>">
-                                        <?= Html::tag('a', '-', [
-                                            'href' => 'javascript:void(0)',
-                                            'data-type' => 'button',
-                                            'data-action' => 'decrement',
-                                            'class' => 'intec-bt-button=type-2 button-small item-quantity-down intec-cl-text-hover'
-                                        ]) ?>
-                                        <?= Html::input('text', null, $arOffer['CATALOG_MEASURE_RATIO'], [
-                                            'data-type' => 'input',
-                                            'class' => 'item-quantity-input'
-                                        ]) ?>
-                                        <?= Html::tag('a', '+', [
-                                            'href' => 'javascript:void(0)',
-                                            'data-type' => 'button',
-                                            'data-action' => 'increment',
-                                            'class' => 'intec-bt-button=type-2 button-small item-quantity-down intec-cl-text-hover'
-                                        ]) ?>
-                                        <?=$bShowMeasure?'<span class="item-quantity-measure">'.$arOffer['ITEM_MEASURE']['TITLE'].'</span>':'';?>
-                                    </span>
-                                    <span class="item-buttons-counter-block">
-                                        <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
-                                           data-basket-add="<?= $arOffer['ID'] ?>"
-                                           data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                           data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
-                                            <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                            <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
-                                        </a>
-                                        <a href="<?= $arParams['BASKET_URL'] ?>"
-                                           class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
-                                           data-basket-added="<?= $arOffer['ID'] ?>"
-                                           data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                           data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
-                                            <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                            <span class="intec-basket-text">
-                                                <?= GetMessage('CT_BCE_CATALOG_ADDED') ?>
-                                            </span>
-                                        </a>
-                                        <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
-                                            <span class="intec-button intec-button-link jsFastOrder">
-                                                <i class="intec-button-w-icon glyph-icon-one_click"></i>
-                                                <?= GetMessage('CE_FAST_ORDER') ?>
-                                            </span>
-                                        <?php } ?>
-                                    </span>
-                                </div>
-                                <span class="intec-small-buttons-wrapper">
-                                    <?php if ($arParams['DISPLAY_COMPARE']) { ?>
-                                        <span class="intec-compare glyph-icon-compare add"
-                                              title="Сравнить"
-                                              data-compare-add="<?= $arOffer['ID'] ?>"
-                                              data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                              data-compare-list="<?= $compareList ?>"
-                                              data-compare-iblock="<?= $iIBlockId ?>">
-                                        </span>
-                                        <span class="intec-compare glyph-icon-compare active added"
-                                              title="Сравнить"
-                                              data-compare-added="<?= $arOffer['ID'] ?>"
-                                              data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                              data-compare-list="<?= $compareList ?>"
-                                              data-compare-iblock="<?= $iIBlockId ?>">
-                                        </span>
-                                    <?php } ?>
-                                    <?php if ($displayDelay) { ?>
-                                        <span class="intec-like fa fa-heart add"
-                                              title="Отложить"
-                                              data-basket-delay="<?= $arOffer['ID'] ?>"
-                                              data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
-                                        </span>
-                                        <span class="intec-like fa fa-heart added active"
-                                              title="Отложить"
-                                              data-basket-delayed="<?= $arOffer['ID'] ?>"
-                                              data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
-                                        </span>
-                                    <?php } ?>
-                                </span>
-                            </div>
-                            <?php } ?>
-                        <?php } ?>
-                    <?php } else {
+    <div class="item-info-section clearfix">
+        <?php if ($arParams['USE_BASKET'] == 'Y') { ?>
+            <?php if ($bUseProductQuantity) { ?>
+                <?php if (!empty($arResult['OFFERS'])) { ?>
+                    <?php foreach($arResult['OFFERS'] as $key => $arOffer) {
+                        $bInBasket = ArrayHelper::getValue($arOffer, ['BASKET', 'IN']);
+                        $bInDelay = ArrayHelper::getValue($arOffer, ['BASKET', 'DELAY']);
+                        $bInCompare = !empty(ArrayHelper::getValue($_SESSION, [$arParams['COMPARE_NAME'], 'ITEMS', $arResult['ID']]));
+                        $bCanBuyZero = ArrayHelper::getValue($arOffer, 'CAN_BUY_ZERO');
+                        $bOfferCanBuy = ArrayHelper::getValue($arOffer, ['CAN_BUY']);
 
-                        $bCanBuyZero = ArrayHelper::getValue($arResult, 'CAN_BUY_ZERO');
-
-                        $arCounterSettings = Json::encode([
-                            'bounds' => [
-                                'minimum' => $arResult['CATALOG_MEASURE_RATIO'],
-                                'maximum' => $bCanBuyZero ? false : $arResult['CATALOG_QUANTITY']
-                            ],
-                            'step' => $arResult['CATALOG_MEASURE_RATIO'],
-                            'value' => $arResult['CATALOG_MEASURE_RATIO']
-                        ]);
+                        if ($bOfferCanBuy) {
+                            $arCounterSettings = Json::encode([
+                                'bounds' => [
+                                    'minimum' => $arOffer['CATALOG_MEASURE_RATIO'],
+                                    'maximum' => $bCanBuyZero ? false : $arOffer['CATALOG_QUANTITY']
+                                ],
+                                'step' => $arOffer['CATALOG_MEASURE_RATIO'],
+                                'value' => $arOffer['CATALOG_MEASURE_RATIO']
+                            ]);
 
                         ?>
-                        <div class="item-buttons block-<?= $currentOfferId ?>">
-                            <?php if ($canBuy) { ?>
+                        <div class="item-buttons-block block-<?= $arOffer['ID'] ?>" style="display: none;">
+                            <div class="item-buttons vam">
                                 <span class="item-quantity-wrap" data-settings="<?= Html::encode($arCounterSettings) ?>">
                                     <?= Html::tag('a', '-', [
                                         'href' => 'javascript:void(0)',
@@ -337,7 +245,7 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                         'data-action' => 'decrement',
                                         'class' => 'intec-bt-button=type-2 button-small item-quantity-down intec-cl-text-hover'
                                     ]) ?>
-                                    <?= Html::input('text', null, $arResult['CATALOG_MEASURE_RATIO'], [
+                                    <?= Html::input('text', null, $arOffer['CATALOG_MEASURE_RATIO'], [
                                         'data-type' => 'input',
                                         'class' => 'item-quantity-input'
                                     ]) ?>
@@ -347,24 +255,26 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                         'data-action' => 'increment',
                                         'class' => 'intec-bt-button=type-2 button-small item-quantity-down intec-cl-text-hover'
                                     ]) ?>
-                                    <?=$bShowMeasure?'<span class="item-quantity-measure">'.$arResult['ITEM_MEASURE']['TITLE'].'</span>':'';?>
+                                    <?=$bShowMeasure?'<span class="item-quantity-measure">'.$arOffer['ITEM_MEASURE']['TITLE'].'</span>':'';?>
                                 </span>
-                                <span class="item-buttons-counter-block" id="<?= $arItemIDs['BASKET_ACTIONS'] ?>">
+                                <span class="item-buttons-counter-block">
                                     <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
-                                       data-basket-add="<?= $arResult['ID'] ?>"
+                                       data-basket-add="<?= $arOffer['ID'] ?>"
                                        data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                       data-basket-quantity="<?= $arResult['CATALOG_MEASURE_RATIO'] ?>">
+                                       data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
                                         <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
                                         <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
                                     </a>
                                     <a href="<?= $arParams['BASKET_URL'] ?>"
                                        class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
-                                       data-basket-added="<?= $arResult['ID'] ?>"
-                                       data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>">
+                                       data-basket-added="<?= $arOffer['ID'] ?>"
+                                       data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
+                                       data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
                                         <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                        <span class="intec-basket-text"><?= GetMessage('CT_BCE_CATALOG_ADDED') ?></span>
+                                        <span class="intec-basket-text">
+                                            <?= GetMessage('CT_BCE_CATALOG_ADDED') ?>
+                                        </span>
                                     </a>
-
                                     <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
                                         <span class="intec-button intec-button-link jsFastOrder">
                                             <i class="intec-button-w-icon glyph-icon-one_click"></i>
@@ -372,188 +282,304 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
                                         </span>
                                     <?php } ?>
                                 </span>
-                            <?php } ?>
-
-                            <?php if ($showSubscribeBtn) {
-                                $APPLICATION->includeComponent('bitrix:catalog.product.subscribe', '',
-                                    array(
-                                        'PRODUCT_ID' => $arResult['ID'],
-                                        'BUTTON_ID' => $arItemIDs['SUBSCRIBE_LINK'],
-                                        'BUTTON_CLASS' => 'bx_big bx_bt_button',
-                                        'DEFAULT_DISPLAY' => !$canBuy,
-                                    ),
-                                    $component, array('HIDE_ICONS' => 'Y')
-                                );
-                            } ?>
-                        </div>
-                        <span class="intec-small-buttons-wrapper">
-                            <?php if ($arParams['DISPLAY_COMPARE']) { ?>
-                                <span class="intec-compare glyph-icon-compare add"
-                                      title="Сравнить"
-                                      data-compare-add="<?= $arResult['ID'] ?>"
-                                      data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                      data-compare-list="<?= $compareList ?>"></span>
-                                <span class="intec-compare glyph-icon-compare active added"
-                                      title="Сравнить"
-                                      data-compare-added="<?= $arResult['ID'] ?>"
-                                      data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                      data-compare-list="<?= $compareList ?>"></span>
-                            <?php } ?>
-                            <?php if ($displayDelay) { ?>
-                                <span class="intec-like fa fa-heart add <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
-                                      title="Отложить"
-                                      data-basket-delay="<?= $arResult['ID'] ?>"
-                                      data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>"></span>
-                                <span class="intec-like fa fa-heart added active <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
-                                      title="Отложить"
-                                      data-basket-delayed="<?= $arResult['ID'] ?>"
-                                      data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>"></span>
-                            <?php } ?>
-                        </span>
-                    <?php } ?>
-                <?php } else { ?>
-                    <?php if (!empty($arResult['OFFERS'])) { ?>
-                        <?php foreach($arResult['OFFERS'] as $key => $arOffer) {
-
-                            $bInBasket = ArrayHelper::getValue($arOffer, ['BASKET', 'IN']);
-                            $bInDelay = ArrayHelper::getValue($arOffer, ['BASKET', 'DELAY']);
-                            $bInCompare = !empty(ArrayHelper::getValue($_SESSION, [$arParams['COMPARE_NAME'], 'ITEMS', $arResult['ID']]));
-
-                            ?>
-                            <div class="item-buttons-block block-<?= $arOffer['ID'] ?>" style="display: none;">
-                                <div class="item-buttons vam">
-                                    <span class="item-buttons-counter-block">
-                                        <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
-                                           data-basket-add="<?= $arOffer['ID'] ?>"
-                                           data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                           data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
-                                            <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                            <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
-                                        </a>
-                                        <a href="<?= $arParams['BASKET_URL'] ?>"
-                                           class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
-                                           data-basket-added="<?= $arOffer['ID'] ?>"
-                                           data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                           data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
-                                            <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                            <span class="intec-basket-text">
-                                                <?= GetMessage('CT_BCE_CATALOG_ADDED') ?>
-                                            </span>
-                                        </a>
-                                        <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
-                                            <span class="intec-button intec-button-link jsFastOrder">
-                                                <i class="intec-button-w-icon glyph-icon-one_click"></i>
-                                                <?= GetMessage('CE_FAST_ORDER') ?>
-                                            </span>
-                                        <?php } ?>
-                                    </span>
-                                </div>
-                                <span class="intec-small-buttons-wrapper">
-                                    <?php if ($arParams['DISPLAY_COMPARE']) { ?>
-                                        <span class="intec-compare glyph-icon-compare add"
-                                              title="Сравнить"
-                                              data-compare-add="<?= $arOffer['ID'] ?>"
-                                              data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                              data-compare-list="<?= $compareList ?>"
-                                              data-compare-iblock="<?= $iIBlockId ?>">
-                                        </span>
-                                        <span class="intec-compare glyph-icon-compare active added"
-                                              title="Сравнить"
-                                              data-compare-added="<?= $arOffer['ID'] ?>"
-                                              data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                              data-compare-list="<?= $compareList ?>"
-                                              data-compare-iblock="<?= $iIBlockId ?>">
-                                        </span>
-                                    <?php } ?>
-                                    <?php if ($displayDelay) { ?>
-                                        <span class="intec-like fa fa-heart add"
-                                              title="Отложить"
-                                              data-basket-delay="<?= $arOffer['ID'] ?>"
-                                              data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
-                                        </span>
-                                        <span class="intec-like fa fa-heart added active"
-                                              title="Отложить"
-                                              data-basket-delayed="<?= $arOffer['ID'] ?>"
-                                              data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
-                                        </span>
-                                    <?php } ?>
-                                </span>
                             </div>
-                        <?php } ?>
-                    <?php } else { ?>
-                        <div class="item-buttons vam block-<?= $currentOfferId ?>">
-                            <span class="item-buttons-counter-block"
-                                  id="<?= $arItemIDs['BASKET_ACTIONS'] ?>"
-                                  style="<?= $canBuy ? '' : 'display: none;' ?>">
-                                <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
-                                   data-basket-add="<?= $arResult['ID'] ?>"
-                                   data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                   data-basket-quantity="<?= $arResult['CATALOG_MEASURE_RATIO'] ?>">
-                                    <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                    <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
-                                </a>
-                                <a href="<?= $arParams['BASKET_URL'] ?>"
-                                   class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
-                                   data-basket-added="<?= $arResult['ID'] ?>"
-                                   data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
-                                   data-basket-quantity="<?= $arResult['CATALOG_MEASURE_RATIO'] ?>">
-                                    <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                                    <span class="intec-basket-text"><?= GetMessage('CT_BCE_CATALOG_ADDED') ?></span>
-                                </a>
-                                <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
-                                    <span class="intec-button intec-button-link jsFastOrder">
-                                        <i class="intec-button-w-icon glyph-icon-one_click"></i>
-                                        <?= GetMessage('CE_FAST_ORDER') ?>
+                            <span class="intec-small-buttons-wrapper">
+                                <?php if ($arParams['DISPLAY_COMPARE']) { ?>
+                                    <span class="intec-compare glyph-icon-compare add"
+                                          title="Сравнить"
+                                          data-compare-add="<?= $arOffer['ID'] ?>"
+                                          data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                          data-compare-list="<?= $compareList ?>"
+                                          data-compare-iblock="<?= $iIBlockId ?>">
+                                    </span>
+                                    <span class="intec-compare glyph-icon-compare active added"
+                                          title="Сравнить"
+                                          data-compare-added="<?= $arOffer['ID'] ?>"
+                                          data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                          data-compare-list="<?= $compareList ?>"
+                                          data-compare-iblock="<?= $iIBlockId ?>">
+                                    </span>
+                                <?php } ?>
+                                <?php if ($displayDelay) { ?>
+                                    <span class="intec-like fa fa-heart add"
+                                          title="Отложить"
+                                          data-basket-delay="<?= $arOffer['ID'] ?>"
+                                          data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
+                                    </span>
+                                    <span class="intec-like fa fa-heart added active"
+                                          title="Отложить"
+                                          data-basket-delayed="<?= $arOffer['ID'] ?>"
+                                          data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
                                     </span>
                                 <?php } ?>
                             </span>
                         </div>
-                        <?php
-                        unset($showAddBtn, $showBuyBtn); ?>
+                        <?php } ?>
+                    <?php } ?>
+                <?php } else {
 
-                        <span class="intec-small-buttons-wrapper">
-                            <?php if ($arParams['DISPLAY_COMPARE']) { ?>
-                                <span class="intec-compare glyph-icon-compare add"
-                                      title="Сравнить"
-                                      data-compare-add="<?= $arResult['ID'] ?>"
-                                      data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                      data-compare-list="<?= $compareList ?>">
+                    $bCanBuyZero = ArrayHelper::getValue($arResult, 'CAN_BUY_ZERO');
+
+                    $arCounterSettings = Json::encode([
+                        'bounds' => [
+                            'minimum' => $arResult['CATALOG_MEASURE_RATIO'],
+                            'maximum' => $bCanBuyZero ? false : $arResult['CATALOG_QUANTITY']
+                        ],
+                        'step' => $arResult['CATALOG_MEASURE_RATIO'],
+                        'value' => $arResult['CATALOG_MEASURE_RATIO']
+                    ]);
+
+                    ?>
+                    <div class="item-buttons block-<?= $currentOfferId ?>">
+                        <?php if ($canBuy) { ?>
+                            <span class="item-quantity-wrap" data-settings="<?= Html::encode($arCounterSettings) ?>">
+                                <?= Html::tag('a', '-', [
+                                    'href' => 'javascript:void(0)',
+                                    'data-type' => 'button',
+                                    'data-action' => 'decrement',
+                                    'class' => 'intec-bt-button=type-2 button-small item-quantity-down intec-cl-text-hover'
+                                ]) ?>
+                                <?= Html::input('text', null, $arResult['CATALOG_MEASURE_RATIO'], [
+                                    'data-type' => 'input',
+                                    'class' => 'item-quantity-input'
+                                ]) ?>
+                                <?= Html::tag('a', '+', [
+                                    'href' => 'javascript:void(0)',
+                                    'data-type' => 'button',
+                                    'data-action' => 'increment',
+                                    'class' => 'intec-bt-button=type-2 button-small item-quantity-down intec-cl-text-hover'
+                                ]) ?>
+                                <?=$bShowMeasure?'<span class="item-quantity-measure">'.$arResult['ITEM_MEASURE']['TITLE'].'</span>':'';?>
+                            </span>
+
+                        <?php } ?>
+
+                        <?php if ($showSubscribeBtn) {
+                            $APPLICATION->includeComponent('bitrix:catalog.product.subscribe', '',
+                                array(
+                                    'PRODUCT_ID' => $arResult['ID'],
+                                    'BUTTON_ID' => $arItemIDs['SUBSCRIBE_LINK'],
+                                    'BUTTON_CLASS' => 'bx_big bx_bt_button',
+                                    'DEFAULT_DISPLAY' => !$canBuy,
+                                ),
+                                $component, array('HIDE_ICONS' => 'Y')
+                            );
+                        } ?>
+                    </div>
+                    <span class="intec-small-buttons-wrapper">
+                        <?php if ($arParams['DISPLAY_COMPARE']) { ?>
+                            <span class="intec-compare glyph-icon-compare add"
+                                  title="Сравнить"
+                                  data-compare-add="<?= $arResult['ID'] ?>"
+                                  data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                  data-compare-list="<?= $compareList ?>"></span>
+                            <span class="intec-compare glyph-icon-compare active added"
+                                  title="Сравнить"
+                                  data-compare-added="<?= $arResult['ID'] ?>"
+                                  data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                  data-compare-list="<?= $compareList ?>"></span>
+                        <?php } ?>
+                        <?php if ($displayDelay) { ?>
+                            <span class="intec-like fa fa-heart add <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                  title="Отложить"
+                                  data-basket-delay="<?= $arResult['ID'] ?>"
+                                  data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>"></span>
+                            <span class="intec-like fa fa-heart added active <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                  title="Отложить"
+                                  data-basket-delayed="<?= $arResult['ID'] ?>"
+                                  data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>"></span>
+                        <?php } ?>
+                    </span>
+                <?php } ?>
+            <?php } else { ?>
+                <?php if (!empty($arResult['OFFERS'])) { ?>
+                    <?php foreach($arResult['OFFERS'] as $key => $arOffer) {
+
+                        $bInBasket = ArrayHelper::getValue($arOffer, ['BASKET', 'IN']);
+                        $bInDelay = ArrayHelper::getValue($arOffer, ['BASKET', 'DELAY']);
+                        $bInCompare = !empty(ArrayHelper::getValue($_SESSION, [$arParams['COMPARE_NAME'], 'ITEMS', $arResult['ID']]));
+
+                        ?>
+                        <div class="item-buttons-block block-<?= $arOffer['ID'] ?>" style="display: none;">
+                            <div class="item-buttons vam">
+                                <span class="item-buttons-counter-block">
+                                    <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
+                                       data-basket-add="<?= $arOffer['ID'] ?>"
+                                       data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
+                                       data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
+                                        <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                                        <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
+                                    </a>
+                                    <a href="<?= $arParams['BASKET_URL'] ?>"
+                                       class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
+                                       data-basket-added="<?= $arOffer['ID'] ?>"
+                                       data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
+                                       data-basket-quantity="<?= $arOffer['CATALOG_MEASURE_RATIO'] ?>">
+                                        <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                                        <span class="intec-basket-text">
+                                            <?= GetMessage('CT_BCE_CATALOG_ADDED') ?>
+                                        </span>
+                                    </a>
+                                    <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
+                                        <span class="intec-button intec-button-link jsFastOrder">
+                                            <i class="intec-button-w-icon glyph-icon-one_click"></i>
+                                            <?= GetMessage('CE_FAST_ORDER') ?>
+                                        </span>
+                                    <?php } ?>
                                 </span>
-                                <span class="intec-compare glyph-icon-compare active added"
-                                      title="Сравнить"
-                                      data-compare-added="<?= $arResult['ID'] ?>"
-                                      data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
-                                      data-compare-list="<?= $compareList ?>">
-                                </span>
-                            <?php } ?>
-                            <?php if ($displayDelay) { ?>
-                                <span class="intec-like fa fa-heart add <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
-                                      title="Отложить"
-                                      data-basket-delay="<?= $arResult['ID'] ?>"
-                                      data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
-                                </span>
-                                <span class="intec-like fa fa-heart added active <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
-                                      title="Отложить"
-                                      data-basket-delayed="<?= $arResult['ID'] ?>"
-                                      data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
+                            </div>
+                            <span class="intec-small-buttons-wrapper">
+                                <?php if ($arParams['DISPLAY_COMPARE']) { ?>
+                                    <span class="intec-compare glyph-icon-compare add"
+                                          title="Сравнить"
+                                          data-compare-add="<?= $arOffer['ID'] ?>"
+                                          data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                          data-compare-list="<?= $compareList ?>"
+                                          data-compare-iblock="<?= $iIBlockId ?>">
+                                    </span>
+                                    <span class="intec-compare glyph-icon-compare active added"
+                                          title="Сравнить"
+                                          data-compare-added="<?= $arOffer['ID'] ?>"
+                                          data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                          data-compare-list="<?= $compareList ?>"
+                                          data-compare-iblock="<?= $iIBlockId ?>">
+                                    </span>
+                                <?php } ?>
+                                <?php if ($displayDelay) { ?>
+                                    <span class="intec-like fa fa-heart add"
+                                          title="Отложить"
+                                          data-basket-delay="<?= $arOffer['ID'] ?>"
+                                          data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
+                                    </span>
+                                    <span class="intec-like fa fa-heart added active"
+                                          title="Отложить"
+                                          data-basket-delayed="<?= $arOffer['ID'] ?>"
+                                          data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
+                                    </span>
+                                <?php } ?>
+                            </span>
+                        </div>
+                    <?php } ?>
+                <?php } else { ?>
+                    <div class="item-buttons vam block-<?= $currentOfferId ?>">
+                        <span class="item-buttons-counter-block"
+                              id="<?= $arItemIDs['BASKET_ACTIONS'] ?>"
+                              style="<?= $canBuy ? '' : 'display: none;' ?>">
+                            <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
+                               data-basket-add="<?= $arResult['ID'] ?>"
+                               data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
+                               data-basket-quantity="<?= $arResult['CATALOG_MEASURE_RATIO'] ?>">
+                                <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                                <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
+                            </a>
+                            <a href="<?= $arParams['BASKET_URL'] ?>"
+                               class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
+                               data-basket-added="<?= $arResult['ID'] ?>"
+                               data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
+                               data-basket-quantity="<?= $arResult['CATALOG_MEASURE_RATIO'] ?>">
+                                <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                                <span class="intec-basket-text"><?= GetMessage('CT_BCE_CATALOG_ADDED') ?></span>
+                            </a>
+                            <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
+                                <span class="intec-button intec-button-link jsFastOrder">
+                                    <i class="intec-button-w-icon glyph-icon-one_click"></i>
+                                    <?= GetMessage('CE_FAST_ORDER') ?>
                                 </span>
                             <?php } ?>
                         </span>
-                    <?php } ?>
-                <?php } ?>
-            <?php } else { ?>
-                <?php if (!empty($arResult['FORM_ORDER'])) { ?>
-                    <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16"
-                       onclick="universe.forms.show(<?= JavaScript::toObject($arResult['FORM_ORDER']) ?>)"
-                        >
-                        <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
-                        <span class="intec-basket-text"><?= GetMessage('TEXT_BUTTON_ORDER_PRODUCT') ?></span>
-                    </a>
+                    </div>
+                    <?php
+                    unset($showAddBtn, $showBuyBtn); ?>
+
+                    <span class="intec-small-buttons-wrapper">
+                        <?php if ($arParams['DISPLAY_COMPARE']) { ?>
+                            <span class="intec-compare glyph-icon-compare add"
+                                  title="Сравнить"
+                                  data-compare-add="<?= $arResult['ID'] ?>"
+                                  data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                  data-compare-list="<?= $compareList ?>">
+                            </span>
+                            <span class="intec-compare glyph-icon-compare active added"
+                                  title="Сравнить"
+                                  data-compare-added="<?= $arResult['ID'] ?>"
+                                  data-compare-in="<?= $bInCompare ? 'true' : 'false' ?>"
+                                  data-compare-list="<?= $compareList ?>">
+                            </span>
+                        <?php } ?>
+                        <?php if ($displayDelay) { ?>
+                            <span class="intec-like fa fa-heart add <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                  title="Отложить"
+                                  data-basket-delay="<?= $arResult['ID'] ?>"
+                                  data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
+                            </span>
+                            <span class="intec-like fa fa-heart added active <?= $arResult['IN_DELAY'] ? 'active' : '' ?>"
+                                  title="Отложить"
+                                  data-basket-delayed="<?= $arResult['ID'] ?>"
+                                  data-basket-in="<?= $bInDelay ? 'true' : 'false' ?>">
+                            </span>
+                        <?php } ?>
+                    </span>
                 <?php } ?>
             <?php } ?>
+        <?php } else { ?>
+            <?php if (!empty($arResult['FORM_ORDER'])) { ?>
+                <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16"
+                   onclick="universe.forms.show(<?= JavaScript::toObject($arResult['FORM_ORDER']) ?>)"
+                    >
+                    <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                    <span class="intec-basket-text"><?= GetMessage('TEXT_BUTTON_ORDER_PRODUCT') ?></span>
+                </a>
+            <?php } ?>
+        <?php } ?>
+    </div>
+
+    <?php if ($brand && !empty($brand['SRC'])) { ?>
+        <span class="item-brand">
+                    <a href="<?= $brand['DETAIL_PAGE_URL'] ?>">
+                        <img class="intec-icon-brand"
+                             src="<?= $brand['SRC'] ?>"
+                             alt="<?= $brand['NAME'] ?>"
+                             title="<?= $brand['NAME'] ?>" />
+                    </a>
+                </span>
+    <?php } ?>
+
+</div>
+
+
+
+<div class="col-xs-12 column-buy-button">
+    <div class="item-info-section left clearfix">
+        <div class="item-buttons block-<?= $currentOfferId ?>">
+
+            <span class="item-buttons-counter-block" id="<?= $arItemIDs['BASKET_ACTIONS'] ?>">
+                <a class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button add"
+                   data-basket-add="<?= $arResult['ID'] ?>"
+                   data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>"
+                   data-basket-quantity="<?= $arResult['CATALOG_MEASURE_RATIO'] ?>">
+                    <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                    <span class="intec-basket-text"><?= $buyBtnMessage ?></span>
+                </a>
+                <a href="<?= $arParams['BASKET_URL'] ?>"
+                   class="intec-button intec-button-cl-common intec-button-md intec-button-s-7 intec-button-fs-16 intec-button-block intec-basket-button added"
+                   data-basket-added="<?= $arResult['ID'] ?>"
+                   data-basket-in="<?= $bInBasket ? 'true' : 'false' ?>">
+                    <span class="intec-button-w-icon intec-basket glyph-icon-cart"></span>
+                    <span class="intec-basket-text"><?= GetMessage('CT_BCE_CATALOG_ADDED') ?></span>
+                </a>
+
+            </span>
+            <?php if ($arParams['USE_FAST_ORDER'] == 'Y') { ?>
+                <span class="intec-button intec-button-link jsFastOrder">
+                        <i class="intec-button-w-icon glyph-icon-one_click"></i>
+                    <?= GetMessage('CE_FAST_ORDER') ?>
+                    </span>
+            <?php } ?>
+
         </div>
     </div>
 </div>
+
 
 <script type="text/javascript">
     (function ($, api) {
@@ -619,7 +645,7 @@ $measureRatio = $actualItem['ITEM_MEASURE_RATIOS'][$actualItem['ITEM_MEASURE_RAT
 
                 if (instance !== null) {
                     instance.on('change', function (event, value) {
-                        node.closest('.item-buttons')
+                        node.closest('.item-info-column')
                             .find('[data-basket-add]')
                             .data('basket-quantity', value);
 

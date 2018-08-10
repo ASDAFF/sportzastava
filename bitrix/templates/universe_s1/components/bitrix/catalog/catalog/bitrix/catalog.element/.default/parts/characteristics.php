@@ -11,30 +11,23 @@
  */
 
 $displayProp = false;
-foreach ($characteristics as $property) {
-    if (!empty($property['VALUE']))
-        $displayProp = true;
-}
+?>
 
-if ($hasTab['characteristics'] && $displayProp) {
-    $tempCharacteristics = $characteristics;
-    $firstCharacteristics = array_splice($tempCharacteristics, 0, 6);
-    ?>
+
+
     <div class="properties-list-wrapper">
-        <ul class="properties-list clearfix">
-            <?php foreach ($firstCharacteristics as $key => $property) { ?>
-                <li class="col-xs-12 col-md-6">
-                    <span><?= $property['NAME'] ?> - <?= $property['DISPLAY_VALUE'] ?>;</span>
-                </li>
-            <?php } ?>
+
+        <ul class="properties-list-custom clearfix">
+            <li class="col-xs-12 col-md-12">
+                <span>Официальный дилер <?=$characteristics['SYSTEM_BRAND']['DISPLAY_VALUE']?></span>
+            </li>
+            <li class="col-xs-12 col-md-12">
+                <span>Доставка бесплатно в город <?=getCityForIp(false)?> <a href="javascript:void(0)"><?=date("d.m.Y", strtotime("+1 day"))?> или позже</a></span>
+            </li>
+
+            <li class="col-xs-12 col-md-12">
+                <span>Видели дешевле? <a href="javascript:void(0)" data-action="call">Сообщите нам!</a></span>
+            </li>
         </ul>
-        <div class="show-all-characteristics"
-             onclick="
-                 $(document).scrollTo('#anchor-characteristics', 500);
-                 $('[href=\'#tab-characteristics\']').tab('show');">
-            <?= GetMessage('ALL_CHARACTERISTICS') ?>
-        </div>
+
     </div>
-    <?php
-    unset($tempCharacteristics, $firstCharacteristics);
-}

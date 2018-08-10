@@ -242,16 +242,6 @@ $showSubscribeBtn = $arResult['CATALOG_SUBSCRIBE'] == 'Y';
                 <?php include('parts/main_image.php') ?>
             </div>
             <div class="col-xs-12 col-md-7 item-info-column">
-                <?php if ($brand && !empty($brand['SRC'])) { ?>
-                    <span class="item-brand">
-                        <a href="<?= $brand['DETAIL_PAGE_URL'] ?>">
-                            <img class="intec-icon-brand"
-                                 src="<?= $brand['SRC'] ?>"
-                                 alt="<?= $brand['NAME'] ?>"
-                                 title="<?= $brand['NAME'] ?>" />
-                        </a>
-                    </span>
-                <?php } ?>
 
                 <?php if (!empty($article)) { ?>
                     <div class="item-article text-muted"><?= GetMessage('ARTICLE') ?> <?= $article ?></div>

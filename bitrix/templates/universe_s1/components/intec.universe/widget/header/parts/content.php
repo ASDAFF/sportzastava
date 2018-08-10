@@ -248,7 +248,7 @@ $bStickersDisplay =
                                                 (function ($, api) {
                                                     var root;
 
-                                                    root = $(<?= JavaScript::toObject('#'.$sTemplateId) ?>);
+                                                    root = $('body');
                                                     root.find('[data-action=call]').on('click', function () {
                                                         universe.forms.show(<?= JavaScript::toObject([
                                                             'id' => $arParams['PHONE_FORM'],
