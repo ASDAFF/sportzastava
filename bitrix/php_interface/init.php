@@ -15,6 +15,7 @@ function getCityForIp($ip = false){
     $result = file_get_contents('http://ipgeobase.ru:7020/geo?ip='.$ip);
     $xml->LoadString(iconv("Windows-1251", "UTF-8", $result));
     if ($node = $xml->SelectNodes('/ip-answer/ip/city')) {
+        var_dump($node->textContent());
         return $node->textContent();
     }
 }
