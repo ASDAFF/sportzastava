@@ -325,6 +325,7 @@
 
     .widget-flying-basket-footer {
         position: static;
+        box-shadow: none;
     }
 
     .widget-flying-basket-footer .flying-basket-mobile-buttons-wrap {

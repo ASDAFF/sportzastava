@@ -63,7 +63,8 @@ if (!empty($sImage)) {
             <div class="brand-products-title">
                 <?=GetMessage('C_BRANDS_C_E_DEFAULT_PRODUCTS')?>
             </div>
-            <?php $APPLICATION->IncludeComponent(
+            <?php
+            $APPLICATION->IncludeComponent(
                 'bitrix:catalog.section',
                 'tile',
                 array(
@@ -95,7 +96,7 @@ if (!empty($sImage)) {
                     'SET_STATUS_404' => $arParams['SET_STATUS_404'],
                     'DISPLAY_COMPARE' => $arParams['DISPLAY_COMPARE'] ? 'Y' : 'N',
                     'COMPARE_NAME' => $arParams['COMPARE_NAME'],
-                    'PAGE_ELEMENT_COUNT' => $arParams['PAGE_ELEMENT_COUNT'],
+                    'PAGE_ELEMENT_COUNT' => 21,
                     'LINE_ELEMENT_COUNT' => $arParams['LINE_ELEMENT_COUNT'],
                     'DISPLAY_PREVIEW' => $arParams['LIST_DISPLAY_PREVIEW'],
                     'DISPLAY_PROPERTIES' => $arParams['LIST_DISPLAY_PROPERTIES'],
