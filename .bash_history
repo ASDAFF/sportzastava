@@ -263,3 +263,21 @@ git status
 git pull
 ls
 git pull
+ls
+git pull
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git push
+git status
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+git status
+git status
+git pull

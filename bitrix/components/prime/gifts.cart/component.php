@@ -78,7 +78,8 @@ if($price){
 		$arResult[$row['NAME']] = $row['VALUE'];
 	}
 
-	if($arResult['ITEM'])
+
+	if($arResult['ITEM'] OR $arResult['ITEM_MAX'])
 	$this->includeComponentTemplate();
 
 }

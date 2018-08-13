@@ -6,7 +6,7 @@ $strReferer2 = htmlspecialchars($_GET["referer2"]);
 header("Content-Type: text/xml; charset=windows-1251");
 echo "<"."?xml version=\"1.0\" encoding=\"windows-1251\"?".">"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2018-08-10 08:26">
+<yml_catalog date="2018-08-13 08:40">
 <shop>
 <name>Интернет-магазин Спорт застава</name>
 <company>sportzastava.ru</company>
