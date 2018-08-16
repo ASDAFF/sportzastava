@@ -83,11 +83,5 @@ $APPLICATION->SetTitle("Оформление заказа");?><?$APPLICATION->In
 );?><?$APPLICATION->IncludeComponent(
 	"prime:gifts.cart",
 	"",
-	Array(
-		"COMPOSITE_FRAME_MODE" => "A",
-		"COMPOSITE_FRAME_TYPE" => "AUTO",
-		"PRIME_YOUR_GIFT_TEXT" => "Ваш подарок на заказ от ",
-		"PRIME_YOUR_GIFT_TEXT_MORE" => "Добавте в корзину еще на ",
-		"PRIME_YOUR_GIFT_TEXT_MORE_FROM" => " и выберите подарок за заказ от "
-	)
+Array()
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -26,7 +26,7 @@ class Gifts
     }
 
     function GetMaxGifts($sum){
-        $sql = "SELECT * FROM $this->TABLE_NAME WHERE ACTIVE = 'Y' AND PRICE_FROM = (SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE PRICE_FROM >= $sum LIMIT 1)";
+        $sql = "SELECT * FROM $this->TABLE_NAME WHERE ACTIVE = 'Y' AND PRICE_FROM = (SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE ACTIVE = 'Y' AND PRICE_FROM >= $sum ORDER BY PRICE_FROM ASC LIMIT 1)";
         global $DB;
         return $DB->Query($sql,false);
     }
@@ -213,7 +213,7 @@ class Gifts
     }
 
     function getSettingsMorePrice($sum = false){
-        $sql = "SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE PRICE_FROM >= $sum LIMIT 1";
+        $sql = "SELECT PRICE_FROM FROM $this->TABLE_NAME WHERE ACTIVE = 'Y' AND PRICE_FROM >= $sum ORDER BY PRICE_FROM ASC LIMIT 1";
         global $DB;
         return $DB->Query($sql,false);
     }
@@ -264,6 +264,10 @@ class Gifts
 
         if(is_set($arFields, "NAME") && strlen($arFields["NAME"])<=0)
             $this->LAST_ERROR .= GetMessage("PRIME_GIFTS_BAD_NAME")."<br>";
+        if(is_set($arFields, "PRICE_FROM") && strlen($arFields["PRICE_FROM"])<=0)
+            $this->LAST_ERROR .= GetMessage("PRIME_GIFTS_BAD_PRICE_FROM")."<br>";
+        if(is_set($arFields, "PRICE_TO") && strlen($arFields["PRICE_TO"])<=0)
+            $this->LAST_ERROR .= GetMessage("PRIME_GIFTS_BAD_PRICE_TO")."<br>";
         if(is_set($arFields, "SID") && strlen($arFields["SID"])<=0)
             $this->LAST_ERROR .= GetMessage("PRIME_GIFTS_BAD_SITE")."<br>";
         $strRes = CFile::CheckImageFile($arFields["IMAGE_ID"], 0, 0, 0,array("IMAGE"),false,false);

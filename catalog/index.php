@@ -234,8 +234,5 @@ $APPLICATION->SetTitle("Каталог товаров");?><?$APPLICATION->Includ
 );?><?$APPLICATION->IncludeComponent(
 	"prime:gifts.element",
 	"",
-	Array(
-		"COMPOSITE_FRAME_MODE" => "A",
-		"COMPOSITE_FRAME_TYPE" => "AUTO"
-	)
+Array()
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

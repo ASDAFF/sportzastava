@@ -173,7 +173,7 @@ $tabControl->BeginNextTab();
     </tr>
 
     <tr>
-        <td><?=GetMessage("PRIME_GIFTS_PRICE");?></td>
+        <td><span class="required">*</span><?=GetMessage("PRIME_GIFTS_PRICE");?></td>
         <td><?echo $gifts->PricePeriod("PRICE_FROM", $str_PRICE_FROM, "PRICE_TO", $str_PRICE_TO, "post_form");?></td>
     </tr>
 

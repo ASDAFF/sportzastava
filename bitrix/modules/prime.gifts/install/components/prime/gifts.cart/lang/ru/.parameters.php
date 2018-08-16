@@ -17,7 +17,8 @@ $MESS ['T_IBLOCK_DESC_LIST_CONT'] = "Количество новостей на 
 $MESS ['T_IBLOCK_DESC_ACTIVE_DATE_FORMAT'] = "Формат показа даты";
 $MESS ['CP_BNL_FIELD_CODE'] = "Поля";
 $MESS ['CP_BNL_CACHE_GROUPS'] = "Учитывать права доступа";
+
 $MESS["PRIME_YOUR_GIFT_TEXT"] = "Ваш подарок на заказ от ";
-$MESS["PRIME_YOUR_GIFT_TEXT_MORE"] = "Добавте в корзину еще на ";
+$MESS["PRIME_YOUR_GIFT_TEXT_MORE"] = "Добавьте в корзину еще на ";
 $MESS["PRIME_YOUR_GIFT_TEXT_MORE_FROM"] = " и выберите подарок за заказ от ";
 ?>

@@ -84,17 +84,17 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 
     <tr>
         <td></span><?echo GetMessage("PRIME_YOUR_GIFT_TEXT")?></td>
-        <td><input type="text" name="GIFT_TEXT" value="<?echo $arValue[GIFT_TEXT];?>" size="30" maxlength="100"></td>
+        <td><input type="text" name="GIFT_TEXT" value="<?=($arValue[GIFT_TEXT]) ? $arValue[GIFT_TEXT] : GetMessage("PRIME_YOUR_GIFT_TEXT");?>" size="30" maxlength="100"></td>
     </tr>
 
     <tr>
         <td></span><?echo GetMessage("PRIME_YOUR_GIFT_TEXT_MORE")?></td>
-        <td><input type="text" name="GIFT_TEXT_MORE" value="<?echo $arValue[GIFT_TEXT_MORE];?>" size="30" maxlength="100"></td>
+        <td><input type="text" name="GIFT_TEXT_MORE" value="<?=($arValue[GIFT_TEXT_MORE]) ? $arValue[GIFT_TEXT_MORE] : GetMessage("PRIME_YOUR_GIFT_TEXT_MORE");?>" size="30" maxlength="100"></td>
     </tr>
 
     <tr>
         <td></span><?echo GetMessage("PRIME_YOUR_GIFT_TEXT_MORE_FROM")?></td>
-        <td><input type="text" name="GIFT_TEXT_MORE_FROM" value="<?echo $arValue[GIFT_TEXT_MORE_FROM];?>" size="30" maxlength="100"></td>
+        <td><input type="text" name="GIFT_TEXT_MORE_FROM" value="<?=($arValue[GIFT_TEXT_MORE_FROM]) ? $arValue[GIFT_TEXT_MORE_FROM] : GetMessage("PRIME_YOUR_GIFT_TEXT_MORE_FROM");?>" size="30" maxlength="100"></td>
     </tr>
 
 

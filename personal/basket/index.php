@@ -50,15 +50,4 @@ $APPLICATION->SetTitle("Корзина");?><?$APPLICATION->IncludeComponent(
 		"USE_GIFTS" => "Y",
 		"USE_PREPAYMENT" => "N"
 	)
-);?><?$APPLICATION->IncludeComponent(
-	"prime:gifts.cart",
-	"",
-	Array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "300",
-		"CACHE_TYPE" => "A",
-		"COMPOSITE_FRAME_MODE" => "A",
-		"COMPOSITE_FRAME_TYPE" => "AUTO"
-	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
