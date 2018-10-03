@@ -29,5 +29,8 @@ $displayProp = false;
                 <span>Видели дешевле? <a href="javascript:void(0)" data-action="call">Сообщите нам!</a></span>
             </li>
         </ul>
+        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="//yastatic.net/share2/share.js"></script>
+        <div class="ya-share2" style="margin: 10px auto;" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter" data-size="s"></div>
 
     </div>
