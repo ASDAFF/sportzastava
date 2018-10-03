@@ -1,0 +1,57 @@
+.prime-gifts-main{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+    padding: 20px;
+    margin: 10px auto;
+}
+.prime-gifts-main.disabled{
+    opacity: 0.5;
+}
+
+.prime-gifts-main .prime-gifts-h1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.prime-gifts-main .prime-gifts-list{
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.prime-gifts-main .prime-gifts-list > li{
+    display: inline-block;
+    font-size: 16px;
+    width: 25%;
+    min-width: 150px;
+}
+
+.prime-gifts-main .prime-gifts-list > li > .gifts-item{
+    margin: 0 5px 0px 0;
+    font-weight: 600;
+}
+
+.prime-gifts-main .prime-gifts-list > li > .gifts-item .gifts-text::before{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #E8E8E8;
+}
+
+.prime-gifts-main .prime-gifts-list > li > .gifts-item > .gifts-image{
+    border: 1px solid #c3c3c3;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.prime-gifts-main .prime-gifts-list [id^=r-] {
+    display: none;
+}
+
+[id^=r-]:checked + label.gifts-item div.gifts-image{
+    border-color: #e05615;
+}
+
+[id^=r-]:checked + label.gifts-item div.gifts-text::before{
+    background-color: #e05615;
+}
