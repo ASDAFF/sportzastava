@@ -10,12 +10,13 @@ global $APPLICATION;
  * @var BuildTemplate $template
  * @var WidgetTemplate $this
  */
+$tags = (count(explode('/',$APPLICATION->GetCurDir())) == 4) ? "div" : "h1";
 ?>
 <div class="intec-content">
     <div class="intec-content-wrapper">
-        <h1 style="margin: 0;">
+        <<?=$tags?> style="margin: 0;font-size:30px;">
             <? $APPLICATION->ShowTitle('header') ?>
-        </h1>
+        </<?=$tags?>>
     </div>
 </div>
 
