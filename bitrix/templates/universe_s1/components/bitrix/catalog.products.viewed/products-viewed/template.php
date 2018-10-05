@@ -119,7 +119,7 @@ $containerName = 'catalog-products-viewed-container';
 if (!empty($arResult['ITEMS']) && !empty($arResult['ITEM_ROWS']))
 {
 	?>
-	<h1 style="">Ранее вы смотрели</h1>
+	<div style="font-size: 30px">Ранее вы смотрели</div>
 	<div role="tabpanel" id="" class="widget-catalog-categories-tab-content tab-pane active">
 		<div class="widget-catalog-categories-slider-wrap">
 			<div class="widget-catalog-categories-navigation">

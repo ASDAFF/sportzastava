@@ -74,7 +74,7 @@ if (!empty($arResult['ITEMS']))
 	</script>
 
 
-	<h1><? echo GetMessage('CVP_TPL_MESS_RCM') ?></h1>
+	<div style="font-size: 30px"><? echo GetMessage('CVP_TPL_MESS_RCM') ?></div>
 
 	<div role="tabpanel" id="" class="widget-catalog-categories-tab-content tab-pane active">
 	<div class="widget-catalog-categories-slider-wrap">
