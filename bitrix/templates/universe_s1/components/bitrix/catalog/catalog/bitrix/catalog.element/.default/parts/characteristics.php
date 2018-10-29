@@ -22,7 +22,7 @@ $displayProp = false;
                 <span>Официальный дилер <?=$characteristics['SYSTEM_BRAND']['DISPLAY_VALUE']?></span>
             </li>
             <li class="col-xs-12 col-md-12">
-                <span>Доставка бесплатно в город <?=getCityForIp(false)?> <a href="javascript:void(0)"><?=date("d.m.Y", strtotime("+1 day"))?> или позже</a></span>
+                <span>Доставка бесплатно в город <?=$characteristics['SYSTEM_BRAND']['CITY']?> <a href="javascript:void(0)"><?=$characteristics['SYSTEM_BRAND']['DAY_PLUS']?> или позже</a></span>
             </li>
 
             <li class="col-xs-12 col-md-12">

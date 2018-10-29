@@ -41,8 +41,14 @@ foreach ($arResult['DISPLAY_PROPERTIES'] as $key => $property) {
     if (is_array($property['VALUE']))
         $property['VALUE'] = implode(', ', $property['VALUE']);
 
+    $property['DAY_PLUS'] = showDatePlusDay(1);
+    $property['CITY'] = getCityForIp(false);
+
     $characteristics[$key] = $property;
 }
+
+
+
 
 // Product videos
 $videoIds = ArrayHelper::getValue($arResult, ['PROPERTIES', $arParams['PROPERTY_VIDEO'], 'VALUE']);

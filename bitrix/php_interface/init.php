@@ -19,3 +19,7 @@ function getCityForIp($ip){
         return $node->textContent();
     }
 }
+
+function showDatePlusDay($day){
+    return date("d.m.Y", strtotime("+$day day"));
+}
